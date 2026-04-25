@@ -1,0 +1,14 @@
+# config.yaml — Cấu hình VLTK1 Bot
+
+server:
+  host: "0.0.0.0"   # TODO: thay bằng IP game server (tìm qua Wireshark hoặc frida connect hook)
+  port: 0            # TODO: thay bằng port thật
+
+pool:
+  max_workers: 20    # Số account chạy song song (tăng dần: 1 → 5 → 20 → 100)
+
+quests:
+  da_tau:
+    loop_count: 0    # 0 = chạy vô hạn đến khi hết NV, >0 = số vòng cố định
+
+log_dir: "./logs"

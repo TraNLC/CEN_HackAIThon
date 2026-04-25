@@ -1,0 +1,1642 @@
+syntax = "proto3";
+
+package vltk1;
+
+option java_package = "vn.perfingame.jx1mobile.protocol";
+
+// Namespace: GameServer.Network.Protocol
+message ActivitiesListData {
+  string title = 1;
+  repeated ActivitiesListField list = 2;
+  int64 currentTimeSeconds = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ActivitiesListField {
+  int32 timeStart = 1;
+  int32 totalSeconds = 2;
+  string title = 3;
+  string description = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AddMapObject {
+  string objectId = 1;
+  int32 dataId = 2;
+  int32 mapId = 3;
+  int32 mapX = 4;
+  int32 mapY = 5;
+  int32 direction = 6;
+  string name = 7;
+  int32 nameColor = 8;
+  int32 type = 9;
+  int32 remainingLifeFrame = 10;
+  int32 remainingDropFrame = 11;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AddMinistateKey {
+  string key = 1;
+  int32 lifetime = 2;
+  string source = 3;
+  string description = 4;
+  string iconSpritePath = 5;
+  int32 iconSkillId = 6;
+  int32 iconItemMagicParticular = 7;
+  bool isKeepOnDeath = 8;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AddPropField {
+  int32 power = 1;
+  int32 inside = 2;
+  int32 outer = 3;
+  int32 agility = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AddSkillPoint {
+  int32 skillId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AllMagicAttribResponse {
+  repeated MagicAttrib list = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AnswerServerForString {
+  int32 id = 1;
+  string data = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ApplyAutoplayProfile {
+  bool startAuto = 1;
+  string profile = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AskClientForString {
+  int32 id = 1;
+  string title = 2;
+  string desc = 3;
+  int32 minlen = 4;
+  int32 maxlen = 5;
+  bool openNumPad = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message Attention2Player {
+  string message = 1;
+  bool isMsg2Player = 2;
+  bool isTalk2Player = 3;
+  bool isDialog2Player = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AutoEquipRequest {
+  int32 itemId = 1;
+  bool isEquip = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AwardSelectionAnswer {
+  int32 id = 1;
+  int32 selected = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message AwardSelectionAsk {
+  int32 id = 1;
+  string description = 2;
+  repeated int32 selectionIcons = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message BounceSelfPoint {
+  string data = 1;
+  int32 style = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message CastSkill {
+  int32 launchType = 1;
+  string launchId = 2;
+  int32 targetType = 3;
+  string targetId = 4;
+  int32 targetPositionX = 5;
+  int32 targetPositionY = 6;
+  int32 skillId = 7;
+  int32 skillLevel = 8;
+  bool isNoAction = 9;
+}
+
+// Namespace: GameServer.Network.Protocol
+message CharacterRequest {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatItemClick {
+  int32 targetChannel = 1;
+  string targetCid = 2;
+  string targetName = 3;
+  int32 targetItemId = 4;
+  string targetItemName = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatItemView {
+  string ownedCid = 1;
+  string ownedName = 2;
+  Item ownedItem = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatItemViewFalse {
+  string ownedCid = 1;
+  string ownedName = 2;
+  string itemName = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatMessage {
+  int32 channel = 1;
+  string senderCid = 2;
+  string senderName = 3;
+  string message = 4;
+  string item = 5;
+  string receiver = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatMessageWithItem {
+  ChatMessage message = 1;
+  Item item = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatRemoveLogChannel {
+  int32 channel = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatRemoveLogPlayerC {
+  int32 channel = 1;
+  string playerCid = 2;
+  string playerName = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ChatSend {
+  int32 channel = 1;
+  string message = 2;
+  string item = 3;
+  string receiver = 4;
+  string autoreply = 5;
+  bool isautoplay = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ContextDesSelect {
+  int32 selectIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ContextDescription {
+  repeated string contentPage = 1;
+  repeated string selections = 2;
+  int32 widthPercent = 3;
+  int32 heightPercent = 4;
+  int32 backgroundPadding = 5;
+  int32 fadeSeconds = 6;
+  string title = 7;
+  int32 backgroundAlphaPercent = 8;
+}
+
+// Namespace: GameServer.Network.Protocol
+message Delivered {
+  string token = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message DoSkillTargetNpc {
+  int32 skillid = 1;
+  string nid = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message DoSkillTargetPlayer {
+  int32 skillid = 1;
+  string cid = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message DoSkillTargetPosition {
+  int32 skillid = 1;
+  int32 positionX = 2;
+  int32 positionY = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnterGameServer {
+  int32 mapId = 1;
+  int32 mapX = 2;
+  int32 mapY = 3;
+  string serverIp = 4;
+  int32 serverPort = 5;
+  string token = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnterMap {
+  int32 mapId = 1;
+  int32 mapX = 2;
+  int32 mapY = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnterPlayerStart {
+  int32 mapId = 1;
+  int32 mapX = 2;
+  int32 mapY = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnvelopersAdd {
+  int32 id = 1;
+  string title = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnvelopersOpen {
+  int32 id = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message EnvelopersOpenned {
+  int32 id = 1;
+  string description = 2;
+  repeated string itemimage = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyAddConfirm {
+  string targetCid = 1;
+  bool isAccepted = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyAddNotify {
+  string requestCid = 1;
+  string name = 2;
+  int32 level = 3;
+  int32 faction = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyAddRequest {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyAddResponse {
+  bool isAccepted = 1;
+  string cid = 2;
+  string name = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyListingField {
+  string cid = 1;
+  string name = 2;
+  bool isOnline = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyListingRequest {
+  int32 listType = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyListingResponse {
+  repeated FriendlyListingField listing = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message FriendlyRemoveRequest {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message GiveBoxOpen {
+  string title = 1;
+  string description = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message GiveBoxRemove {
+  string itemId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message GiveBoxSend {
+  string itemId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message GotoNpc {
+  repeated string npcName = 1;
+  int32 data = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message GotoPosition {
+  int32 mapx = 1;
+  int32 mapy = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HandstrengthLocation {
+  int32 skillLocation = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HandstrengthSkillId {
+  int32 skillId = 1;
+  bool withDebug = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeyItemApplied {
+  int32 index = 1;
+  int32 data = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeyItemList {
+  HotkeyItemDatabase data = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeyRemove2C {
+  int32 skillId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeyRemove2S {
+  int32 skillId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeyRequest {
+  int32 hotkeyId = 1;
+  int32 skillId = 2;
+  int32 dirFunc = 3;
+  int32 control = 4;
+  int32 target = 5;
+  int32 showDirImage = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeySkillField {
+  int32 data = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message HotkeySkillList {
+  repeated int32 listing = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message IsSittingDown {
+  bool value = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ItemJoin {
+  int32 itemIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ItemLocationRequest {
+  int32 itemIndex = 1;
+  int32 itemLocation = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message JumToMap {
+  int32 mapId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message LiveOptions {
+  int32 overGsvMessageSeconds = 1;
+  int32 silentReconnectCount = 2;
+  int32 reconnectSecondsTimeout = 3;
+  bool isReconnectRandomType = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message LocalNews {
+  string news = 1;
+  int32 times = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MagicAttrib {
+  string type = 1;
+  repeated int32 values = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ManualEquipRequest {
+  int32 itemindex = 1;
+  int32 place = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapDialogNpc {
+  string name = 1;
+  int32 mapX = 2;
+  int32 mapY = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapDialogNpcListRequest {
+  int32 mapId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapDialogNpcListResponse {
+  int32 mapId = 1;
+  repeated MapDialogNpc list = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapRegionObstacle {
+  int32 x = 1;
+  int32 y = 2;
+  int32 v = 3;
+  int32 h = 4;
+  repeated string data = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapRegionTrap {
+  int32 nx = 1;
+  int32 ny = 2;
+  repeated string grid = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message MapRegionTrapOpen {
+  bool open = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message NpcAttack {
+  string uuid = 1;
+  string cid = 2;
+  int32 sid = 3;
+  int32 slv = 4;
+  int32 damage = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message NpcDebug {
+  string uuid = 1;
+  int32 mapX = 2;
+  int32 mapY = 3;
+  int32 direction = 4;
+  string name = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message NpcDialogue {
+  string npcId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message NpcSelectMessage {
+  int32 selectIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message NpcTransferMessage {
+  string title = 1;
+  repeated string selections = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ObjectPickup {
+  string objectId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message OpenPlayerInfoRequest {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message OpenPlayerInfoResponse {
+  OtherPlayerProperties properties = 1;
+  repeated Item items = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message OpenSaveBox {
+  int32 data = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message OtherPlayerProperties {
+  int32 rank = 1;
+  string name = 2;
+  string cid = 3;
+  int32 faction = 4;
+  bool isGirl = 5;
+  int32 level = 6;
+  int32 pk = 7;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyCaptain {
+  string cid = 1;
+  int32 maxTeamSize = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyData {
+  string name = 1;
+  int32 level = 2;
+  int32 faction = 3;
+  int32 teamId = 4;
+  int32 memCount = 5;
+  int32 type = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyInvite {
+  PartyData party = 1;
+  string captainCid = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyJoin {
+  string cid = 1;
+  string name = 2;
+  int32 level = 3;
+  int32 faction = 4;
+  int32 teamId = 5;
+  int32 curHP = 6;
+  int32 maxHp = 7;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyNearest {
+  repeated PartyData list = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyOut {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartyRequest {
+  string cid = 1;
+  string name = 2;
+  int32 level = 3;
+  int32 faction = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfAccept {
+  int32 teamId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfCaptain {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfConfirm {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfCreate {
+  int32 type = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfInvite {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfJoin {
+  int32 teamId = 1;
+  string cidMemberOfTeam = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfKick {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfUnaccept {
+  int32 teamId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySelfUnconfirm {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PartySync {
+  string cid = 1;
+  int32 perLife = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message Passcode {
+  int32 code = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlaySoundEffect {
+  string name = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayStateId {
+  string cid = 1;
+  int32 stateid = 2;
+  int32 looptimes = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayStateSpr {
+  string cid = 1;
+  string sprPath = 2;
+  int32 looptimes = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerLoginRequest {
+  string loginCode = 1;
+  string cid = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerLoginResponse {
+  bool isOk = 1;
+  string msg = 2;
+  int32 mapId = 3;
+  int32 mapX = 4;
+  int32 mapY = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerStallBuyItemRequest {
+  string stallCid = 1;
+  int32 stallIndex = 2;
+  int32 itemIndex = 3;
+  int32 itemMoney = 4;
+  int32 itemKnb = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerStallBuyItemResponse {
+  bool isOk = 1;
+  int32 itemIndex = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerStallOpenRequest {
+  string stallKey = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerStallOpenResponse {
+  string playerCid = 1;
+  int32 stallIndex = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerTalk {
+  string message = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PlayerUseItem {
+  int32 itemindex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PrivateFight {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message PrivateFightTarget {
+  string targetCid = 1;
+  string targetName = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message QuestClick {
+  string key = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message QuestComplete {
+  string k = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message QuestInfo {
+  string k = 1;
+  string t = 2;
+  string c = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message QuestLimit {
+  QuestInfo info = 1;
+  int32 displayTime = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message QuestLock {
+  string key = 1;
+  bool sendclick = 2;
+  bool minimize = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RankPlayerFactionRequest {
+  int32 factionId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RankPlayerFactionResponseField {
+  int32 rank = 1;
+  int32 level = 2;
+  string name = 3;
+  int64 exp = 4;
+  int32 faction = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RankPlayerLevelRequest {
+  int32 page = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RankPlayerLevelResponseField {
+  int32 rank = 1;
+  string name = 2;
+  int32 level = 3;
+  int64 exp = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RankPlayerMoneyResponseField {
+  int32 rank = 1;
+  string name = 2;
+  string money = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RemoveItemRequest {
+  int32 itemIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RemoveItemRespone {
+  int32 itemIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RemoveMinistateKey {
+  string key = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message RemoveSkill {
+  int32 skillid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanAddItem {
+  int32 itemIndexInBagarate = 1;
+  int32 money = 2;
+  int32 knb = 3;
+  int32 stallIndex = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanCloseStallRequest {
+  int32 stallIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanCloseStallResponse {
+  bool isOk = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanGetStallDataRequest {
+  int32 stallIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanGetStallDataResponse {
+  string title = 1;
+  int64 availableMoney = 2;
+  int64 availableKnb = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanOpenStallRequest {
+  int32 stallIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanOpenStallResponse {
+  int32 stallIndex = 1;
+  bool isOk = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanPricingRequest {
+  int32 itemIndexInBagarate = 1;
+  int32 money = 2;
+  int32 knb = 3;
+  int32 stallIndex = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanRemoveItem {
+  int32 itemIndexInBagarate = 1;
+  int32 stallIndex = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanSetTitleRequest {
+  int32 stallIndex = 1;
+  string title = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanSetTitleResponse {
+  int32 stallIndex = 1;
+  string title = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanTakeItemRequest {
+  int32 itemIndexInBagarate = 1;
+  int32 stallIndex = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanTakeMoneyRequest {
+  int32 stallIndex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SalesmanTakeMoneyResponse {
+  bool isOk = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SendStorageMoney {
+  int64 moneyToStorage = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SetPkState {
+  int32 state = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SetRiding {
+  bool riding = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopBuyItem {
+  string shopkey = 1;
+  int32 itemindex = 2;
+  int32 quantity = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopData {
+  string shopkey = 1;
+  string shopname = 2;
+  int32 costtype = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopItem {
+  int64 cost = 1;
+  int32 lockstate = 2;
+  int32 lockseconds = 3;
+  int32 expireseconds = 4;
+  int32 gold = 5;
+  int32 genre = 6;
+  int32 detail = 7;
+  int32 particular = 8;
+  int32 level = 9;
+  int32 series = 10;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopSellItem {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopTypeOne {
+  ShopData data = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopTypeThree {
+  int64 leftPoint = 1;
+  ShopData data = 2;
+  string pointName = 3;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopTypeThreeCurrentPoint {
+  int64 leftPoint = 1;
+  string pointName = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ShopTypeTwo {
+  repeated ShopData list = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message StateMagic {
+  int32 parentSkillId = 1;
+  int32 skillId = 2;
+  int32 skillLevel = 3;
+  int32 stateId = 4;
+  int32 leftTime = 5;
+  repeated MagicAttrib magics = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message StorageExtendCell {
+  bool isLocked = 1;
+  int32 extend1CellMaximum = 2;
+  int32 extend2CellMaximum = 3;
+  int32 extend3CellMaximum = 4;
+  int32 extend4CellMaximum = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message StorageLockState {
+  bool isLocked = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message SyncItemDurability {
+  int32 itemindex = 1;
+  int32 durabilityCurrently = 2;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TargetToPlayerSpecial {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message ThrowItemRequest {
+  int32 itemindex = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongOverview {
+  string tongName = 1;
+  string masterName = 2;
+  int32 memCount = 3;
+  int32 memLimit = 4;
+  int32 camp = 5;
+  string note = 6;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongRequestField {
+  string cid = 1;
+  string name = 2;
+  int32 faction = 3;
+  int32 level = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfMemberFigure {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfMemberKick {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfMemberTitle {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfRequestAccept {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfRequestReject {
+  string targetCid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongSelfRequestSend {
+  int32 targetTongId = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TongTongField {
+  int32 id = 1;
+  string name = 2;
+  int32 level = 3;
+  int32 memCount = 4;
+  int32 memLimit = 5;
+  string master = 6;
+  string note = 7;
+  int32 camp = 8;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeInviteAccept {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeInviteToCli {
+  string cid = 1;
+  string name = 2;
+  string tongname = 3;
+  int32 level = 4;
+  int32 faction = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeInviteToGsv {
+  string cid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessRefundItem {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessRefundItemDestinate {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessRefundItemSource {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendCashToAdd {
+  int64 cash = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendCashToGsv {
+  int64 cash = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendCashToRemove {
+  int64 cash = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendItemToAdd {
+  Item item = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendItemToGsv {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeProcessSendItemToRemove {
+  int32 itemid = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TradeStart {
+  string cid = 1;
+  string name = 2;
+  string tongname = 3;
+  int32 level = 4;
+  int32 faction = 5;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TrainoffCheckRequet {
+  bool autoplayIsOpen = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TrainoffCheckResponse {
+  string description = 1;
+  bool enterAllowed = 2;
+  string enterLabel = 3;
+  bool autoplayAllowed = 4;
+}
+
+// Namespace: GameServer.Network.Protocol
+message TrainoffStart {
+  string autoplayProfile = 1;
+}
+
+// Namespace: GameServer.Network.Protocol
+message UnmergeItem {
+  int32 itemIndex = 1;
+  int32 count = 2;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Any {
+  string typeUrl = 1;
+  bytes value = 2;
+}
+
+// Namespace: App
+message Character {
+  string cid = 1;
+  string account = 2;
+  string name = 3;
+  int32 sex = 4;
+  int32 sect = 5;
+  int32 revivalOnLogin = 6;
+  string tongIdentify = 7;
+  int64 bagarateMoney = 8;
+  int32 series = 9;
+  int32 teamId = 10;
+  int32 level = 11;
+  int64 exp = 12;
+  int32 power = 13;
+  int32 agility = 14;
+  int32 outer = 15;
+  int32 inside = 16;
+  int32 luck = 17;
+  int32 maxLife = 18;
+  int32 maxStamina = 19;
+  int32 maxInner = 20;
+  int32 leftProp = 21;
+  int32 leftFight = 22;
+  int32 fightMode = 23;
+  int32 armorRes = 24;
+  int32 weaponRes = 25;
+  int32 helmRes = 26;
+  int32 horseRes = 27;
+  int32 camp = 28;
+  int32 mapId = 29;
+  int32 mapX = 30;
+  int32 mapY = 31;
+  int32 curLife = 32;
+  int32 curInner = 33;
+  int32 curStamina = 34;
+  int32 worldRank = 35;
+  int32 storageCellMaximum = 36;
+  int32 bagarateCellMaximum = 37;
+  int32 pkStatus = 38;
+  int32 pkvalue = 39;
+  int32 tongIndex = 40;
+  int32 revivalMapId = 41;
+  int32 revivalMapX = 42;
+  int32 revivalMapY = 43;
+  int32 knb = 44;
+  int32 campCurrently = 45;
+  int32 runSpeed = 46;
+  int32 action = 47;
+  int32 direction = 48;
+  int32 attackSpeed = 49;
+  int32 castSpeed = 50;
+  int32 stateStature = 51;
+  string titleCurrently = 52;
+  int64 storageMoney = 53;
+  int32 teamLatestId = 54;
+  int32 lastSavedTime = 55;
+  int32 expLimitCheck = 56;
+  int64 expLimitReceived = 57;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message DescriptorProto {
+  string name = 1;
+  repeated FieldDescriptorProto field = 2;
+  repeated FieldDescriptorProto extension = 3;
+  repeated DescriptorProto nestedType = 4;
+  repeated EnumDescriptorProto enumType = 5;
+  repeated OneofDescriptorProto oneofDecl = 6;
+  MessageOptions options = 7;
+  repeated string reservedName = 8;
+  SymbolVisibility visibility = 9;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Duration {
+  int64 seconds = 1;
+  int32 nanos = 2;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Enum {
+  string name = 1;
+  repeated EnumValue enumvalue = 2;
+  repeated Option options = 3;
+  SourceContext sourceContext = 4;
+  Syntax syntax = 5;
+  string edition = 6;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message EnumDescriptorProto {
+  string name = 1;
+  repeated EnumValueDescriptorProto value = 2;
+  EnumOptions options = 3;
+  repeated string reservedName = 4;
+  SymbolVisibility visibility = 5;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message EnumOptions {
+  bool allowAlias = 1;
+  bool deprecated = 2;
+  bool deprecatedLegacyJsonFieldConflicts = 3;
+  FeatureSet features = 4;
+  repeated UninterpretedOption uninterpretedOption = 5;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message EnumValue {
+  string name = 1;
+  int32 number = 2;
+  repeated Option options = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message EnumValueDescriptorProto {
+  string name = 1;
+  int32 number = 2;
+  EnumValueOptions options = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message EnumValueOptions {
+  bool deprecated = 1;
+  FeatureSet features = 2;
+  bool debugRedact = 3;
+  repeated UninterpretedOption uninterpretedOption = 4;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message ExtensionRangeOptions {
+  repeated UninterpretedOption uninterpretedOption = 1;
+  FeatureSet features = 2;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FeatureSetDefaults {
+  Edition minimumEdition = 1;
+  Edition maximumEdition = 2;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Field {
+  int32 number = 1;
+  string name = 2;
+  string typeUrl = 3;
+  int32 oneofIndex = 4;
+  bool packed = 5;
+  repeated Option options = 6;
+  string jsonName = 7;
+  string defaultValue = 8;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FieldDescriptorProto {
+  string name = 1;
+  int32 number = 2;
+  string typeName = 3;
+  string extendee = 4;
+  string defaultValue = 5;
+  int32 oneofIndex = 6;
+  string jsonName = 7;
+  FieldOptions options = 8;
+  bool proto3Optional = 9;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message FieldMask {
+  repeated string paths = 1;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FieldOptions {
+  bool packed = 1;
+  bool lazy = 2;
+  bool unverifiedLazy = 3;
+  bool deprecated = 4;
+  bool weak = 5;
+  bool debugRedact = 6;
+  FeatureSet features = 7;
+  repeated UninterpretedOption uninterpretedOption = 8;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FileDescriptorProto {
+  string name = 1;
+  string package = 2;
+  repeated string dependency = 3;
+  repeated int32 publicDependency = 4;
+  repeated int32 weakDependency = 5;
+  repeated string optionDependency = 6;
+  repeated DescriptorProto messageType = 7;
+  repeated EnumDescriptorProto enumType = 8;
+  repeated ServiceDescriptorProto service = 9;
+  repeated FieldDescriptorProto extension = 10;
+  FileOptions options = 11;
+  SourceCodeInfo sourceCodeInfo = 12;
+  string syntax = 13;
+  Edition edition = 14;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FileDescriptorSet {
+  repeated FileDescriptorProto file = 1;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message FileOptions {
+  string javaPackage = 1;
+  string javaOuterClassname = 2;
+  bool javaMultipleFiles = 3;
+  bool javaGenerateEqualsAndHash = 4;
+  bool javaStringCheckUtf8 = 5;
+  string goPackage = 6;
+  bool ccGenericServices = 7;
+  bool javaGenericServices = 8;
+  bool pyGenericServices = 9;
+  bool deprecated = 10;
+  bool ccEnableArenas = 11;
+  string objcClassPrefix = 12;
+  string csharpNamespace = 13;
+  string swiftPrefix = 14;
+  string phpClassPrefix = 15;
+  string phpNamespace = 16;
+  string phpMetadataNamespace = 17;
+  string rubyPackage = 18;
+  FeatureSet features = 19;
+  repeated UninterpretedOption uninterpretedOption = 20;
+}
+
+// Namespace: App
+message HotkeyItemDatabase {
+  string cid = 1;
+  repeated int32 list = 2;
+}
+
+// Namespace: App
+message Item {
+  int32 identify = 1;
+  int32 rowIndexAndType = 2;
+  int32 detailAndGenre = 3;
+  int32 particularAndLevel = 4;
+  int32 stackAndSeries = 5;
+  int32 durabilityAndLockState = 6;
+  int64 createTimestampSeconds = 7;
+  string sourceCid = 8;
+  string sourceName = 9;
+  repeated int64 state = 10;
+  repeated int32 magic = 11;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message ListValue {
+  repeated Value values = 1;
+}
+
+// Namespace: App
+message MSPasscode {
+  int32 passcode = 1;
+}
+
+// Namespace: App
+message MSUnityCreateCharacterRequest {
+  string data = 1;
+  int32 factionId = 2;
+  string name = 3;
+  int32 sex = 4;
+}
+
+// Namespace: App
+message MSUnityCreateCharacterResponse {
+  bool isOk = 1;
+  string message = 2;
+}
+
+// Namespace: App
+message MSUnityEntergameRequest {
+  int32 resourceVersion = 1;
+  int32 protocolVersion = 2;
+}
+
+// Namespace: App
+message MSUnityEntergameResponse {
+  string serverIp = 1;
+  int32 serverPort = 2;
+  string loginCode = 3;
+  string cid = 4;
+}
+
+// Namespace: App
+message MSUnityLoginQueueStart {
+  int32 orderNumber = 1;
+}
+
+// Namespace: App
+message MSUnityLoginRequest {
+  string account = 1;
+  string password = 2;
+}
+
+// Namespace: App
+message MSUnityLoginResponse {
+  bool isOk = 1;
+  bool haveCharacter = 2;
+  string message = 3;
+}
+
+// Namespace: App
+message MSUnityRegisterFields {
+  string data = 1;
+}
+
+// Namespace: App
+message MSUnityRegisterRequest {
+  string account = 1;
+  string password = 2;
+}
+
+// Namespace: App
+message MSUnityRegisterResponse {
+  bool isOk = 1;
+  string account = 2;
+  string message = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message MessageOptions {
+  bool messageSetWireFormat = 1;
+  bool noStandardDescriptorAccessor = 2;
+  bool deprecated = 3;
+  bool mapEntry = 4;
+  bool deprecatedLegacyJsonFieldConflicts = 5;
+  FeatureSet features = 6;
+  repeated UninterpretedOption uninterpretedOption = 7;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message MethodDescriptorProto {
+  string name = 1;
+  string inputType = 2;
+  string outputType = 3;
+  MethodOptions options = 4;
+  bool clientStreaming = 5;
+  bool serverStreaming = 6;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message MethodOptions {
+  bool deprecated = 1;
+  FeatureSet features = 2;
+  repeated UninterpretedOption uninterpretedOption = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message OneofDescriptorProto {
+  string name = 1;
+  OneofOptions options = 2;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message OneofOptions {
+  FeatureSet features = 1;
+  repeated UninterpretedOption uninterpretedOption = 2;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Option {
+  string name = 1;
+  Any value = 2;
+}
+
+// Namespace: App
+message SalesmanItem {
+  Item item = 1;
+  int32 money = 2;
+  int32 knb = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message ServiceDescriptorProto {
+  string name = 1;
+  repeated MethodDescriptorProto method = 2;
+  ServiceOptions options = 3;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message ServiceOptions {
+  FeatureSet features = 1;
+  bool deprecated = 2;
+  repeated UninterpretedOption uninterpretedOption = 3;
+}
+
+// Namespace: App
+message Skill {
+  int32 id = 1;
+  int32 level = 2;
+  int64 exp = 3;
+  int32 tempEnhancedPoint = 4;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message SourceContext {
+  string fileName = 1;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Timestamp {
+  int64 seconds = 1;
+  int32 nanos = 2;
+}
+
+// Namespace: App
+message TongMember {
+  string cid = 1;
+  string name = 2;
+  int32 figure = 3;
+  string title = 4;
+  bool isOnline = 5;
+  int32 level = 6;
+  int32 sect = 7;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Type {
+  string name = 1;
+  repeated Field fields = 2;
+  repeated string oneofs = 3;
+  repeated Option options = 4;
+  SourceContext sourceContext = 5;
+  Syntax syntax = 6;
+  string edition = 7;
+}
+
+// Namespace: Google.Protobuf.Reflection
+message UninterpretedOption {
+  string identifierValue = 1;
+  uint64 positiveIntValue = 2;
+  int64 negativeIntValue = 3;
+  double doubleValue = 4;
+  bytes stringValue = 5;
+  string aggregateValue = 6;
+}
+
+// Namespace: Google.Protobuf.WellKnownTypes
+message Value {
+  object kind = 1;
+}
+

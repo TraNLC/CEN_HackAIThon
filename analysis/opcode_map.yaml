@@ -1,0 +1,40 @@
+# opcode_map.yaml — Ghi chú opcodes đã reverse engineer
+# Format: opcode (hex) → mô tả, direction, payload structure
+#
+# Cách dùng:
+#   1. Capture session qua frida/capture.py
+#   2. Dùng analysis/packet_parser.py --detect-format để tìm format
+#   3. Làm từng action trong game, so sánh packet nào xuất hiện
+#   4. Ghi lại opcode vào đây
+
+# ============================================================
+# CLIENT → SERVER (C2S)
+# ============================================================
+c2s:
+  # Điền vào sau khi capture
+  # Ví dụ format:
+  # 0x0001:
+  #   name: LOGIN_REQUEST
+  #   payload: "string username, string password"
+  #   notes: "gửi khi login"
+
+# ============================================================
+# SERVER → CLIENT (S2C)
+# ============================================================
+s2c:
+  # Điền vào sau khi capture
+  # Ví dụ format:
+  # 0x0101:
+  #   name: LOGIN_RESPONSE
+  #   payload: "uint8 success, uint32 char_id"
+  #   notes: "success=1 ok, success=0 fail"
+
+# ============================================================
+# NOTES — ghi chú quá trình RE
+# ============================================================
+notes:
+  packet_format: "chưa xác định — chạy --detect-format"
+  encryption: "chưa xác định"
+  server_ip: "chưa xác định"
+  server_port: "chưa xác định"
+  apk_package: "chưa xác định"
