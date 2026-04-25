@@ -1,0 +1,26 @@
+{
+  "main": {
+    "ClickPlayerBeaweenDownAndUpLimitTime": 500,
+    "Logo18AllowToHide": 1,
+    "Logo18RoutineSecondsHide": 900,
+    "Logo18RoutineSecondsLive": 10,
+    "MissileSoundNextActiveSameFileName": 500,
+    "MissileSoundPlayingCurrentlyFiles": 12,
+    "PlayerActionSoundPlayingCurrentlyFiles": 8,
+    "SpriteLimitMBCacheNpc": 200,
+    "SpriteLimitMBCacheSkill": 150,
+    "SpriteLimitMBCacheMap": 100,
+    "MapVisibilityLimitMinimum": 20,
+    "MapVisibilityLimitMaximum": 40,
+    "JumpSpeed": 10,
+    "JumpAnimateLoops": 2,
+    "JumpHeight": 1024,
+    "PlayerTalkFieldLifeTime": 5,
+    "PlayerTalkFieldMaximunCount": 4,
+    "HomeTouchTargetListKeepOnRadius": 200,
+    "HomeTouchTargetListTopCount": 5,
+    "ItemDetailLayerFastUseWaitMilli": 200,
+    "ShowoffBagarateTimeMilli": 80,
+    "PickupButtonFindNpcDelayFrames18": 12
+  }
+}

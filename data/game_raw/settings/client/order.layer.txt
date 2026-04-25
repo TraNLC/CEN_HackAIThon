@@ -1,0 +1,59 @@
+USER.INTERFACE	SAFE.AREA
+VariableJoystick	GroupBottomButton
+mini.map\framed.js	Ministate
+mini.map\no.sprite.js	TopHealth
+mini.map	
+PanelSafeArea	quest.team.chat
+PanelHotKeys	OpenChat
+deny.moving	home.touch.target.list
+GroupRightButton	
+Right.Hotkey	
+TopRightButtons	
+home.skill.direction.target.list	
+player.self.equipment.series	
+player.self.properties.text	
+player.self.properties	
+player.self.bagarate	
+player.self.storage	
+player.self.storage.extension	
+player.self.salesman	
+player.self.skill	
+player.self.skill.direction	
+npc.money.shop	
+npc.knb.shop	
+npc.point.shop	
+tong.pc	
+friendly.list	
+player.other.equipment	
+player.other.stall	
+world.rank.pc	
+player.trade	
+give.item	
+PlayerDieMessage	
+MiniMapZoomPC	
+party.invite.pc	
+player.self.settings	
+panel.equipment\main.panel.js	
+player.self.prop.point	
+activities.pc	
+envelop.listing	
+viewport.item\main.js	
+item.details.pc	
+notification.pc	
+player.self.salesman.pricing	
+share.item.autoreply	
+hotkey.assignment	
+un.merge.item.pc	
+award.selection	
+npc.dialog	
+npc.dialog.10	
+npc.dialog.infi	
+UiContextDescription	
+player.self.choision	
+local.news	
+manual.layout	
+autoplay	
+standard.input.pc	
+standard.confirm.pc	
+PlayerTalk	
+DisconnectMessage	

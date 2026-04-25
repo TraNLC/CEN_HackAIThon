@@ -1,0 +1,8850 @@
+[
+  {
+    "path": "ễÝứứấệèĐ\\ãỳệố",
+    "id": 1,
+    "name": "Phượng Tường",
+    "pos": "169,287"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ằêẫẵ",
+    "id": 2,
+    "name": "Hoa Sơn",
+    "pos": "242,291"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ẵƠáỵễÝứứ\\ẵƠáỵễÝứứ",
+    "id": 3,
+    "name": "Kiếm Các Tây Bắc",
+    "pos": "138,346"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ẵƠáỵễÝứứ\\ẵỷạỡảđẫịạơ",
+    "id": 4,
+    "name": "Kim Quang ừụng",
+    "pos": "270,300"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ẵƠáỵễÝứứ\\ắưằẹảđẫịạơ",
+    "id": 5,
+    "name": "Kinh Hoàng ừụng",
+    "pos": "320,340"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ẵƠáỵễÝứứ\\ềĐịéảđẫịạơ",
+    "id": 6,
+    "name": "Tởa Vân ừụng",
+    "pos": "275,300"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\èõầờ\\èõầờ",
+    "id": 7,
+    "name": "Tèn LỚng",
+    "pos": "233,244"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\èõầờ\\èõẹẳằẹầờàõệẩỉằựớ",
+    "id": 8,
+    "name": "LỚng Tèn Thủy Hoàng",
+    "pos": "226,245"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ÚỜẵưịđểã\\ÚỜẵưịđểã",
+    "id": 9,
+    "name": "Trường Giang Nguyên Đèu",
+    "pos": "79,446"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ÚỜẵưịđểã\\ìớẹửảđẫịạơ",
+    "id": 10,
+    "name": "Nhạn Thạch ừụng",
+    "pos": "60,465"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\Úẫảẳ\\Úẫảẳ",
+    "id": 11,
+    "name": "Thành Đô",
+    "pos": "145,387"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\Úẫảẳ\\Úẫảẳíậệờềẩăỵịăàõà�ẫịạơ",
+    "id": 12,
+    "name": "Đốa ừạo hều viện Tỗn TưỮng tđ",
+    "pos": "175,380"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\ảỪởỉậẫ",
+    "id": 13,
+    "name": "Nga My phái",
+    "pos": "35,410"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\ẫểằỘảđìỚẫịạơ",
+    "id": 14,
+    "name": "Mãnh Hù ừụng",
+    "pos": "8,405"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\ẵựắưếẫ",
+    "id": 15,
+    "name": "Giảng Kinh Đường",
+    "pos": "58,431"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\èữàợ",
+    "id": 16,
+    "name": "Tiỉn ừiện",
+    "pos": "58,431"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\ếýàợ",
+    "id": 17,
+    "name": "Chỗnh ừiện",
+    "pos": "58,431"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ảỪởỉậẫ\\ỏỵéôàợ",
+    "id": 18,
+    "name": "Tả Thiên ừiện",
+    "pos": "58,431"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ẵƠáỵễÝấệ",
+    "id": 19,
+    "name": "Kiếm Các Tây Nam",
+    "pos": "138,346"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ẵưẵýđú",
+    "id": 20,
+    "name": "Giang Tân Thôn",
+    "pos": "195,416"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\èờÚèẫẵ\\èờÚèẫẵ",
+    "id": 21,
+    "name": "Thanh Thành sơn",
+    "pos": "85,381"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\èờÚèẫẵ\\ữỏịéảđẫịạơ",
+    "id": 22,
+    "name": "Bạch Vân ừụng",
+    "pos": "40,370"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\èờÚèẫẵ\\ẫủệẫảđẫịạơ",
+    "id": 23,
+    "name": "Thèn Tiên ừụng",
+    "pos": "40,370"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\èờÚèẫẵ\\ệỬềừảđẫịạơ",
+    "id": 24,
+    "name": "HưỪng Thủy ừụng",
+    "pos": "92,350"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ếéẫậ",
+    "id": 25,
+    "name": "Đường Môn",
+    "pos": "159,452"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ệủềặảđỉằựớ",
+    "id": 26,
+    "name": "Trỵc Tơ ừụng tèng 1",
+    "pos": "135,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ệủềặảđảỴựớ",
+    "id": 27,
+    "name": "Trỵc Tơ ừụng tèng 2",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ệủềặảđẻýựớ",
+    "id": 28,
+    "name": "Trỵc Tơ ừụng tèng 3",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ữàéÝãặ",
+    "id": 29,
+    "name": "ám khỗ phộng",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ằỷéÝãặ",
+    "id": 30,
+    "name": "Hởa khỗ phộng",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ễợạỠãặ",
+    "id": 31,
+    "name": "Vỡ công phộng",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ỉẵỉâãặ",
+    "id": 32,
+    "name": "Y dược phộng",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ằởặểđỵếỰ",
+    "id": 33,
+    "name": "Phộng khách",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ỉụẹẩđỵếỰ",
+    "id": 34,
+    "name": "Phộng nghố sđ",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ếýãặ",
+    "id": 35,
+    "name": "Chỗnh phộng",
+    "pos": "178,471"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ẳ�ỏùếỰ",
+    "id": 36,
+    "name": "Tế tù ừường",
+    "pos": "178,471"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ớờắâ\\ớờắâ",
+    "id": 37,
+    "name": "Biện Kinh",
+    "pos": "424,252"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ớờắâ\\ếƯềỴẫịạơ",
+    "id": 38,
+    "name": "Thiết tháp tèng 1",
+    "pos": "460,245"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ớờắâ\\ếƯềỴẫịạơ2",
+    "id": 39,
+    "name": "Thiết tháp tèng 2",
+    "pos": "445,290"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ớờắâ\\ếƯềỴẫịạơ3",
+    "id": 40,
+    "name": "Thiết tháp tèng 3",
+    "pos": "445,290"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ãỰậƠẫẵ\\ãỰậƠẫẵễÝ",
+    "id": 41,
+    "name": "PhỲc Ngưu Sơn Tây",
+    "pos": "303,286"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ãỰậƠẫẵ\\ếỬíấảđẫịạơ",
+    "id": 42,
+    "name": "Thiên Tâm ừụng",
+    "pos": "323,307"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẵƠáỵệíịư",
+    "id": 43,
+    "name": "Kiếm Các Trung Nguyên",
+    "pos": "138,346"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ềễẵỷếẵÚỐ",
+    "id": 44,
+    "name": "Chiến trường Tống Kim",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỉểỡ",
+    "id": 45,
+    "name": "Thiên Nhẫn giáo",
+    "pos": "503.,214"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỉấọ1",
+    "id": 46,
+    "name": "Thiên Nhẫn Giáo tèng 1",
+    "pos": "503,214"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỉấọỏỵ2",
+    "id": 47,
+    "name": "Thiên Nhẫn Giáo tèng 2",
+    "pos": "503,214"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỉấọĩỉ2",
+    "id": 48,
+    "name": "Thiên Nhẫn Giáo tèng 2",
+    "pos": "503,214"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỉấọ3",
+    "id": 49,
+    "name": "Thiên Nhẫn Giáo tèng 3",
+    "pos": "503,214"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\éộẫứảđẫịạơ",
+    "id": 50,
+    "name": "Thẹt Sát ừụng",
+    "pos": "525,220"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỞảđ1",
+    "id": 51,
+    "name": "Thánh ừụng tèng 1",
+    "pos": "523,200"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỞảđ2",
+    "id": 52,
+    "name": "Thánh ừụng tèng 2",
+    "pos": "523,236"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ữểầờệõ",
+    "id": 53,
+    "name": "Ba LỚng huyện",
+    "pos": "351,391",
+    "script": "\\script\\changefeature\\maps_53.lua"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ấệị�ếý",
+    "id": 54,
+    "name": "Nam Nhạc trẹn",
+    "pos": "399,486"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỉằỚịđ",
+    "id": 55,
+    "name": "Đào Hoa Nguyên",
+    "pos": "260,446"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ăỡẫẵậẫ\\ăỡẫẵậẫ",
+    "id": 56,
+    "name": "Hoành Sơn Phái",
+    "pos": "426,446"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ăỡẫẵậẫ\\ăỡẫẵđỵếỰ",
+    "id": 57,
+    "name": "Hoành Sơn ừại ừỏnh",
+    "pos": "448,466"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ăỡẫẵậẫ\\ả�ạẩẵƠễịẹỉ",
+    "id": 58,
+    "name": "Đục Cô Kiếm Ngợa thẹt",
+    "pos": "448,466"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ếỬểỶữỳ",
+    "id": 59,
+    "name": "Thiên Vương Bang",
+    "pos": "427,402"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\èữàợ",
+    "id": 60,
+    "name": "Tiỉn ừiện",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ếỬểỶđỵàợ",
+    "id": 61,
+    "name": "Thiên Vương Đại ừiện",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\èốạơ",
+    "id": 62,
+    "name": "Tẻm cung",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ữỳệọẳỉ1",
+    "id": 63,
+    "name": "Phộng ừệ tỸ 1",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ữỳệọẳỉ2",
+    "id": 64,
+    "name": "Phộng ừệ tỸ 2",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ếỬểỶàăẫẵảđ",
+    "id": 65,
+    "name": "Thiên Vương ừảo sơn ừụng",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ảđểỞăỴàỏẫẵảđ1",
+    "id": 66,
+    "name": "Đáy Đụng Đỏnh hú tèng 1",
+    "pos": "446,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\ảđểỞăỴàỏẫẵảđ2",
+    "id": 67,
+    "name": "Đáy Đụng Đỏnh hú tèng 2",
+    "pos": "480,350"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\èờẩỗàă",
+    "id": 68,
+    "name": "Thanh Loa ừảo",
+    "pos": "400,405"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ếỬểỶữỳ\\èờẩỗàăẫẵảđ",
+    "id": 69,
+    "name": "Thanh Loa ừảo sơn ừụng",
+    "pos": "400,418"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ễợầờẫẵ\\ễợầờ",
+    "id": 70,
+    "name": "Vý LỚng sơn",
+    "pos": "324,428"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ễợầờẫẵ\\ữỏềừảđẫịạơ",
+    "id": 71,
+    "name": "Bạch Thủy ừụng",
+    "pos": "300,390"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ễợầờẫẵ\\đỵèỶảđẫịạơ",
+    "id": 72,
+    "name": "Đại Tỳ ừụng",
+    "pos": "300,447"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ễợầờẫẵ\\ãỰầÝảđẫịạơ",
+    "id": 73,
+    "name": "PhỲc Lưu ừụng",
+    "pos": "275,410"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ẫủậâẳổ\\ẫủậâẳổ",
+    "id": 74,
+    "name": "Miêu Lổnh",
+    "pos": "342,498"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ẫủậâẳổ\\ýặĩẻảđẫịạơ",
+    "id": 75,
+    "name": "Khoả Lang ừụng",
+    "pos": "364,519"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ẫủậâẳổ\\ẫẵứỠảđẫịạơ",
+    "id": 76,
+    "name": "Sơn Bảo ừụng",
+    "pos": "340,520"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ẫủậâẳổ\\ìờỏĩảđẫịạơ",
+    "id": 77,
+    "name": "Yến TỸ ừụng",
+    "pos": "364,480"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ệúìỲ\\ệúìỲ",
+    "id": 78,
+    "name": "Tương Dương",
+    "pos": "421,342",
+    "script": "\\script\\changefeature\\maps_53.lua"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ệúìỲ\\ệúìỲÚèìẫẫậẫõà�",
+    "id": 79,
+    "name": "Mềt ừạo Nha môn Tương Dương",
+    "pos": "450,362"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ìỳệỗ",
+    "id": 80,
+    "name": "Dương Châu",
+    "pos": "555,293"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ễợàứậẫ",
+    "id": 81,
+    "name": "Vỡ Đang phái",
+    "pos": "377,335"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ắừàỏẫịạơ",
+    "id": 82,
+    "name": "Mê cung Đáy giếng",
+    "pos": "350,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ằỷ�èảđẫịạơ",
+    "id": 83,
+    "name": "Hởa Lang ừụng",
+    "pos": "398,315"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ỏệệỸđỵàợ",
+    "id": 84,
+    "name": "TỸ Tiêu ừại ừiện",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ẹừãẵàợ",
+    "id": 85,
+    "name": "Thềp Phương ừiện",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ááấáàợ",
+    "id": 86,
+    "name": "PhỲ Mẫu ừiện",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ầƯằỘàợ",
+    "id": 87,
+    "name": "Long Hù ừiện",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ìậẹỉ1",
+    "id": 88,
+    "name": "Nhã thẹt 1",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ễợàứậẫ\\ìậẹỉ2",
+    "id": 89,
+    "name": "Nhã thẹt 2",
+    "pos": "396,357"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ãỰậƠẫẵ\\ãỰậƠẫẵảô",
+    "id": 90,
+    "name": "PhỲc Ngưu Sơn Đông",
+    "pos": "303,286"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ãỰậƠẫẵ\\ẳỠạọảđẫịạơ",
+    "id": 91,
+    "name": "Mê cung Kê Quán ừụng",
+    "pos": "385,275"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ẹủáịẫẵ\\ẹủáịẫẵ",
+    "id": 92,
+    "name": "ThỲc Cương sơn",
+    "pos": "493,282"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ẹủáịẫẵ\\ẳỸắếảđẫổạơ",
+    "id": 93,
+    "name": "Tiến Cỵc ừụng",
+    "pos": "500,265"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ẹủáịẫẵ\\ầụạẻảđẫổạơ",
+    "id": 94,
+    "name": "Linh Cốc ừụng",
+    "pos": "516,302"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\íẩẹệặểếằ",
+    "id": 95,
+    "name": "Tân Thủ khách cơ",
+    "pos": "220,435"
+  },
+  {
+    "path": "ầẵăỴèĐ\\íẩẹệặểếằ",
+    "id": 96,
+    "name": "Tân Thủ khách cơ",
+    "pos": "381,411"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ẵưẵýíẩẹệảđ",
+    "id": 97,
+    "pos": "220,435",
+    "name": "Giang Tân thôn-Vô Danh ừụng"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ữểầờíẩẹệảđ",
+    "id": 98,
+    "pos": "381,411",
+    "name": "Ba LỚng huyện-Thanh Khê ừụng"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ĩ��ệếý",
+    "id": 99,
+    "name": "Vổnh Lạc trẹn",
+    "pos": "194,322"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ệỬệẫếý",
+    "id": 100,
+    "name": "Chu Tiên trẹn",
+    "pos": "437,285"
+  },
+  {
+    "path": "ệíịưấệèĐ\\àắệớđú",
+    "id": 101,
+    "name": "Đạo Hương thôn",
+    "pos": "501,328"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ếỬẻếẵế\\ếỬẻếẵếẹỞảđảỴựớẫổẹỉ",
+    "id": 102,
+    "name": "Thánh ừụng tèng 2",
+    "pos": "450,10"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ẫóầệậẫ",
+    "id": 103,
+    "name": "Thiếu Lâm phái",
+    "pos": "370,259"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ựõắưáỵ",
+    "id": 104,
+    "name": "Tàng Kinh Các"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\đỳấỠếẫ",
+    "id": 105,
+    "name": "Đạt Ma Đường"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\đỵíồứỠàợ",
+    "id": 106,
+    "name": "Đại Hỳng bảo ừiện"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\àổỏĩãặ1",
+    "id": 107,
+    "name": "Thiếu Lâm Đệ tỸ phộng"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\àổỏĩãặ2",
+    "id": 108,
+    "name": "Thiếu Lâm Đệ tỸ phộng"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ãẵếẫỬĐẹỉ",
+    "id": 109,
+    "name": "Phương trượng Thiỉn phộng"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ẩốăăếẫ",
+    "id": 110,
+    "name": "La Hán Đường"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ấắẻềệỳ",
+    "id": 111,
+    "name": "Mục Nhân Hạng"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\èĐãỷàợ",
+    "id": 112,
+    "name": "Thiên Phềt ừiện"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ẫóầệẫổẹỉ",
+    "id": 113,
+    "name": "Mềt thẹt Thiếu Lâm"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ẫóầệậẫ\\ỉằữóầớữềẩốăăếỵ",
+    "id": 114,
+    "name": "108 La Hán trền"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\õỜữỳ",
+    "id": 115,
+    "name": "Cái Bang",
+    "pos": "528,263"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\àõệẩẫịạơỉằựớ",
+    "id": 116,
+    "name": "Tường Vân ừụng tèng 1"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\àõệẩẫịạơảỴựớ",
+    "id": 117,
+    "name": "Tường Vân ừụng tèng 2"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\àõệẩẫịạơẻýựớ",
+    "id": 118,
+    "name": "Tường Vân ừụng tèng 3"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\àõệẩẫịạơềấựớ",
+    "id": 119,
+    "name": "Tường Vân ừụng tèng 4"
+  },
+  {
+    "path": "ệíịưấệèĐ\\õỜữỳ\\àõệẩẫịạơễúựớ",
+    "id": 120,
+    "name": "Tường Vân ừụng tèng 5"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ầƯẫậếý",
+    "id": 121,
+    "name": "Long Môn trẹn",
+    "pos": "145,233"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ằéăĩịđểã",
+    "id": 122,
+    "name": "Hoàng Hà Nguyên Đèu",
+    "pos": "50,273"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\�ệằỘảđẫịạơ",
+    "id": 123,
+    "name": "Lão Hù ừụng"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\íđịửảđẫịạơ",
+    "id": 124,
+    "name": "Cán Viên ừụng"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđỉằựớ",
+    "id": 125,
+    "name": "Lưu Tiên ừụng tèng 1"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđảỴựớ",
+    "id": 126,
+    "name": "Lưu Tiên ừụng tèng 2"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđẻýựớ",
+    "id": 127,
+    "name": "Lưu Tiên ừụng tèng 3"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđềấựớ",
+    "id": 128,
+    "name": "Lưu Tiên ừụng tèng 4"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđễúựớ",
+    "id": 129,
+    "name": "Lưu Tiên ừụng tèng 5"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ằéăĩịđểã\\ầỲệẫảđầđựớ",
+    "id": 130,
+    "name": "Lưu Tiên ừụng tèng 6"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\�Ởẩõậẫ",
+    "id": 131,
+    "name": "Côn Lôn phái",
+    "pos": "50,164"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ứđìỚẫịạơ",
+    "id": 132,
+    "name": "BỚng Huyệt ừụng"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\àổỏĩãặ1",
+    "id": 133,
+    "name": "Phộng Đệ tỸ"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\àổỏĩãặ2",
+    "id": 134,
+    "name": "Phộng Đệ tỸ"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ẳỨíịãúẫẵảđ",
+    "id": 135,
+    "name": "Kiến Tỗnh Phong sơn ừụng"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ặỬằợầệẫịạơ",
+    "id": 136,
+    "name": "Khoái Hoạt Lâm"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ếỬễỘàợ",
+    "id": 137,
+    "name": "Thiên Vi ừiện"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ếýàợ",
+    "id": 138,
+    "name": "Chỗnh ừiện"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\ỏệễỘàợ",
+    "id": 139,
+    "name": "TỸ Vi ừiện"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ỉâểỶạẻ",
+    "id": 140,
+    "name": "Dược Vương Cốc",
+    "pos": "177,169"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ỉâểỶảđỉằựớ",
+    "id": 141,
+    "name": "Dược Vương ừụng tèng 1"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ỉâểỶảđảỴựớ",
+    "id": 142,
+    "name": "Dược Vương ừụng tèng 2"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ỉâểỶảđẻýựớ",
+    "id": 143,
+    "name": "Dược Vương ừụng tèng 3"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ỉâểỶảđềấựớ",
+    "id": 144,
+    "name": "Dược Vương ừụng tèng 4"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđỉằựớ",
+    "id": 145,
+    "name": "Tuyết Báo ừụng tèng 1"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđảỴựớ",
+    "id": 146,
+    "name": "Tuyết Báo ừụng tèng 2"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđẻýựớ",
+    "id": 147,
+    "name": "Tuyết Báo ừụng tèng 3"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđềấựớ",
+    "id": 148,
+    "name": "Tuyết Báo ừụng tèng 4"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđễúựớ",
+    "id": 149,
+    "name": "Tuyết Báo ừụng tèng 5"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđầđựớ",
+    "id": 150,
+    "name": "Tuyết Báo ừụng tèng 6"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđéộựớ",
+    "id": 151,
+    "name": "Tuyết Báo ừụng tèng 7"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ỉâểỶạẻ\\ìâứêảđữềựớ",
+    "id": 152,
+    "name": "Tuyết Báo ừụng tèng 8"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\ẹửạấếý",
+    "id": 153,
+    "name": "Thạch Cù trẹn",
+    "pos": "198,513"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\đợìế",
+    "id": 154,
+    "name": "Thỵy Yên môn",
+    "pos": "260,507"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\ữóằỚếỰ",
+    "id": 155,
+    "name": "Bách Hoa ừỏnh"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\àổỏĩãặ1",
+    "id": 156,
+    "name": "phộng Đệ tỸ"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\àổỏĩãặ2",
+    "id": 157,
+    "name": "phộng Đệ tỸ"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\ẵỨàõẫịạơ",
+    "id": 158,
+    "name": "Mê cung cẹm ừốa"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\ẫậẩỞ",
+    "id": 159,
+    "name": "Môn lèu"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\ẹõĩủếỰ",
+    "id": 160,
+    "name": "Thủ Ngợc sảnh"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đợìếẫậ\\ệÝãặ",
+    "id": 161,
+    "name": "Thỵy Yên Lèu"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\đỵ�Ữáừ",
+    "id": 162,
+    "name": "Đại Lý phủ",
+    "pos": "190,476"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\ảủữịẳỉàõà�",
+    "id": 163,
+    "name": "ác bá ừốa ừạo"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\èĐìữềỴỉằựớ",
+    "id": 164,
+    "name": "Thiên Tèm tháp tèng 1"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\èĐìữềỴảỴựớ",
+    "id": 165,
+    "name": "Thiên Tèm tháp tèng 2"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\èĐìữềỴẻýựớ",
+    "id": 166,
+    "name": "Thiên Tèm tháp tèng 3"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\àớựịẫẵ",
+    "id": 167,
+    "name": "Điĩm Thương sơn",
+    "pos": "149,508"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\ãỳìồảđẫịạơ",
+    "id": 168,
+    "name": "PhỲng Nhãn ừụng"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\ầƯìồảđẫịạơ",
+    "id": 169,
+    "name": "Long Nhãn ừụng"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\ểầãềẫịạơ",
+    "id": 170,
+    "name": "Thù Phõ ừụng"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\àớựịẫẵảđỉằựớ",
+    "id": 171,
+    "name": "Điĩm Thương ừụng tèng 1"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\àớựịẫẵảđảỴựớ",
+    "id": 172,
+    "name": "Điĩm Thương ừụng tèng 2"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\àớựịẫẵảđẻýựớ",
+    "id": 173,
+    "name": "Điĩm Thương ừụng tèng 3"
+  },
+  {
+    "path": "ẵưấệèĐ\\ầƯẻê",
+    "id": 174,
+    "name": "Long Tuyỉn thôn",
+    "pos": "489,431"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễÝẫẵđú",
+    "id": 175,
+    "name": "Tây Sơn thôn",
+    "pos": "590,323"
+  },
+  {
+    "path": "ẵưấệèĐ\\ầóữự\\ầóữự",
+    "id": 176,
+    "name": "Lâm An",
+    "pos": "545,342"
+  },
+  {
+    "path": "ẵưấệèĐ\\ầóữự\\ĩđằỚịữ",
+    "id": 177,
+    "name": "Ngđ Hoa viên"
+  },
+  {
+    "path": "ẵưấệèĐ\\ầóữự\\ĩđằỚịữẫẵảđ",
+    "id": 178,
+    "name": "Sơn ừụng Ngđ Hoa viên"
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ẩốệỸẫẵ",
+    "id": 179,
+    "name": "La Tiêu sơn",
+    "pos": "543,376"
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầƯạơảđẫịạơ",
+    "id": 180,
+    "name": "Long Cung ừụng"
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầẵềừảđẫịạơ",
+    "id": 181,
+    "name": "LưỬng Thủy ừụng"
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ấỶầƯảđẫịạơ",
+    "id": 182,
+    "name": "Nghiệt Long ừụng"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ễúảắ",
+    "id": 183,
+    "name": "Ngý Đục Giáo",
+    "pos": "553,463"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\Úờíôếử",
+    "id": 184,
+    "name": "Xỗch Yết trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ẵỷẫộếử",
+    "id": 185,
+    "name": "Kim Xà trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ấôệỪếử",
+    "id": 186,
+    "name": "Méc Thỳ trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\èờýọếử",
+    "id": 187,
+    "name": "Thanh Ngô trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ỉĐỵáếử",
+    "id": 188,
+    "name": "Ngân Thiỉm trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ỏổếử",
+    "id": 189,
+    "name": "Tùng trại"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ẻỪẫậẫịạơ",
+    "id": 190,
+    "name": "Mê cung nhềp môn"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\àổỏĩãặ1",
+    "id": 191,
+    "name": "phộng Đệ tỸ"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\àổỏĩãặ2",
+    "id": 192,
+    "name": "phộng Đệ tỸ"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễợỉấẫẵ\\ễợỉấẫẵ",
+    "id": 193,
+    "name": "Vý Di sơn",
+    "pos": "560,414"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễợỉấẫẵ\\ĩủằêảđẫịạơ",
+    "id": 194,
+    "name": "Ngợc Hoa ừụng"
+  },
+  {
+    "path": "ẵưấệèĐ\\ìớàđẫẵ\\ìớàđẫẵ",
+    "id": 195,
+    "name": "Nhạn Đãng sơn",
+    "pos": "596,367"
+  },
+  {
+    "path": "ẵưấệèĐ\\ìớàđẫẵ\\ìýẵèảđẫịạơ",
+    "id": 196,
+    "name": "Dương Giác ừụng"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ếỬ�ễ",
+    "id": 197,
+    "name": "Thiên lao"
+  },
+  {
+    "path": "ẵưấệèĐ\\èúệêảđẫịạơ",
+    "id": 198,
+    "name": "Thanh khê ừụng"
+  },
+  {
+    "path": "ầẵăỴèĐ\\ễợầờảđẫịạơ",
+    "id": 199,
+    "name": "Vý LỚng ừụng"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ạậìỲảđẫịạơ",
+    "id": 200,
+    "name": "Cù Dương ừụng"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ứđăĩảđẫịạơ",
+    "id": 201,
+    "name": "BỚng Hà ừụng"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ổẵẻõảđẫịạơ",
+    "id": 202,
+    "name": "Phỳ Dung ừụng"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\ễốẫỨảđẫịạơ",
+    "id": 203,
+    "name": "Vô Danh ừụng"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ãẫếỬảđẫịạơ",
+    "id": 204,
+    "name": "Phi Thiên ừụng"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ìỲệíảđẫịạơ",
+    "id": 205,
+    "name": "Dương Trung ừụng"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\èõầờ\\èõẹẳằẹầờàõệẩảỴựớ",
+    "id": 206,
+    "name": "Tèn LỚng tèng 2"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\èõầờ\\èõẹẳằẹầờàõệẩẻýựớ",
+    "id": 207,
+    "name": "Tèn LỚng tèng 3"
+  },
+  {
+    "path": "ệíịưấệèĐ\\đỵ�ễ",
+    "id": 208,
+    "name": "Đại lao",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\yanwuchang",
+    "id": 209,
+    "name": "Diịn vỡ trường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF",
+      "STALL_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\yanwuchang",
+    "id": 210,
+    "name": "Diịn vỡ trường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF",
+      "STALL_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\yanwuchang",
+    "id": 211,
+    "name": "Diịn vỡ trường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF",
+      "STALL_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ằêẫẵắĐảỞ",
+    "id": 212,
+    "name": "Hoa Sơn tuyệt ừõnh",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 213,
+    "name": "Lôi ừài Bang hụi 1",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 214,
+    "name": "Lôi ừài Bang hụi 2",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 215,
+    "name": "Lôi ừài Bang hụi 3",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 216,
+    "name": "Lôi ừài Bang hụi 4",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 217,
+    "name": "Lôi ừài Bang hụi 5",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 218,
+    "name": "Lôi ừài Bang hụi 6",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 219,
+    "name": "Lôi ừài Bang hụi 7",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 220,
+    "name": "Diịn Vỡ trường 8",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "name": "Công thành chiến trường",
+    "path": "ếõẹỡĩẫàõ\\ẵƠẫậạõvn",
+    "id": 221,
+    "pos": "300,347",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF",
+      "STALL_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "name": "Hều phương bên Thủ",
+    "path": "ếõẹỡĩẫàõ\\ẵƠẫậạõệíỏê",
+    "id": 222,
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "name": "Hều phương bên Công",
+    "path": "ếõẹỡĩẫàõ\\ẵƠẫậạõệíỏê",
+    "id": 223,
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừàõứỮ",
+    "id": 224,
+    "name": "Sa mạc ừốa biĩu",
+    "pos": "85,78"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 225,
+    "name": "Sa Mạc 1"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ2",
+    "id": 226,
+    "name": "Sa Mạc 2"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ3",
+    "id": 227,
+    "name": "Sa Mạc 3"
+  },
+  {
+    "path": "ễÝứứứứèĐ\\�Ởẩõậẫ\\�Ởẩõăỵẫẵ",
+    "id": 228,
+    "name": "Hều sơn Côn Lôn"
+  },
+  {
+    "path": "ễÝấệứứèĐ\\ếéẫậ\\ếẵảãẳ�ỏùếỰ",
+    "id": 229,
+    "name": "Tế Tù ừỏnh (chiến ừẹu)"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\đỵ�Ữ\\map_dalijiejing",
+    "id": 230,
+    "name": "Trong thành Đại Lý (chiến ừẹu)"
+  },
+  {
+    "path": "ễÝấệấệèĐ\\àớựịẫẵ\\ựỏ�ềặểắĩềđ",
+    "id": 231,
+    "name": "Nơi Ừ Thương Lương khách"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ãỰậƠẫẵ\\ệổịéẻêắĩềđ",
+    "id": 232,
+    "name": "Nơi Ừ Chu Vân Tuyỉn"
+  },
+  {
+    "path": "ệíịưấệèĐ\\ẹủáịẫẵ\\map_mokongkejusuo",
+    "id": 233,
+    "name": "Nơi Ừ Mạc Không Nguyệt"
+  },
+  {
+    "path": "ẵưấệèĐ\\ễúảắẵế\\ếẵảãẵỷẫộếử",
+    "id": 234,
+    "name": "Kim Xà trại (chiến ừẹu)"
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 235,
+    "name": "Đảo Sđ Kiện",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 236,
+    "name": "Đào Hoa ừảo (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 237,
+    "name": "Đào Hoa ừảo (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 238,
+    "name": "Đào Hoa ừảo (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 239,
+    "name": "Đào Hoa ừảo (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 240,
+    "name": "Đào Hoa ừảo (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 241,
+    "name": "Đào Hoa ừảo (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 242,
+    "name": "Tẻy Tủy ừảo (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 243,
+    "name": "Tẻy Tủy ừảo (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 244,
+    "name": "Tẻy Tủy ừảo (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 245,
+    "name": "Tẻy Tủy ừảo (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 246,
+    "name": "Tẻy Tủy ừảo (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 247,
+    "name": "Tẻy Tủy ừảo (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚ",
+    "id": 248,
+    "name": "Tẻy Tủy ừảo (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 249,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 250,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 251,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 252,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 253,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 254,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 255,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 256,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 257,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 258,
+    "name": "Tẻy Tủy ừảo sơn ừụng (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 259,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 260,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 261,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 262,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 263,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 264,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 265,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 266,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 267,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 268,
+    "name": "Tẻy Tủy ừảo sơn ừụng (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 269,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 270,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 271,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 272,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 273,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 274,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 275,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 276,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 277,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 278,
+    "name": "Tẻy Tủy ừảo sơn ừụng (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 279,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 280,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 281,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 282,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 283,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 284,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 285,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 286,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 287,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 288,
+    "name": "Tẻy Tủy ừảo sơn ừụng (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 289,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 290,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 291,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 292,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 293,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 294,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 295,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 296,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 297,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 298,
+    "name": "Tẻy Tủy ừảo sơn ừụng (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 299,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 300,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 301,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 302,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 303,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 304,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 305,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 306,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 307,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 308,
+    "name": "Tẻy Tủy ừảo sơn ừụng (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 309,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 310,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 311,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 312,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 313,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 314,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 315,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 316,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 317,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫễắÚẫẵảđ",
+    "id": 318,
+    "name": "Tẻy Tủy ừảo sơn ừụng (7)"
+  },
+  {
+    "path": "ảôứứèĐ\\ầóĩúạõ",
+    "id": 319,
+    "name": "Lâm Du Quan",
+    "pos": "505,124"
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵẵậ",
+    "id": 320,
+    "name": "Chân nỵi Trường Bạch",
+    "pos": "675,33"
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵấệ",
+    "id": 321,
+    "name": "Trường Bạch sơn Nam",
+    "pos": "671,32"
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵứứẩđ",
+    "id": 322,
+    "name": "Trường Bạch sơn Bắc",
+    "pos": "671,32"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 323,
+    "name": "Điĩm báo danh Tống Kim (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "SJFIGHTSTATE_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 324,
+    "name": "Điĩm báo danh Tống Kim (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "SJFIGHTSTATE_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 325,
+    "name": "Điĩm báo danh Tống Kim (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "SJFIGHTSTATE_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưếẵÚỐ",
+    "id": 326,
+    "name": "Khu vđc bỏnh nguyên (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưếẵÚỐ",
+    "id": 327,
+    "name": "Khu vđc bỏnh nguyên (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưếẵÚỐ",
+    "id": 328,
+    "name": "Khu vđc bỏnh nguyên (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶếẵÚỐ",
+    "id": 329,
+    "name": "Khu vđc Hà Tân (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶếẵÚỐ",
+    "id": 330,
+    "name": "Khu vđc Hà Tân (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶếẵÚỐ",
+    "id": 331,
+    "name": "Khu vđc Hà Tân (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ễÝấệấệèĐ\\ếỬầƯềẩ\\ếỬầƯềẩ",
+    "id": 332,
+    "name": "Thiên Long Tđ",
+    "pos": "112,521"
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ằêẫẵậẫ\\ằêẫẵậẫ",
+    "id": 333,
+    "name": "Hoa Sơn phái",
+    "pos": "314,278"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ứẻễợđỵằởằởÚỐ",
+    "id": 334,
+    "name": "Khu vđc tỨ vỡ",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ứẻễợÚỐ",
+    "id": 335,
+    "name": "TỨ vỡ trường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ãủầờảẫ",
+    "id": 336,
+    "name": "Phong LỚng ừụ",
+    "pos": "275,135"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 337,
+    "name": "Bến thuyỉn 1",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 338,
+    "name": "Bến thuyỉn 2",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 339,
+    "name": "Bến thuyỉn 3",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ấêáộặộ",
+    "id": 340,
+    "name": "Mạc Cao Quềt",
+    "pos": "68,216"
+  },
+  {
+    "path": "ảôứứèĐ\\ấừứứựỗịư",
+    "id": 341,
+    "name": "Mạc Bắc Thảo Nguyên",
+    "pos": "397,82",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ễÝẫẵẻăàă",
+    "id": 342,
+    "name": "Vi sơn ừảo",
+    "pos": "634,301",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ầẵăỴèĐ\\ăỡẫẵẫổẹỉ",
+    "id": 343,
+    "name": "Mềt thẹt Hoành Sơn"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýếẵÚỐ",
+    "id": 344,
+    "name": "Thành trẹn (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýếẵÚỐ",
+    "id": 345,
+    "name": "Thành trẹn (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýếẵÚỐ",
+    "id": 346,
+    "name": "Thành trẹn (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻếẵÚỐ",
+    "id": 347,
+    "name": "Sơn cốc (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻếẵÚỐ",
+    "id": 348,
+    "name": "Sơn cốc (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻếẵÚỐ",
+    "id": 349,
+    "name": "Sơn cốc (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệếẵÚỐ",
+    "id": 350,
+    "name": "Thâm lâm (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệếẵÚỐ",
+    "id": 351,
+    "name": "Thâm lâm (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệếẵÚỐ",
+    "id": 352,
+    "name": "Thâm lâm (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửếẵÚỐ",
+    "id": 353,
+    "name": "Doanh trại (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửếẵÚỐ",
+    "id": 354,
+    "name": "Doanh trại (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửếẵÚỐ",
+    "id": 355,
+    "name": "Doanh trại (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\èíđốÚỐ",
+    "id": 356,
+    "name": "Trường ừẹu (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưàỞếỲếẵÚỐ",
+    "id": 357,
+    "name": "Đơn ừẹu Bỏnh nguyên (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưàỞếỲếẵÚỐ",
+    "id": 358,
+    "name": "Đơn ừẹu Bỏnh nguyên (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\éẵịưàỞếỲếẵÚỐ",
+    "id": 359,
+    "name": "Đơn ừẹu Bỏnh nguyên (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶàỞếỲếẵÚỐ",
+    "id": 360,
+    "name": "Đơn ừẹu Hà tân (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶàỞếỲếẵÚỐ",
+    "id": 361,
+    "name": "Đơn ừẹu Hà tân (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶàỞếỲếẵÚỐ",
+    "id": 362,
+    "name": "Đơn ừẹu Hà tân (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệàỞếỲếẵÚỐ",
+    "id": 363,
+    "name": "Đơn ừẹu Thâm lâm (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệàỞếỲếẵÚỐ",
+    "id": 364,
+    "name": "Đơn ừẹu Thâm lâm (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫưầệàỞếỲếẵÚỐ",
+    "id": 365,
+    "name": "Đơn ừẹu Thâm lâm (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻàỞếỲếẵÚỐ",
+    "id": 366,
+    "name": "Đơn ừẹu Sơn cốc (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻàỞếỲếẵÚỐ",
+    "id": 367,
+    "name": "Đơn ừẹu Sơn cốc (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫẵạẻàỞếỲếẵÚỐ",
+    "id": 368,
+    "name": "Đơn ừẹu Sơn cốc (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýàỞếỲếẵÚỐ",
+    "id": 369,
+    "name": "Đơn ừẹu Thành trẹn (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýàỞếỲếẵÚỐ",
+    "id": 370,
+    "name": "Đơn ừẹu Thành trẹn (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýàỞếỲếẵÚỐ",
+    "id": 371,
+    "name": "Đơn ừẹu Thành trẹn (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửàỞếỲếẵÚỐ",
+    "id": 372,
+    "name": "Đơn ừẹu Doanh trại (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửàỞếỲếẵÚỐ",
+    "id": 373,
+    "name": "Đơn ừẹu Doanh trại (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ĩêếửàỞếỲếẵÚỐ",
+    "id": 374,
+    "name": "Đơn ừẹu Doanh trại (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ềễẵỷếẵÚỐ",
+    "id": 375,
+    "name": "Chiến trường Tống Kim cý (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ềễẵỷếẵÚỐ",
+    "id": 376,
+    "name": "Chiến trường Tống Kim cý (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ềễẵỷếẵÚỐ",
+    "id": 377,
+    "name": "Chiến trường Tống Kim (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚúãùếẵÚỐ",
+    "id": 378,
+    "name": "Xung phong (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚúãùếẵÚỐ",
+    "id": 379,
+    "name": "Xung phong (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚúãùếẵÚỐ",
+    "id": 380,
+    "name": "Xung phong (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 381,
+    "name": "Thâm lâm (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 382,
+    "name": "Thâm lâm (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 383,
+    "name": "Thâm lâm (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵủèậếẵÚỐ",
+    "id": 384,
+    "name": "Cèu ranh giỮi (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵủèậếẵÚỐ",
+    "id": 385,
+    "name": "Cèu ranh giỮi (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵủèậếẵÚỐ",
+    "id": 386,
+    "name": "Cèu ranh giỮi (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ãủệừéỳ",
+    "id": 387,
+    "name": "Phong KƯ (60-89)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ãủệừéỳ",
+    "id": 388,
+    "name": "Phong KƯ (90-119)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ãủệừéỳ",
+    "id": 389,
+    "name": "Phong KƯ (trên 120)",
+    "script": "\\script\\task\\tollgate\\messenger\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ẫẵẫủẫỮ",
+    "id": 390,
+    "name": "Sơn Thèn miếu (60-89)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ẫẵẫủẫỮ",
+    "id": 391,
+    "name": "Sơn Thèn miếu (90-119)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\ẫẵẫủẫỮ",
+    "id": 392,
+    "name": "Sơn Thèn miếu (trên 120)",
+    "script": "\\script\\task\\tollgate\\messenger\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\èĐứỠặỡ",
+    "id": 393,
+    "name": "Thiên Bảo khố (60-89)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\èĐứỠặỡ",
+    "id": 394,
+    "name": "Thiên Bảo khố (90-119)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\íậẹạẻễễủ\\èĐứỠặỡ",
+    "id": 395,
+    "name": "Thiên Bảo khố (trên 120)",
+    "script": "\\script\\task\\tollgate\\messenger\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 396,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 397,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (1)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 398,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 399,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (2)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 400,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 401,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (3)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 402,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 403,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (4)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 404,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 405,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (5)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 406,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 407,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (6)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 408,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 409,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (7)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 410,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 411,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (8)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 412,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 413,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (9)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 414,
+    "name": "Hụi trường liên ừẹu Kiệt xuẹt (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 415,
+    "name": "Đẹu trường liên ừẹu Kiệt xuẹt (10)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 416,
+    "name": "Thuyỉn Rúng sơ cẹp (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 417,
+    "name": "Thuyỉn Rúng sơ cẹp (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 418,
+    "name": "Thuyỉn Rúng sơ cẹp (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 419,
+    "name": "Thuyỉn Rúng sơ cẹp (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 420,
+    "name": "Thuyỉn Rúng sơ cẹp (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 421,
+    "name": "Thuyỉn Rúng sơ cẹp (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 422,
+    "name": "Thuyỉn Rúng sơ cẹp (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 423,
+    "name": "Thuyỉn Rúng sơ cẹp (8)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 424,
+    "name": "Thuyỉn Rúng cao cẹp (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 425,
+    "name": "Thuyỉn Rúng cao cẹp (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 426,
+    "name": "Thuyỉn Rúng cao cẹp (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 427,
+    "name": "Thuyỉn Rúng cao cẹp (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 428,
+    "name": "Thuyỉn Rúng cao cẹp (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 429,
+    "name": "Thuyỉn Rúng cao cẹp (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 430,
+    "name": "Thuyỉn Rúng cao cẹp (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 431,
+    "name": "Thuyỉn Rúng cao cẹp (8)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 432,
+    "name": "Thuyỉn Rúng cao cẹp (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 433,
+    "name": "Thuyỉn Rúng cao cẹp (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 434,
+    "name": "Thuyỉn Rúng cao cẹp (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 435,
+    "name": "Thuyỉn Rúng cao cẹp (12)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 436,
+    "name": "Thuyỉn Rúng cao cẹp (13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 437,
+    "name": "Thuyỉn Rúng cao cẹp (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 438,
+    "name": "Thuyỉn Rúng cao cẹp (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 439,
+    "name": "Thuyỉn Rúng cao cẹp (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 440,
+    "name": "Thuyỉn Rúng sơ cẹp (9)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 441,
+    "name": "Thuyỉn Rúng sơ cẹp (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 442,
+    "name": "Thuyỉn Rúng sơ cẹp (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 443,
+    "name": "Thuyỉn Rúng sơ cẹp (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 444,
+    "name": "Thuyỉn Rúng sơ cẹp (13)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 445,
+    "name": "Thuyỉn Rúng sơ cẹp (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 446,
+    "name": "Thuyỉn Rúng sơ cẹp (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 447,
+    "name": "Thuyỉn Rúng sơ cẹp (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 448,
+    "name": "Thuyỉn Rúng cao cẹp (17)"
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 449,
+    "name": "Thuyỉn Rúng cao cẹp (18)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 450,
+    "name": "Thuyỉn Rúng cao cẹp (19)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 451,
+    "name": "Thuyỉn Rúng cao cẹp (20)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 452,
+    "name": "Thuyỉn Rúng cao cẹp (21)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 453,
+    "name": "Thuyỉn Rúng cao cẹp (22)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 454,
+    "name": "Thuyỉn Rúng cao cẹp (23)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 455,
+    "name": "Thuyỉn Rúng cao cẹp (24)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 456,
+    "name": "Thuyỉn Rúng cao cẹp (25)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 457,
+    "name": "Thuyỉn Rúng cao cẹp (26)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 458,
+    "name": "Thuyỉn Rúng cao cẹp (27)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 459,
+    "name": "Thuyỉn Rúng cao cẹp (28)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 460,
+    "name": "Thuyỉn Rúng cao cẹp (29)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 461,
+    "name": "Thuyỉn Rúng cao cẹp (30)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 462,
+    "name": "Thuyỉn Rúng cao cẹp (31)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưứứèĐ\\ảẫđơ",
+    "id": 463,
+    "name": "Thuyỉn Rúng cao cẹp (32)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 464,
+    "name": "Thách thĐc thời gian (Sơ cẹp 1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 465,
+    "name": "Thách thĐc thời gian (Sơ cẹp 2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 466,
+    "name": "Thách thĐc thời gian (Sơ cẹp 3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 467,
+    "name": "Thách thĐc thời gian (Sơ cẹp 4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 468,
+    "name": "Thách thĐc thời gian (Sơ cẹp 5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 469,
+    "name": "Thách thĐc thời gian (Sơ cẹp 6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 470,
+    "name": "Thách thĐc thời gian (Sơ cẹp 7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 471,
+    "name": "Thách thĐc thời gian (Sơ cẹp 8)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 472,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 473,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 474,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 475,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 476,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 477,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 478,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 479,
+    "name": "ThỸ luyện tài nghệ (Sơ cẹp 8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 480,
+    "name": "Thách thĐc thời gian (Cao cẹp 1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 481,
+    "name": "Thách thĐc thời gian (Cao cẹp 2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 482,
+    "name": "Thách thĐc thời gian (Cao cẹp 3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 483,
+    "name": "Thách thĐc thời gian (Cao cẹp 4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 484,
+    "name": "Thách thĐc thời gian (Cao cẹp 5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 485,
+    "name": "Thách thĐc thời gian (Cao cẹp 6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 486,
+    "name": "Thách thĐc thời gian (Cao cẹp 7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 487,
+    "name": "Thách thĐc thời gian (Cao cẹp 8)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 488,
+    "name": "Thách thĐc thời gian (Cao cẹp 9)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 489,
+    "name": "Thách thĐc thời gian (Cao cẹp 10)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 490,
+    "name": "Thách thĐc thời gian (Cao cẹp 11)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 491,
+    "name": "Thách thĐc thời gian (Cao cẹp 12)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 492,
+    "name": "Thách thĐc thời gian (Cao cẹp 13)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 493,
+    "name": "Thách thĐc thời gian (Cao cẹp 14)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 494,
+    "name": "Thách thĐc thời gian (Cao cẹp 15)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 495,
+    "name": "Thách thĐc thời gian (Cao cẹp 16)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 496,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 497,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 498,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 499,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 500,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 501,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 502,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 503,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 504,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 505,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 10)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 506,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 507,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 508,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 509,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 510,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫứẹệàấẹịầả",
+    "id": 511,
+    "name": "ThỸ luyện tài nghệ (Cao cẹp 16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\ểơữụẵếĩýẻễễủ\\ịéệíà�",
+    "id": 512,
+    "name": "Vân Trung Đạo"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\ểơữụắủèụẻễễủ\\ữóằỚạẻ",
+    "id": 513,
+    "name": "Bách Hoa Cốc"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\ểơữụắủèụẻễễủ\\ẫẵịỲảđ",
+    "id": 514,
+    "name": "Sơn Téc ừụng"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẻễễủĩẫàõ\\ểơữụắủèụẻễễủ\\ỏệệẳầỪ",
+    "id": 515,
+    "name": "TỸ Hà Lổnh"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýếẵÚỐ",
+    "id": 516,
+    "name": "Thủ thành phe Tống",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CD_Forbid_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚèếýếẵÚỐ",
+    "id": 517,
+    "name": "Thủ thành phe Kim",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CD_Forbid_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 518,
+    "name": "Báo danh thủ thành phe Tống"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 519,
+    "name": "Báo danh thủ thành phe Kim"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 520,
+    "name": "Minh Nguyệt trẹn (Phượng Tường)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 521,
+    "name": "Minh Nguyệt trẹn (Thành Đô)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 522,
+    "name": "Minh Nguyệt trẹn (Biện Kinh)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 523,
+    "name": "Minh Nguyệt trẹn (Tương Dương)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 524,
+    "name": "Minh Nguyệt trẹn (Dương Châu)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 525,
+    "name": "Minh Nguyệt trẹn (Đại Lý)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẫÝịẩếý",
+    "id": 526,
+    "name": "Minh Nguyệt trẹn (Lâm An)",
+    "script": "\\script\\_event\\trung_thu_thang_8\\map_newworld.lua"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 527,
+    "name": "Khu vđc liên ừẹu (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 528,
+    "name": "Khu vđc liên ừẹu (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 529,
+    "name": "Khu vđc liên ừẹu kiệt xuẹt (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 530,
+    "name": "Khu vđc liên ừẹu kiệt xuẹt (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 531,
+    "name": "Chuẻn bố liên ừẹu (1)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 532,
+    "name": "Chuẻn bố liên ừẹu (2)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 533,
+    "name": "Chuẻn bố liên ừẹu kiệt xuẹt (1)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 534,
+    "name": "Chuẻn bố liên ừẹu kiệt xuẹt (2)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 535,
+    "name": "Đẹu trường liên ừẹu (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 536,
+    "name": "Đẹu trường liên ừẹu (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 537,
+    "name": "Đẹu trường liên ừẹu kiệt xuẹt (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 538,
+    "name": "Đẹu trường liên ừẹu kiệt xuẹt (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 539,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 540,
+    "name": "Hụi trường liên ừẹu (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 541,
+    "name": "Đẹu trường liên ừẹu (1)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 542,
+    "name": "Hụi trường liên ừẹu (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 543,
+    "name": "Đẹu trường liên ừẹu (2)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 544,
+    "name": "Hụi trường liên ừẹu (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 545,
+    "name": "Đẹu trường liên ừẹu (3)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 546,
+    "name": "Hụi trường liên ừẹu (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 547,
+    "name": "Đẹu trường liên ừẹu (4)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 548,
+    "name": "Hụi trường liên ừẹu (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 549,
+    "name": "Đẹu trường liên ừẹu (5)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 550,
+    "name": "Hụi trường liên ừẹu (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 551,
+    "name": "Đẹu trường liên ừẹu (6)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 552,
+    "name": "Hụi trường liên ừẹu (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 553,
+    "name": "Đẹu trường liên ừẹu (7)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 554,
+    "name": "Hụi trường liên ừẹu (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 555,
+    "name": "Đẹu trường liên ừẹu (8)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 556,
+    "name": "Hụi trường liên ừẹu (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 557,
+    "name": "Đẹu trường liên ừẹu (9)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 558,
+    "name": "Hụi trường liên ừẹu (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 559,
+    "name": "Đẹu trường liên ừẹu (10)",
+    "script": "\\script\\missions\\leaguematch\\combat\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 560,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (1)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 561,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (2)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 562,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (3)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 563,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (4)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 564,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (5)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 565,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (6)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 566,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (7)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 567,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (8)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 568,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (9)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 569,
+    "name": "Hều trường liên ừẹu Kiệt xuẹt (10)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 570,
+    "name": "Hều trường liên ừẹu (1)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 571,
+    "name": "Hều trường liên ừẹu (2)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 572,
+    "name": "Hều trường liên ừẹu (3)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 573,
+    "name": "Hều trường liên ừẹu (4)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 574,
+    "name": "Hều trường liên ừẹu (5)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 575,
+    "name": "Hều trường liên ừẹu (6)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 576,
+    "name": "Hều trường liên ừẹu (7)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 577,
+    "name": "Hều trường liên ừẹu (8)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 578,
+    "name": "Hều trường liên ừẹu (9)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 579,
+    "name": "Hều trường liên ừẹu (10)",
+    "script": "\\script\\missions\\leaguematch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèíẩàõểẳ",
+    "id": 580,
+    "name": "Chiến trường phe Tống",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CD_Forbid_OFF",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèíẩàõểẳ",
+    "id": 581,
+    "name": "Chiến trường phe Kim",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CD_Forbid_OFF",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 582,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\missions\\racegame\\ready\\readynewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 583,
+    "name": "Hang Giáng Sinh",
+    "script": "\\script\\missions\\chrismas\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 584,
+    "name": "Nơi chuẻn bố nhÝng hoạt ừụng dốp xuân",
+    "script": "\\script\\missions\\springfestival\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 585,
+    "name": "Khu vđc hoạt ừụng dốp xuân",
+    "script": "\\script\\missions\\springfestival\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ạôạựàõểẳ",
+    "id": 586,
+    "name": "Khu vđc bang hụi chung 1",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úẫảẳ",
+    "id": 587,
+    "name": "Khu vđc bang hụi Sơn Thành",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\đỵ�Ữ",
+    "id": 588,
+    "name": "Khu vđc bang hụi Miêu Cương",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ãỳệố",
+    "id": 589,
+    "name": "Khu vđc bang hụi Sa Mạc",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ầóữự",
+    "id": 590,
+    "name": "Khu vđc bang hụi Kinh Sư",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ệúìỲ",
+    "id": 591,
+    "name": "Khu vđc bang hụi Biên Trại",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\íẩẹệđúữỳằởàõểẳ",
+    "id": 592,
+    "name": "Khu vđc Bang hụi (Giang Tân thôn)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ìỳệỗ",
+    "id": 593,
+    "name": "Khu vđc bang hụi Giang Nam",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ớờắâ",
+    "id": 594,
+    "name": "Khu vđc bang hụi Tuyết Lãnh",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ạôạựàõểẳ",
+    "id": 595,
+    "name": "Khu vđc bang hụi chung 2",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ạôạựàõểẳ",
+    "id": 596,
+    "name": "Khu vđc bang hụi chung 3",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\ạôạựàõểẳ",
+    "id": 597,
+    "name": "Khu vđc bang hụi chung 4",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "TONG_MAP"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 598,
+    "name": "Khu vđc Bang hụi (Phượng Tường)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 599,
+    "name": "Khu vđc Bang hụi (Thành Đô)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 600,
+    "name": "Khu vđc Bang hụi (Biện Kinh)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 601,
+    "name": "Khu vđc Bang hụi (Tương Dương)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 602,
+    "name": "Khu vđc Bang hụi (Dương Châu)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 603,
+    "name": "Khu vđc Bang hụi (Đại Lý)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằởỏỚĩẫ\\Úèẹíữỳằởàõểẳ",
+    "id": 604,
+    "name": "Khu vđc Bang hụi (Lâm An)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 605,
+    "name": "Vỡ Lâm Đệ Nhẹt Bang",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 606,
+    "name": "Vỡ Lâm Đệ Nhẹt Bang",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 607,
+    "name": "Vỡ Lâm Đệ Nhẹt Bang",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 608,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 609,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 610,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 611,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 612,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễ�ạƯếẵếđ\\ãụằỷầơÚèứỚẫỨàớ",
+    "id": 613,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 614,
+    "name": "Khu vđc (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 615,
+    "name": "Khu vđc (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 616,
+    "name": "Khu vđc (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 617,
+    "name": "Khu vđc (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 618,
+    "name": "Khu vđc (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 619,
+    "name": "Khu vđc (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 620,
+    "name": "Khu vđc (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 621,
+    "name": "Khu vđc (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 622,
+    "name": "Khu vđc (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 623,
+    "name": "Khu vđc (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 624,
+    "name": "Khu vđc (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 625,
+    "name": "Khu vđc (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 626,
+    "name": "Khu vđc (13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 627,
+    "name": "Khu vđc (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 628,
+    "name": "Khu vđc (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 629,
+    "name": "Khu vđc (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 630,
+    "name": "Khu vđc (17)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 631,
+    "name": "Khu vđc (18)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 632,
+    "name": "Khu vđc (19)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 633,
+    "name": "Khu vđc (20)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 634,
+    "name": "Khu vđc (21)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 635,
+    "name": "Khu vđc (22)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 636,
+    "name": "Khu vđc (23)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 637,
+    "name": "Khu vđc (24)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 638,
+    "name": "Khu vđc (25)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 639,
+    "name": "Khu vđc (26)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 640,
+    "name": "Khu vđc (27)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 641,
+    "name": "Khu vđc (28)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 642,
+    "name": "Khu vđc (29)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 643,
+    "name": "Khu vđc (30)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 644,
+    "name": "Khu vđc (31)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 645,
+    "name": "Khu vđc (32)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 646,
+    "name": "Khu vđc (33)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 647,
+    "name": "Khu vđc (34)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 648,
+    "name": "Khu vđc (35)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 649,
+    "name": "Khu vđc (36)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ếỉằỚàă",
+    "id": 650,
+    "name": "Khu vđc (37)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 651,
+    "name": "Quan sát trường (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 652,
+    "name": "Quan sát trường (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 653,
+    "name": "Quan sát trường (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 654,
+    "name": "Quan sát trường (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 655,
+    "name": "Quan sát trường (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 656,
+    "name": "Quan sát trường (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 657,
+    "name": "Quan sát trường (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 658,
+    "name": "Quan sát trường (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 659,
+    "name": "Quan sát trường (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 660,
+    "name": "Quan sát trường (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 661,
+    "name": "Hụi trường vỡ lâm ừại hụi (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 662,
+    "name": "Hụi trường vỡ lâm ừại hụi (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 663,
+    "name": "Hụi trường vỡ lâm ừại hụi (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 664,
+    "name": "Hụi trường vỡ lâm ừại hụi (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 665,
+    "name": "Hụi trường vỡ lâm ừại hụi (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 666,
+    "name": "Hụi trường vỡ lâm ừại hụi (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 667,
+    "name": "Hụi trường vỡ lâm ừại hụi (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 668,
+    "name": "Hụi trường vỡ lâm ừại hụi (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 669,
+    "name": "Hụi trường vỡ lâm ừại hụi (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 670,
+    "name": "Hụi trường vỡ lâm ừại hụi (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 671,
+    "name": "Hụi trường vỡ lâm ừại hụi (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 672,
+    "name": "Hụi trường vỡ lâm ừại hụi (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 673,
+    "name": "Khu vđc chuẻn bố (1)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 674,
+    "name": "Khu vđc chuẻn bố (2)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 675,
+    "name": "Khu vđc chuẻn bố (3)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 676,
+    "name": "Khu vđc chuẻn bố (4)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 677,
+    "name": "Khu vđc chuẻn bố (5)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 678,
+    "name": "Khu vđc chuẻn bố (6)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 679,
+    "name": "Khu vđc chuẻn bố (7)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 680,
+    "name": "Khu vđc chuẻn bố (8)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 681,
+    "name": "Khu vđc chuẻn bố (9)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 682,
+    "name": "Khu vđc chuẻn bố (10)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 683,
+    "name": "Khu vđc chuẻn bố (11)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ễợầệđỵằởỏỚĩẫ\\ễợầệđỵằởằởÚỐ",
+    "id": 684,
+    "name": "Khu vđc chuẻn bố (12)",
+    "script": "\\script\\missions\\finalmatch\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 685,
+    "name": "Đẹu trường (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 686,
+    "name": "Đẹu trường (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 687,
+    "name": "Đẹu trường (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 688,
+    "name": "Đẹu trường (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 689,
+    "name": "Đẹu trường (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 690,
+    "name": "Đẹu trường (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 691,
+    "name": "Đẹu trường (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 692,
+    "name": "Đẹu trường (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 693,
+    "name": "Đẹu trường (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 694,
+    "name": "Đẹu trường (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 695,
+    "name": "Đẹu trường (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 696,
+    "name": "Đẹu trường (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 697,
+    "name": "Đẹu trường (13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 698,
+    "name": "Đẹu trường (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 699,
+    "name": "Đẹu trường (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 700,
+    "name": "Đẹu trường (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 701,
+    "name": "Đẹu trường (17)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 702,
+    "name": "Đẹu trường (18)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 703,
+    "name": "Đẹu trường (19)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 704,
+    "name": "Đẹu trường (20)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 705,
+    "name": "Đẹu trường (21)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 706,
+    "name": "Đẹu trường (22)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 707,
+    "name": "Đẹu trường (23)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 708,
+    "name": "Đẹu trường (24)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 709,
+    "name": "Khu vđc thi ừẹu (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 710,
+    "name": "Khu vđc thi ừẹu (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 711,
+    "name": "Khu vđc thi ừẹu (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 712,
+    "name": "Khu vđc thi ừẹu (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 713,
+    "name": "Khu vđc thi ừẹu (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 714,
+    "name": "Khu vđc thi ừẹu (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 715,
+    "name": "Khu vđc thi ừẹu (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 716,
+    "name": "Khu vđc thi ừẹu (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 717,
+    "name": "Khu vđc thi ừẹu (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 718,
+    "name": "Khu vđc thi ừẹu (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 719,
+    "name": "Khu vđc thi ừẹu (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 720,
+    "name": "Khu vđc thi ừẹu (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 721,
+    "name": "Khu vđc thi ừẹu (13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 722,
+    "name": "Khu vđc thi ừẹu (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 723,
+    "name": "Khu vđc thi ừẹu (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 724,
+    "name": "Khu vđc thi ừẹu (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 725,
+    "name": "Khu vđc thi ừẹu (17)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 726,
+    "name": "Khu vđc thi ừẹu (18)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 727,
+    "name": "Khu vđc thi ừẹu (19)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 728,
+    "name": "Khu vđc thi ừẹu (20)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 729,
+    "name": "Khu vđc thi ừẹu (21)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 730,
+    "name": "Khu vđc thi ừẹu (22)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 731,
+    "name": "Khu vđc thi ừẹu (23)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 732,
+    "name": "Khu vđc thi ừẹu (24)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 733,
+    "name": "Khu vđc thi ừẹu (25)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 734,
+    "name": "Khu vđc thi ừẹu (26)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 735,
+    "name": "Khu vđc thi ừẹu (27)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 736,
+    "name": "Khu vđc thi ừẹu (28)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 737,
+    "name": "Khu vđc thi ừẹu (29)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 738,
+    "name": "Khu vđc thi ừẹu (30)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 739,
+    "name": "Khu vđc thi ừẹu (31)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 740,
+    "name": "Khu vđc thi ừẹu (32)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 741,
+    "name": "Khu vđc thi ừẹu (33)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 742,
+    "name": "Khu vđc thi ừẹu (34)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 743,
+    "name": "Khu vđc thi ừẹu (35)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 744,
+    "name": "Khu vđc thi ừẹu (36)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 745,
+    "name": "Khu vđc thi ừẹu (37)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 746,
+    "name": "Khu vđc thi ừẹu (38)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 747,
+    "name": "Khu vđc thi ừẹu (39)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 748,
+    "name": "Khu vđc thi ừẹu (40)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 749,
+    "name": "Khu vđc thi ừẹu (41)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 750,
+    "name": "Khu vđc thi ừẹu (42)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 751,
+    "name": "Khu vđc thi ừẹu (43)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 752,
+    "name": "Khu vđc thi ừẹu (44)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 753,
+    "name": "Khu vđc thi ừẹu (45)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 754,
+    "name": "Khu vđc thi ừẹu (46)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 755,
+    "name": "Khu vđc thi ừẹu (47)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 756,
+    "name": "Khu vđc thi ừẹu (48)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 757,
+    "name": "Khu vđc thi ừẹu (49)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 758,
+    "name": "Khu vđc thi ừẹu (50)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 759,
+    "name": "Khu vđc thi ừẹu (51)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 760,
+    "name": "Khu vđc thi ừẹu (52)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 761,
+    "name": "Khu vđc thi ừẹu (53)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 762,
+    "name": "Khu vđc thi ừẹu (54)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 763,
+    "name": "Khu vđc thi ừẹu (55)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 764,
+    "name": "Khu vđc thi ừẹu (56)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 765,
+    "name": "Khu vđc thi ừẹu (57)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 766,
+    "name": "Khu vđc thi ừẹu (58)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 767,
+    "name": "Khu vđc thi ừẹu (59)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 768,
+    "name": "Khu vđc thi ừẹu (60)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 769,
+    "name": "Khu vđc thi ừẹu (61)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 770,
+    "name": "Khu vđc thi ừẹu (62)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 771,
+    "name": "Khu vđc thi ừẹu (63)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 772,
+    "name": "Khu vđc thi ừẹu (64)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 773,
+    "name": "Khu vđc thi ừẹu (65)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 774,
+    "name": "Khu vđc thi ừẹu (66)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 775,
+    "name": "Khu vđc thi ừẹu (67)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 776,
+    "name": "Khu vđc thi ừẹu (68)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 777,
+    "name": "Khu vđc thi ừẹu (69)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 778,
+    "name": "Khu vđc thi ừẹu (70)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 779,
+    "name": "Khu vđc thi ừẹu (71)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 780,
+    "name": "Khu vđc thi ừẹu (72)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 781,
+    "name": "Khu vđc thi ừẹu (73)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 782,
+    "name": "Khu vđc thi ừẹu (74)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 783,
+    "name": "Khu vđc thi ừẹu (75)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 784,
+    "name": "Khu vđc thi ừẹu (76)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 785,
+    "name": "Khu vđc thi ừẹu (77)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 786,
+    "name": "Khu vđc thi ừẹu (78)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 787,
+    "name": "Khu vđc thi ừẹu (79)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 788,
+    "name": "Khu vđc thi ừẹu (80)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 789,
+    "name": "Khu vđc thi ừẹu (81)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 790,
+    "name": "Khu vđc thi ừẹu (82)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 791,
+    "name": "Khu vđc thi ừẹu (83)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 792,
+    "name": "Khu vđc thi ừẹu (84)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 793,
+    "name": "Khu vđc thi ừẹu (85)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 794,
+    "name": "Khu vđc thi ừẹu (86)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 795,
+    "name": "Khu vđc thi ừẹu (87)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 796,
+    "name": "Khu vđc thi ừẹu (88)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 797,
+    "name": "Khu vđc thi ừẹu (89)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 798,
+    "name": "Khu vđc thi ừẹu (90)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 799,
+    "name": "Khu vđc thi ừẹu (91)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 800,
+    "name": "Khu vđc thi ừẹu (92)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 801,
+    "name": "Khu vđc thi ừẹu (93)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữỳằở�ốếỚ",
+    "id": 802,
+    "name": "Khu vđc thi ừẹu (94)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 803,
+    "name": "Đại ừẹu trường (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 804,
+    "name": "Đại ừẹu trường (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 805,
+    "name": "Đại ừẹu trường (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 806,
+    "name": "Đại ừẹu trường (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 807,
+    "name": "Đại ừẹu trường (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 808,
+    "name": "Đại ừẹu trường (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 809,
+    "name": "Đại ừẹu trường (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 810,
+    "name": "Đại ừẹu trường (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 811,
+    "name": "Đại ừẹu trường (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 812,
+    "name": "Đại ừẹu trường (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 813,
+    "name": "Đại ừẹu trường (11)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 814,
+    "name": "Đại ừẹu trường (12)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 815,
+    "name": "Đại ừẹu trường (13)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 816,
+    "name": "Đại ừẹu trường (14)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 817,
+    "name": "Đại ừẹu trường (15)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 818,
+    "name": "Đại ừẹu trường (16)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 819,
+    "name": "Đại ừẹu trường (17)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 820,
+    "name": "Đại ừẹu trường (18)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 821,
+    "name": "Khu vđc chuẻn bố chiêu mụ ừệ tỸ",
+    "script": "\\script\\missions\\tong\\tong_disciple\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 822,
+    "name": "Khu vđc chiêu mụ ừệ tỸ",
+    "script": "\\script\\missions\\tong\\tong_disciple\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 823,
+    "name": "Khu vđc chuẻn bố ừánh quái thỵ",
+    "script": "\\script\\missions\\tong\\tong_springfestival\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 824,
+    "name": "Khu vđc ừánh quái thỵ",
+    "script": "\\script\\missions\\tong\\tong_springfestival\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ảềễủẵọàõểẳ",
+    "id": 825,
+    "name": "Khu vđc chuẻn bố - Tết Đoan Ngợ",
+    "script": "\\script\\missions\\dragonboatfestival_06\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ảềễủẵọàõểẳ",
+    "id": 826,
+    "name": "Khu vđc Tết Đoan Ngợ",
+    "script": "\\script\\missions\\dragonboatfestival_06\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ảềễủẵọàõểẳ",
+    "id": 827,
+    "name": "Khu vđc chuẻn bố - Thu thềp vềt phẻm",
+    "script": "\\script\\missions\\tong\\collectgoods\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ảềễủẵọàõểẳ",
+    "id": 828,
+    "name": "Khu vđc thu thềp vềt phẻm",
+    "script": "\\script\\missions\\tong\\collectgoods\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 829,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 830,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 831,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 832,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 833,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 834,
+    "name": "Trường Ca Môn cẹm ừốa"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 835,
+    "name": "Vô Danh Cốc (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 836,
+    "name": "Vô Danh Cốc (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 837,
+    "name": "Vô Danh Cốc (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 838,
+    "name": "Vô Danh Cốc (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 839,
+    "name": "Vô Danh Cốc (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚỜáốẫậẵỨàõ",
+    "id": 840,
+    "name": "Vô Danh Cốc (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 841,
+    "name": "Lôi ừài hào kiệt 1",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 842,
+    "name": "Lôi ừài hào kiệt 2",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 843,
+    "name": "Lôi ừài hào kiệt 3",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 844,
+    "name": "Lôi ừài hào kiệt 4",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 845,
+    "name": "Lôi ừài hào kiệt 5",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 846,
+    "name": "Lôi ừài hào kiệt 6",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 847,
+    "name": "Lôi ừài hào kiệt 7",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ắôĩỘ�ốếỚ",
+    "id": 848,
+    "name": "Lôi ừài hào kiệt 8",
+    "script": "\\script\\missions\\tong_leitai\\battle\\newworld\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 849,
+    "name": "Khu vđc chuẻn bố - Tết Đoan Ngợ",
+    "script": "\\script\\missions\\springfestival07\\schedule\\prepare_newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 850,
+    "name": "Khu vđc Tết Đoan Ngợ",
+    "script": "\\script\\missions\\springfestival07\\schedule\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõỏẳứáÚỐ",
+    "id": 851,
+    "name": "CỸa vào bảo tang Viêm Đế"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõỏẳứáÚỐ",
+    "id": 852,
+    "name": "CỸa vào bảo tang Viêm Đế"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 853,
+    "name": "Bảo tàng Viêm Đế (1)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 854,
+    "name": "Bảo tàng Viêm Đế (2)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 855,
+    "name": "Bảo tàng Viêm Đế (3)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 856,
+    "name": "Bảo tàng Viêm Đế (4)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 857,
+    "name": "Bảo tàng Viêm Đế (5)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 858,
+    "name": "Bảo tàng Viêm Đế (6)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 859,
+    "name": "Bảo tàng Viêm Đế (7)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 860,
+    "name": "Bảo tàng Viêm Đế (8)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 861,
+    "name": "Bảo tàng Viêm Đế (9)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ìỏàồứỠựõ",
+    "id": 862,
+    "name": "Bảo tàng Viêm Đế (10)"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ăĩứỶếẵÚỐ",
+    "id": 863,
+    "name": "Khu vđc ừường ừua",
+    "pos": "452,314",
+    "script": "\\script\\missions\\racegame\\racenewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ằêẫẵắĐảỞ",
+    "id": 864,
+    "name": "Lôi ừài Hoa Sơn (Trung cẹp)",
+    "script": "\\script\\missions\\huashanqunzhan\\mid_grade\\leitainewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứấệèĐ\\ằêẫẵắĐảỞ",
+    "id": 865,
+    "name": "Lôi ừài Hoa Sơn (Cao cẹp)",
+    "script": "\\script\\missions\\huashanqunzhan\\high_grade\\leitainewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 866,
+    "name": "Chân nỵi Hoa Sơn (Trung cẹp)",
+    "script": "\\script\\missions\\huashanqunzhan\\mid_grade\\ready\\readynewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 867,
+    "name": "Chân nỵi Hoa Sơn (Cao cẹp)",
+    "script": "\\script\\missions\\huashanqunzhan\\high_grade\\ready\\readynewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ằấấừếẵÚỐ",
+    "id": 868,
+    "name": "Chiến trường Hoang Mạc (sơ)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ằấấừếẵÚỐ",
+    "id": 869,
+    "name": "Chiến trường Hoang Mạc (trung)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ằấấừếẵÚỐ",
+    "id": 870,
+    "name": "Chiến trường Hoang Mạc (cao)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 871,
+    "name": "Thanh Ộm Đụng (1)",
+    "script": "\\script\\missions\\caiyao\\caiyao\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 872,
+    "name": "Thanh Ộm Đụng (2)",
+    "script": "\\script\\missions\\caiyao\\caiyao\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 873,
+    "name": "An KƯ Liên Đơn Đụng (1)",
+    "script": "\\script\\missions\\caiyao\\caiyao\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 874,
+    "name": "An KƯ Liên Đơn Đụng (2)",
+    "script": "\\script\\missions\\caiyao\\caiyao\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ2",
+    "id": 875,
+    "name": "Hắc Sa ừụng"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ạậÚèếẵÚỐ",
+    "id": 876,
+    "name": "Cù thành (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ạậÚèếẵÚỐ",
+    "id": 877,
+    "name": "Cù thành (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ạậÚèếẵÚỐ",
+    "id": 878,
+    "name": "Cù thành (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵỷẹửẫẵếẵÚỐ",
+    "id": 879,
+    "name": "Kim Thạch sơn (sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵỷẹửẫẵếẵÚỐ",
+    "id": 880,
+    "name": "Kim Thạch sơn (trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵỷẹửẫẵếẵÚỐ",
+    "id": 881,
+    "name": "Kim Thạch sơn (cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 882,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\missions\\racegame\\ready\\readynewworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẳýềỴếẵÚỐ",
+    "id": 883,
+    "name": "Chiến trường Tháp tiịn (Sơ cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẳýềỴếẵÚỐ",
+    "id": 884,
+    "name": "Chiến trường Tháp tiịn (Trung cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẳýềỴếẵÚỐ",
+    "id": 885,
+    "name": "Chiến trường Tháp tiịn (Cao cẹp)",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\chunfengguvn",
+    "id": 895,
+    "name": "Xuân Phong Đảo",
+    "script": "\\script\\missions\\dangboss\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianxingu1",
+    "id": 896,
+    "name": "CỸu Châu Cốc",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "rongyuxitong\\mingrentang",
+    "id": 897,
+    "name": "Danh nhân ừường",
+    "script": "\\script\\honor\\honor_newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẵủèậếẵÚỐ",
+    "id": 898,
+    "name": "Quốc chiến GiỮi Kiỉu chiến",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 899,
+    "name": "Quốc chiến Mềt Lâm chiến",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚúãùếẵÚỐ",
+    "id": 900,
+    "name": "Quốc chiến Hoàng Sa Lâm",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\địầệếẵÚỐ",
+    "id": 902,
+    "name": "Chiến trường tỳng lâm (sơ)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\địầệếẵÚỐ",
+    "id": 903,
+    "name": "Chiến trường tỳng lâm (trung)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\địầệếẵÚỐ",
+    "id": 904,
+    "name": "Chiến trường tỳng lâm (cao)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 905,
+    "name": "Trường Ca Sơn Trang",
+    "script": "\\script\\missions\\dungeon\\head.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\đăẵọàõểẳ",
+    "id": 906,
+    "name": "Mỳa an lành (chuẻn bố)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead_ready.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 907,
+    "name": "Mỳa an lành (1)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 908,
+    "name": "Mỳa an lành(2)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 909,
+    "name": "Mỳa an lành(3)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 910,
+    "name": "Mỳa an lành(4)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 911,
+    "name": "Mỳa an lành(5)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 912,
+    "name": "Mỳa an lành(6)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 913,
+    "name": "Mỳa an lành(7)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 914,
+    "name": "Mỳa an lành(8)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 915,
+    "name": "Mỳa an lành(9)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừẫẵảđ1",
+    "id": 916,
+    "name": "Mỳa an lành(10)",
+    "script": "\\script\\missions\\killbossmatch\\missionhead.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ấêáộặộ",
+    "id": 917,
+    "name": "Tỗch Huyết Cốc",
+    "pos": "68,216",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_A"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ấêáộặộ",
+    "id": 918,
+    "name": "ác Nhân Cốc",
+    "pos": "68,216",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_A"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừàõứỮ",
+    "id": 919,
+    "name": "Thđc Cốt Nhai",
+    "pos": "85,78",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_A"
+    ]
+  },
+  {
+    "path": "ễÝứứứứèĐ\\ẫÚấừẫịạơ\\ẫÚấừàõứỮ",
+    "id": 920,
+    "name": "Hắc Mục Nhai",
+    "pos": "85,78",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_A"
+    ]
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵấệ",
+    "id": 921,
+    "name": "Thiên PhỲ Sơn",
+    "pos": "671,32",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_B"
+    ]
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵấệ",
+    "id": 922,
+    "name": "Bàn Long Sơn",
+    "pos": "671,32",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_B"
+    ]
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵứứẩđ",
+    "id": 923,
+    "name": "Đốa Mẫu Sơn",
+    "pos": "671,32",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_B"
+    ]
+  },
+  {
+    "path": "ảôứứèĐ\\ÚỜữỏẫẵ\\ÚỜữỏẫẵứứẩđ",
+    "id": 924,
+    "name": "Uyĩn PhỲng Sơn",
+    "pos": "671,32",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "FIGHTSTATE_ON",
+      "NOTIMELIMIT",
+      "NEWPRACTICE_B"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\shiliantang",
+    "id": 925,
+    "name": "Thỗ Luyện Đường",
+    "script": "\\script\\missions\\dungeon\\head.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\chengduzhanchang",
+    "id": 926,
+    "name": "Chiến trường Thành Đô",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\bianjingzhanchang",
+    "id": 927,
+    "name": "Chiến trường Biện Kinh",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\dalizhanchang",
+    "id": 928,
+    "name": "Chiến trường Đại Lý",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\fengxiangzhanchang",
+    "id": 929,
+    "name": "Chiến trường Phượng Tường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\linanzhanchang",
+    "id": 930,
+    "name": "Chiến trường Lâm An",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\xiangyangzhanchang",
+    "id": 931,
+    "name": "Chiến trường Tương Dương",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qichengdazhan\\yangzhouzhanchang",
+    "id": 932,
+    "name": "Chiến trường Dương Châu",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\huanzhuangditu",
+    "id": 934,
+    "name": "Ngợn nỵi Trường Bạch",
+    "script": "\\script\\changefeature\\maps.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing1",
+    "id": 935,
+    "name": "Thiên Trỏ  Tèng 1",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing2",
+    "id": 936,
+    "name": "Thiên Trỏ  Tèng 2",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 937,
+    "name": "Thiên Trỏ  Tèng 3 (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 938,
+    "name": "Thiên Trỏ Tèng 3 (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 939,
+    "name": "Thiên Trỏ  Tèng 3 (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 940,
+    "name": "Thiên Trỏ  Tèng 3 (4)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 941,
+    "name": "Thiên Trỏ  Tèng 3 (5)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 942,
+    "name": "Thiên Trỏ  Tèng 3 (6)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 943,
+    "name": "Thiên Trỏ  Tèng 3 (7)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 944,
+    "name": "Thiên Trỏ  Tèng 3 (8)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 945,
+    "name": "Thiên Trỏ Tèng 3 (9)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing3",
+    "id": 946,
+    "name": "Thiên Trỏ  Tèng 3 (10)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing4",
+    "id": 947,
+    "name": "Thiên Trỏ tèng thĐ 4",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\jianzhong",
+    "id": 948,
+    "name": "Kiếm Gia Mê Cung.",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\shijiangu1",
+    "id": 949,
+    "name": "Thỗ Kiếm Cốc",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 950,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 951,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 952,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 953,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 954,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 955,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\xinchanggemen",
+    "id": 956,
+    "name": "ầc Lang Cốc",
+    "script": "\\script\\missions\\elanggu\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 957,
+    "name": "Mềt Phộng cỸa ải",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "LOGINREVOUT_OFF",
+      "PUNISH_OFF",
+      "USETOWNP_OFF",
+      "FIGHTSTATE_OFF",
+      "HEART_OFF",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 958,
+    "name": "Đẹu trường",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầẵềừảđẫịạơ",
+    "id": 959,
+    "name": "Chiến Long Đụng",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\leitai",
+    "id": 960,
+    "name": "Lôi Đài Hoàng Thành Tư",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_OFF",
+      "USETOWNP_OFF",
+      "HEART_OFF",
+      "CD_Forbid_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 961,
+    "name": "Đẹu trường chuẻn bố hoạt ừụng Mục Nhân",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\yandibaozangzhunbeiditu",
+    "id": 962,
+    "name": "CỸa vào bảo tang Viêm Đế"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\tianchimijing2",
+    "id": 963,
+    "name": "Khu vđc chuẻn bố",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PUNISH_PK10",
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\ìỗễợÚỐỉằ",
+    "id": 964,
+    "name": "Đẹu trường (1)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\ìỗễợÚỐỉằ",
+    "id": 965,
+    "name": "Đẹu trường (2)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\ìỗễợÚỐỉằ",
+    "id": 966,
+    "name": "Đẹu trường (3)",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ữựéọầảàỜảđ",
+    "id": 967,
+    "name": "Vô Danh Mềt Cảnh",
+    "script": "\\script\\missions\\caiyao\\caiyao\\newworld.lua",
+    "params": [
+      "PARTNER_OFF",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\yuegedao",
+    "id": 968,
+    "name": "Nguyệt Ca Đảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\yuegemigu",
+    "id": 969,
+    "name": "Nguyệt Ca Mềt Cốc",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\íẩẫổầệếẵÚỐ",
+    "id": 970,
+    "name": "Chiến trường liên kết Mềt Lâm",
+    "pos": "452,314",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "NATIONALWAR",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ÚúãùếẵÚỐ",
+    "id": 971,
+    "name": "Chiến trường liên kết Hoàng Sa Lâm",
+    "pos": "452,314",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "DELBTGOLDEQUIP",
+      "LOGINREVOUT_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 972,
+    "name": "Điĩm báo danh Tống Kim liên server",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "DELBTGOLDEQUIP",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 973,
+    "name": "Điĩm báo danh liên server 2",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "DELBTGOLDEQUIP",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ềễẵỷứỚẫỨàớ",
+    "id": 974,
+    "name": "Điĩm báo danh liên server 3",
+    "pos": "452,314",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "DELBTGOLDEQUIP",
+      "STALL_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\jingjichang",
+    "id": 975,
+    "name": "Cảnh KỰ Trường",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\qianchonglou",
+    "id": 976,
+    "name": "Thiên Trỳng Lâu",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "FIGHTSTATE_ON"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ẹỞàừàõểẳ",
+    "id": 977,
+    "name": "thu nhét lỵa nưỮc",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "CreateTeam_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 978,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 979,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 980,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 981,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 982,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 983,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\banghuichengbao",
+    "id": 984,
+    "name": "Bang hụi thành bảo",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\bianjingdigong",
+    "id": 985,
+    "name": "Đốa Cung Biên Kinh",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "PUNISH_OFF"
+    ]
+  },
+  {
+    "path": "ảôứứèĐ\\ầóĩúạõ",
+    "id": 986,
+    "name": "Tuyết Nhân Đại Chiến",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR",
+      "STALL_OFF",
+      "PUNISH_OFF"
+    ]
+  },
+  {
+    "path": "ệíịưấệèĐ\\yanwuchang",
+    "id": 987,
+    "name": "VNGỏịảỚỉúàõểẳ",
+    "script": "\\script\\maps\\newworldscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "USETOWNP_OFF",
+      "STALL_OFF",
+      "TISHENZHIREN",
+      "NOTONGCLAIMWAR"
+    ]
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\sjwar",
+    "id": 988,
+    "name": "Chiến trường Phỳ Li Xung Đụt Chiến",
+    "script": "\\script\\missions\\basemission\\mapscript.lua",
+    "params": [
+      "PARTNER_OFF",
+      "PUNISH_OFF"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầẵềừảđẫịạơ",
+    "id": 989,
+    "name": "C.L.Đ - Sơ",
+    "script": "\\script\\_missions\\chien_long_dong\\newworld.lua",
+    "params": [
+      "PUNISH_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầẵềừảđẫịạơ",
+    "id": 990,
+    "name": "C.L.Đ - Trung",
+    "script": "\\script\\_missions\\chien_long_dong\\newworld.lua",
+    "params": [
+      "PUNISH_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "ẵưấệèĐ\\ẩốệỸẫẵ\\ầẵềừảđẫịạơ",
+    "id": 991,
+    "name": "C.L.Đ - Cao",
+    "script": "\\script\\_missions\\chien_long_dong\\newworld.lua",
+    "params": [
+      "PUNISH_OFF",
+      "USETOWNP_OFF"
+    ]
+  },
+  {
+    "path": "qua.huy.hoang\\mongcovuongdinh",
+    "id": 992,
+    "name": "Đêm Huy Hoàng"
+  },
+  {
+    "path": "ếõẹỡĩẫàõ\\ầêẻỰứẻẻỰĩẫàõ",
+    "id": 993,
+    "name": "VLMC Đẹu Trường"
+  }
+]

@@ -1,0 +1,132 @@
+EqName	FreeStand1	FreeStand2	FreeStand3	MeleeWStand	RangeWStand	DoubleWStand	FreeWalk	MeleeWWalk	RangeWWalk	DoubleWWalk	FreeRun	MeleeWRun	RangeWRun	DoubleWRun	FreeWound	MeleeWWound	RangeWWound	DoubleWWound	FreeDie	MeleeWDie	MeleeWDie	DoubleWDie	FreeAttack	MeleeWPuncture	MeleeWCut	RangeWPuncture	RangeWCut	DoubleWPull	DoubleWPound	DartThrow	FreeMagic	MeleeWMagic	RangeWMagic	DoubleWMagic	SitDown	JumpFly	RideStand	RideWalk	RideRun	RideCut	RidePuncture	RideMagic	RideWound	RideDie	RideStand1	RideStand2
+Th©n th” 01																																														
+Th©n th” 02																																														
+Th©n th” 03																																														
+Th©n th” 04																																														
+Th©n th” 05																																														
+Th©n th” 06																																														
+Th©n th” 07																																														
+Th©n th” 08																																														
+Th©n th” 09																																														
+Th©n th” 10																																														
+Th©n th” 11																																														
+Th©n th” 12																																														
+Th©n th” 13																																														
+Th©n th” 14																																														
+Th©n th” 15																																														
+Th©n th” 16																																														
+Th©n th” 17																																														
+Th©n th” 18																																														
+Th©n th” 19																																														
+Th©n th” 20																																														
+Th©n th” 21																																														
+Th©n th” 22																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 23																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 24																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 25																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 26																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 27																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 28																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 29																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 30																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 31																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 32																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 33																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 34																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 35																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 36																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 37																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 38																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 39																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 40																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 41																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 42																																					112,8,1	96,8,1	80,8,1	96,8,1	112,8,1	96,8,1	48,8,1	112,8,1	112,8,1	112,8,1
+Th©n th” 43																																														
+Th©n th” 44																																														
+Th©n th” 45																																														
+Th©n th” 46																																														
+«˚ÃÂ47																																														
+«˚ÃÂ48																																														
+«˚ÃÂ49																																														
+«˚ÃÂ50																																														
+«˚ÃÂ51																																														
+«˚ÃÂ52																																														
+«˚ÃÂ53																																														
+«˚ÃÂ54																																														
+«˚ÃÂ55																																														
+«˚ÃÂ56																																														
+«˚ÃÂ57																																														
+«˚ÃÂ58																																														
+«˚ÃÂ59																																														
+«˚ÃÂ60																																														
+«˚ÃÂ61																																														
+«˚ÃÂ62																																														
+«˚ÃÂ63																																														
+«˚ÃÂ64																																														
+«˚ÃÂ65																																														
+«˚ÃÂ66																																														
+«˚ÃÂ67																																														
+«˚ÃÂ68																																														
+«˚ÃÂ69																																														
+«˚ÃÂ70																																														
+Th©n th” 71																																														
+Th©n th” 72																																														
+Th©n th” 73																																														
+Th©n th” 74																																														
+Th©n th” 75																																														
+Th©n th” 76																																														
+Th©n th” 77																																														
+Th©n th” 78																																														
+Th©n th” 79																																														
+Th©n th” 80																																														
+Th©n th” 81																																														
+Nguy÷t Khuy’t Tr‰ng Ki’p T®ng M∑o																																														
+Nguy÷t Khuy’t S∏t Ki’p T®ng M∑o																																														
+Nguy÷t Khuy’t Ph∏ Ki’p T®ng M∑o																																														
+Nguy÷t Khuy’t Ph n VÚ Kh´i																																														
+Nguy÷t Khuy’t Phong Y™n Kh´i																																														
+Nguy÷t Khuy’t Tr≠Íng Kh´ng Kh´i																																														
+Nguy÷t Khuy’t Kinh HÂng Ph∏t ß∏i																																														
+Nguy÷t Khuy’t Hi”u Nguy÷t Ph∏t ß∏i																																														
+Nguy÷t Khuy’t T≠¨ng T≠ Tr©m																																														
+Nguy÷t Khuy’t Phong Nguy÷t Tr©m																																														
+Nguy÷t Khuy’t B∏ch ßÈc Ph∏t ß∏i																																														
+Nguy÷t Khuy’t U Minh Ph∏t ß∏i																																														
+Nguy÷t Khuy’t Th´i M÷nh Qu∏n																																														
+Nguy÷t Khuy’t B› ßÈc Qu∏n																																														
+Nguy÷t Khuy’t Mπn ßÂ Ph∏t Qu∏n																																														
+Nguy÷t Khuy’t X›ch Long ß«u Hoµn																																														
+Nguy÷t Khuy’t Hµo Ki÷t ß«u Hoµn																																														
+Nguy÷t Khuy’t Tham Lang Kh´i																																														
+Nguy÷t Khuy’t Li÷t D≠¨ng Qu∏n Mi÷n																																														
+Nguy÷t Khuy’t Linh ßÈng Qu∏n																																														
+Nguy÷t Khuy’t ∂o ∂nh Qu∏n																																														
+Nguy÷t Khuy’t L®ng Phong ßπo Qu∏n																																														
+Nguy÷t Khuy’t MÈc VÚ ßπo Qu∏n																																														
+Nguy÷t Khuy’t DÀt ∂nh Qu∏n																																														
+Nguy÷t Khuy’t Thanh Phong Qu∏n																																														
+Di÷u D≠¨ng MÈng Long Tri“n ThÒ																																														
+Di÷u D≠¨ng PhÙc Ma Ph∏p C´n																																														
+Di÷u D≠¨ng T≠ Kh´ng GiÌi ßao																																														
+Di÷u D≠¨ng H∏m Thi™n Th«n ChÔy																																														
+Di÷u D≠¨ng K’ Nghi÷p Th≠¨ng																																														
+Di÷u D≠¨ng Ng˘ Long B∂o ßao																																														
+Di÷u D≠¨ng V´ Gian B∂o Ki’m																																														
+Di÷u D≠¨ng V´ Ma Tri“n ThÒ																																														
+Di÷u D≠¨ng T™ Hoµng B∂o ßao																																														
+Di÷u D≠¨ng B›ch H∂i Uy™n ¶¨ng ßao																																														
+Di÷u D≠¨ng U Lung Tri“n ThÒ																																														
+Di÷u D≠¨ng Minh ∂o Huy’t NhÀn																																														
+Di÷u D≠¨ng B®ng Hµn Phi ßao																																														
+Di÷u D≠¨ng Thi™n Quang TÙ Ti‘n																																														
+Di÷u D≠¨ng S©m Hoang Phi Ti™u																																														
+Di÷u D≠¨ng ßÂng Cıu Tri“n ThÒ																																														
+Di÷u D≠¨ng ßﬁch Kh∏i Tr≠Óng																																														
+Di÷u D≠¨ng Ma S∏t Th≠¨ng																																														
+Di÷u D≠¨ng Ma Hoµng B∂o ßao																																														
+Di÷u D≠¨ng L®ng Nhπc Th«n Ki’m																																														
+Di÷u D≠¨ng CÀp Phong Th«n Ki’m																																														
+Di÷u D≠¨ng S≠¨ng Tinh B∂o ßao																																														
+Di÷u D≠¨ng L´i Khung Th«n Ki’m																																														
+Di÷u D≠¨ng PhÔ V©n Ki’m																																														
+Di÷u D≠¨ng Xung V©n Ki’m																																														

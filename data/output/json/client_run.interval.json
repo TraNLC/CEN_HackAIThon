@@ -1,0 +1,398 @@
+[
+  {
+    "﻿SPEED": 0,
+    "run.man.interval": 2000,
+    "run.man.audio": 60,
+    "run.girl.interval": 2000,
+    "run.girl.audio": 60,
+    "riding.interval": 10000,
+    "riding.audio": 0
+  },
+  {
+    "﻿SPEED": 1,
+    "run.man.interval": 1900,
+    "run.man.audio": 65,
+    "run.girl.interval": 1900,
+    "run.girl.audio": 65,
+    "riding.interval": 7000,
+    "riding.audio": 20
+  },
+  {
+    "﻿SPEED": 2,
+    "run.man.interval": 1900,
+    "run.man.audio": 65,
+    "run.girl.interval": 1800,
+    "run.girl.audio": 70,
+    "riding.interval": 4000,
+    "riding.audio": 30
+  },
+  {
+    "﻿SPEED": 3,
+    "run.man.interval": 1900,
+    "run.man.audio": 65,
+    "run.girl.interval": 1700,
+    "run.girl.audio": 75,
+    "riding.interval": 3500,
+    "riding.audio": 35
+  },
+  {
+    "﻿SPEED": 4,
+    "run.man.interval": 1800,
+    "run.man.audio": 70,
+    "run.girl.interval": 1600,
+    "run.girl.audio": 80,
+    "riding.interval": 3000,
+    "riding.audio": 45
+  },
+  {
+    "﻿SPEED": 5,
+    "run.man.interval": 1700,
+    "run.man.audio": 75,
+    "run.girl.interval": 1500,
+    "run.girl.audio": 85,
+    "riding.interval": 2500,
+    "riding.audio": 55
+  },
+  {
+    "﻿SPEED": 6,
+    "run.man.interval": 1600,
+    "run.man.audio": 80,
+    "run.girl.interval": 1400,
+    "run.girl.audio": 90,
+    "riding.interval": 2000,
+    "riding.audio": 65
+  },
+  {
+    "﻿SPEED": 7,
+    "run.man.interval": 1500,
+    "run.man.audio": 85,
+    "run.girl.interval": 1300,
+    "run.girl.audio": 100,
+    "riding.interval": 1900,
+    "riding.audio": 75
+  },
+  {
+    "﻿SPEED": 8,
+    "run.man.interval": 1400,
+    "run.man.audio": 90,
+    "run.girl.interval": 1200,
+    "run.girl.audio": 110,
+    "riding.interval": 1200,
+    "riding.audio": 100
+  },
+  {
+    "﻿SPEED": 9,
+    "run.man.interval": 1300,
+    "run.man.audio": 100,
+    "run.girl.interval": 1100,
+    "run.girl.audio": 120,
+    "riding.interval": 1200,
+    "riding.audio": 100
+  },
+  {
+    "﻿SPEED": 10,
+    "run.man.interval": 1200,
+    "run.man.audio": 110,
+    "run.girl.interval": 1000,
+    "run.girl.audio": 130,
+    "riding.interval": 1000,
+    "riding.audio": 115
+  },
+  {
+    "﻿SPEED": 11,
+    "run.man.interval": 1100,
+    "run.man.audio": 120,
+    "run.girl.interval": 1000,
+    "run.girl.audio": 130,
+    "riding.interval": 1000,
+    "riding.audio": 115
+  },
+  {
+    "﻿SPEED": 12,
+    "run.man.interval": 1000,
+    "run.man.audio": 130,
+    "run.girl.interval": 900,
+    "run.girl.audio": 145,
+    "riding.interval": 900,
+    "riding.audio": 135
+  },
+  {
+    "﻿SPEED": 13,
+    "run.man.interval": 1000,
+    "run.man.audio": 130,
+    "run.girl.interval": 900,
+    "run.girl.audio": 145,
+    "riding.interval": 900,
+    "riding.audio": 135
+  },
+  {
+    "﻿SPEED": 14,
+    "run.man.interval": 900,
+    "run.man.audio": 145,
+    "run.girl.interval": 850,
+    "run.girl.audio": 157,
+    "riding.interval": 800,
+    "riding.audio": 145
+  },
+  {
+    "﻿SPEED": 15,
+    "run.man.interval": 900,
+    "run.man.audio": 145,
+    "run.girl.interval": 850,
+    "run.girl.audio": 157,
+    "riding.interval": 800,
+    "riding.audio": 145
+  },
+  {
+    "﻿SPEED": 16,
+    "run.man.interval": 850,
+    "run.man.audio": 157,
+    "run.girl.interval": 800,
+    "run.girl.audio": 170,
+    "riding.interval": 800,
+    "riding.audio": 145
+  },
+  {
+    "﻿SPEED": 17,
+    "run.man.interval": 800,
+    "run.man.audio": 170,
+    "run.girl.interval": 800,
+    "run.girl.audio": 170,
+    "riding.interval": 800,
+    "riding.audio": 145
+  },
+  {
+    "﻿SPEED": 18,
+    "run.man.interval": 750,
+    "run.man.audio": 180,
+    "run.girl.interval": 750,
+    "run.girl.audio": 180,
+    "riding.interval": 700,
+    "riding.audio": 160
+  },
+  {
+    "﻿SPEED": 19,
+    "run.man.interval": 750,
+    "run.man.audio": 180,
+    "run.girl.interval": 750,
+    "run.girl.audio": 180,
+    "riding.interval": 700,
+    "riding.audio": 160
+  },
+  {
+    "﻿SPEED": 20,
+    "run.man.interval": 700,
+    "run.man.audio": 190,
+    "run.girl.interval": 700,
+    "run.girl.audio": 190,
+    "riding.interval": 600,
+    "riding.audio": 180
+  },
+  {
+    "﻿SPEED": 21,
+    "run.man.interval": 700,
+    "run.man.audio": 190,
+    "run.girl.interval": 700,
+    "run.girl.audio": 190,
+    "riding.interval": 600,
+    "riding.audio": 180
+  },
+  {
+    "﻿SPEED": 22,
+    "run.man.interval": 650,
+    "run.man.audio": 200,
+    "run.girl.interval": 650,
+    "run.girl.audio": 200,
+    "riding.interval": 600,
+    "riding.audio": 180
+  },
+  {
+    "﻿SPEED": 23,
+    "run.man.interval": 650,
+    "run.man.audio": 200,
+    "run.girl.interval": 650,
+    "run.girl.audio": 200,
+    "riding.interval": 600,
+    "riding.audio": 180
+  },
+  {
+    "﻿SPEED": 24,
+    "run.man.interval": 600,
+    "run.man.audio": 210,
+    "run.girl.interval": 600,
+    "run.girl.audio": 210,
+    "riding.interval": 500,
+    "riding.audio": 210
+  },
+  {
+    "﻿SPEED": 25,
+    "run.man.interval": 600,
+    "run.man.audio": 210,
+    "run.girl.interval": 600,
+    "run.girl.audio": 210,
+    "riding.interval": 500,
+    "riding.audio": 210
+  },
+  {
+    "﻿SPEED": 26,
+    "run.man.interval": 550,
+    "run.man.audio": 220,
+    "run.girl.interval": 550,
+    "run.girl.audio": 220,
+    "riding.interval": 500,
+    "riding.audio": 210
+  },
+  {
+    "﻿SPEED": 27,
+    "run.man.interval": 550,
+    "run.man.audio": 220,
+    "run.girl.interval": 550,
+    "run.girl.audio": 220,
+    "riding.interval": 500,
+    "riding.audio": 210
+  },
+  {
+    "﻿SPEED": 28,
+    "run.man.interval": 500,
+    "run.man.audio": 230,
+    "run.girl.interval": 500,
+    "run.girl.audio": 230,
+    "riding.interval": 450,
+    "riding.audio": 230
+  },
+  {
+    "﻿SPEED": 29,
+    "run.man.interval": 500,
+    "run.man.audio": 230,
+    "run.girl.interval": 500,
+    "run.girl.audio": 230,
+    "riding.interval": 450,
+    "riding.audio": 230
+  },
+  {
+    "﻿SPEED": 30,
+    "run.man.interval": 450,
+    "run.man.audio": 240,
+    "run.girl.interval": 450,
+    "run.girl.audio": 240,
+    "riding.interval": 450,
+    "riding.audio": 230
+  },
+  {
+    "﻿SPEED": 31,
+    "run.man.interval": 450,
+    "run.man.audio": 240,
+    "run.girl.interval": 450,
+    "run.girl.audio": 240,
+    "riding.interval": 450,
+    "riding.audio": 230
+  },
+  {
+    "﻿SPEED": 32,
+    "run.man.interval": 400,
+    "run.man.audio": 250,
+    "run.girl.interval": 400,
+    "run.girl.audio": 250,
+    "riding.interval": 400,
+    "riding.audio": 270
+  },
+  {
+    "﻿SPEED": 33,
+    "run.man.interval": 400,
+    "run.man.audio": 250,
+    "run.girl.interval": 400,
+    "run.girl.audio": 250,
+    "riding.interval": 400,
+    "riding.audio": 270
+  },
+  {
+    "﻿SPEED": 34,
+    "run.man.interval": 350,
+    "run.man.audio": 260,
+    "run.girl.interval": 350,
+    "run.girl.audio": 260,
+    "riding.interval": 400,
+    "riding.audio": 270
+  },
+  {
+    "﻿SPEED": 35,
+    "run.man.interval": 350,
+    "run.man.audio": 260,
+    "run.girl.interval": 350,
+    "run.girl.audio": 260,
+    "riding.interval": 400,
+    "riding.audio": 270
+  },
+  {
+    "﻿SPEED": 36,
+    "run.man.interval": 350,
+    "run.man.audio": 260,
+    "run.girl.interval": 350,
+    "run.girl.audio": 260,
+    "riding.interval": 300,
+    "riding.audio": 300
+  },
+  {
+    "﻿SPEED": 37,
+    "run.man.interval": 350,
+    "run.man.audio": 260,
+    "run.girl.interval": 350,
+    "run.girl.audio": 260,
+    "riding.interval": 300,
+    "riding.audio": 300
+  },
+  {
+    "﻿SPEED": 38,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 300,
+    "riding.audio": 300
+  },
+  {
+    "﻿SPEED": 39,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 300,
+    "riding.audio": 300
+  },
+  {
+    "﻿SPEED": 40,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 250,
+    "riding.audio": 350
+  },
+  {
+    "﻿SPEED": 41,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 250,
+    "riding.audio": 350
+  },
+  {
+    "﻿SPEED": 42,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 250,
+    "riding.audio": 350
+  },
+  {
+    "﻿SPEED": 43,
+    "run.man.interval": 300,
+    "run.man.audio": 270,
+    "run.girl.interval": 300,
+    "run.girl.audio": 270,
+    "riding.interval": 250,
+    "riding.audio": 350
+  }
+]

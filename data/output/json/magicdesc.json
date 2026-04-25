@@ -1,0 +1,648 @@
+[
+  {
+    "﻿MAGIC.TYPE": "số_lượng_hình_ảnh",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tốc_độ_bay_của_hình_ảnh",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_tồn_tại_hình_ảnh",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "phạm_vi_hiệu_quả",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phạm vi hiệu quả: {value.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "cho_phép_kỹ_năng_phụ",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "đẳng_cấp_kỹ_năng_phụ",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kỹ_năng_phụ_khi_bắt_đầu",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kỹ_năng_phụ_khi_đang_bay",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kỹ_năng_phụ_khi_va_chạm",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kỹ_năng_phụ_khi_kết_thúc",
+    "RESERVE1": "=>"
+  },
+  {
+    "﻿MAGIC.TYPE": "ngũ_hành_tương_khắc_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Ngũ hành tương khắc: {value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_nội",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - nội công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_nội_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - nội công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_ngoại",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - ngoại công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_ngoại_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - ngoại công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - ngoại công: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_vật_lý_nội_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương vật lý - nội công: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "độc_sát_nội",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Độc sát - nội công: {+.value.1} điểm/lần"
+  },
+  {
+    "﻿MAGIC.TYPE": "độc_sát_ngoại",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Độc sát - ngoại công: {+.value.1} điểm/lần"
+  },
+  {
+    "﻿MAGIC.TYPE": "lôi_sát_nội",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Lôi sát - nội công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "lôi_sát_nội_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Lôi sát - nội công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "lôi_sát_ngoại",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Lôi sát - ngoại công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "lôi_sát_ngoại_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Lôi sát - ngoại công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "băng_sát_nội",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Băng sát - nội công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "băng_sát_nội_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Băng sát - nội công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "băng_sát_ngoại",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Băng sát - ngoại công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "băng_sát_ngoại_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Băng sát - ngoại công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỏa_sát_nội",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hỏa sát - nội công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỏa_sát_nội_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hỏa sát - nội công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỏa_sát_ngoại",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hỏa sát - ngoại công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỏa_sát_ngoại_trong_khoảng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hỏa sát - ngoại công: {value.1} đến {value.2} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỏa_sát_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hỏa sát tối đa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "độ_chính_xác",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Độ chính xác: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "độ_chính_xác_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Độ chính xác: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tốc_độ_đánh_nội_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tốc độ đánh - nội công: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tốc_độ_đánh_ngoại_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tốc độ đánh - ngoại công: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "né_tránh",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Né tránh: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "né_tránh_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Né tránh: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tốc_độ_di_chuyển_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tốc độ di chuyển: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "phản_đòn_cận_chiến",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phản đòn cận chiến: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "phản_đòn_cận_chiến_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phản đòn cận chiến: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_phục_hồi",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian phục hồi: {-.value.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_tất_cả_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng tất cả: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hút_sinh_lực_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hút sinh lực: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hút_nội_lực_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hút nội lực: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "sinh_lực_tối_đa",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sinh lực tối đa: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sinh_lực_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sinh lực tối đa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "nội_lực_tối_đa",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội lực tối đa: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "nội_lực_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội lực tối đa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thể_lực_tối_đa",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thể lực tối đa: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "thể_lực_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thể lực tối đa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phục hồi sinh lực mỗi nửa giây: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "tăng_hồi_sinh_lực_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Hồi phục sinh lực: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "phục_hồi_nội_lực_mỗi_nửa_giây",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phục hồi nội lực mỗi nửa giây: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phục hồi thể lực mỗi nửa giây: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sức_mạnh",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sức mạnh: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "thân_pháp",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thân pháp: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sinh_khí",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sinh khí: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "nội_công",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội công: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Chuyển hóa sát thương thành nội lực: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "phòng_thủ_vật_lý_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phòng thủ vật lý: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_độc_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng độc: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_băng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng băng: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_hỏa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng hỏa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_lôi_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng lôi: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_choáng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian choáng: {-.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_trúng_độc_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian trúng độc: {-.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "may_mắn_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "May mắn: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_làm_chậm_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian làm chậm: {-.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_thân_pháp",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu thân pháp: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_sinh_khí",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu sinh khí: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "đẳng_cấp_yêu_cầu",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Đẳng cấp yêu cầu: {value.1} cấp"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_sức_mạnh",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu sức mạnh: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "độ_bền",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Độ bền: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_lớn_nhất",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương lớn nhất: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_nhỏ_nhất",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương nhỏ nhất: {value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "giới_tính",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Giới tính: {gender.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_sử_dụng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian sử dụng còn: {value.1} phút"
+  },
+  {
+    "﻿MAGIC.TYPE": "số_lần_sử_dụng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Số lần sử dụng còn: {value.1} lần"
+  },
+  {
+    "﻿MAGIC.TYPE": "thuộc_tính_ngũ_hành",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thuộc tính ngũ hành: hệ {series.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "môn_phái",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Môn phái: {faction.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "tăng_cấp_kỹ_năng",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kỹ năng {skill.2} {+.value.1} cấp"
+  },
+  {
+    "﻿MAGIC.TYPE": "không_thể_phá_hủy",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Không thể phá hủy"
+  },
+  {
+    "﻿MAGIC.TYPE": "bỏ_qua_né_tránh_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Bỏ qua né tránh: {value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_độc_phát_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian độc phát: {-.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tấn_công_chí_mạng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tấn công chí mạng: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tăng_tấn_công_chí_mạng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng tấn công chí mạng: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "phản_đòn_tầm_xa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phản đòn tầm xa: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "sát_thương_địch_nhận_được_kinh_nghiệm_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Sát thương địch nhận được kinh nghiệm {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "làm_choáng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tỷ lệ làm choáng {value.1}% trong {seconds.3} giây"
+  },
+  {
+    "﻿MAGIC.TYPE": "nội_lực_hộ_thân_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội lực hộ thân: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_1_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_2_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_3_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_4_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_5_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "hỗ_trợ_kỹ_năng_6_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tăng kỹ năng [{skill.1}]{+.value.2}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "nội_lực_hộ_thân_điểm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội lực hộ thân: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_phản_đòn_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng phản đòn: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_1",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_2",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_3",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_4",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_5",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_6",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_7",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_8",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_9",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "yêu_cầu_kỹ_năng_10",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Yêu cầu kỹ năng <color=yellow>[{skill.1}]</color> <color=#a8a8ff>cấp {value.2}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "xs_bỏ_qua_bùa_giảm_kháng_p",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Xác suất bỏ qua bùa giảm kháng: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "phản_đòn_khi_bị_trúng_độc_p",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Phản đòn khi bị trúng độc: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "xs_phản_đòn_bùa_chú_p",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Xác suất phản đòn bùa chú: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tự_phản_hồi_khi_bị_đánh",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Khi bị trúng đòn có xác suất <color=orange>{value256.22}%</color> tự thi triển <color=#4d7efc>[{skill256.11}]</color> <color=orange>cấp {value256.12}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tự_đánh_khi_xuất_chiêu",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Khi xuất chiêu có xác suất <color=orange>{value256.22}%</color> tự thi triển <color=#4d7efc>[{skill256.11}]</color> <color=orange>cấp {value256.12}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tự_đánh_khi_bị_hạ_gục",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Khi bị hạ gục có xác suất <color=orange>{value256.22}%</color> tự thi triển <color=#4d7efc>[{skill256.11}]</color> <color=orange>cấp {value256.12}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tự_đánh_khi_máu_thấp_hơn_25_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Khi sinh lực thấp hơn 25% có xác suất <color=orange>{value256.22}%</color> tự thi triển <color=#4d7efc>[{skill256.11}]</color> <color=orange>cấp {value256.12}</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "ẩn_thân_tạm_thời",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Ẩn thân <color=orange>{seconds.3} giây</color>, thi triển võ công sẽ hiện hình trở lại"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_tất_cả_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức kháng tính tối đa: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "phòng_thủ_vật_lý_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức phòng thủ vật lý tối đa:<color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_độc_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức kháng độc tối đa: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_băng_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức kháng băng tối đa: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_hỏa_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức kháng hỏa tối đa:<color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "kháng_lôi_tối_đa_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Mức kháng lôi tối đa: <color=orange>{+.value.1}%</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "hoảng_loạn",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian hoảng loạn trong <color=orange>{seconds.3} giây</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "tỷ_lệ_đánh_không_trúng_mục_tiêu",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tỷ lệ đánh không trúng mục tiêu: {value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "số_lượng_mục_tiêu_tối_đa",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Số lượng mục tiêu tối đa: {value.1}"
+  },
+  {
+    "﻿MAGIC.TYPE": "bỏ_qua_trạng_thái_dị_thường_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Xóa bỏ trạng thái dị thường và có xác suất <color=orange>{value.1}%</color> miễn dịch trạng thái dị thường trong <color=orange>{seconds.3} giây</color>"
+  },
+  {
+    "﻿MAGIC.TYPE": "thời_gian_trì_hoãn_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Thời gian trì hoãn: {+.value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "tấn_công_chí_tử_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Tấn công chí tử: {value.1}%"
+  },
+  {
+    "﻿MAGIC.TYPE": "triệt_tiêu_sát_thương_quái",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Nội lực hộ thân: {+.value.1} điểm"
+  },
+  {
+    "﻿MAGIC.TYPE": "Kháng_đòn_chí_mạng_phần_trăm",
+    "RESERVE1": "=>",
+    "DESCRIPTION": "Kháng đòn chí mạng: {+.value.1}%"
+  }
+]

@@ -1,0 +1,798 @@
+[
+  {
+    "﻿level": 1,
+    "exp.to.up.level": 18
+  },
+  {
+    "﻿level": 2,
+    "exp.to.up.level": 89
+  },
+  {
+    "﻿level": 3,
+    "exp.to.up.level": 196
+  },
+  {
+    "﻿level": 4,
+    "exp.to.up.level": 339
+  },
+  {
+    "﻿level": 5,
+    "exp.to.up.level": 518
+  },
+  {
+    "﻿level": 6,
+    "exp.to.up.level": 732
+  },
+  {
+    "﻿level": 7,
+    "exp.to.up.level": 982
+  },
+  {
+    "﻿level": 8,
+    "exp.to.up.level": 1268
+  },
+  {
+    "﻿level": 9,
+    "exp.to.up.level": 1589
+  },
+  {
+    "﻿level": 10,
+    "exp.to.up.level": 1946
+  },
+  {
+    "﻿level": 11,
+    "exp.to.up.level": 2339
+  },
+  {
+    "﻿level": 12,
+    "exp.to.up.level": 2804
+  },
+  {
+    "﻿level": 13,
+    "exp.to.up.level": 3339
+  },
+  {
+    "﻿level": 14,
+    "exp.to.up.level": 3946
+  },
+  {
+    "﻿level": 15,
+    "exp.to.up.level": 4625
+  },
+  {
+    "﻿level": 16,
+    "exp.to.up.level": 5375
+  },
+  {
+    "﻿level": 17,
+    "exp.to.up.level": 6196
+  },
+  {
+    "﻿level": 18,
+    "exp.to.up.level": 7089
+  },
+  {
+    "﻿level": 19,
+    "exp.to.up.level": 8054
+  },
+  {
+    "﻿level": 20,
+    "exp.to.up.level": 9089
+  },
+  {
+    "﻿level": 21,
+    "exp.to.up.level": 20911
+  },
+  {
+    "﻿level": 22,
+    "exp.to.up.level": 22125
+  },
+  {
+    "﻿level": 23,
+    "exp.to.up.level": 27018
+  },
+  {
+    "﻿level": 24,
+    "exp.to.up.level": 28446
+  },
+  {
+    "﻿level": 25,
+    "exp.to.up.level": 29982
+  },
+  {
+    "﻿level": 26,
+    "exp.to.up.level": 31625
+  },
+  {
+    "﻿level": 27,
+    "exp.to.up.level": 33375
+  },
+  {
+    "﻿level": 28,
+    "exp.to.up.level": 35232
+  },
+  {
+    "﻿level": 29,
+    "exp.to.up.level": 37196
+  },
+  {
+    "﻿level": 30,
+    "exp.to.up.level": 39268
+  },
+  {
+    "﻿level": 31,
+    "exp.to.up.level": 62875
+  },
+  {
+    "﻿level": 32,
+    "exp.to.up.level": 65250
+  },
+  {
+    "﻿level": 33,
+    "exp.to.up.level": 67821
+  },
+  {
+    "﻿level": 34,
+    "exp.to.up.level": 70589
+  },
+  {
+    "﻿level": 35,
+    "exp.to.up.level": 73554
+  },
+  {
+    "﻿level": 36,
+    "exp.to.up.level": 76714
+  },
+  {
+    "﻿level": 37,
+    "exp.to.up.level": 80071
+  },
+  {
+    "﻿level": 38,
+    "exp.to.up.level": 83625
+  },
+  {
+    "﻿level": 39,
+    "exp.to.up.level": 87375
+  },
+  {
+    "﻿level": 40,
+    "exp.to.up.level": 127036
+  },
+  {
+    "﻿level": 41,
+    "exp.to.up.level": 202607
+  },
+  {
+    "﻿level": 42,
+    "exp.to.up.level": 242929
+  },
+  {
+    "﻿level": 43,
+    "exp.to.up.level": 283714
+  },
+  {
+    "﻿level": 44,
+    "exp.to.up.level": 286068
+  },
+  {
+    "﻿level": 45,
+    "exp.to.up.level": 330964
+  },
+  {
+    "﻿level": 46,
+    "exp.to.up.level": 337429
+  },
+  {
+    "﻿level": 47,
+    "exp.to.up.level": 380071
+  },
+  {
+    "﻿level": 48,
+    "exp.to.up.level": 387464
+  },
+  {
+    "﻿level": 49,
+    "exp.to.up.level": 389250
+  },
+  {
+    "﻿level": 50,
+    "exp.to.up.level": 1000000
+  },
+  {
+    "﻿level": 51,
+    "exp.to.up.level": 1070000
+  },
+  {
+    "﻿level": 52,
+    "exp.to.up.level": 1144900
+  },
+  {
+    "﻿level": 53,
+    "exp.to.up.level": 1225043
+  },
+  {
+    "﻿level": 54,
+    "exp.to.up.level": 1310797
+  },
+  {
+    "﻿level": 55,
+    "exp.to.up.level": 1402551
+  },
+  {
+    "﻿level": 56,
+    "exp.to.up.level": 1500730
+  },
+  {
+    "﻿level": 57,
+    "exp.to.up.level": 1605781
+  },
+  {
+    "﻿level": 58,
+    "exp.to.up.level": 1718186
+  },
+  {
+    "﻿level": 59,
+    "exp.to.up.level": 1838459
+  },
+  {
+    "﻿level": 60,
+    "exp.to.up.level": 3934302
+  },
+  {
+    "﻿level": 61,
+    "exp.to.up.level": 4209704
+  },
+  {
+    "﻿level": 62,
+    "exp.to.up.level": 4504384
+  },
+  {
+    "﻿level": 63,
+    "exp.to.up.level": 4819690
+  },
+  {
+    "﻿level": 64,
+    "exp.to.up.level": 5157068
+  },
+  {
+    "﻿level": 65,
+    "exp.to.up.level": 5518064
+  },
+  {
+    "﻿level": 66,
+    "exp.to.up.level": 5904328
+  },
+  {
+    "﻿level": 67,
+    "exp.to.up.level": 6317630
+  },
+  {
+    "﻿level": 68,
+    "exp.to.up.level": 6759864
+  },
+  {
+    "﻿level": 69,
+    "exp.to.up.level": 7233056
+  },
+  {
+    "﻿level": 70,
+    "exp.to.up.level": 7739368
+  },
+  {
+    "﻿level": 71,
+    "exp.to.up.level": 8281124
+  },
+  {
+    "﻿level": 72,
+    "exp.to.up.level": 8860804
+  },
+  {
+    "﻿level": 73,
+    "exp.to.up.level": 9481060
+  },
+  {
+    "﻿level": 74,
+    "exp.to.up.level": 10144734
+  },
+  {
+    "﻿level": 75,
+    "exp.to.up.level": 10854866
+  },
+  {
+    "﻿level": 76,
+    "exp.to.up.level": 11614706
+  },
+  {
+    "﻿level": 77,
+    "exp.to.up.level": 12427736
+  },
+  {
+    "﻿level": 78,
+    "exp.to.up.level": 13297676
+  },
+  {
+    "﻿level": 79,
+    "exp.to.up.level": 14228514
+  },
+  {
+    "﻿level": 80,
+    "exp.to.up.level": 100000000
+  },
+  {
+    "﻿level": 81,
+    "exp.to.up.level": 113548243
+  },
+  {
+    "﻿level": 82,
+    "exp.to.up.level": 121351248
+  },
+  {
+    "﻿level": 83,
+    "exp.to.up.level": 133103217
+  },
+  {
+    "﻿level": 84,
+    "exp.to.up.level": 146410680
+  },
+  {
+    "﻿level": 85,
+    "exp.to.up.level": 161051052
+  },
+  {
+    "﻿level": 86,
+    "exp.to.up.level": 177156103
+  },
+  {
+    "﻿level": 87,
+    "exp.to.up.level": 194871710
+  },
+  {
+    "﻿level": 88,
+    "exp.to.up.level": 214358881
+  },
+  {
+    "﻿level": 89,
+    "exp.to.up.level": 235794769
+  },
+  {
+    "﻿level": 90,
+    "exp.to.up.level": 259374246
+  },
+  {
+    "﻿level": 91,
+    "exp.to.up.level": 285311671
+  },
+  {
+    "﻿level": 92,
+    "exp.to.up.level": 313842838
+  },
+  {
+    "﻿level": 93,
+    "exp.to.up.level": 450000000
+  },
+  {
+    "﻿level": 94,
+    "exp.to.up.level": 550000000
+  },
+  {
+    "﻿level": 95,
+    "exp.to.up.level": 850000000
+  },
+  {
+    "﻿level": 96,
+    "exp.to.up.level": 1450000000
+  },
+  {
+    "﻿level": 97,
+    "exp.to.up.level": 2150000000
+  },
+  {
+    "﻿level": 98,
+    "exp.to.up.level": 2950000000
+  },
+  {
+    "﻿level": 99,
+    "exp.to.up.level": 3850000000
+  },
+  {
+    "﻿level": 100,
+    "exp.to.up.level": 4850000000
+  },
+  {
+    "﻿level": 101,
+    "exp.to.up.level": 5950000000
+  },
+  {
+    "﻿level": 102,
+    "exp.to.up.level": 7050000000
+  },
+  {
+    "﻿level": 103,
+    "exp.to.up.level": 8150000000
+  },
+  {
+    "﻿level": 104,
+    "exp.to.up.level": 9250000000
+  },
+  {
+    "﻿level": 105,
+    "exp.to.up.level": 10350000000
+  },
+  {
+    "﻿level": 106,
+    "exp.to.up.level": 11450000000
+  },
+  {
+    "﻿level": 107,
+    "exp.to.up.level": 12550000000
+  },
+  {
+    "﻿level": 108,
+    "exp.to.up.level": 13650000000
+  },
+  {
+    "﻿level": 109,
+    "exp.to.up.level": 14750000000
+  },
+  {
+    "﻿level": 110,
+    "exp.to.up.level": 15850000000
+  },
+  {
+    "﻿level": 111,
+    "exp.to.up.level": 16950000000
+  },
+  {
+    "﻿level": 112,
+    "exp.to.up.level": 18050000000
+  },
+  {
+    "﻿level": 113,
+    "exp.to.up.level": 19150000000
+  },
+  {
+    "﻿level": 114,
+    "exp.to.up.level": 20250000000
+  },
+  {
+    "﻿level": 115,
+    "exp.to.up.level": 21350000000
+  },
+  {
+    "﻿level": 116,
+    "exp.to.up.level": 22450000000
+  },
+  {
+    "﻿level": 117,
+    "exp.to.up.level": 23550000000
+  },
+  {
+    "﻿level": 118,
+    "exp.to.up.level": 24650000000
+  },
+  {
+    "﻿level": 119,
+    "exp.to.up.level": 25750000000
+  },
+  {
+    "﻿level": 120,
+    "exp.to.up.level": 26850000000
+  },
+  {
+    "﻿level": 121,
+    "exp.to.up.level": 27950000000
+  },
+  {
+    "﻿level": 122,
+    "exp.to.up.level": 29050000000
+  },
+  {
+    "﻿level": 123,
+    "exp.to.up.level": 30150000000
+  },
+  {
+    "﻿level": 124,
+    "exp.to.up.level": 31250000000
+  },
+  {
+    "﻿level": 125,
+    "exp.to.up.level": 32350000000
+  },
+  {
+    "﻿level": 126,
+    "exp.to.up.level": 33450000000
+  },
+  {
+    "﻿level": 127,
+    "exp.to.up.level": 34550000000
+  },
+  {
+    "﻿level": 128,
+    "exp.to.up.level": 35650000000
+  },
+  {
+    "﻿level": 129,
+    "exp.to.up.level": 36750000000
+  },
+  {
+    "﻿level": 130,
+    "exp.to.up.level": 37850000000
+  },
+  {
+    "﻿level": 131,
+    "exp.to.up.level": 38950000000
+  },
+  {
+    "﻿level": 132,
+    "exp.to.up.level": 40050000000
+  },
+  {
+    "﻿level": 133,
+    "exp.to.up.level": 41150000000
+  },
+  {
+    "﻿level": 134,
+    "exp.to.up.level": 42250000000
+  },
+  {
+    "﻿level": 135,
+    "exp.to.up.level": 43350000000
+  },
+  {
+    "﻿level": 136,
+    "exp.to.up.level": 44450000000
+  },
+  {
+    "﻿level": 137,
+    "exp.to.up.level": 45550000000
+  },
+  {
+    "﻿level": 138,
+    "exp.to.up.level": 46650000000
+  },
+  {
+    "﻿level": 139,
+    "exp.to.up.level": 47750000000
+  },
+  {
+    "﻿level": 140,
+    "exp.to.up.level": 48850000000
+  },
+  {
+    "﻿level": 141,
+    "exp.to.up.level": 49950000000
+  },
+  {
+    "﻿level": 142,
+    "exp.to.up.level": 51050000000
+  },
+  {
+    "﻿level": 143,
+    "exp.to.up.level": 52150000000
+  },
+  {
+    "﻿level": 144,
+    "exp.to.up.level": 53250000000
+  },
+  {
+    "﻿level": 145,
+    "exp.to.up.level": 54350000000
+  },
+  {
+    "﻿level": 146,
+    "exp.to.up.level": 55450000000
+  },
+  {
+    "﻿level": 147,
+    "exp.to.up.level": 56550000000
+  },
+  {
+    "﻿level": 148,
+    "exp.to.up.level": 57650000000
+  },
+  {
+    "﻿level": 149,
+    "exp.to.up.level": 58750000000
+  },
+  {
+    "﻿level": 150,
+    "exp.to.up.level": 59850000000
+  },
+  {
+    "﻿level": 151,
+    "exp.to.up.level": 5150000000
+  },
+  {
+    "﻿level": 152,
+    "exp.to.up.level": 5304500000
+  },
+  {
+    "﻿level": 153,
+    "exp.to.up.level": 5463635000
+  },
+  {
+    "﻿level": 154,
+    "exp.to.up.level": 5627544050
+  },
+  {
+    "﻿level": 155,
+    "exp.to.up.level": 5796370372
+  },
+  {
+    "﻿level": 156,
+    "exp.to.up.level": 5970261483
+  },
+  {
+    "﻿level": 157,
+    "exp.to.up.level": 6149369327
+  },
+  {
+    "﻿level": 158,
+    "exp.to.up.level": 6333850407
+  },
+  {
+    "﻿level": 159,
+    "exp.to.up.level": 6523865919
+  },
+  {
+    "﻿level": 160,
+    "exp.to.up.level": 7000000000
+  },
+  {
+    "﻿level": 161,
+    "exp.to.up.level": 7140000000
+  },
+  {
+    "﻿level": 162,
+    "exp.to.up.level": 7282800000
+  },
+  {
+    "﻿level": 163,
+    "exp.to.up.level": 7428456000
+  },
+  {
+    "﻿level": 164,
+    "exp.to.up.level": 7577025120
+  },
+  {
+    "﻿level": 165,
+    "exp.to.up.level": 7728565622
+  },
+  {
+    "﻿level": 166,
+    "exp.to.up.level": 7883136935
+  },
+  {
+    "﻿level": 167,
+    "exp.to.up.level": 8040799674
+  },
+  {
+    "﻿level": 168,
+    "exp.to.up.level": 8201615667
+  },
+  {
+    "﻿level": 169,
+    "exp.to.up.level": 8365647980
+  },
+  {
+    "﻿level": 170,
+    "exp.to.up.level": 8532960940
+  },
+  {
+    "﻿level": 171,
+    "exp.to.up.level": 8703620159
+  },
+  {
+    "﻿level": 172,
+    "exp.to.up.level": 8877692562
+  },
+  {
+    "﻿level": 173,
+    "exp.to.up.level": 9055246413
+  },
+  {
+    "﻿level": 174,
+    "exp.to.up.level": 9136351341
+  },
+  {
+    "﻿level": 175,
+    "exp.to.up.level": 9321078368
+  },
+  {
+    "﻿level": 176,
+    "exp.to.up.level": 9409499936
+  },
+  {
+    "﻿level": 177,
+    "exp.to.up.level": 9601689934
+  },
+  {
+    "﻿level": 178,
+    "exp.to.up.level": 9797723733
+  },
+  {
+    "﻿level": 179,
+    "exp.to.up.level": 9834721547
+  },
+  {
+    "﻿level": 180,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 181,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 182,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 183,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 184,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 185,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 186,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 187,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 188,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 189,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 190,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 191,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 192,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 193,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 194,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 195,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 196,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 197,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 198,
+    "exp.to.up.level": 10000000000
+  },
+  {
+    "﻿level": 199,
+    "exp.to.up.level": 10000000000
+  }
+]

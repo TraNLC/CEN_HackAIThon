@@ -176,3 +176,29 @@ data/
   libil2cpp.so      — Game binary (static analysis)
   game_cap.pcap     — Latest captured traffic
 ```
+
+---
+
+## 8. Item Options (Thuộc tính trang bị)
+
+Trường `magic` của trang bị (trong packet `eSyncPlayerItem`) là một mảng protobuf `repeated int32` được nén (packed varint). Mỗi phần tử chứa cả ID thuộc tính và giá trị.
+
+### Cách giải mã:
+1. Decode mảng byte packed varint thành các số nguyên (int).
+2. Với mỗi số nguyên `V`:
+   - **Attribute ID**: `V % 1000`
+   - **Giá trị**: `V // 1000`
+
+### Bảng thuộc tính phổ biến (Map ID):
+| ID | Thuộc tính dự đoán |
+|----|----------------------|
+| 61 | Sinh Lực (HP) |
+| 63 | Né Tránh (Dodge) |
+| 79 | Phục hồi Sinh Lực |
+| 78 | Phục hồi Nội Lực |
+| 87 | Kháng (Lôi/Băng/Hỏa) |
+| 80 | Hút (SL/NL) |
+| 92 | Tốc độ đánh / Thời gian phục hồi |
+| 71 | Tốc độ di chuyển |
+
+*Lưu ý: Logic này đã được lưu tại `bot/item_decoder.py` để thuận tiện import.*

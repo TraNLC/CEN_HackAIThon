@@ -1,0 +1,182 @@
+[
+  {
+    "USER.INTERFACE": "VariableJoystick",
+    "SAFE.AREA": "GroupBottomButton"
+  },
+  {
+    "USER.INTERFACE": "mini.map\\framed.js",
+    "SAFE.AREA": "Ministate"
+  },
+  {
+    "USER.INTERFACE": "mini.map\\no.sprite.js",
+    "SAFE.AREA": "TopHealth"
+  },
+  {
+    "USER.INTERFACE": "mini.map"
+  },
+  {
+    "USER.INTERFACE": "PanelSafeArea",
+    "SAFE.AREA": "quest.team.chat"
+  },
+  {
+    "USER.INTERFACE": "PanelHotKeys",
+    "SAFE.AREA": "OpenChat"
+  },
+  {
+    "USER.INTERFACE": "deny.moving",
+    "SAFE.AREA": "home.touch.target.list"
+  },
+  {
+    "USER.INTERFACE": "GroupRightButton"
+  },
+  {
+    "USER.INTERFACE": "Right.Hotkey"
+  },
+  {
+    "USER.INTERFACE": "TopRightButtons"
+  },
+  {
+    "USER.INTERFACE": "home.skill.direction.target.list"
+  },
+  {
+    "USER.INTERFACE": "player.self.equipment.series"
+  },
+  {
+    "USER.INTERFACE": "player.self.properties.text"
+  },
+  {
+    "USER.INTERFACE": "player.self.properties"
+  },
+  {
+    "USER.INTERFACE": "player.self.bagarate"
+  },
+  {
+    "USER.INTERFACE": "player.self.storage"
+  },
+  {
+    "USER.INTERFACE": "player.self.storage.extension"
+  },
+  {
+    "USER.INTERFACE": "player.self.salesman"
+  },
+  {
+    "USER.INTERFACE": "player.self.skill"
+  },
+  {
+    "USER.INTERFACE": "player.self.skill.direction"
+  },
+  {
+    "USER.INTERFACE": "npc.money.shop"
+  },
+  {
+    "USER.INTERFACE": "npc.knb.shop"
+  },
+  {
+    "USER.INTERFACE": "npc.point.shop"
+  },
+  {
+    "USER.INTERFACE": "tong.pc"
+  },
+  {
+    "USER.INTERFACE": "friendly.list"
+  },
+  {
+    "USER.INTERFACE": "player.other.equipment"
+  },
+  {
+    "USER.INTERFACE": "player.other.stall"
+  },
+  {
+    "USER.INTERFACE": "world.rank.pc"
+  },
+  {
+    "USER.INTERFACE": "player.trade"
+  },
+  {
+    "USER.INTERFACE": "give.item"
+  },
+  {
+    "USER.INTERFACE": "PlayerDieMessage"
+  },
+  {
+    "USER.INTERFACE": "MiniMapZoomPC"
+  },
+  {
+    "USER.INTERFACE": "party.invite.pc"
+  },
+  {
+    "USER.INTERFACE": "player.self.settings"
+  },
+  {
+    "USER.INTERFACE": "panel.equipment\\main.panel.js"
+  },
+  {
+    "USER.INTERFACE": "player.self.prop.point"
+  },
+  {
+    "USER.INTERFACE": "activities.pc"
+  },
+  {
+    "USER.INTERFACE": "envelop.listing"
+  },
+  {
+    "USER.INTERFACE": "viewport.item\\main.js"
+  },
+  {
+    "USER.INTERFACE": "item.details.pc"
+  },
+  {
+    "USER.INTERFACE": "notification.pc"
+  },
+  {
+    "USER.INTERFACE": "player.self.salesman.pricing"
+  },
+  {
+    "USER.INTERFACE": "share.item.autoreply"
+  },
+  {
+    "USER.INTERFACE": "hotkey.assignment"
+  },
+  {
+    "USER.INTERFACE": "un.merge.item.pc"
+  },
+  {
+    "USER.INTERFACE": "award.selection"
+  },
+  {
+    "USER.INTERFACE": "npc.dialog"
+  },
+  {
+    "USER.INTERFACE": "npc.dialog.10"
+  },
+  {
+    "USER.INTERFACE": "npc.dialog.infi"
+  },
+  {
+    "USER.INTERFACE": "UiContextDescription"
+  },
+  {
+    "USER.INTERFACE": "player.self.choision"
+  },
+  {
+    "USER.INTERFACE": "local.news"
+  },
+  {
+    "USER.INTERFACE": "manual.layout"
+  },
+  {
+    "USER.INTERFACE": "autoplay"
+  },
+  {
+    "USER.INTERFACE": "standard.input.pc"
+  },
+  {
+    "USER.INTERFACE": "standard.confirm.pc"
+  },
+  {
+    "USER.INTERFACE": "PlayerTalk"
+  },
+  {
+    "USER.INTERFACE": "DisconnectMessage"
+  }
+]
