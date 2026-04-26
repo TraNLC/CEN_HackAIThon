@@ -60,3 +60,37 @@ python tools/export_map.py
 - **Decoding:** Áp dụng `blackboxprotobuf` và schema trong `proto/` để giải mã dữ liệu nhị phân thành text đọc hiểu được.
 - **Database:** Tất cả tên map, NPC, skill được dịch ngược từ file config của game để đảm bảo độ chuẩn xác 100%.
 - **GUI:** Quản lý cấu hình bằng UI, xuất ra config, điều hướng thread Worker để chạy Auto độc lập với UI.
+
+Các Tân Thủ Thôn (Thôn trang cơ bản):
+Map 20: Giang Tân Thôn
+Map 53: Ba Lăng Huyện
+Map 101: Đạo Hương Thôn
+Map 174: Long Tuyền Thôn
+Map 153: Thạch Cổ Trấn
+Map 121: Long Môn Trấn
+Map 100: Chu Tiên Trấn
+Map 99: Vĩnh Lạc Trấn
+Các Map Phụ Cận/Khu Vực Riêng có tính chất thôn/trấn:
+Map 11: Thành Đô (được game xếp cả vào cụm từ "Thành/Trấn")
+Map 21: Thanh Thành Sơn
+Map 23: Thần Tiên Động
+Map 43: Kiếm Các Trung Nguyên
+Map 51: Thánh Động tầng 1
+Map 52: Thánh Động tầng 2
+Map 54: Nam Nhạc Trấn
+Map 68: Thanh Loa Đảo
+Map 69: Thanh Loa Đảo sơn động
+Map 97: Giang Tân thôn-Vô Danh Động
+Map 98: Ba Lăng huyện-Thanh Khê Động
+Map 102: Thánh Động tầng 2 (bản đồ phụ)
+Map 114: 108 La Hán trận
+Map 132: Băng Huyết Động
+Map 175: Tây Sơn thôn
+Map 187: Thanh Ngưu trại
+Map 198: Thanh khê động
+Map 205: Dương Trung động
+Map 520 -> 526: Minh Nguyệt trấn (các nhánh từ các thành)
+Map 905: Trường Ca Sơn Trang
+Map 926: Chiến trường Thành Đô
+
+python tools/export_map.py 176 //176 = ID map

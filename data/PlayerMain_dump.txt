@@ -1,0 +1,394 @@
+====== PlayerMain Methods and RVAs ======
+
+[Static Field] public static PlayerMain instance; // 0x0
+
+// RVA: 0x6FC880 Offset: 0x6FC880 VA: 0x6FC880
+public void Release() { }
+
+// RVA: 0x6FC9DC Offset: 0x6FC9DC VA: 0x6FC9DC
+public void Initialize() { }
+
+// RVA: 0x6FCB3C Offset: 0x6FCB3C VA: 0x6FCB3C
+private void Update() { }
+
+// RVA: 0x6FD884 Offset: 0x6FD884 VA: 0x6FD884
+private void OnDestroy() { }
+
+// RVA: 0x6FD8BC Offset: 0x6FD8BC VA: 0x6FD8BC
+public void AutoplayRegisterOnThrowItem(Action<int> action) { }
+
+// RVA: 0x6FD8C4 Offset: 0x6FD8C4 VA: 0x6FD8C4
+public void RegisterOnThrowItem(Item item) { }
+
+// RVA: 0x6FD91C Offset: 0x6FD91C VA: 0x6FD91C
+public bool IsOutScreenVisibility(int targetMapX, int targetMapY) { }
+
+// RVA: 0x6FDAE8 Offset: 0x6FDAE8 VA: 0x6FDAE8
+public bool IsInScreenVisibility(int targetMapX, int targetMapY) { }
+
+// RVA: 0x6FDCBC Offset: 0x6FDCBC VA: 0x6FDCBC
+public bool EquipmentExistingDurabilityDown(int reducedCount) { }
+
+// RVA: 0x6FDD3C Offset: 0x6FDD3C VA: 0x6FDD3C
+public bool EquipmentHasDurabilityDown(int durabilityTriggered) { }
+
+// RVA: 0x6FDDBC Offset: 0x6FDDBC VA: 0x6FDDBC
+public bool AnyGoldItemMappingExisting(Dictionary<int, bool> goldindexShared) { }
+
+// RVA: 0x6FE0FC Offset: 0x6FE0FC VA: 0x6FE0FC
+public string GetGoldItemSetDescription(Item item) { }
+
+// RVA: 0x6FE4A8 Offset: 0x6FE4A8 VA: 0x6FE4A8
+public bool IsRangeWeaponEquipped() { }
+
+// RVA: 0x6FE520 Offset: 0x6FE520 VA: 0x6FE520
+public Item GetItemBagarateGdp(int g, int d, int p) { }
+
+// RVA: 0x6FE820 Offset: 0x6FE820 VA: 0x6FE820
+public int GetSkillAttackRadius(int skillid) { }
+
+// RVA: 0x6FE8E0 Offset: 0x6FE8E0 VA: 0x6FE8E0
+public int GetSkillLevel(int skillid) { }
+
+// RVA: 0x6FE9A0 Offset: 0x6FE9A0 VA: 0x6FE9A0
+public bool IsExistingMinistateItemMagic(int particular) { }
+
+// RVA: 0x6FEA20 Offset: 0x6FEA20 VA: 0x6FEA20
+public ConcurrentDictionary<int, Item> GetAllGameItems() { }
+
+// RVA: 0x6FEA28 Offset: 0x6FEA28 VA: 0x6FEA28
+public int GetAllItemCount() { }
+
+// RVA: 0x6FEA8C Offset: 0x6FEA8C VA: 0x6FEA8C
+public int GetItemIndexInBagarate(int g, int d, int p) { }
+
+// RVA: 0x6FED90 Offset: 0x6FED90 VA: 0x6FED90
+public bool IsExistingItemInBagarate(int g, int d, int p) { }
+
+// RVA: 0x6FF09C Offset: 0x6FF09C VA: 0x6FF09C
+public void PlayMusicUseItem() { }
+
+// RVA: 0x6FF218 Offset: 0x6FF218 VA: 0x6FF218
+public void CloseStorageBox() { }
+
+// RVA: 0x6FF3B8 Offset: 0x6FF3B8 VA: 0x6FF3B8
+public void OpenStorageBox() { }
+
+// RVA: 0x6FF7B0 Offset: 0x6FF7B0 VA: 0x6FF7B0
+public void Talk(string message) { }
+
+// RVA: 0x6FF890 Offset: 0x6FF890 VA: 0x6FF890
+public void CloseBagarate() { }
+
+// RVA: 0x6FF9F4 Offset: 0x6FF9F4 VA: 0x6FF9F4
+public void OpenBagarate() { }
+
+// RVA: 0x6FFB54 Offset: 0x6FFB54 VA: 0x6FFB54
+public void CloseNpcShop() { }
+
+// RVA: 0x6FFCD0 Offset: 0x6FFCD0 VA: 0x6FFCD0
+public void SetNpcShopTypeOne(ShopTypeOne message) { }
+
+// RVA: 0x6FFDBC Offset: 0x6FFDBC VA: 0x6FFDBC
+public string FindDialogNpcIdByName(string name, int radiusFlat) { }
+
+// RVA: 0x7001F4 Offset: 0x7001F4 VA: 0x7001F4
+public void CloseNpcDialog() { }
+
+// RVA: 0x700318 Offset: 0x700318 VA: 0x700318
+public void SetNpcTransferMessage(NpcTransferMessage message) { }
+
+// RVA: 0x7004CC Offset: 0x7004CC VA: 0x7004CC
+public int GetCountPotionOwned() { }
+
+// RVA: 0x70079C Offset: 0x70079C VA: 0x70079C
+public int GetItemBagarateGdpCount(int g, int d, int p) { }
+
+// RVA: 0x700A9C Offset: 0x700A9C VA: 0x700A9C
+public void SetMapDialogNpcList(MapDialogNpcListResponse message) { }
+
+// RVA: 0x700B4C Offset: 0x700B4C VA: 0x700B4C
+public MapDialogNpcListResponse GetCurrentMapDialogNpcList() { }
+
+// RVA: 0x700C08 Offset: 0x700C08 VA: 0x700C08
+public bool IsHorseEquipped() { }
+
+// RVA: 0x700C8C Offset: 0x700C8C VA: 0x700C8C
+public void Townportal() { }
+
+// RVA: 0x700D2C Offset: 0x700D2C VA: 0x700D2C
+public bool IsExistingPlayerEnemyAround(int radius) { }
+
+// RVA: 0x701098 Offset: 0x701098 VA: 0x701098
+public int GetStorageItemCount() { }
+
+// RVA: 0x701358 Offset: 0x701358 VA: 0x701358
+public int GetStorageEmptyCount() { }
+
+// RVA: 0x701384 Offset: 0x701384 VA: 0x701384
+public long GetStorageMoney() { }
+
+// RVA: 0x7013A0 Offset: 0x7013A0 VA: 0x7013A0
+public int GetBagarateItemCount() { }
+
+// RVA: 0x701660 Offset: 0x701660 VA: 0x701660
+public int GetBagarateEmptyCellCount() { }
+
+// RVA: 0x70168C Offset: 0x70168C VA: 0x70168C
+public long GetBagarateMoney() { }
+
+// RVA: 0x7016A8 Offset: 0x7016A8 VA: 0x7016A8
+public bool IsExistingHealthItemInBagarate() { }
+
+// RVA: 0x7019AC Offset: 0x7019AC VA: 0x7019AC
+public bool IsExistingManaItemInBagarate() { }
+
+// RVA: 0x701CA0 Offset: 0x701CA0 VA: 0x701CA0
+public void SetActiveAuraSkill(int skillId) { }
+
+// RVA: 0x701E48 Offset: 0x701E48 VA: 0x701E48
+public bool IsButtonSkillPressing() { }
+
+// RVA: 0x701E50 Offset: 0x701E50 VA: 0x701E50
+public void SetButtonSkillPressing(bool isButtonSkillPressing) { }
+
+// RVA: 0x701E58 Offset: 0x701E58 VA: 0x701E58
+public void SendGSMessage(Id id) { }
+
+// RVA: 0x6FF738 Offset: 0x6FF738 VA: 0x6FF738
+public void SendGSMessage(Id id, IMessage message) { }
+
+// RVA: 0x701EC8 Offset: 0x701EC8 VA: 0x701EC8
+public ConcurrentDictionary<string, NpcRes.Special> GetNearPlayers() { }
+
+// RVA: 0x700194 Offset: 0x700194 VA: 0x700194
+public ConcurrentDictionary<string, NpcRes.Normal> GetNearNpcs() { }
+
+// RVA: 0x6FF6D8 Offset: 0x6FF6D8 VA: 0x6FF6D8
+public ConcurrentDictionary<string, Object> GetNearObjects() { }
+
+// RVA: 0x701F28 Offset: 0x701F28 VA: 0x701F28
+public void PrivateFightTarget(PrivateFightTarget message) { }
+
+// RVA: 0x7022FC Offset: 0x7022FC VA: 0x7022FC
+public void EnterPlayerStart(EnterPlayerStart message) { }
+
+// RVA: 0x702AE0 Offset: 0x702AE0 VA: 0x702AE0
+public void EnterMap(EnterMap message) { }
+
+// RVA: 0x702C50 Offset: 0x702C50 VA: 0x702C50
+public void BounceSelfPoint(BounceSelfPoint message) { }
+
+// RVA: 0x702D5C Offset: 0x702D5C VA: 0x702D5C
+public void TradeStart(TradeStart message) { }
+
+// RVA: 0x702E08 Offset: 0x702E08 VA: 0x702E08
+public void TradeInviteToCli(TradeInviteToCli message) { }
+
+// RVA: 0x702EDC Offset: 0x702EDC VA: 0x702EDC
+public MainUnity GetAutoplay() { }
+
+// RVA: 0x702F60 Offset: 0x702F60 VA: 0x702F60
+public MainUnity ReferAutoplay() { }
+
+// RVA: 0x702F68 Offset: 0x702F68 VA: 0x702F68
+public void ApplyAutoplayProfile(ApplyAutoplayProfile message) { }
+
+// RVA: 0x7031AC Offset: 0x7031AC VA: 0x7031AC
+public void SelfForceMoveStop(string[] splited) { }
+
+// RVA: 0x703534 Offset: 0x703534 VA: 0x703534
+public void SelfForceMoveTarget(string[] splited) { }
+
+// RVA: 0x7037A4 Offset: 0x7037A4 VA: 0x7037A4
+public void SetUpMainPlayer(NpcRes.Special controller, World world) { }
+
+// RVA: 0x6FF1AC Offset: 0x6FF1AC VA: 0x6FF1AC
+public void PerformEachFrame(Action action) { }
+
+// RVA: 0x703888 Offset: 0x703888 VA: 0x703888
+public void PerformInMainThread(Action action) { }
+
+// RVA: 0x7038F4 Offset: 0x7038F4 VA: 0x7038F4
+public bool IsParty(int teamId) { }
+
+// RVA: 0x6FC40C Offset: 0x6FC40C VA: 0x6FC40C
+public void PartyCheck(string cid, int pastTeamId, int presentTeamId) { }
+
+// RVA: 0x6FBFC8 Offset: 0x6FBFC8 VA: 0x6FBFC8
+public void PartyChange(int pastTeamId, int presentTeamId) { }
+
+// RVA: 0x703924 Offset: 0x703924 VA: 0x703924
+public void CharacterResponse(Character character) { }
+
+// RVA: 0x704A40 Offset: 0x704A40 VA: 0x704A40
+public void CallTargetNpc(string npcid) { }
+
+// RVA: 0x704B14 Offset: 0x704B14 VA: 0x704B14
+public void PlayerSit() { }
+
+// RVA: 0x704CDC Offset: 0x704CDC VA: 0x704CDC
+public void PlayerSwitchHorse() { }
+
+// RVA: 0x704D08 Offset: 0x704D08 VA: 0x704D08
+private void SyncSwitchHorse(bool isUseHose) { }
+
+// RVA: 0x704E10 Offset: 0x704E10 VA: 0x704E10
+public void SetEndOfCastAnimate(int animateInterval) { }
+
+// RVA: 0x704E8C Offset: 0x704E8C VA: 0x704E8C
+public bool IsEndOfCastAnimate(int delayFrameAppend = 0) { }
+
+// RVA: 0x704F28 Offset: 0x704F28 VA: 0x704F28
+public int CalcJumpCurrentStamina(int originStamina) { }
+
+// RVA: 0x704FF4 Offset: 0x704FF4 VA: 0x704FF4
+public bool DoSkill(int id) { }
+
+// RVA: 0x706888 Offset: 0x706888 VA: 0x706888
+public void SetKillTargetBySkill(int skillid) { }
+
+// RVA: 0x706A1C Offset: 0x706A1C VA: 0x706A1C
+private void KillTargetBySkillResetWeaponType() { }
+
+// RVA: 0x6FCF8C Offset: 0x6FCF8C VA: 0x6FCF8C
+private void KillTargetBySkillUpdate() { }
+
+// RVA: 0x6FCCB8 Offset: 0x6FCCB8 VA: 0x6FCCB8
+private void RunFollowTargetUpdate() { }
+
+// RVA: 0x7066F8 Offset: 0x7066F8 VA: 0x7066F8
+private void SendDoSkillTargetPosition(int skillid, int positionX, int positionY, int isPhysic) { }
+
+// RVA: 0x706564 Offset: 0x706564 VA: 0x706564
+private void SendDoSkillTargetNpc(int skillid, string nid, int isPhysic) { }
+
+// RVA: 0x7063D0 Offset: 0x7063D0 VA: 0x7063D0
+private void SendDoSkillTargetPlayer(int skillid, string cid, int isPhysic) { }
+
+// RVA: 0x706D40 Offset: 0x706D40 VA: 0x706D40
+public void RemoveSkill(int skillid) { }
+
+// RVA: 0x706ECC Offset: 0x706ECC VA: 0x706ECC
+public void SyncSkill(Skill skillapp) { }
+
+// RVA: 0x70710C Offset: 0x70710C VA: 0x70710C
+public void PickupObject(Object gameObject) { }
+
+// RVA: 0x7071EC Offset: 0x7071EC VA: 0x7071EC
+public void GotoAndPickTargetObject(Object itemObject) { }
+
+// RVA: 0x7073A0 Offset: 0x7073A0 VA: 0x7073A0
+public void FindAndPickNearestObject() { }
+
+// RVA: 0x707FB0 Offset: 0x707FB0 VA: 0x707FB0
+public void TeleportSynchronous(int top, int left) { }
+
+// RVA: 0x6FC9B0 Offset: 0x6FC9B0 VA: 0x6FC9B0
+public void ClearRun() { }
+
+// RVA: 0x708288 Offset: 0x708288 VA: 0x708288
+public void ProtocolGotoPosition(GotoPosition message) { }
+
+// RVA: 0x708350 Offset: 0x708350 VA: 0x708350
+public void GotoNpc(Position npcPosition, string npcID) { }
+
+// RVA: 0x708470 Offset: 0x708470 VA: 0x708470
+public void GotoNpc(GotoNpc message, int waitingCount = 0) { }
+
+// RVA: 0x708E9C Offset: 0x708E9C VA: 0x708E9C
+public List<PathFinding.Core.Node> get_findingPathVector() { }
+
+// RVA: 0x708EA4 Offset: 0x708EA4 VA: 0x708EA4
+private void set_findingPathVector(List<PathFinding.Core.Node> value) { }
+
+// RVA: 0x706A70 Offset: 0x706A70 VA: 0x706A70
+public void GotoFindingPath(int targetX, int targetY, int approach3d = 20, Action onFinish, Action<bool> onResponse) { }
+
+// RVA: 0x708EAC Offset: 0x708EAC VA: 0x708EAC
+public void GotoFindingPathOnVector(Action<int> findingPathOnVector) { }
+
+// RVA: 0x708070 Offset: 0x708070 VA: 0x708070
+public void GotoFindingPathStop() { }
+
+// RVA: 0x6FD2BC Offset: 0x6FD2BC VA: 0x6FD2BC
+private void GotoFindingPathUpdate() { }
+
+// RVA: 0x708EB4 Offset: 0x708EB4 VA: 0x708EB4
+public void ItemViewportOpenCompare(Item item, Dictionary<ItemDetailPc.Button, Action> buttonCallback) { }
+
+// RVA: 0x70901C Offset: 0x70901C VA: 0x70901C
+public void SetUpMapBackground(PlayerMainMapBackground handle) { }
+
+// RVA: 0x709070 Offset: 0x709070 VA: 0x709070
+public void SetUpSkillDirection(PlayerMainSkillDirection handle) { }
+
+// RVA: 0x7090C4 Offset: 0x7090C4 VA: 0x7090C4
+public void SetUpSkillPositionArea(PlayerMainSkillPositionArea handle) { }
+
+// RVA: 0x709118 Offset: 0x709118 VA: 0x709118
+public void SetUpSkillRadius(PlayerMainSkillRadius skillRadiusGameobject) { }
+
+// RVA: 0x70916C Offset: 0x70916C VA: 0x70916C
+public void SkillDirectionDraw(int directionIndex64, int showDirImage) { }
+
+// RVA: 0x70924C Offset: 0x70924C VA: 0x70924C
+public void SkillPositionAreaDraw(float distanceCurrently, float distanceMaximum, int directionIndex64, int showDirImage) { }
+
+// RVA: 0x709348 Offset: 0x709348 VA: 0x709348
+public void SkillDirectionClear() { }
+
+// RVA: 0x70936C Offset: 0x70936C VA: 0x70936C
+public void SkillPositionAreaClear() { }
+
+// RVA: 0x709390 Offset: 0x709390 VA: 0x709390
+public void SkillRadiusDraw(int skillid) { }
+
+// RVA: 0x7094FC Offset: 0x7094FC VA: 0x7094FC
+public void SyncItemDurability(int itemindex, int durability) { }
+
+// RVA: 0x70959C Offset: 0x70959C VA: 0x70959C
+public void SyncStorageLockState(StorageLockState message) { }
+
+// RVA: 0x709678 Offset: 0x709678 VA: 0x709678
+public void SyncStorageExtendCell(StorageExtendCell message) { }
+
+// RVA: 0x7097AC Offset: 0x7097AC VA: 0x7097AC
+public void SyncItem(Item itemData) { }
+
+// RVA: 0x709D00 Offset: 0x709D00 VA: 0x709D00
+public void RemoveItem(RemoveItemRespone removeItem) { }
+
+// RVA: 0x709E24 Offset: 0x709E24 VA: 0x709E24
+public void MoveItemFromStorageToBagarate(Item item) { }
+
+// RVA: 0x709FDC Offset: 0x709FDC VA: 0x709FDC
+public void RequestUseItemFromBag(Item item) { }
+
+// RVA: 0x70A120 Offset: 0x70A120 VA: 0x70A120
+public void BuyItem(string shopKey, int itemindex, int quantity) { }
+
+// RVA: 0x70A2AC Offset: 0x70A2AC VA: 0x70A2AC
+public void .ctor() { }
+
+// RVA: 0x70A604 Offset: 0x70A604 VA: 0x70A604
+private static void .cctor() { }
+
+// RVA: 0x70A908 Offset: 0x70A908 VA: 0x70A908
+private void <EnterMap>b__94_0() { }
+
+// RVA: 0x70A934 Offset: 0x70A934 VA: 0x70A934
+private void <KillTargetBySkillUpdate>b__121_0() { }
+
+// RVA: 0x70A9BC Offset: 0x70A9BC VA: 0x70A9BC
+private void <TeleportSynchronous>b__133_0() { }
+
+// RVA: 0x70AA08 Offset: 0x70AA08 VA: 0x70AA08
+private void <GotoFindingPathStop>b__151_0() { }
+
+// RVA: 0x70AB48 Offset: 0x70AB48 VA: 0x70AB48
+private void <GotoFindingPathUpdate>b__152_0() { }
+
+// RVA: 0x70AB74 Offset: 0x70AB74 VA: 0x70AB74
+private void <GotoFindingPathUpdate>b__152_1(Vector2 _pos) { }
+

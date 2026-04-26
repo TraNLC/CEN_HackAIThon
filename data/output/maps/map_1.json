@@ -1,8 +1,7 @@
 {
     "map_id": 1,
     "map_name": "Phượng Tường",
-    "map_type": "Thành thị",
-    "npc_count": 72,
+    "npc_count": 51,
     "npcs": [
         {
             "name": "Ông chủ dược điếm",
@@ -258,119 +257,6 @@
             "name": "Sầm Hùng",
             "x": 49180,
             "y": 51421
-        },
-        {
-            "name": "Dư Vũ",
-            "x": 51096,
-            "y": 51692
-        },
-        {
-            "name": "Võ Lâm truyền nhân",
-            "x": 52012,
-            "y": 51280
-        },
-        {
-            "name": "Thái Thẩm Thẩm",
-            "x": 52901,
-            "y": 51445
-        },
-        {
-            "name": "Mẹ của Đậu Đậu",
-            "x": 52873,
-            "y": 51454
-        },
-        {
-            "name": "Vệ binh thành môn",
-            "x": 48302,
-            "y": 52200
-        },
-        {
-            "name": "Chủ Tiền trang",
-            "x": 49719,
-            "y": 51860
-        },
-        {
-            "name": "Dư Tẩu",
-            "x": 50477,
-            "y": 51786
-        },
-        {
-            "name": "A Kiều",
-            "x": 50524,
-            "y": 51773
-        },
-        {
-            "name": "Mẫu Đơn",
-            "x": 50416,
-            "y": 51823
-        },
-        {
-            "name": "A Ngưu",
-            "x": 50247,
-            "y": 52115
-        },
-        {
-            "name": "Chủ lữ quán",
-            "x": 51511,
-            "y": 51797
-        },
-        {
-            "name": "Chủ tiệm trà",
-            "x": 51208,
-            "y": 52173
-        },
-        {
-            "name": "Chủ tiệm cầm đồ",
-            "x": 52079,
-            "y": 51837
-        },
-        {
-            "name": "Người thu tiền tiệm cầm đồ",
-            "x": 52121,
-            "y": 51844
-        },
-        {
-            "name": "Vệ binh thành môn",
-            "x": 48425,
-            "y": 52256
-        },
-        {
-            "name": "Trương Tử Thiện",
-            "x": 50774,
-            "y": 52719
-        },
-        {
-            "name": "Thúy Thúy",
-            "x": 52057,
-            "y": 52423
-        },
-        {
-            "name": "Vệ binh thành môn",
-            "x": 53385,
-            "y": 52966
-        },
-        {
-            "name": "Vệ binh thành môn",
-            "x": 53286,
-            "y": 53016
-        },
-        {
-            "name": "Nhiếp Thí Trần",
-            "x": 48192,
-            "y": 51168
-        },
-        {
-            "name": "Nhất Thống Giang Sơn",
-            "x": 51580,
-            "y": 50461
         }
-    ],
-    "detected_by": {
-        "char_name": "LongKakA96",
-        "char_level": 87,
-        "char_pos": [
-            52992,
-            50672
-        ]
-    }
+    ]
 }

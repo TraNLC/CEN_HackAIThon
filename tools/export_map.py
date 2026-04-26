@@ -1,437 +1,291 @@
 """
-Auto Export All - Tool tự động 1 lệnh duy nhất!
-Chỉ cần đứng trong thành bất kỳ → chạy file này → tự động:
-  1. Detect Map ID đang đứng (inject eCharacterRequest)
-  2. Lấy toàn bộ NPC + tọa độ (inject eMapDialogNpcListRequest)
-  3. Nhận diện tên thành / thôn trang
-  4. Xuất ra file JSON
+export_map.py - VLTK1 Map NPC Exporter v3
+Uses tcpdump to capture server response + lightweight protobuf parser.
+No external dependencies required.
 
-Cách dùng:
-    python bot/auto_export_all.py              (tự detect map)
-    python bot/auto_export_all.py 176          (chỉ định map ID)
+Usage:
+    python tools/export_map.py          (map_id=1 default)
+    python tools/export_map.py 78       (force map_id=78)
 """
-import sys, time, subprocess, json, os, struct, frida
-from pathlib import Path
 import sys
+import time
+import json
+import struct
+import subprocess
+from pathlib import Path
 
-# Thêm đường dẫn gốc để import thư viện
 ROOT_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT_DIR))
 sys.path.insert(0, str(ROOT_DIR / 'proto'))
+sys.stdout.reconfigure(encoding='utf-8')
 
-from core.protocol import decode_message_fields
-import blackboxprotobuf
-from database.db_manager import db
-from core.injector import get_pid, find_game_fd, ADB, DEVICE_ID, JS_WRITE
+from features.bot.game_bot import VLTK1Bot
 
-PCAP = '/data/local/tmp/auto_all.pcap'
-LOCAL_PCAP = 'data/auto_all.pcap'
+ADB       = r'C:\platform-tools\adb.exe'
+DEVICE_ID = 'emulator-5554'
+PACKAGE   = 'vn.perfingame.jx1mobile'
+PCAP_DEV  = '/data/local/tmp/npc_export.pcap'
+PCAP_LOC  = str(ROOT_DIR / 'data' / 'npc_export.pcap')
+OUTPUT_DIR = ROOT_DIR / 'data' / 'output' / 'maps'
+
+MAP_NAMES = {
+    1:   "Phượng Tường",
+    11:  "Thành Đô",
+    37:  "Biện Kinh",
+    53:  "Ba Lăng Huyện",
+    78:  "Tương Dương",
+    80:  "Dương Châu",
+    99:  "Vĩnh Lạc trấn",
+    100: "Chu Tiên trấn",
+    121: "Long Môn trấn",
+    153: "Thạch Cổ trấn",
+    162: "Đại Lý phủ",
+    174: "Long Tuyền thôn",
+    176: "Lâm An",
+}
 
 
+# ── Lightweight protobuf parser ───────────────────────────────────────────────
 
-def safe_print(text):
+def read_varint(data, pos):
+    result, shift = 0, 0
+    while pos < len(data):
+        b = data[pos]; pos += 1
+        result |= (b & 0x7F) << shift
+        shift += 7
+        if not (b & 0x80):
+            break
+    return result, pos
+
+
+def parse_npc_entry(raw: bytes) -> dict:
+    """Parse MapDialogNpc {1:name(str), 2:mapX(int), 3:mapY(int)}."""
+    npc = {"name": "", "x": 0, "y": 0}
+    pos = 0
+    while pos < len(raw):
+        tag, pos = read_varint(raw, pos)
+        if pos > len(raw): break
+        field, wtype = tag >> 3, tag & 0x7
+        if wtype == 0:
+            val, pos = read_varint(raw, pos)
+            if field == 2: npc["x"] = val
+            elif field == 3: npc["y"] = val
+        elif wtype == 2:
+            ln, pos = read_varint(raw, pos)
+            val = raw[pos:pos+ln]; pos += ln
+            if field == 1:
+                npc["name"] = val.decode("utf-8", errors="replace")
+        else:
+            break
+    return npc
+
+
+def parse_npc_list_response(body: bytes):
+    """Parse eMapDialogNpcListResponse {1:mapId, 2:repeated MapDialogNpc}."""
+    map_id, npcs = None, []
+    pos = 0
+    while pos < len(body):
+        tag, pos = read_varint(body, pos)
+        if pos > len(body): break
+        field, wtype = tag >> 3, tag & 0x7
+        if wtype == 0:
+            val, pos = read_varint(body, pos)
+            if field == 1: map_id = val
+        elif wtype == 2:
+            ln, pos = read_varint(body, pos)
+            raw = body[pos:pos+ln]; pos += ln
+            if field == 2:
+                npc = parse_npc_entry(raw)
+                if npc["name"]:
+                    npcs.append(npc)
+        else:
+            break
+    return map_id, npcs
+
+
+# ── PCAP parsing ──────────────────────────────────────────────────────────────
+
+def parse_pcap_for_opcode(filepath: str, target_opcode: int):
+    """Extract packet body for a specific opcode from a pcap file."""
     try:
-        print(text)
-    except UnicodeEncodeError:
-        sys.stdout.buffer.write((str(text) + '\n').encode('utf-8'))
+        with open(filepath, 'rb') as f:
+            data = f.read()
+    except FileNotFoundError:
+        return None
 
-def get_remote_port(pid):
-    """Lấy port kết nối tới game server."""
-    out = subprocess.check_output(
-        [ADB, '-s', DEVICE_ID, 'shell', f'su -c "cat /proc/{pid}/net/tcp"']
-    ).decode('utf-8', 'ignore')
-    for line in out.splitlines()[1:]:
-        parts = line.strip().split()
-        if len(parts) >= 3 and parts[3] == '01':
-            try:
-                return int(parts[2].split(':')[1], 16)
-            except:
-                pass
-    return 45677
-
-def parse_pcap_stream(filepath, server_port):
-    """Parse pcap file và trả về (recv_buffer, send_buffer)."""
-    if not os.path.exists(filepath):
-        return b'', b''
-    with open(filepath, 'rb') as f:
-        data = f.read()
     if len(data) < 24:
-        return b'', b''
+        return None
 
     magic = struct.unpack_from('<I', data, 0)[0]
     endian = '<' if magic == 0xa1b2c3d4 else '>'
     link_type = struct.unpack_from(f'{endian}I', data, 20)[0]
 
     offset = 24
-    recv_buf = b''
-    send_buf = b''
-
     while offset + 16 <= len(data):
-        ts_sec, ts_usec, incl_len, orig_len = struct.unpack_from(f'{endian}IIII', data, offset)
+        _, _, incl_len, _ = struct.unpack_from(f'{endian}IIII', data, offset)
         offset += 16
         if offset + incl_len > len(data):
             break
-        pkt_data = data[offset:offset + incl_len]
+        pkt = data[offset:offset + incl_len]
         offset += incl_len
 
-        if link_type == 113 and len(pkt_data) >= 16:
-            ip_data = pkt_data[16:]
-        elif link_type == 1 and len(pkt_data) >= 14:
-            ip_data = pkt_data[14:]
+        # Strip link layer
+        if link_type == 113:    # LINUX_SLL
+            ip_data = pkt[16:]
+        elif link_type == 1:    # Ethernet
+            ip_data = pkt[14:]
         else:
             continue
 
-        if len(ip_data) < 20 or ip_data[9] != 6:
+        if len(ip_data) < 20 or ip_data[9] != 6:  # must be TCP
             continue
-        ihl = (ip_data[0] & 0x0F) * 4
+
+        ihl = (ip_data[0] & 0xF) * 4
         tcp = ip_data[ihl:]
         if len(tcp) < 20:
             continue
 
-        src_port = struct.unpack('>H', tcp[0:2])[0]
-        dst_port = struct.unpack('>H', tcp[2:4])[0]
         tcp_hlen = ((tcp[12] >> 4) & 0xF) * 4
         payload = tcp[tcp_hlen:]
-        if not payload:
-            continue
 
-        if src_port == server_port:
-            recv_buf += payload
-        elif dst_port == server_port:
-            send_buf += payload
-
-    return recv_buf, send_buf
-
-def extract_packets(tcp_buffer, target_opcode=None):
-    """Trích xuất tất cả game packets từ TCP buffer. 
-    Nếu target_opcode != None, chỉ trả về packets có opcode đó."""
-    results = []
-    p_off = 0
-    while p_off + 6 <= len(tcp_buffer):
-        proto_len = struct.unpack_from('<I', tcp_buffer, p_off)[0]
-        if proto_len > 500000:  # Sanity check
-            break
-        opcode = struct.unpack_from('<H', tcp_buffer, p_off + 4)[0]
-        if p_off + 6 + proto_len > len(tcp_buffer):
-            break
-        body = tcp_buffer[p_off + 6: p_off + 6 + proto_len]
-        p_off += 6 + proto_len
-
-        if target_opcode is None or opcode == target_opcode:
-            results.append((opcode, body))
-    return results
-
-def encode_varint_field(field_num, value):
-    """Encode protobuf varint field."""
-    tag = (field_num << 3) | 0  # wire type 0 = varint
-    result = bytes([tag])
-    while value > 0x7F:
-        result += bytes([(value & 0x7F) | 0x80])
-        value >>= 7
-    result += bytes([value & 0x7F])
-    return result
-
-def build_map_request(map_id):
-    """Tạo protobuf body cho eMapDialogNpcListRequest (field 1 = mapId)."""
-    if map_id < 128:
-        return struct.pack('<BB', 0x08, map_id)
-    else:
-        b1 = (map_id & 0x7F) | 0x80
-        b2 = map_id >> 7
-        return struct.pack('<BBB', 0x08, b1, b2)
-
-# ==================== MAIN FLOW ====================
-
-def run(forced_map_id=None):
-    safe_print("")
-    safe_print("╔══════════════════════════════════════════════════╗")
-    safe_print("║   VLTK1 Mobile - Auto Export Tool (All-in-One)  ║")
-    safe_print("║   Tự động detect map + lấy NPC + tọa độ        ║")
-    safe_print("╚══════════════════════════════════════════════════╝")
-    safe_print("")
-
-    # ── Bước 0: Kiểm tra game ──
-    pid = get_pid()
-    if not pid:
-        safe_print("[-] Game chưa mở! Hãy mở VLTK1 Mobile trước.")
-        return
-    fd = find_game_fd(pid)
-    if fd <= 0:
-        safe_print("[-] Không tìm thấy Socket FD!")
-        return
-
-    port = get_remote_port(pid)
-    safe_print(f"[+] Game PID: {pid} | FD: {fd} | Server Port: {port}")
-    os.makedirs('data/maps', exist_ok=True)
-
-    # ── Kết nối Frida 1 lần duy nhất ──
-    try:
-        device = next(d for d in frida.enumerate_devices() if DEVICE_ID in d.id)
-        session = device.attach(pid)
-        script = session.create_script(JS_WRITE)
-        script.load()
-        rpc = script.exports_sync
-    except Exception as e:
-        safe_print(f"[-] Lỗi Frida: {e}")
-        return
-
-    def inject(opcode, body):
-        pkt = struct.pack('<IH', len(body), opcode) + body
-        return rpc.send_raw(fd, pkt.hex())
-
-    # ── Tìm base address của libil2cpp.so qua /proc/maps ──
-    il2cpp_base = None
-    try:
-        maps_out = subprocess.check_output(
-            [ADB, '-s', DEVICE_ID, 'shell', f'su -c "cat /proc/{pid}/maps"'],
-            timeout=5
-        ).decode('utf-8', 'ignore')
-        for line in maps_out.splitlines():
-            if 'libil2cpp.so' in line and 'r-xp' in line:
-                il2cpp_base = '0x' + line.split('-')[0].strip()
+        # Scan payload for our target opcode
+        p = 0
+        while p + 6 <= len(payload):
+            pkt_len = struct.unpack_from('<I', payload, p)[0]
+            opcode  = struct.unpack_from('<H', payload, p + 4)[0]
+            if pkt_len > 100000:
                 break
-        # Nếu không tìm thấy r-xp, lấy vùng đầu tiên
-        if not il2cpp_base:
-            for line in maps_out.splitlines():
-                if 'libil2cpp.so' in line:
-                    il2cpp_base = '0x' + line.split('-')[0].strip()
-                    break
-    except:
+            if opcode == target_opcode:
+                body = payload[p + 6: p + 6 + pkt_len]
+                return body
+            p += 6 + pkt_len
+
+    return None
+
+
+def get_server_port(pid: int) -> int:
+    """Get game server port from /proc/net/tcp."""
+    try:
+        out = subprocess.check_output(
+            [ADB, '-s', DEVICE_ID, 'shell', f'cat /proc/{pid}/net/tcp'],
+            timeout=5
+        ).decode('utf-8', errors='ignore')
+        for line in out.splitlines()[1:]:
+            parts = line.strip().split()
+            if len(parts) >= 4 and parts[3] == '01':
+                return int(parts[2].split(':')[1], 16)
+    except Exception:
         pass
-    
-    if il2cpp_base:
-        safe_print(f"[+] libil2cpp.so base: {il2cpp_base}")
-    
-    def get_map_name_from_game(map_id_val):
-        # Đã loại bỏ do dễ crash và đã có dict JSON chuẩn
-        return None
+    return 45677
 
-    # ── Kill tcpdump cũ ──
-    subprocess.run([ADB, '-s', DEVICE_ID, 'shell', 'su -c "killall tcpdump 2>/dev/null"'],
+
+# ── Main ─────────────────────────────────────────────────────────────────────
+
+def run(map_id=1):
+    map_name = MAP_NAMES.get(map_id, f"Map_{map_id}")
+
+    print()
+    print("=" * 58)
+    print("  VLTK1 Map NPC Exporter v3 (tcpdump)")
+    print("=" * 58)
+    print(f"  Target: Map {map_id} - {map_name}")
+    print()
+
+    # ── Get PID & port ──
+    try:
+        pid_str = subprocess.check_output(
+            [ADB, '-s', DEVICE_ID, 'shell', f'pidof {PACKAGE}'], timeout=5
+        ).decode().strip()
+        pid = int(pid_str.split()[0])
+        print(f"[+] PID: {pid}")
+    except Exception as e:
+        print(f"[-] Cannot get PID: {e}")
+        return
+
+    port = get_server_port(pid)
+    print(f"[+] Server port: {port}")
+
+    # ── Kill old tcpdump ──
+    subprocess.run([ADB, '-s', DEVICE_ID, 'shell',
+                    'su -c "killall tcpdump 2>/dev/null"'],
                    capture_output=True)
     time.sleep(0.5)
 
-    # ═══════════════════════════════════════════════════
-    #   PHASE 1: Detect Map ID (nếu chưa chỉ định)
-    # ═══════════════════════════════════════════════════
-    map_id = forced_map_id
-    char_name = None
-    char_level = None
-    char_pos = None
-
-    if map_id is None:
-        safe_print("\n[*] PHASE 1: Đang detect Map ID hiện tại...")
-
-        # Bật tcpdump
-        tcpdump = subprocess.Popen(
-            [ADB, '-s', DEVICE_ID, 'shell',
-             f'su -c "tcpdump -i any -U -w {PCAP} port {port} -c 200"'],
-            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
-        )
-        time.sleep(2)
-
-        # Inject eCharacterRequest (opcode 11) → server trả về opcode 12
-        safe_print("[*] Gửi eCharacterRequest...")
-        inject(11, b'')
-        time.sleep(3)
-
-        # Dừng capture và pull
-        tcpdump.terminate()
-        subprocess.run([ADB, '-s', DEVICE_ID, 'shell', 'su -c "killall tcpdump 2>/dev/null"'],
-                       capture_output=True)
-        time.sleep(1)
-        subprocess.run([ADB, '-s', DEVICE_ID, 'pull', PCAP, LOCAL_PCAP], capture_output=True)
-
-        # Parse opcode 12 (eCharacterResponse)
-        recv_buf, _ = parse_pcap_stream(LOCAL_PCAP, port)
-        packets = extract_packets(recv_buf, target_opcode=12)
-
-        for opcode, body in packets:
-            try:
-                decoded = decode_message_fields('Character', body)
-                if decoded and 'mapId' in decoded:
-                    map_id = decoded['mapId']
-                    char_name = decoded.get('name', '?')
-                    char_level = decoded.get('level', '?')
-                    char_pos = (decoded.get('mapX', '?'), decoded.get('mapY', '?'))
-                    break
-            except:
-                pass
-
-        # Fallback: thử opcode 4 (eCharacterDetailResponse)
-        if map_id is None:
-            packets = extract_packets(recv_buf, target_opcode=4)
-            for opcode, body in packets:
-                try:
-                    decoded = decode_message_fields('Character', body)
-                    if decoded and 'mapId' in decoded:
-                        map_id = decoded['mapId']
-                        char_name = decoded.get('name', '?')
-                        char_level = decoded.get('level', '?')
-                        char_pos = (decoded.get('mapX', '?'), decoded.get('mapY', '?'))
-                        break
-                except:
-                    pass
-
-        if map_id is None:
-            safe_print("[-] Không detect được Map ID!")
-            safe_print("[!] Hãy thử:")
-            safe_print("    - Đảm bảo nhân vật đang online trong game")
-            safe_print("    - Hoặc chỉ định map ID: python bot/auto_export_all.py 176")
-            session.detach()
-            return
-
-
-        safe_print(f"[+] DETECT THÀNH CÔNG!")
-        if char_name:
-            safe_print(f"    Nhân vật: {char_name} (Lv.{char_level})")
-        if char_pos:
-            safe_print(f"    Vị trí  : ({char_pos[0]}, {char_pos[1]})")
-        safe_print(f"    Map ID  : {map_id}")
-        map_info = db.get_map(map_id)
-        safe_print(f"    Tên Map : {map_info['name']} (từ Settings)")
-
-        # Lưu map ID cho các script khác
-        os.makedirs('data', exist_ok=True)
-        with open('data/current_map.txt', 'w') as f:
-            f.write(str(map_id))
-
-    else:
-        safe_print(f"\n[*] Sử dụng Map ID được chỉ định: {map_id}")
-        map_info = db.get_map(map_id)
-        safe_print(f"    Tên Map : {map_info['name']} (từ Settings)")
-
-    # ═══════════════════════════════════════════════════
-    #   PHASE 2: Lấy danh sách NPC + Tọa độ
-    # ═══════════════════════════════════════════════════
-    safe_print(f"\n[*] PHASE 2: Đang lấy danh sách NPC trên Map {map_id}...")
-
-    # Kill tcpdump cũ, bật mới
-    subprocess.run([ADB, '-s', DEVICE_ID, 'shell', 'su -c "killall tcpdump 2>/dev/null"'],
-                   capture_output=True)
-    time.sleep(0.5)
-
+    # ── Start tcpdump ──
+    print(f"[*] Starting tcpdump (port {port})...")
     tcpdump = subprocess.Popen(
         [ADB, '-s', DEVICE_ID, 'shell',
-         f'su -c "tcpdump -i any -U -w {PCAP} port {port} -c 200"'],
+         f'su -c "tcpdump -i any -U -w {PCAP_DEV} port {port} -c 500"'],
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
     )
     time.sleep(2)
 
-    # Inject eMapDialogNpcListRequest (opcode 71, body = mapId)
-    proto_body = build_map_request(map_id)
-    safe_print(f"[*] Gửi eMapDialogNpcListRequest (map={map_id})...")
-    inject(71, proto_body)
-    time.sleep(3)
-
-    # Dừng capture
-    tcpdump.terminate()
-    subprocess.run([ADB, '-s', DEVICE_ID, 'shell', 'su -c "killall tcpdump 2>/dev/null"'],
-                   capture_output=True)
-    time.sleep(1)
-    subprocess.run([ADB, '-s', DEVICE_ID, 'pull', PCAP, LOCAL_PCAP], capture_output=True)
-
-    # Ngắt Frida (đã xong hết)
-    session.detach()
-
-    # ── Parse opcode 72 (eMapDialogNpcListResponse) ──
-    recv_buf, _ = parse_pcap_stream(LOCAL_PCAP, port)
-    packets = extract_packets(recv_buf, target_opcode=72)
-
-    npc_list_raw = None
-    for opcode, body in packets:
-        try:
-            decoded = decode_message_fields('MapDialogNpcListResponse', body)
-            if decoded and 'list' in decoded:
-                npc_list_raw = decoded['list']
-                break
-        except:
-            pass
-
-    if not npc_list_raw:
-        safe_print("[-] Không nhận được danh sách NPC từ server!")
-        safe_print("[!] Có thể bạn không đứng trong map này, hoặc server chưa phản hồi.")
-        safe_print("[!] Hãy thử chạy lại.")
+    # ── Send eMapDialogNpcListRequest via VLTK1Bot ──
+    bot = VLTK1Bot()
+    if not bot.connect():
+        print("[-] Cannot connect to game!")
+        tcpdump.terminate()
         return
 
-    # ── Giải mã NPC ──
-    npc_schema = {
-        '1': {'type': 'bytes', 'name': 'name'},
-        '2': {'type': 'int', 'name': 'mapX'},
-        '3': {'type': 'int', 'name': 'mapY'}
-    }
+    print(f"[*] Sending eMapDialogNpcListRequest (mapId={map_id})...")
+    ok = bot.send_gs('eMapDialogNpcListRequest', mapId=map_id)
+    print(f"[+] Sent: {ok}")
 
-    parsed_npcs = []
-    npc_names = []
+    print("[*] Waiting 5s for server response...")
+    time.sleep(5)
 
-    for npc in npc_list_raw:
-        if isinstance(npc, bytes):
-            try:
-                n_msg, _ = blackboxprotobuf.decode_message(npc, npc_schema)
-                name = n_msg.get('name', b'').decode('utf-8', 'ignore')
-                x = n_msg.get('mapX', 0)
-                y = n_msg.get('mapY', 0)
-                parsed_npcs.append({'name': name, 'x': x, 'y': y})
-                npc_names.append(name)
-            except:
-                pass
-        else:
-            name = npc.get('name', '?')
-            x = npc.get('mapX', 0)
-            y = npc.get('mapY', 0)
-            parsed_npcs.append({'name': name, 'x': x, 'y': y})
-            npc_names.append(name)
+    bot.close()
+    tcpdump.terminate()
 
-    # ═══════════════════════════════════════════════════
-    #   PHASE 3: Nhận diện thành / xuất kết quả
-    # ═══════════════════════════════════════════════════
-    
-    # Ưu tiên 1: Lấy từ file settings JSON gốc (chuẩn xác nhất)
-    map_info = db.get_map(map_id)
-    final_map_name = map_info['name']
-    final_map_type = map_info['type']
+    # ── Stop tcpdump & pull pcap ──
+    subprocess.run([ADB, '-s', DEVICE_ID, 'shell',
+                    'su -c "killall tcpdump 2>/dev/null"'],
+                   capture_output=True)
+    time.sleep(1)
 
-    safe_print("")
-    safe_print("╔══════════════════════════════════════════════════╗")
-    safe_print("║              KẾT QUẢ DETECT                     ║")
-    safe_print("╠══════════════════════════════════════════════════╣")
-    safe_print(f"║  Tên Map : {final_map_name:<37} ║")
-    safe_print(f"║  Map ID  : {str(map_id):<37} ║")
-    safe_print(f"║  Loại    : {final_map_type:<37} ║")
-    safe_print(f"║  Số NPC  : {str(len(parsed_npcs)):<37} ║")
-    safe_print("╚══════════════════════════════════════════════════╝")
+    print(f"[*] Pulling pcap...")
+    r = subprocess.run(
+        [ADB, '-s', DEVICE_ID, 'pull', PCAP_DEV, PCAP_LOC],
+        capture_output=True, text=True
+    )
+    print(f"    {r.stdout.strip() or r.stderr.strip()}")
 
-    # In danh sách NPC
-    safe_print(f"\n--- DANH SÁCH NPC ({len(parsed_npcs)}) ---")
-    for i, npc in enumerate(parsed_npcs, 1):
-        safe_print(f"  {i:>3}. {npc['name']:<35} ({npc['x']}, {npc['y']})")
+    # ── Parse ──
+    print("[*] Parsing opcode 72 (eMapDialogNpcListResponse)...")
+    body = parse_pcap_for_opcode(PCAP_LOC, 72)
 
-    # ── Lưu file JSON ──
-    save_path = f"data/maps/map_{map_id}.json"
+    if body is None:
+        print("[-] opcode 72 not found in capture!")
+        print("[!] Make sure you are standing IN this map.")
+        return
+
+    actual_map_id, npcs = parse_npc_list_response(body)
+    actual_id   = actual_map_id or map_id
+    actual_name = MAP_NAMES.get(actual_id, f"Map_{actual_id}")
+
+    print(f"\n[+] Map ID : {actual_id} ({actual_name})")
+    print(f"[+] NPCs   : {len(npcs)}\n")
+
+    for npc in npcs:
+        flag = " <-- DA TAU!" if "tẩu" in npc["name"].lower() else ""
+        print(f"  {npc['name']:<35} ({npc['x']}, {npc['y']}){flag}")
+
+    # ── Save ──
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_file = OUTPUT_DIR / f"map_{actual_id}.json"
     result = {
-        'map_id': map_id,
-        'map_name': final_map_name,
-        'map_type': final_map_type,
-        'npc_count': len(parsed_npcs),
-        'npcs': parsed_npcs
+        "map_id":    actual_id,
+        "map_name":  actual_name,
+        "npc_count": len(npcs),
+        "npcs":      npcs,
     }
-
-    # Thêm thông tin nhân vật nếu có
-    if char_name:
-        result['detected_by'] = {
-            'char_name': char_name,
-            'char_level': char_level,
-            'char_pos': list(char_pos) if char_pos else None
-        }
-
-    with open(save_path, 'w', encoding='utf-8') as f:
+    with open(out_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=4)
 
-    safe_print(f"\n[+] ĐÃ LƯU: {save_path}")
-    safe_print(f"[+] HOÀN TẤT!")
+    print(f"\n[+] Saved: {out_file}")
+    print("[+] Run: python tests/test_datau_coords.py")
 
-if __name__ == '__main__':
-    if len(sys.argv) == 2 and sys.argv[1].isdigit():
-        run(int(sys.argv[1]))
-    else:
-        run()
+
+if __name__ == "__main__":
+    mid = int(sys.argv[1]) if len(sys.argv) == 2 and sys.argv[1].isdigit() else 1
+    run(mid)

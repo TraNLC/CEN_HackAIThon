@@ -1,5 +1,5 @@
 """
-game_bot.py — VLTK1 Bot Controller
+game_bot.py 鈥?VLTK1 Bot Controller
 Connect Frida to game, inject hooks, call RPC to control character.
 
 Usage:
@@ -13,7 +13,7 @@ import subprocess
 import threading
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'proto'))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'proto'))
 from vltk1_protocol import encode_message_fields, GS_OPCODES_REV, MESSAGES
 
 import frida
@@ -25,7 +25,7 @@ SCRIPT_PATH = Path(__file__).parent / 'frida_bot.js'
 
 
 class VLTK1Bot:
-    """VLTK1 Game Bot — Frida socket injection."""
+    """VLTK1 Game Bot 鈥?Frida socket injection."""
 
     def __init__(self):
         self.session  = None
@@ -185,6 +185,8 @@ class VLTK1Bot:
 
         elif t == 'send':
             print(f'[RAW SEND] fd={p.get("fd")} size={p.get("size")} | {p.get("hex")}')
+        elif t == 'send_log':
+            print(f'[OUT -> Server] Opcode: {p.get("opcode")} | Hex: {p.get("hex")}')
 
         elif t == 'error':
             print(f'[-] Script error: {p.get("msg")}')
@@ -240,7 +242,13 @@ class VLTK1Bot:
 
     def move_to(self, x: int, y: int):
         print(f'[>] Move to ({x}, {y})')
-        return self.send_gs('eGotoPosition', mapx=x, mapy=y)
+        return self.send_gs('eGotoPosition', targetPositionX=x, targetPositionY=y)
+
+    def goto_path_native(self, x: int, y: int):
+        print(f'[>] Native GotoFindingPath to ({x}, {y})')
+        result = self.rpc.gotopath(x, y)
+        print(f'    {result}')
+        return result.get('ok', False)
 
     def set_riding(self, ride: bool):
         """Mount/dismount horse. Confirmed working via disassembly."""
@@ -249,6 +257,60 @@ class VLTK1Bot:
         proto = b'\x08\x01' if ride else b''
         packet = struct.pack('<IH', len(proto), 58) + proto
         return self.send_raw(packet)
+
+    def adb_tap(self, x: int, y: int):
+        """M么 ph峄弉g thao t谩c ch岷 m脿n h矛nh qua ADB"""
+        try:
+            import subprocess
+            adb_cmd = ['C:\\platform-tools\\adb.exe', '-s', DEVICE_ID, 'shell', 'input', 'tap', str(x), str(y)]
+            subprocess.run(adb_cmd, check=True)
+            print(f'[+] ADB Tap at ({x}, {y})')
+            return True
+        except Exception as e:
+            print(f'[-] ADB Tap Error: {e}')
+            return False
+
+    def go_to_datau_via_ui(self):
+        """T峄?膽峄檔g Click M峄?B岷 膼峄?v脿 ch峄峮 NPC D茫 T岷﹗"""
+        import time
+        print("[+] Th峄眂 hi峄噉 chu峄梚 l峄噉h UI: M峄?Map -> Ch峄峮 D茫 T岷﹗")
+        self.adb_tap(900, 50)
+        time.sleep(1.0)
+        self.adb_tap(850, 180)
+        time.sleep(0.5)
+        self.adb_tap(900, 50)
+        print("[+] 膼茫 click ch峄峮 D茫 T岷﹗ tr锚n Map!")
+
+    def tap_joystick(self, cur_x: int, cur_y: int, tar_x: int, tar_y: int):
+        """T铆nh to谩n h瓢峄沶g 膽i v脿 Click m岷穞 膽岷 (Tap and Hold) 膽峄?nh芒n v岷璽 di chuy峄僴 1 b瓢峄沜"""
+        import math
+        import subprocess
+        # Quy 膽峄昳 vector l瓢峄沬 ra vector m脿n h矛nh (G贸c nh矛n Isometric)
+        dx_grid = tar_x - cur_x
+        dy_grid = tar_y - cur_y
+        
+        # VLTK1 Isometric:
+        screen_dx = dx_grid - dy_grid
+        screen_dy = dx_grid + dy_grid
+        
+        # Chu岷﹏ h贸a vector
+        length = math.sqrt(screen_dx**2 + screen_dy**2)
+        if length == 0: return False
+        
+        # Click m岷穞 膽岷 c谩ch nh芒n v岷璽 (480, 270) m峄檛 kho岷g 80 pixel 膽峄?tr谩nh UI (Chatbox, Skill)
+        click_x = 480 + int((screen_dx / length) * 80)
+        click_y = 270 + int((screen_dy / length) * 80)
+        
+        print(f"[Walk] H瓢峄沶g t峄沬 ({tar_x}, {tar_y}) -> Click m岷穞 膽岷 ({click_x}, {click_y})")
+        try:
+            # D霉ng swipe t岷 ch峄?150ms 膽峄?m么 ph峄弉g ng贸n tay ch岷 th岷璽 (tr谩nh game coi l脿 auto-click r谩c)
+            adb_cmd = ['C:\\platform-tools\\adb.exe', '-s', DEVICE_ID, 'shell', 'input', 'swipe', 
+                       str(click_x), str(click_y), str(click_x), str(click_y), '150']
+            subprocess.run(adb_cmd, check=True)
+            return True
+        except Exception as e:
+            print(f'[-] ADB Tap Ground Error: {e}')
+            return False
 
     def goto_npc(self, npc_name: str):
         print(f'[>] goto_npc: {npc_name}')
@@ -324,3 +386,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

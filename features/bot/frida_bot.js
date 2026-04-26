@@ -1,5 +1,5 @@
 /*
-frida_bot.js — VLTK1 Bot socket injector (v2 - working)
+frida_bot.js – VLTK1 Bot socket injector (v3 - clean)
 
 Key discovery: On Houdini x86 emulators, libc functions from ARM libraries
 are not callable. Use write() from app_process32 (x86, rwx) instead.
@@ -15,9 +15,8 @@ var gameFd = -1;
 var recvBuffer = [];
 
 // ==================== FIND EXECUTABLE write() ====================
-// On Houdini, ARM libc exports are mapped non-executable from x86 side.
-// We need write() from an x86-native module (app_process32, linker, etc.)
 var nativeWrite = null;
+var nativeWritePtr = null;
 var writeSource = 'none';
 
 (function findExecutableWrite() {
@@ -29,6 +28,7 @@ var writeSource = 'none';
             if (!exp) continue;
             var range = Process.findRangeByAddress(exp);
             if (range && range.protection.indexOf('x') !== -1) {
+                nativeWritePtr = exp;
                 nativeWrite = new NativeFunction(exp, 'int', ['int', 'pointer', 'int']);
                 writeSource = m.name + ' @ ' + exp + ' (' + range.protection + ')';
                 break;
@@ -37,21 +37,7 @@ var writeSource = 'none';
     }
 })();
 
-// ==================== PACKET PARSING ====================
-var GS_OPCODES = {
-    0: 'eUnidentified', 1: 'ePlayerLoginRequest', 2: 'ePlayerLoginResponse',
-    3: 'eEnterWorldSuccess', 4: 'eCharacterDetailResponse', 5: 'eSkillResponse',
-    6: 'eItemResponse', 7: 'eEnterMap', 8: 'eEnterGameServer',
-    9: 'eStringData', 10: 'eDelivered', 20: 'eSyncPlayerMove',
-    23: 'eSyncDamage', 33: 'eNpcDialogue', 34: 'eNpcQuest',
-    35: 'eNpcSelect', 40: 'eCastSkill', 48: 'ePlayerTalk',
-    49: 'ePlayerUserItem', 56: 'eObjectPickup', 58: 'eSetRiding',
-    69: 'ePing', 70: 'ePong', 117: 'eSwitchWalking',
-    132: 'eChatSend', 133: 'eChatMessage',
-    231: 'eGotoNpc', 238: 'eDoSkillTargetPlayer', 239: 'eDoSkillTargetNpc',
-    240: 'eDoSkillTargetPosition', 248: 'eGotoPosition',
-};
-
+// ==================== HELPERS ====================
 function toHex(arr, maxBytes) {
     var n = Math.min(arr.length, maxBytes || arr.length);
     var result = '';
@@ -61,9 +47,35 @@ function toHex(arr, maxBytes) {
     return result;
 }
 
+// ==================== OPCODE MAP ====================
+var GS_OPCODES = {
+    0: 'eUnidentified',
+    1: 'ePlayerLoginRequest',    2: 'ePlayerLoginResponse',
+    3: 'eEnterWorldSuccess',     4: 'eCharacterDetailResponse',
+    5: 'eSkillResponse',         6: 'eItemResponse',
+    7: 'eEnterMap',              8: 'eEnterGameServer',
+    9: 'eStringData',            10: 'eDelivered',
+    13: 'eJumToMap',             20: 'eSyncPlayerMove',
+    23: 'eSyncDamage',           33: 'eNpcDialogue',
+    34: 'eNpcQuest',             35: 'eNpcSelect',
+    40: 'eCastSkill',            48: 'ePlayerTalk',
+    49: 'ePlayerUserItem',       54: 'eAddMapObject',
+    56: 'eObjectPickup',         58: 'eSetRiding',
+    69: 'ePing',                 70: 'ePong',
+    71: 'eMapDialogNpcListRequest',
+    72: 'eMapDialogNpcListResponse',
+    117: 'eSwitchWalking',
+    122: 'eTownportal',
+    132: 'eChatSend',            133: 'eChatMessage',
+    140: 'eApplyAutoplayProfile',
+    172: 'eEnterTongMap',        188: 'eSelfRevertMap',
+    231: 'eGotoNpc',
+    238: 'eDoSkillTargetPlayer', 239: 'eDoSkillTargetNpc',
+    240: 'eDoSkillTargetPosition',
+    248: 'eGotoPosition',
+};
+
 // ==================== SOCKET HOOKS ====================
-// Use module-scanning approach instead of direct findExportByName
-// to handle Houdini properly
 try {
     var libc = Process.findModuleByName('libc.so');
     if (!libc) throw new Error('libc not found');
@@ -94,7 +106,7 @@ try {
         });
     }
 
-    // Recv handler
+    // Recv handler – buffer ALL incoming packets and send to Python
     function onRecvEnter(args) {
         this.fd  = args[0].toInt32();
         this.buf = args[1];
@@ -104,22 +116,22 @@ try {
         if (n <= 0 || this.fd !== gameFd) return;
         try {
             var data = new Uint8Array(this.buf.readByteArray(n));
-            var hex  = toHex(data, 256);
-            // Parse: first 4 bytes = proto_len, next 2 = opcode
+            var hex  = toHex(data, 512);
             var opcode = -1;
-            var name = 'raw';
+            var name   = 'raw';
             if (n >= 6) {
                 opcode = data[4] | (data[5] << 8);
                 name = GS_OPCODES[opcode] || ('UNK_' + opcode);
             }
-            recvBuffer.push({ opcode: opcode, name: name, size: n, hex: hex });
-            if (recvBuffer.length > 100) recvBuffer.shift();
-            send({ type: 'recv', opcode: opcode, name: name, size: n, hex: hex });
+            var pkt = { opcode: opcode, name: name, size: n, hex: hex, raw: hex };
+            recvBuffer.push(pkt);
+            if (recvBuffer.length > 200) recvBuffer.shift();
+            send({ type: 'recv', opcode: opcode, name: name, size: n, hex: hex, raw: hex });
         } catch(e) {}
     }
 
     if (recvAddr) Interceptor.attach(recvAddr, { onEnter: onRecvEnter, onLeave: onRecvLeave });
-    if (readAddr) Interceptor.attach(readAddr, { onEnter: onRecvEnter, onLeave: onRecvLeave });
+    if (readAddr)  Interceptor.attach(readAddr,  { onEnter: onRecvEnter, onLeave: onRecvLeave });
 
     send({ type: 'ready', hooks: {
         connect: !!connectAddr, recv: !!recvAddr, read: !!readAddr,
@@ -128,6 +140,36 @@ try {
 
 } catch(e) {
     send({ type: 'error', msg: e.toString() + '\n' + e.stack });
+}
+
+// ==================== IL2CPP ====================
+function getIl2CppBase() {
+    var base = null;
+    var lines = File.readAllText('/proc/self/maps').split('\n');
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        if (line.indexOf('libil2cpp.so') !== -1 && line.indexOf('r-xp') !== -1) {
+            base = ptr('0x' + line.split('-')[0]);
+            break;
+        }
+    }
+    if (!base) {
+        for (var i = 0; i < lines.length; i++) {
+            var line = lines[i];
+            if (line.indexOf('libil2cpp.so') !== -1) {
+                base = ptr('0x' + line.split('-')[0]);
+                break;
+            }
+        }
+    }
+    return base;
+}
+
+var il2cppBase = getIl2CppBase();
+if (il2cppBase) {
+    send({ type: 'il2cpp_ready', lib: 'libil2cpp.so', base: il2cppBase });
+} else {
+    send({ type: 'il2cpp_ready', msg: 'libil2cpp.so not found in maps' });
 }
 
 // ==================== RPC EXPORTS ====================
@@ -156,11 +198,13 @@ rpc.exports = {
         for (var i = 0; i < hexData.length; i += 2) {
             bytes.push(parseInt(hexData.substr(i, 2), 16));
         }
-        var buf = Memory.alloc(bytes.length);
-        for (var i = 0; i < bytes.length; i++) {
+        var n = bytes.length;
+        if (n === 0) return { ok: false, error: 'Empty data' };
+        var buf = Memory.alloc(n);
+        for (var i = 0; i < n; i++) {
             buf.add(i).writeU8(bytes[i]);
         }
-        var ret = nativeWrite(gameFd, buf, bytes.length);
-        return { ok: ret === bytes.length, sent: ret, len: bytes.length };
+        var ret = nativeWrite(gameFd, buf, n);
+        return { ok: ret === n, sent: ret, len: n };
     }
 };
