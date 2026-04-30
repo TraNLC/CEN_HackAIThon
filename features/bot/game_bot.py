@@ -241,8 +241,24 @@ class VLTK1Bot:
         return self.send_gs('eChatSend', channel=channel, message=message)
 
     def move_to(self, x: int, y: int):
-        print(f'[>] Move to ({x}, {y})')
-        return self.send_gs('eGotoPosition', targetPositionX=x, targetPositionY=y)
+        """Di chuyển đến tọa độ 5 số (world coords).
+        
+        Dùng eGotoPosition (opcode 248) với fields mapx, mapy.
+        Lưu ý: x, y là tọa độ WORLD (5 số), không phải game (3 số).
+        Để di chuyển bằng tọa độ 3 số, dùng move_to_game().
+        """
+        print(f'[>] Move to world ({x}, {y})')
+        return self.send_gs('eGotoPosition', mapx=x, mapy=y)
+
+    def move_to_game(self, game_x: int, game_y: int):
+        """Di chuyển đến tọa độ 3 số (game/minimap coords).
+        
+        Tự động quy đổi sang world coords (5 số) rồi gửi.
+        """
+        from core.position import game_to_world_center
+        wx, wy = game_to_world_center(game_x, game_y)
+        print(f'[>] Move to game ({game_x}, {game_y}) [world: {wx}, {wy}]')
+        return self.send_gs('eGotoPosition', mapx=wx, mapy=wy)
 
     def goto_path_native(self, x: int, y: int):
         print(f'[>] Native GotoFindingPath to ({x}, {y})')
@@ -270,16 +286,62 @@ class VLTK1Bot:
             print(f'[-] ADB Tap Error: {e}')
             return False
 
-    def go_to_datau_via_ui(self):
-        """T峄?膽峄檔g Click M峄?B岷 膼峄?v脿 ch峄峮 NPC D茫 T岷﹗"""
-        import time
-        print("[+] Th峄眂 hi峄噉 chu峄梚 l峄噉h UI: M峄?Map -> Ch峄峮 D茫 T岷﹗")
-        self.adb_tap(900, 50)
-        time.sleep(1.0)
-        self.adb_tap(850, 180)
-        time.sleep(0.5)
-        self.adb_tap(900, 50)
-        print("[+] 膼茫 click ch峄峮 D茫 T岷﹗ tr锚n Map!")
+    NPC_MAP_COORDS = {
+        "Phượng Tường": {
+            "Da Tau": (51836, 49441),  # game coords (map_id=1)
+        },
+        "Thành Đô": {
+            "Da Tau": (100922, 81048),  # game coords (map_id=11)
+        },
+        "Map_20": {
+            "Da Tau": (113218, 99704),  # game coords (map_id=20)
+        },
+        "Biện Kinh": {
+            "Da Tau": (55537, 49611),  # game coords (map_id=37)
+        },
+        "Ba Lăng Huyện": {
+            "Da Tau": (52033, 50761),  # game coords (map_id=53)
+        },
+        "Dương Châu": {
+            "Da Tau": (55812, 47465),  # game coords (map_id=80)
+        },
+        "Vĩnh Lạc trấn": {
+            "Da Tau": (52690, 51080),  # game coords (map_id=99)
+        },
+        "Chu Tiên trấn": {
+            "Da Tau": (51709, 51190),  # game coords (map_id=100)
+        },
+        "Map_101": {
+            "Da Tau": (53697, 50303),  # game coords (map_id=101)
+        },
+        "Long Môn trấn": {
+            "Da Tau": (62705, 72005),  # game coords (map_id=121)
+        },
+        "Thạch Cổ trấn": {
+            "Da Tau": (52580, 51769),  # game coords (map_id=153)
+        },
+        "Đại Lý phủ": {
+            "Da Tau": (52832, 51609),  # game coords (map_id=162)
+        },
+        "Long Tuyền thôn": {
+            "Da Tau": (51464, 51204),  # game coords (map_id=174)
+        },
+        "Lâm An": {
+            "Da Tau": (50006, 47670),  # game coords (map_id=176)
+        },
+    }
+
+    def go_to_npc_via_map(self, map_name: str, npc_name: str):
+        """Navigate to an NPC based on predefined coordinates via GotoFindingPath"""
+        coords = self.NPC_MAP_COORDS.get(map_name, {}).get(npc_name)
+        if not coords:
+            print(f"[-] Không tìm thấy tọa độ {npc_name} tại {map_name} trong NPC_MAP_COORDS!")
+            return False
+            
+        tar_x, tar_y = coords
+        print(f"[+] Tìm thấy {npc_name} tại {map_name}: ({tar_x}, {tar_y})")
+        return self.goto_path_native(tar_x, tar_y)
+
 
     def tap_joystick(self, cur_x: int, cur_y: int, tar_x: int, tar_y: int):
         """T铆nh to谩n h瓢峄沶g 膽i v脿 Click m岷穞 膽岷 (Tap and Hold) 膽峄?nh芒n v岷璽 di chuy峄僴 1 b瓢峄沜"""
@@ -372,12 +434,13 @@ def main():
     bot.auto_keepalive()
 
     print('\n[*] Bot ready. Use bot.xxx() commands.')
-    print('    bot.chat("msg")         - send chat')
-    print('    bot.move_to(x, y)       - move')
-    print('    bot.set_riding(True)    - mount horse')
-    print('    bot.goto_npc("name")    - go to NPC')
-    print('    bot.poll_recv()         - read packets')
-    print('    bot.close()             - disconnect\n')
+    print('    bot.chat("msg")           - send chat')
+    print('    bot.move_to(wx, wy)       - move (world coords 5 số)')
+    print('    bot.move_to_game(gx, gy)  - move (game coords 3 số)')
+    print('    bot.set_riding(True)      - mount horse')
+    print('    bot.goto_npc("name")      - go to NPC')
+    print('    bot.poll_recv()           - read packets')
+    print('    bot.close()               - disconnect\n')
 
     import code
     code.interact(banner='', local={'bot': bot, 'VLTK1Bot': VLTK1Bot})
