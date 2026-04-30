@@ -2,74 +2,117 @@
 
 ## Tổng quan
 
-Có **3 phương thức** di chuyển nhân vật:
+Hệ thống di chuyển sử dụng **Numpad Navigation** — nhập tọa độ vào dialog minimap qua ADB, kết hợp tcpdump để xác minh vị trí.
 
-| Phương thức | Cách hoạt động | Ưu điểm | Nhược điểm |
-|---|---|---|---|
-| **eGotoPosition** | Gửi packet opcode 248 qua socket | Chính xác, nhanh | Bị block nếu có vật cản |
-| **GotoFindingPath** | Gọi hàm IL2CPP native | Client tự tìm đường, né vật cản | Cần PlayerMain instance |
-| **ADB Tap** | Tap màn hình giả lập | Luôn hoạt động | Không chính xác, chậm |
+> [!IMPORTANT]
+> Không dùng OCR. Không gửi packet trực tiếp (server-side pathfinding + SSL encryption).
+> Movement 100% qua ADB tap + passive tcpdump.
 
-## Kiến trúc Module
+## Kiến trúc
+
+| Thành phần | Vai trò |
+|---|---|
+| **ADB tap** | Mở numpad dialog, nhập tọa độ, xác nhận |
+| **tcpdump** | Bắt gói tin opcode 9 để đọc vị trí hiện tại |
+| **Tap trigger** | Tap nhẹ screen → server phản hồi opcode 9 → biết vị trí |
 
 ```
 core/movement.py
-├── MovementController     # Controller chính
-│   ├── read_position()    # Đọc vị trí từ Frida hooks (realtime)
-│   ├── move_to_game()     # Di chuyển bằng tọa độ 3 số
-│   ├── move_to_world()    # Di chuyển bằng tọa độ 5 số
-│   ├── move_to_native()   # Di chuyển bằng IL2CPP native
-│   └── _unstuck()         # Gỡ kẹt tự động
-├── MoveResult             # Kết quả di chuyển
-└── Utilities              # calculate_distance, estimate_travel_time
+├── MovementController
+│   ├── move_unified()          # Entry point chính
+│   ├── move_via_minimap()      # Numpad navigation loop
+│   ├── _send_numpad_goto()     # Mở dialog + gõ tọa độ + xác nhận
+│   ├── _numpad_type_coords()   # Gõ từng số trên numpad
+│   ├── _get_position_tcpdump() # Tap trigger + tcpdump → vị trí
+│   └── _find_entity_position() # Parse opcode 9 → entity gần nhất
 ```
 
-## Flow Di Chuyển (Feedback Loop)
+## Flow Di Chuyển
 
 ```mermaid
 flowchart TD
-    A[Bắt đầu] --> B[Đọc vị trí hiện tại<br>Frida readPosition]
-    B --> C{Đã ở đích?}
-    C -->|Có| D[✅ Trả về MoveResult success]
-    C -->|Không| E[Gửi eGotoPosition]
-    E --> F[Chờ 3s]
-    F --> G[Poll vị trí mới]
-    G --> H{Đã đến?}
-    H -->|Có| D
-    H -->|Không| I{Bị kẹt?}
-    I -->|Có| J[Gỡ kẹt: ADB tap + offset]
-    I -->|Không| K{Timeout / Max steps?}
-    J --> E
-    K -->|Có| L[❌ Trả về MoveResult fail]
-    K -->|Không| E
+    A[move_unified target_gx, target_gy] --> B[Tap trigger + tcpdump]
+    B --> C[Parse opcode 9 → vị trí hiện tại]
+    C --> D{Đã ở đích? dist ≤ 5 tiles}
+    D -->|Có| E[✅ Arrived]
+    D -->|Không| F[Mở minimap numpad dialog]
+    F --> G[Gõ tọa độ đích: X Y]
+    G --> H[Tap Xác nhận]
+    H --> I[Chờ pathfinding: distance_tiles × 1s]
+    I --> J[Tap trigger + tcpdump]
+    J --> K[Parse vị trí mới]
+    K --> L{Đã đến? dist ≤ 5}
+    L -->|Có| E
+    L -->|Không| M{Max attempts?}
+    M -->|Có| N[❌ Timeout]
+    M -->|Không| F
 ```
 
-## Cải tiến so với code cũ
+## Numpad Layout
 
-### Trước (test_move_final.py)
-- Dùng **tcpdump** để capture packets → parse opcode 9 → tìm vị trí
-- Mỗi lần detect tốn **5-8 giây** (start tcpdump + capture + kill + pull + parse)
-- Entity detection dễ nhầm (chọn entity di chuyển nhiều nhất ≠ mình)
+```
+┌─────────────────────────┐
+│   (500,186) 7  8  9     │
+│   (500,241) 4  5  6     │
+│   (500,296) 1  2  3     │
+│   (500,351) x  0  space │
+│                         │
+│   [Xác nhận] (265,333)  │
+└─────────────────────────┘
 
-### Sau (core/movement.py)
-- Dùng **Frida recv hook** (`readPosition()`) → vị trí realtime
-- Mỗi lần poll chỉ **0.5 giây**
-- Entity tracking chính xác (Frida đã parse sẵn opcode 9)
+Cột: 500 / 570 / 630
+Dòng: 186 / 241 / 296 / 351
 
-## Bug đã fix
+Minimap button: (890, 120)
+Close keyboard: (700, 335)
+```
 
-> [!WARNING]
-> `game_bot.py` `move_to()` gửi sai field name:
-> ```diff
-> - return self.send_gs('eGotoPosition', targetPositionX=x, targetPositionY=y)
-> + return self.send_gs('eGotoPosition', mapx=x, mapy=y)
-> ```
-> `targetPositionX/Y` là field của `CastSkill`, không phải `GotoPosition`.
-> Protobuf silently ignores unknown fields → packet gửi đi rỗng → nhân vật không di chuyển!
+## Tọa độ quan trọng
+
+| Nút | Vị trí ADB |
+|---|---|
+| Mở minimap dialog | `(890, 120)` |
+| Đóng giao diện trước | `(700, 335)` |
+| Xác nhận | `(265, 333)` |
+| Tap trigger (center screen) | `(480, 300)` |
+
+## Position Detection
+
+Sử dụng **tcpdump + tap trigger** thay vì Frida hooks (ổn định hơn trên nhiều instance):
+
+```python
+# 1. Start tcpdump trên device
+tcpdump -i any -U -w /tmp/pos.pcap port {game_port}
+
+# 2. ADB tap center screen → server phản hồi opcode 9
+adb shell input tap 480 300
+
+# 3. Pull pcap + parse opcode 9 → world coords
+# 4. Convert world → game: game_x = world_x // 256
+```
+
+> [!NOTE]
+> **Game port** được detect tự động qua `netstat -tnp | grep jx1mobile`
+
+### Hạn chế entity detection
+
+Ở khu vực đông người, opcode 9 chứa nhiều entity. Hệ thống ưu tiên:
+1. Entity có tọa độ gần `last_known_pos` nhất
+2. Entity có `world_x > 10000` (lọc entity giả)
+3. Nếu không có reference → dùng entity cuối cùng parse được
 
 ## Sử dụng
 
-### Cơ bản
+### CLI Test
+```bash
+# Di chuyển đến tọa độ
+python tests/test_movement.py --target 220,190
+
+# Debug mode
+python tests/test_movement.py --target 220,190 --debug
+```
+
+### Trong code
 ```python
 from features.bot.game_bot import VLTK1Bot
 from core.movement import MovementController
@@ -78,63 +121,40 @@ bot = VLTK1Bot()
 bot.connect()
 
 mover = MovementController(bot)
+result = mover.move_unified(220, 190)
 
-# Di chuyển đến tọa độ 3 số (minimap)
-result = mover.move_to_game(240, 175)
-print(result)  # MoveResult(success=True, ...)
-
-# Di chuyển đến tọa độ 5 số (world)
-result = mover.move_to_world(54272, 50048)
+if result.success:
+    print(f"Arrived at ({result.end_x}, {result.end_y})")
 ```
 
-### Với callback
-```python
-def on_step(step, gx, gy, dist):
-    print(f"Step {step}: ({gx}, {gy}) dist={dist:.0f}")
+## Kết quả test thực tế
 
-result = mover.move_to_game(210, 195, on_step=on_step)
+```
+Move to (220, 190)
+Start:    (213, 200)
+End:      (219, 192)
+Target:   (220, 190)
+Distance: 2.4 tiles
+Steps:    1
+Time:     27.1s
+>>> OK
 ```
 
-### Native pathfinding
-```python
-from core.position import game_to_world_center
-wx, wy = game_to_world_center(240, 175)
-result = mover.move_to_native(wx, wy)
-```
+## Hạn chế hiện tại
 
-### Tùy chỉnh config
-```python
-mover = MovementController(bot, config={
-    "max_steps": 50,
-    "arrival_threshold_world": 300,  # Ngưỡng đến nơi (world units)
-    "stuck_threshold": 5,            # Số lần liên tiếp stuck
-    "wait_after_move": 2.0,          # Giây chờ sau mỗi move
-    "timeout": 180,                  # Timeout tổng
-})
-```
+| Vấn đề | Chi tiết |
+|---|---|
+| **Khu đông** | Position detect ±5 tiles do nhiễu entity |
+| **Pathfind fail** | Game reject nếu tọa độ đích unreachable ("Không tìm được đường") |
+| **Thời gian** | Mỗi attempt ~15-30s (chờ pathfinding + tcpdump) |
+| **Cross-map** | Chưa hỗ trợ di chuyển giữa các map |
 
-## Test
+## Lịch sử phát triển
 
-```bash
-# Di chuyển gần (+3, -2 ô) rồi quay về
-python tests/test_movement.py
-
-# Di chuyển đến tọa độ cụ thể
-python tests/test_movement.py --target 240,175
-
-# Di chuyển đến Dã Tẩu
-python tests/test_movement.py --target da_tau
-
-# Dùng native pathfinding
-python tests/test_movement.py --target da_tau --method native
-
-# Tăng số bước tối đa
-python tests/test_movement.py --target 240,175 --steps 50
-```
-
-## Phát hiện (Ngày 28/04/2026)
-
-- Bug `move_to()` gửi sai field name → fix thành `mapx`, `mapy`
-- Frida hooks đã có `readPosition()` realtime → không cần tcpdump
-- Tạo `MovementController` với feedback loop thay thế toàn bộ test scripts cũ
-- Thêm `move_to_game()` trong `game_bot.py` cho tiện sử dụng
+| Ngày | Thay đổi |
+|---|---|
+| 28/04 | Ban đầu: eGotoPosition opcode 248 + Frida hooks |
+| 29/04 | Chuyển sang numpad navigation + tcpdump (ổn định hơn) |
+| 29/04 | Fix confirm button `(265, 333)`, fix entity detection |
+| 29/04 | Thêm proximity-based entity selection |
+| 30/04 | Test thành công: `(213,200) → (219,192)` target `(220,190)` ✅ |
