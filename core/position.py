@@ -42,19 +42,22 @@ def game_to_world_center(game_x: int, game_y: int) -> tuple[int, int]:
 
 # ── Detect vị trí nhân vật từ packets ────────────────────────
 
-def detect_player_position(packets: list, last_known_pos: tuple = None) -> tuple[int, int, str]:
+def detect_player_position(packets: list, last_known_pos: tuple = None,
+                            tracked_eid: str = None) -> tuple[int, int, str]:
     """Phân tích opcode 9 entity sync packets để tìm vị trí nhân vật.
     
     Args:
         packets: List of (opcode, body) tuples from pcap parser
         last_known_pos: (world_x, world_y) — nếu có, ưu tiên entity gần vị trí này
+        tracked_eid: Entity ID đã biết của nhân vật — nếu có, chỉ track ID này
         
     Returns:
         (world_x, world_y, entity_id) — tọa độ 5 số + ID nhân vật.
         Trả (0, 0, "") nếu không tìm thấy.
     """
-    ent_positions = {}  # eid -> set of (x, y) unique positions
-    ent_last_pos = {}   # eid -> last known (x, y)
+    ent_positions = {}  # eid -> list of (x, y) positions (ordered)
+    ent_last_pos = {}   # eid -> last (x, y)
+    ent_etypes = {}     # eid -> set of etypes seen
     
     for opcode, body in packets:
         if opcode != 9 or len(body) < 10:
@@ -68,26 +71,41 @@ def detect_player_position(packets: list, last_known_pos: tuple = None) -> tuple
         if len(parts) < 4:
             continue
         
+        try:
+            etype = int(parts[0])
+        except (ValueError, IndexError):
+            continue
+        
+        # Only player entities (etype 1 or 2)
+        if etype not in (1, 2):
+            continue
+        
         eid = parts[1]
         
         try:
-            px, py = int(parts[2]), int(parts[3])
-            # Filter: coords must be in reasonable range (game coords > 10)
+            py, px = int(parts[2]), int(parts[3])
             gx, gy = px // COORD_DIVISOR, py // COORD_DIVISOR
             if gx < 10 or gy < 10:
                 continue
             
             if eid not in ent_positions:
-                ent_positions[eid] = set()
-            ent_positions[eid].add((px, py))
+                ent_positions[eid] = []
+                ent_etypes[eid] = set()
+            ent_positions[eid].append((px, py))
             ent_last_pos[eid] = (px, py)
+            ent_etypes[eid].add(etype)
         except (ValueError, IndexError):
             pass
     
     if not ent_positions:
         return 0, 0, ""
     
-    # If we have last known position, pick entity closest to it
+    # Priority 1: If we have a tracked entity ID, use it directly
+    if tracked_eid and tracked_eid in ent_last_pos:
+        wx, wy = ent_last_pos[tracked_eid]
+        return wx, wy, tracked_eid
+    
+    # Priority 2: If we have last known position, pick closest entity
     if last_known_pos and last_known_pos[0] > 0:
         lx, ly = last_known_pos
         best_eid = None
@@ -97,11 +115,11 @@ def detect_player_position(packets: list, last_known_pos: tuple = None) -> tuple
             if d < best_dist:
                 best_dist = d
                 best_eid = eid
-        if best_eid and best_dist < 30000:  # ~120 tiles max
+        if best_eid and best_dist < 15000:  # ~60 tiles max
             wx, wy = ent_last_pos[best_eid]
             return wx, wy, best_eid
     
-    # Fallback: Entity có nhiều vị trí khác nhau nhất = đang di chuyển = mình
+    # Priority 3: Entity with most position updates = most active = likely us
     my_id = max(ent_positions, key=lambda eid: len(ent_positions[eid]))
     wx, wy = ent_last_pos[my_id]
     return wx, wy, my_id

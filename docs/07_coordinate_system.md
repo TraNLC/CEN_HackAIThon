@@ -41,54 +41,86 @@ world_y = 195 * 256 + 128  # = 49920 + 128 = 50048
 
 ## Cách detect tọa độ nhân vật
 
-### Nguồn dữ liệu: Opcode 9 (Entity Sync)
+### Phương pháp: Tap Trigger + tcpdump
 
-Server gửi opcode 9 mỗi khi có entity di chuyển. Format:
+```mermaid
+flowchart LR
+    A[ADB tap center screen] --> B[Client gửi request]
+    B --> C[Server phản hồi opcode 9]
+    C --> D[tcpdump bắt packet]
+    D --> E[Parse world coords]
+    E --> F[Chia 256 → game coords]
+```
+
+1. **Start tcpdump** trên device: `tcpdump -i any -U -w /tmp/pos.pcap port {game_port}`
+2. **ADB tap** center screen `(480, 300)` → server phản hồi opcode 9
+3. **Pull pcap** + parse opcode 9 → world coords `(54182, 50049)`
+4. **Convert**: `game_x = 54182 // 256 = 211`
+
+### Game port detection
+
+```bash
+# Tự động detect port qua netstat
+adb shell su -c "netstat -tnp 2>/dev/null" | grep jx1mobile
+# → tcp 10.0.2.15:54321  103.xx.xx.xx:45676  ESTABLISHED
+# → game_port = 45676
+```
+
+### Opcode 9 (Entity Sync)
+
+Server gửi opcode 9 mỗi khi có entity di chuyển. Protobuf fields:
 
 ```
 etype|entity_id|x|y|...
 ```
 
-- `etype = 1, 2`: Player entity → `parts[2]` = X, `parts[3]` = Y (world coords, 5 số)
-- `etype = 33`: Stall info → `parts[8]` = X, `parts[9]` = Y
-- `etype = 34`: Stall position → `parts[2]` = X, `parts[3]` = Y
+- `etype = 1, 2`: Player entity → `x, y` = world coords
+- `etype = 33`: Stall info
+- `etype = 34`: Stall position
 
-### Logic xác định "nhân vật của mình"
+### Entity detection
 
-Entity type 1/2 có **nhiều update nhất** trong 1 phiên capture = nhân vật của mình. Vì server luôn gửi vị trí của chính mình nhiều hơn các player khác.
+Ở khu đông người, opcode 9 chứa nhiều entity. Hệ thống ưu tiên:
 
-### Điều kiện bắt buộc
+| Ưu tiên | Tiêu chí |
+|---|---|
+| 1 | Entity gần `last_known_pos` nhất |
+| 2 | Entity có `world_x > 10000` (lọc entity giả) |
+| 3 | Entity cuối cùng parse được |
 
-> [!IMPORTANT]
-> Server **CHỈ GỬI** opcode 9 khi có entity **DI CHUYỂN**. Nếu đứng yên hoàn toàn, sẽ không có gói tin nào → không detect được vị trí.
-> 
-> **Giải pháp:** Tap nhẹ lên màn hình (ADB `input tap`) để tạo 1 bước di chuyển nhỏ trước khi capture.
+> [!WARNING]
+> Server **CHỈ GỬI** opcode 9 khi có entity **DI CHUYỂN**. Đứng yên = không có gói tin.
+> **Giải pháp:** ADB tap nhẹ lên screen trước khi capture (tap trigger).
 
 ## Di chuyển nhân vật
 
-### eGotoPosition (Opcode 248)
+### Numpad Navigation (phương pháp chính)
 
-Gửi lệnh di chuyển đến tọa độ chỉ định. Dùng **tọa độ 5 số (world coords)**.
+Nhập tọa độ vào dialog minimap qua ADB:
 
+```
+1. ADB tap (700, 335)     → đóng keyboard cũ
+2. ADB tap (890, 120)     → mở numpad dialog
+3. ADB tap xóa text cũ    → 6x tap (630, 351)
+4. ADB tap từng số tọa độ → numpad buttons
+5. ADB tap (265, 333)     → xác nhận
+6. Chờ pathfinding         → distance_tiles × 1s
+```
+
+> [!IMPORTANT]
+> **Server-side pathfinding**: Client chỉ gửi request "đi đến (x,y)", server tính đường.
+> Nếu tọa độ unreachable, game hiện "Không tìm được đường đi" và không di chuyển.
+
+### eGotoPosition (Opcode 248) — KHÔNG DÙNG
+
+Ban đầu thử gửi packet trực tiếp:
 ```python
-# Protocol: GotoPosition { mapx: int32, mapy: int32 }
 proto = encode_message_fields("GotoPosition", mapx=54272, mapy=50048)
 pkt = struct.pack('<IH', len(proto), 248) + proto
-bot.send_raw(pkt)
 ```
 
 > [!WARNING]
-> Field name là `mapx`, `mapy` (KHÔNG phải `targetPositionX`, `targetPositionY` — đó là của CastSkill).
-
-### ADB Input Tap
-
-Tap trực tiếp lên màn hình giả lập:
-
-```bash
-adb -s emulator-5554 shell input tap 480 280
-```
-
-Cả 2 cách đều hoạt động. `eGotoPosition` cho phép chỉ định tọa độ chính xác, còn ADB tap phụ thuộc vào góc nhìn camera.
+> Phương pháp này **không ổn định** — SSL encryption + server validation. Dùng numpad thay thế.
 
 ## Code tham khảo
 
@@ -103,9 +135,11 @@ from core.position import (
 )
 ```
 
-## Phát hiện (Ngày 27/04/2026)
+## Phát hiện
 
-- Thử nghiệm tất cả divisor từ 248 đến 269
-- Divisor **256** cho kết quả khớp 100% với minimap game
-- Xác nhận bằng cách so sánh vị trí protocol `(54182, 50049)` với minimap `(211, 195)`
-- `54182 // 256 = 211` ✅, `50049 // 256 = 195` ✅
+| Ngày | Nội dung |
+|---|---|
+| 27/04 | Xác nhận divisor **256** bằng so sánh protocol vs minimap |
+| 29/04 | Chuyển từ Frida hooks sang tcpdump cho position detection |
+| 29/04 | Thêm proximity-based entity selection (khu đông) |
+| 30/04 | Game port auto-detect qua `netstat -tnp` |

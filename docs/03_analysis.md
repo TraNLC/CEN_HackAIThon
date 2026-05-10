@@ -224,14 +224,24 @@ s2c:
 ## Workflow tổng hợp
 
 ```
-1. detect_engine.py → biết engine, chọn hook script
-2. Capture session 1 (baseline: chỉ login, đứng yên)
-3. Capture session 2 (action: nhận nhiệm vụ dã tẩu)
-4. packet_parser.py --detect-format → biết packet format
-5. packet_parser.py --summary → xem opcodes + tên gợi ý từ DB
-6. correlate.py --baseline s1 --action-file s2 → tìm opcode ACCEPT_QUEST
-7. packet_parser.py --opcode 0x0201 --payload → xem payload structure
-8. Điền vào analysis/opcode_map.yaml
-9. Lặp lại cho từng action: MOVE_TO, SUBMIT_QUEST, TALK_NPC, v.v.
-10. Tiếp tục: docs/04_bot.md
+1. detect_engine.py → biết engine (Unity IL2CPP), chọn hook script
+2. tcpdump capture → bắt packets passive
+3. Parse pcap → tìm opcodes + protobuf fields
+4. Xác nhận opcode bằng cách trigger action + so sánh
+5. Viết parser cho từng opcode (core/position.py, core/quest.py)
+6. Tích hợp vào bot (ADB tap + tcpdump verify)
 ```
+
+## Opcodes đã xác nhận (VLTK1 VN)
+
+| Opcode | Dir | Tên | Fields chính | Ghi chú |
+|--------|-----|-----|-------------|---------|
+| **9** | S→C | Entity Sync | `etype\|eid\|x\|y` | Vị trí entities |
+| **34** | S→C | NPC Dialog | `f1=text, f2=buttons` | Quest text Dã Tẩu |
+| **54** | S→C | Quest Tracker | `f1=id, f2=num, f7=item, f4/f5=coords` | Active quest |
+| **133** | S→C | Chat | `f3=name, f4=message` | Chat công cộng |
+| **170** | S→C | Player List | `f2=entries` | Player gần |
+| **205** | S→C | Shop Data | `f1=id, f3=entries` | Cửa hàng |
+| **248** | C→S | GotoPosition | `mapx, mapy` | Di chuyển |
+| **251** | S→C | Heartbeat | (empty) | Keep-alive |
+

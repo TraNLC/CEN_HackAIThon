@@ -404,12 +404,16 @@ class MovementController:
     def _find_entity_position(self, packets: list) -> Tuple[int, int, str]:
         """Find player position from opcode 9 packets.
         
-        Uses last known position for proximity-based detection.
+        Uses entity_id tracking + proximity-based detection.
         
         Returns: (world_x, world_y, entity_id) or (0, 0, "")
         """
         from core.position import detect_player_position
-        return detect_player_position(packets, last_known_pos=self._last_position)
+        return detect_player_position(
+            packets,
+            last_known_pos=self._last_position,
+            tracked_eid=self._entity_id if self._entity_id else None
+        )
     
     def read_position_tcpdump(self, duration: float = 3.0) -> Tuple[int, int, str]:
         """Read position by passive tcpdump capture (kernel level).
