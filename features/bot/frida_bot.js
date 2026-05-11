@@ -370,7 +370,126 @@ if (il2cppBase) {
     send({ type: 'il2cpp_ready', msg: 'libil2cpp.so not found in maps' });
 }
 
-// Read PlayerMain instance directly from IL2CPP class static (Failed on Houdini x86)
+function installPlayerMainHooks() {
+    if (!il2cppBase) return;
+    var hooks = [
+        ['PlayerMain.Initialize', 0x6FC9DC],
+        ['PlayerMain.Update', 0x6FCB3C],
+        ['PlayerMain.ClearRun', 0x6FC9B0],
+        ['PlayerMain.IsOutScreenVisibility', 0x6FD91C],
+        ['PlayerMain.IsInScreenVisibility', 0x6FDAE8],
+        ['PlayerMain.SendGSMessage1', 0x701E58],
+        ['PlayerMain.SendGSMessage2', 0x6FF738],
+        ['PlayerMain.GetNearPlayers', 0x701EC8],
+        ['PlayerMain.GetNearNpcs', 0x700194],
+        ['PlayerMain.ProtocolGotoPosition', 0x708288],
+        ['PlayerMain.GotoFindingPathUpdate', 0x6FD2BC],
+        ['PlayerMain.SetUpMainPlayer', 0x7037A4],
+    ];
+    for (var i = 0; i < hooks.length; i++) {
+        (function(name, rva) {
+            try {
+                Interceptor.attach(il2cppBase.add(rva), {
+                    onEnter: function(args) {
+                        if (!_playerMainInstance) {
+                            _playerMainInstance = args[0];
+                            send({ type: 'il2cpp_event', event: name + ' captured', ptr: _playerMainInstance.toString() });
+                        }
+                    }
+                });
+            } catch(e) {
+                send({ type: 'il2cpp_error', msg: 'hook ' + name + ' failed: ' + e.toString() });
+            }
+        })(hooks[i][0], hooks[i][1]);
+    }
+    try {
+        Interceptor.attach(il2cppBase.add(0x706A70), {
+            onEnter: function(args) {
+                _playerMainInstance = args[0];
+                send({ type: 'il2cpp_event', event: 'PlayerMain.GotoFindingPath captured', ptr: _playerMainInstance.toString() });
+            }
+        });
+    } catch(e) {
+        send({ type: 'il2cpp_error', msg: 'hook PlayerMain.GotoFindingPath failed: ' + e.toString() });
+    }
+}
+
+installPlayerMainHooks();
+
+// Read PlayerMain instance directly from IL2CPP class static when exports are visible.
+function il2cppExport(name) {
+    var mod = Process.findModuleByName('libil2cpp.so');
+    if (!mod) {
+        var mods = Process.enumerateModules();
+        for (var i = 0; i < mods.length; i++) {
+            if (
+                (mods[i].name && mods[i].name.indexOf('libil2cpp.so') !== -1) ||
+                (mods[i].path && mods[i].path.indexOf('libil2cpp.so') !== -1)
+            ) {
+                mod = mods[i];
+                break;
+            }
+        }
+    }
+    var p = null;
+    if (mod) p = mod.findExportByName(name);
+    if (!p) {
+        try {
+            var s = DebugSymbol.fromName(name);
+            if (s && s.address && !s.address.isNull()) p = s.address;
+        } catch(e) {}
+    }
+    if (!p) {
+        try {
+            var s2 = DebugSymbol.fromName('libil2cpp.so!' + name);
+            if (s2 && s2.address && !s2.address.isNull()) p = s2.address;
+        } catch(e2) {}
+    }
+    if (!p) throw new Error('Missing il2cpp export: ' + name);
+    return p;
+}
+
+function readPlayerMainDirect() {
+    if (_playerMainInstance) return { ok: true, playerMain: _playerMainInstance.toString(), source: 'captured' };
+    if (!il2cppBase) return { ok: false, error: 'il2cpp not found' };
+    try {
+        var il2cpp_domain_get = new NativeFunction(il2cppExport('il2cpp_domain_get'), 'pointer', []);
+        var il2cpp_thread_attach = new NativeFunction(il2cppExport('il2cpp_thread_attach'), 'pointer', ['pointer']);
+        var il2cpp_domain_assembly_open = new NativeFunction(il2cppExport('il2cpp_domain_assembly_open'), 'pointer', ['pointer', 'pointer']);
+        var il2cpp_assembly_get_image = new NativeFunction(il2cppExport('il2cpp_assembly_get_image'), 'pointer', ['pointer']);
+        var il2cpp_class_from_name = new NativeFunction(il2cppExport('il2cpp_class_from_name'), 'pointer', ['pointer', 'pointer', 'pointer']);
+        var il2cpp_class_get_field_from_name = new NativeFunction(il2cppExport('il2cpp_class_get_field_from_name'), 'pointer', ['pointer', 'pointer']);
+        var il2cpp_field_static_get_value = new NativeFunction(il2cppExport('il2cpp_field_static_get_value'), 'void', ['pointer', 'pointer']);
+
+        var domain = il2cpp_domain_get();
+        if (domain.isNull()) return { ok: false, error: 'domain null' };
+        il2cpp_thread_attach(domain);
+
+        var assembly = il2cpp_domain_assembly_open(domain, Memory.allocUtf8String('Assembly-CSharp.dll'));
+        if (assembly.isNull()) assembly = il2cpp_domain_assembly_open(domain, Memory.allocUtf8String('Assembly-CSharp'));
+        if (assembly.isNull()) return { ok: false, error: 'Assembly-CSharp not found' };
+
+        var image = il2cpp_assembly_get_image(assembly);
+        if (image.isNull()) return { ok: false, error: 'Assembly-CSharp image null' };
+
+        var klass = il2cpp_class_from_name(image, Memory.allocUtf8String(''), Memory.allocUtf8String('PlayerMain'));
+        if (klass.isNull()) return { ok: false, error: 'PlayerMain class not found' };
+
+        var field = il2cpp_class_get_field_from_name(klass, Memory.allocUtf8String('instance'));
+        if (field.isNull()) return { ok: false, error: 'PlayerMain.instance field not found' };
+
+        var out = Memory.alloc(Process.pointerSize);
+        out.writePointer(ptr(0));
+        il2cpp_field_static_get_value(field, out);
+        var instance = out.readPointer();
+        if (instance.isNull()) return { ok: false, error: 'PlayerMain.instance is null' };
+
+        _playerMainInstance = instance;
+        return { ok: true, playerMain: instance.toString() };
+    } catch(e) {
+        return { ok: false, error: 'PlayerMain not captured; metadata unavailable: ' + e.toString(), stack: e.stack };
+    }
+}
 
 // ==================== RPC EXPORTS ====================
 rpc.exports = {
@@ -516,6 +635,86 @@ rpc.exports = {
         };
     },
 
+    getPlayerMain: function() {
+        return readPlayerMainDirect();
+    },
+
+    scanPlayerMainCandidates: function(expectedMapId) {
+        var targetMapId = expectedMapId || 53;
+        var candidates = [];
+        try {
+            var ranges = Process.enumerateRanges({ protection: 'rw-', coalesce: true });
+            var readable = Process.enumerateRanges({ protection: 'r--', coalesce: true })
+                .concat(Process.enumerateRanges({ protection: 'rw-', coalesce: true }))
+                .concat(Process.enumerateRanges({ protection: 'r-x', coalesce: true }))
+                .concat(Process.enumerateRanges({ protection: 'rwx', coalesce: true }));
+            function inRanges(v) {
+                if (v === 0) return false;
+                var pv = ptr(v);
+                for (var k = 0; k < readable.length; k++) {
+                    if (pv.compare(readable[k].base) >= 0 && pv.compare(readable[k].base.add(readable[k].size)) < 0) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            for (var r = 0; r < ranges.length; r++) {
+                var range = ranges[r];
+                if (range.size > 16 * 1024 * 1024) continue;
+                var start = range.base;
+                var end = range.base.add(range.size - 0x100);
+                for (var p = start; p.compare(end) < 0; p = p.add(4)) {
+                    try {
+                        var mapId = p.add(0x98).readS32();
+                        if (mapId !== targetMapId) continue;
+
+                        var items32 = p.add(0x1C).readU32();
+                        var skills32 = p.add(0x20).readU32();
+                        var skillgames32 = p.add(0x24).readU32();
+                        var world32 = p.add(0x28).readU32();
+                        var target32 = p.add(0x5C).readU32();
+                        var near = 0;
+                        if (inRanges(items32)) near++;
+                        if (inRanges(skills32)) near++;
+                        if (inRanges(skillgames32)) near++;
+                        if (inRanges(world32)) near++;
+                        if (inRanges(target32)) near++;
+                        if (near < 3) continue;
+
+                        var findingRunning = p.add(0xE8).readU8();
+                        var findingUpdate = p.add(0xE9).readU8();
+
+                        candidates.push({
+                            ptr: p.toString(),
+                            mapId: mapId,
+                            score: near,
+                            items: ptr(items32).toString(),
+                            skills: ptr(skills32).toString(),
+                            skillgames: ptr(skillgames32).toString(),
+                            world: ptr(world32).toString(),
+                            target: ptr(target32).toString(),
+                            findingRunning: findingRunning,
+                            findingUpdate: findingUpdate,
+                        });
+                        if (candidates.length >= 50) return { ok: true, candidates: candidates };
+                    } catch(e) {}
+                }
+            }
+            return { ok: true, candidates: candidates };
+        } catch(e) {
+            return { ok: false, error: e.toString(), candidates: candidates };
+        }
+    },
+
+    setPlayerMain: function(ptrText) {
+        try {
+            _playerMainInstance = ptr(ptrText);
+            return { ok: true, playerMain: _playerMainInstance.toString() };
+        } catch(e) {
+            return { ok: false, error: e.toString() };
+        }
+    },
+
     // ==================== IL2CPP MEMORY READ ====================
 
     // Call PlayerMain::GetNearPlayers() via IL2CPP
@@ -610,9 +809,13 @@ rpc.exports = {
             var GotoFindingPath = new NativeFunction(
                 il2cppBase.add(0x706A70), 'void', ['pointer', 'int', 'int', 'int', 'pointer', 'pointer']
             );
+            if (!_playerMainInstance) {
+                var res = readPlayerMainDirect();
+                if (!res.ok) return { ok: false, error: 'PlayerMain: ' + res.error };
+            }
             if (typeof _playerMainInstance !== 'undefined' && _playerMainInstance) {
                 GotoFindingPath(_playerMainInstance, x, y, 20, ptr(0), ptr(0));
-                return { ok: true, x: x, y: y };
+                return { ok: true, x: x, y: y, playerMain: _playerMainInstance.toString() };
             }
             return { ok: false, error: 'PlayerMain not captured' };
         } catch(e) {
