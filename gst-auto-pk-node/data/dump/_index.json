@@ -1,0 +1,1990 @@
+{
+  "source": "dump.cs (Il2CppDumper)",
+  "images": [
+    {
+      "id": 0,
+      "name": "mscorlib.dll",
+      "startIndex": 0
+    },
+    {
+      "id": 1,
+      "name": "Assembly-CSharp.dll",
+      "startIndex": 1689
+    },
+    {
+      "id": 2,
+      "name": "System.Xml.dll",
+      "startIndex": 3042
+    },
+    {
+      "id": 3,
+      "name": "System.dll",
+      "startIndex": 3711
+    },
+    {
+      "id": 4,
+      "name": "System.Data.dll",
+      "startIndex": 4409
+    },
+    {
+      "id": 5,
+      "name": "Google.Protocol.dll",
+      "startIndex": 4647
+    },
+    {
+      "id": 6,
+      "name": "Unity.TextMeshPro.dll",
+      "startIndex": 5135
+    },
+    {
+      "id": 7,
+      "name": "System.Core.dll",
+      "startIndex": 5332
+    },
+    {
+      "id": 8,
+      "name": "Newtonsoft.Json.dll",
+      "startIndex": 5981
+    },
+    {
+      "id": 9,
+      "name": "Google.Protobuf.dll",
+      "startIndex": 6286
+    },
+    {
+      "id": 10,
+      "name": "UnityEngine.CoreModule.dll",
+      "startIndex": 6582
+    },
+    {
+      "id": 11,
+      "name": "UnityEngine.UI.dll",
+      "startIndex": 7226
+    },
+    {
+      "id": 12,
+      "name": "UnityEngine.TextCoreTextEngineModule.dll",
+      "startIndex": 7421
+    },
+    {
+      "id": 13,
+      "name": "Mono.Security.dll",
+      "startIndex": 7515
+    },
+    {
+      "id": 14,
+      "name": "UnityEngine.AndroidJNIModule.dll",
+      "startIndex": 7600
+    },
+    {
+      "id": 15,
+      "name": "System.IO.Compression.dll",
+      "startIndex": 7645
+    },
+    {
+      "id": 16,
+      "name": "I18N.West.dll",
+      "startIndex": 7705
+    },
+    {
+      "id": 17,
+      "name": "UnityEngine.IMGUIModule.dll",
+      "startIndex": 7739
+    },
+    {
+      "id": 18,
+      "name": "System.Drawing.dll",
+      "startIndex": 7776
+    },
+    {
+      "id": 19,
+      "name": "UnityEngine.TextCoreFontEngineModule.dll",
+      "startIndex": 7787
+    },
+    {
+      "id": 20,
+      "name": "I18N.dll",
+      "startIndex": 7812
+    },
+    {
+      "id": 21,
+      "name": "System.Numerics.dll",
+      "startIndex": 7825
+    },
+    {
+      "id": 22,
+      "name": "System.Xml.Linq.dll",
+      "startIndex": 7838
+    },
+    {
+      "id": 23,
+      "name": "UnityEngine.PropertiesModule.dll",
+      "startIndex": 7876
+    },
+    {
+      "id": 24,
+      "name": "UnityEngine.dll",
+      "startIndex": 7934
+    },
+    {
+      "id": 25,
+      "name": "deml.netcore-networking.dll",
+      "startIndex": 7935
+    },
+    {
+      "id": 26,
+      "name": "UnityEngine.UnityWebRequestModule.dll",
+      "startIndex": 7949
+    },
+    {
+      "id": 27,
+      "name": "UnityEngine.UIModule.dll",
+      "startIndex": 7968
+    },
+    {
+      "id": 28,
+      "name": "UnityEngine.AnimationModule.dll",
+      "startIndex": 7979
+    },
+    {
+      "id": 29,
+      "name": "UnityEngine.TextRenderingModule.dll",
+      "startIndex": 8011
+    },
+    {
+      "id": 30,
+      "name": "UnityEngine.Physics2DModule.dll",
+      "startIndex": 8025
+    },
+    {
+      "id": 31,
+      "name": "UnityEngine.InputLegacyModule.dll",
+      "startIndex": 8035
+    },
+    {
+      "id": 32,
+      "name": "UnityEngine.AudioModule.dll",
+      "startIndex": 8046
+    },
+    {
+      "id": 33,
+      "name": "UnityEngine.SharedInternalsModule.dll",
+      "startIndex": 8065
+    },
+    {
+      "id": 34,
+      "name": "UnityEngine.AssetBundleModule.dll",
+      "startIndex": 8093
+    },
+    {
+      "id": 35,
+      "name": "UnityEngine.ImageConversionModule.dll",
+      "startIndex": 8099
+    },
+    {
+      "id": 36,
+      "name": "UnityEngine.AIModule.dll",
+      "startIndex": 8101
+    },
+    {
+      "id": 37,
+      "name": "UnityEngine.SpriteShapeModule.dll",
+      "startIndex": 8104
+    },
+    {
+      "id": 38,
+      "name": "System.IO.Compression.FileSystem.dll",
+      "startIndex": 8106
+    },
+    {
+      "id": 39,
+      "name": "CandyCoded.HapticFeedback.Android.dll",
+      "startIndex": 8110
+    },
+    {
+      "id": 40,
+      "name": "System.Runtime.Serialization.dll",
+      "startIndex": 8118
+    },
+    {
+      "id": 41,
+      "name": "CandyCoded.HapticFeedback.dll",
+      "startIndex": 8123
+    },
+    {
+      "id": 42,
+      "name": "System.Runtime.CompilerServices.Unsafe.dll",
+      "startIndex": 8131
+    },
+    {
+      "id": 43,
+      "name": "System.Configuration.dll",
+      "startIndex": 8134
+    },
+    {
+      "id": 44,
+      "name": "__Generated",
+      "startIndex": 8144
+    }
+  ],
+  "namespaces": [
+    {
+      "name": "game",
+      "file": "game.cs",
+      "lines": 240,
+      "sizeKB": 7,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.basemono",
+      "file": "game.basemono.cs",
+      "lines": 83,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.common",
+      "file": "game.common.cs",
+      "lines": 191,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.common.relation",
+      "file": "game.common.relation.cs",
+      "lines": 74,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.common.series",
+      "file": "game.common.series.cs",
+      "lines": 66,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.config",
+      "file": "game.config.cs",
+      "lines": 65,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.item",
+      "file": "game.item.cs",
+      "lines": 1100,
+      "sizeKB": 36,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.item.cache",
+      "file": "game.item.cache.cs",
+      "lines": 218,
+      "sizeKB": 7,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.magic",
+      "file": "game.magic.cs",
+      "lines": 348,
+      "sizeKB": 17,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.manager",
+      "file": "game.manager.cs",
+      "lines": 202,
+      "sizeKB": 7,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.map",
+      "file": "game.map.cs",
+      "lines": 70,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.network",
+      "file": "game.network.cs",
+      "lines": 329,
+      "sizeKB": 11,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.npc",
+      "file": "game.npc.cs",
+      "lines": 192,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.number",
+      "file": "game.number.cs",
+      "lines": 125,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.objects",
+      "file": "game.objects.cs",
+      "lines": 299,
+      "sizeKB": 10,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.objects.texture",
+      "file": "game.objects.texture.cs",
+      "lines": 206,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.player",
+      "file": "game.player.cs",
+      "lines": 280,
+      "sizeKB": 9,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource",
+      "file": "game.resource.cs",
+      "lines": 1069,
+      "sizeKB": 32,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.cache",
+      "file": "game.resource.cache.cs",
+      "lines": 199,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.dataController",
+      "file": "game.resource.dataController.cs",
+      "lines": 184,
+      "sizeKB": 5,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.formater",
+      "file": "game.resource.formater.cs",
+      "lines": 189,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.map",
+      "file": "game.resource.map.cs",
+      "lines": 2359,
+      "sizeKB": 68,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.mapping",
+      "file": "game.resource.mapping.cs",
+      "lines": 111,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.mapping.settings",
+      "file": "game.resource.mapping.settings.cs",
+      "lines": 700,
+      "sizeKB": 27,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.mapping.userInterface",
+      "file": "game.resource.mapping.userInterface.cs",
+      "lines": 242,
+      "sizeKB": 11,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.packageIni",
+      "file": "game.resource.packageIni.cs",
+      "lines": 218,
+      "sizeKB": 8,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.script",
+      "file": "game.resource.script.cs",
+      "lines": 61,
+      "sizeKB": 2,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings",
+      "file": "game.resource.settings.cs",
+      "lines": 552,
+      "sizeKB": 17,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings.npcres",
+      "file": "game.resource.settings.npcres.cs",
+      "lines": 1438,
+      "sizeKB": 45,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings.npcres.normal",
+      "file": "game.resource.settings.npcres.normal.cs",
+      "lines": 103,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings.npcres.special",
+      "file": "game.resource.settings.npcres.special.cs",
+      "lines": 204,
+      "sizeKB": 8,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings.npcres.state",
+      "file": "game.resource.settings.npcres.state.cs",
+      "lines": 262,
+      "sizeKB": 8,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.resource.settings.player",
+      "file": "game.resource.settings.player.cs",
+      "lines": 401,
+      "sizeKB": 12,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.scene",
+      "file": "game.scene.cs",
+      "lines": 586,
+      "sizeKB": 18,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.scene.login",
+      "file": "game.scene.login.cs",
+      "lines": 969,
+      "sizeKB": 29,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.scene.world",
+      "file": "game.scene.world.cs",
+      "lines": 179,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill",
+      "file": "game.skill.cs",
+      "lines": 386,
+      "sizeKB": 10,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill.cast",
+      "file": "game.skill.cast.cs",
+      "lines": 155,
+      "sizeKB": 5,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill.missile",
+      "file": "game.skill.missile.cs",
+      "lines": 259,
+      "sizeKB": 8,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill.missile.fly",
+      "file": "game.skill.missile.fly.cs",
+      "lines": 150,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill.texture",
+      "file": "game.skill.texture.cs",
+      "lines": 192,
+      "sizeKB": 5,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.skill.texture.activate",
+      "file": "game.skill.texture.activate.cs",
+      "lines": 75,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.tong",
+      "file": "game.tong.cs",
+      "lines": 58,
+      "sizeKB": 2,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui",
+      "file": "game.ui.cs",
+      "lines": 11804,
+      "sizeKB": 333,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.autoplay",
+      "file": "game.ui.autoplay.cs",
+      "lines": 4085,
+      "sizeKB": 118,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.autoplay.threadmoving",
+      "file": "game.ui.autoplay.threadmoving.cs",
+      "lines": 175,
+      "sizeKB": 6,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.dialog",
+      "file": "game.ui.dialog.cs",
+      "lines": 62,
+      "sizeKB": 2,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.export",
+      "file": "game.ui.export.cs",
+      "lines": 136,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.leftChat",
+      "file": "game.ui.leftChat.cs",
+      "lines": 79,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.manualLayout",
+      "file": "game.ui.manualLayout.cs",
+      "lines": 223,
+      "sizeKB": 7,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.minimap",
+      "file": "game.ui.minimap.cs",
+      "lines": 127,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.rightHotkey",
+      "file": "game.ui.rightHotkey.cs",
+      "lines": 384,
+      "sizeKB": 12,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.skilllist.details",
+      "file": "game.ui.skilllist.details.cs",
+      "lines": 107,
+      "sizeKB": 4,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.ui.worldmap",
+      "file": "game.ui.worldmap.cs",
+      "lines": 64,
+      "sizeKB": 3,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "game.world",
+      "file": "game.world.cs",
+      "lines": 339,
+      "sizeKB": 10,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "GameServer.Network.Protocol",
+      "file": "GameServer.Network.Protocol.cs",
+      "lines": 31759,
+      "sizeKB": 1000,
+      "image": "Assembly-CSharp.dll"
+    },
+    {
+      "name": "_header",
+      "file": "_header.cs",
+      "lines": 433,
+      "sizeKB": 15,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "App",
+      "file": "App.cs",
+      "lines": 3351,
+      "sizeKB": 105,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "CandyCoded.HapticFeedback",
+      "file": "CandyCoded.HapticFeedback.cs",
+      "lines": 100,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "CandyCoded.HapticFeedback.Android",
+      "file": "CandyCoded.HapticFeedback.Android.cs",
+      "lines": 110,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Crystal",
+      "file": "Crystal.cs",
+      "lines": 153,
+      "sizeKB": 6,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Google.Protobuf",
+      "file": "Google.Protobuf.cs",
+      "lines": 3316,
+      "sizeKB": 104,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Google.Protobuf.Collections",
+      "file": "Google.Protobuf.Collections.cs",
+      "lines": 2341,
+      "sizeKB": 77,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Google.Protobuf.Reflection",
+      "file": "Google.Protobuf.Reflection.cs",
+      "lines": 11317,
+      "sizeKB": 387,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Google.Protobuf.WellKnownTypes",
+      "file": "Google.Protobuf.WellKnownTypes.cs",
+      "lines": 2694,
+      "sizeKB": 83,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "I18N.Common",
+      "file": "I18N.Common.cs",
+      "lines": 550,
+      "sizeKB": 20,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "I18N.West",
+      "file": "I18N.West.cs",
+      "lines": 655,
+      "sizeKB": 21,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Internal.Cryptography",
+      "file": "Internal.Cryptography.cs",
+      "lines": 113,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Internal.Cryptography.Pal",
+      "file": "Internal.Cryptography.Pal.cs",
+      "lines": 162,
+      "sizeKB": 6,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Internal.Runtime.Augments",
+      "file": "Internal.Runtime.Augments.cs",
+      "lines": 154,
+      "sizeKB": 5,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Internal.Threading.Tasks.Tracing",
+      "file": "Internal.Threading.Tasks.Tracing.cs",
+      "lines": 73,
+      "sizeKB": 3,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "JetBrains.Annotations",
+      "file": "JetBrains.Annotations.cs",
+      "lines": 56,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis",
+      "file": "Microsoft.CodeAnalysis.cs",
+      "lines": 112,
+      "sizeKB": 3,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Microsoft.CSharp",
+      "file": "Microsoft.CSharp.cs",
+      "lines": 64,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Microsoft.Win32",
+      "file": "Microsoft.Win32.cs",
+      "lines": 58,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Microsoft.Win32.SafeHandles",
+      "file": "Microsoft.Win32.SafeHandles.cs",
+      "lines": 150,
+      "sizeKB": 5,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono",
+      "file": "Mono.cs",
+      "lines": 633,
+      "sizeKB": 18,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Globalization.Unicode",
+      "file": "Mono.Globalization.Unicode.cs",
+      "lines": 560,
+      "sizeKB": 21,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Http",
+      "file": "Mono.Http.cs",
+      "lines": 132,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Interop",
+      "file": "Mono.Interop.cs",
+      "lines": 73,
+      "sizeKB": 3,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Math",
+      "file": "Mono.Math.cs",
+      "lines": 360,
+      "sizeKB": 12,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Math.Prime",
+      "file": "Mono.Math.Prime.cs",
+      "lines": 126,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Math.Prime.Generator",
+      "file": "Mono.Math.Prime.Generator.cs",
+      "lines": 225,
+      "sizeKB": 12,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Net.Security",
+      "file": "Mono.Net.Security.cs",
+      "lines": 1205,
+      "sizeKB": 42,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Net.Security.Private",
+      "file": "Mono.Net.Security.Private.cs",
+      "lines": 58,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security",
+      "file": "Mono.Security.cs",
+      "lines": 575,
+      "sizeKB": 18,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.Authenticode",
+      "file": "Mono.Security.Authenticode.cs",
+      "lines": 232,
+      "sizeKB": 8,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.Cryptography",
+      "file": "Mono.Security.Cryptography.cs",
+      "lines": 1056,
+      "sizeKB": 34,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.Interface",
+      "file": "Mono.Security.Interface.cs",
+      "lines": 760,
+      "sizeKB": 36,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.Protocol.Ntlm",
+      "file": "Mono.Security.Protocol.Ntlm.cs",
+      "lines": 350,
+      "sizeKB": 11,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.X509",
+      "file": "Mono.Security.X509.cs",
+      "lines": 817,
+      "sizeKB": 26,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Security.X509.Extensions",
+      "file": "Mono.Security.X509.Extensions.cs",
+      "lines": 101,
+      "sizeKB": 3,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Unity",
+      "file": "Mono.Unity.cs",
+      "lines": 1035,
+      "sizeKB": 44,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Util",
+      "file": "Mono.Util.cs",
+      "lines": 59,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Mono.Xml",
+      "file": "Mono.Xml.cs",
+      "lines": 287,
+      "sizeKB": 9,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "MS.Internal.Xml.Cache",
+      "file": "MS.Internal.Xml.Cache.cs",
+      "lines": 468,
+      "sizeKB": 20,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "MS.Internal.Xml.XPath",
+      "file": "MS.Internal.Xml.XPath.cs",
+      "lines": 648,
+      "sizeKB": 21,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "NetCore.Handlers.GS",
+      "file": "NetCore.Handlers.GS.cs",
+      "lines": 2313,
+      "sizeKB": 64,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "NetCoreServer",
+      "file": "NetCoreServer.cs",
+      "lines": 1325,
+      "sizeKB": 42,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json",
+      "file": "Newtonsoft.Json.cs",
+      "lines": 2521,
+      "sizeKB": 85,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json.Bson",
+      "file": "Newtonsoft.Json.Bson.cs",
+      "lines": 336,
+      "sizeKB": 13,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json.Converters",
+      "file": "Newtonsoft.Json.Converters.cs",
+      "lines": 1653,
+      "sizeKB": 53,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json.Linq",
+      "file": "Newtonsoft.Json.Linq.cs",
+      "lines": 1892,
+      "sizeKB": 64,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization",
+      "file": "Newtonsoft.Json.Serialization.cs",
+      "lines": 3297,
+      "sizeKB": 119,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Newtonsoft.Json.Utilities",
+      "file": "Newtonsoft.Json.Utilities.cs",
+      "lines": 4416,
+      "sizeKB": 141,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "shared.resource.settings",
+      "file": "shared.resource.settings.cs",
+      "lines": 97,
+      "sizeKB": 3,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "shared.resource.settings.missile",
+      "file": "shared.resource.settings.missile.cs",
+      "lines": 284,
+      "sizeKB": 9,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "shared.resource.settings.skill",
+      "file": "shared.resource.settings.skill.cs",
+      "lines": 295,
+      "sizeKB": 9,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "shared.skill",
+      "file": "shared.skill.cs",
+      "lines": 55,
+      "sizeKB": 2,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "TMPro",
+      "file": "TMPro.cs",
+      "lines": 10430,
+      "sizeKB": 352,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "TMPro.SpriteAssetUtilities",
+      "file": "TMPro.SpriteAssetUtilities.cs",
+      "lines": 183,
+      "sizeKB": 6,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "Unity",
+      "file": "Unity.cs",
+      "lines": 291,
+      "sizeKB": 9,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "UnityEngine",
+      "file": "UnityEngine.cs",
+      "lines": 15901,
+      "sizeKB": 542,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "UnityEngineInternal",
+      "file": "UnityEngineInternal.cs",
+      "lines": 126,
+      "sizeKB": 4,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "XLua",
+      "file": "XLua.cs",
+      "lines": 3154,
+      "sizeKB": 96,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "XLua.Cast",
+      "file": "XLua.Cast.cs",
+      "lines": 224,
+      "sizeKB": 6,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "XLua.LuaDLL",
+      "file": "XLua.LuaDLL.cs",
+      "lines": 484,
+      "sizeKB": 19,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "XLua.TemplateEngine",
+      "file": "XLua.TemplateEngine.cs",
+      "lines": 212,
+      "sizeKB": 7,
+      "image": "mscorlib.dll"
+    },
+    {
+      "name": "System",
+      "file": "System.cs",
+      "lines": 49789,
+      "sizeKB": 1817,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Buffers",
+      "file": "System.Buffers.cs",
+      "lines": 1186,
+      "sizeKB": 36,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Buffers.Binary",
+      "file": "System.Buffers.Binary.cs",
+      "lines": 79,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Buffers.Text",
+      "file": "System.Buffers.Text.cs",
+      "lines": 113,
+      "sizeKB": 4,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.CodeDom.Compiler",
+      "file": "System.CodeDom.Compiler.cs",
+      "lines": 60,
+      "sizeKB": 2,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Collections",
+      "file": "System.Collections.cs",
+      "lines": 2315,
+      "sizeKB": 71,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Collections.Concurrent",
+      "file": "System.Collections.Concurrent.cs",
+      "lines": 1916,
+      "sizeKB": 73,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Collections.Generic",
+      "file": "System.Collections.Generic.cs",
+      "lines": 40643,
+      "sizeKB": 1436,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Collections.ObjectModel",
+      "file": "System.Collections.ObjectModel.cs",
+      "lines": 1959,
+      "sizeKB": 71,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Collections.Specialized",
+      "file": "System.Collections.Specialized.cs",
+      "lines": 713,
+      "sizeKB": 24,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.ComponentModel",
+      "file": "System.ComponentModel.cs",
+      "lines": 3745,
+      "sizeKB": 127,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.ComponentModel.Design",
+      "file": "System.ComponentModel.Design.cs",
+      "lines": 305,
+      "sizeKB": 10,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.ComponentModel.Design.Serialization",
+      "file": "System.ComponentModel.Design.Serialization.cs",
+      "lines": 112,
+      "sizeKB": 4,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Configuration",
+      "file": "System.Configuration.cs",
+      "lines": 154,
+      "sizeKB": 6,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Configuration.Assemblies",
+      "file": "System.Configuration.Assemblies.cs",
+      "lines": 69,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Data",
+      "file": "System.Data.cs",
+      "lines": 10084,
+      "sizeKB": 334,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Data.Common",
+      "file": "System.Data.Common.cs",
+      "lines": 2368,
+      "sizeKB": 88,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Data.SqlTypes",
+      "file": "System.Data.SqlTypes.cs",
+      "lines": 2186,
+      "sizeKB": 74,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Diagnostics",
+      "file": "System.Diagnostics.cs",
+      "lines": 488,
+      "sizeKB": 14,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Diagnostics.CodeAnalysis",
+      "file": "System.Diagnostics.CodeAnalysis.cs",
+      "lines": 185,
+      "sizeKB": 6,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Diagnostics.Contracts",
+      "file": "System.Diagnostics.Contracts.cs",
+      "lines": 64,
+      "sizeKB": 2,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Diagnostics.Tracing",
+      "file": "System.Diagnostics.Tracing.cs",
+      "lines": 257,
+      "sizeKB": 8,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Drawing",
+      "file": "System.Drawing.cs",
+      "lines": 558,
+      "sizeKB": 18,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Dynamic",
+      "file": "System.Dynamic.cs",
+      "lines": 1104,
+      "sizeKB": 40,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Dynamic.Utils",
+      "file": "System.Dynamic.Utils.cs",
+      "lines": 547,
+      "sizeKB": 18,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Globalization",
+      "file": "System.Globalization.cs",
+      "lines": 3769,
+      "sizeKB": 136,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.IO",
+      "file": "System.IO.cs",
+      "lines": 3213,
+      "sizeKB": 107,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.IO.Compression",
+      "file": "System.IO.Compression.cs",
+      "lines": 2452,
+      "sizeKB": 89,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.IO.Enumeration",
+      "file": "System.IO.Enumeration.cs",
+      "lines": 1160,
+      "sizeKB": 56,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Linq",
+      "file": "System.Linq.cs",
+      "lines": 4538,
+      "sizeKB": 161,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Linq.Expressions",
+      "file": "System.Linq.Expressions.cs",
+      "lines": 5348,
+      "sizeKB": 191,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Linq.Expressions.Interpreter",
+      "file": "System.Linq.Expressions.Interpreter.cs",
+      "lines": 8646,
+      "sizeKB": 279,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net",
+      "file": "System.Net.cs",
+      "lines": 7585,
+      "sizeKB": 252,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net.Cache",
+      "file": "System.Net.Cache.cs",
+      "lines": 131,
+      "sizeKB": 4,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net.Configuration",
+      "file": "System.Net.Configuration.cs",
+      "lines": 327,
+      "sizeKB": 10,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net.NetworkInformation",
+      "file": "System.Net.NetworkInformation.cs",
+      "lines": 181,
+      "sizeKB": 6,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net.Security",
+      "file": "System.Net.Security.cs",
+      "lines": 430,
+      "sizeKB": 18,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Net.Sockets",
+      "file": "System.Net.Sockets.cs",
+      "lines": 1938,
+      "sizeKB": 71,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Numerics",
+      "file": "System.Numerics.cs",
+      "lines": 1026,
+      "sizeKB": 34,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Numerics.Hashing",
+      "file": "System.Numerics.Hashing.cs",
+      "lines": 76,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Reflection",
+      "file": "System.Reflection.cs",
+      "lines": 4077,
+      "sizeKB": 141,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Reflection.Emit",
+      "file": "System.Reflection.Emit.cs",
+      "lines": 702,
+      "sizeKB": 27,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Resources",
+      "file": "System.Resources.cs",
+      "lines": 585,
+      "sizeKB": 19,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime",
+      "file": "System.Runtime.cs",
+      "lines": 80,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.CompilerServices",
+      "file": "System.Runtime.CompilerServices.cs",
+      "lines": 9583,
+      "sizeKB": 294,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.ConstrainedExecution",
+      "file": "System.Runtime.ConstrainedExecution.cs",
+      "lines": 105,
+      "sizeKB": 4,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.ExceptionServices",
+      "file": "System.Runtime.ExceptionServices.cs",
+      "lines": 94,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.InteropServices",
+      "file": "System.Runtime.InteropServices.cs",
+      "lines": 1307,
+      "sizeKB": 40,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting",
+      "file": "System.Runtime.Remoting.cs",
+      "lines": 1143,
+      "sizeKB": 37,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Activation",
+      "file": "System.Runtime.Remoting.Activation.cs",
+      "lines": 231,
+      "sizeKB": 8,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Channels",
+      "file": "System.Runtime.Remoting.Channels.cs",
+      "lines": 364,
+      "sizeKB": 11,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Contexts",
+      "file": "System.Runtime.Remoting.Contexts.cs",
+      "lines": 401,
+      "sizeKB": 13,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Lifetime",
+      "file": "System.Runtime.Remoting.Lifetime.cs",
+      "lines": 262,
+      "sizeKB": 8,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Messaging",
+      "file": "System.Runtime.Remoting.Messaging.cs",
+      "lines": 1643,
+      "sizeKB": 52,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Metadata",
+      "file": "System.Runtime.Remoting.Metadata.cs",
+      "lines": 197,
+      "sizeKB": 6,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Proxies",
+      "file": "System.Runtime.Remoting.Proxies.cs",
+      "lines": 218,
+      "sizeKB": 8,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Remoting.Services",
+      "file": "System.Runtime.Remoting.Services.cs",
+      "lines": 84,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Serialization",
+      "file": "System.Runtime.Serialization.cs",
+      "lines": 1510,
+      "sizeKB": 48,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Serialization.Formatters",
+      "file": "System.Runtime.Serialization.Formatters.cs",
+      "lines": 74,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Serialization.Formatters.Binary",
+      "file": "System.Runtime.Serialization.Formatters.Binary.cs",
+      "lines": 2155,
+      "sizeKB": 76,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Runtime.Versioning",
+      "file": "System.Runtime.Versioning.cs",
+      "lines": 103,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security",
+      "file": "System.Security.cs",
+      "lines": 489,
+      "sizeKB": 15,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Authentication",
+      "file": "System.Security.Authentication.cs",
+      "lines": 131,
+      "sizeKB": 5,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Claims",
+      "file": "System.Security.Claims.cs",
+      "lines": 264,
+      "sizeKB": 10,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Cryptography",
+      "file": "System.Security.Cryptography.cs",
+      "lines": 2907,
+      "sizeKB": 90,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Cryptography.X509Certificates",
+      "file": "System.Security.Cryptography.X509Certificates.cs",
+      "lines": 1918,
+      "sizeKB": 65,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Permissions",
+      "file": "System.Security.Permissions.cs",
+      "lines": 211,
+      "sizeKB": 7,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Policy",
+      "file": "System.Security.Policy.cs",
+      "lines": 86,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Principal",
+      "file": "System.Security.Principal.cs",
+      "lines": 185,
+      "sizeKB": 6,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Security.Util",
+      "file": "System.Security.Util.cs",
+      "lines": 292,
+      "sizeKB": 9,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Text",
+      "file": "System.Text.cs",
+      "lines": 2790,
+      "sizeKB": 95,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Text.RegularExpressions",
+      "file": "System.Text.RegularExpressions.cs",
+      "lines": 2022,
+      "sizeKB": 68,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Threading",
+      "file": "System.Threading.cs",
+      "lines": 3427,
+      "sizeKB": 108,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Threading.Tasks",
+      "file": "System.Threading.Tasks.cs",
+      "lines": 3483,
+      "sizeKB": 113,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Threading.Tasks.Sources",
+      "file": "System.Threading.Tasks.Sources.cs",
+      "lines": 122,
+      "sizeKB": 4,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml",
+      "file": "System.Xml.cs",
+      "lines": 12968,
+      "sizeKB": 452,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.Linq",
+      "file": "System.Xml.Linq.cs",
+      "lines": 1258,
+      "sizeKB": 38,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.Schema",
+      "file": "System.Xml.Schema.cs",
+      "lines": 13956,
+      "sizeKB": 495,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.Serialization",
+      "file": "System.Xml.Serialization.cs",
+      "lines": 3127,
+      "sizeKB": 99,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.XmlConfiguration",
+      "file": "System.Xml.XmlConfiguration.cs",
+      "lines": 66,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.XPath",
+      "file": "System.Xml.XPath.cs",
+      "lines": 352,
+      "sizeKB": 12,
+      "image": "System.dll"
+    },
+    {
+      "name": "System.Xml.Xsl.Runtime",
+      "file": "System.Xml.Xsl.Runtime.cs",
+      "lines": 77,
+      "sizeKB": 3,
+      "image": "System.dll"
+    },
+    {
+      "name": "Unity.Burst",
+      "file": "Unity.Burst.cs",
+      "lines": 66,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Burst.LowLevel",
+      "file": "Unity.Burst.LowLevel.cs",
+      "lines": 59,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Collections",
+      "file": "Unity.Collections.cs",
+      "lines": 1648,
+      "sizeKB": 52,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Collections.LowLevel.Unsafe",
+      "file": "Unity.Collections.LowLevel.Unsafe.cs",
+      "lines": 730,
+      "sizeKB": 24,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.IL2CPP.CompilerServices",
+      "file": "Unity.IL2CPP.CompilerServices.cs",
+      "lines": 56,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.IL2CPP.Metadata",
+      "file": "Unity.IL2CPP.Metadata.cs",
+      "lines": 54,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.IO.Archive",
+      "file": "Unity.IO.Archive.cs",
+      "lines": 83,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.IO.LowLevel.Unsafe",
+      "file": "Unity.IO.LowLevel.Unsafe.cs",
+      "lines": 178,
+      "sizeKB": 6,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Jobs",
+      "file": "Unity.Jobs.cs",
+      "lines": 172,
+      "sizeKB": 6,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Jobs.LowLevel.Unsafe",
+      "file": "Unity.Jobs.LowLevel.Unsafe.cs",
+      "lines": 124,
+      "sizeKB": 4,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Profiling",
+      "file": "Unity.Profiling.cs",
+      "lines": 171,
+      "sizeKB": 5,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Profiling.LowLevel",
+      "file": "Unity.Profiling.LowLevel.cs",
+      "lines": 63,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Profiling.LowLevel.Unsafe",
+      "file": "Unity.Profiling.LowLevel.Unsafe.cs",
+      "lines": 86,
+      "sizeKB": 4,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Profiling.Memory",
+      "file": "Unity.Profiling.Memory.cs",
+      "lines": 115,
+      "sizeKB": 4,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Properties",
+      "file": "Unity.Properties.cs",
+      "lines": 1602,
+      "sizeKB": 48,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "Unity.Properties.Internal",
+      "file": "Unity.Properties.Internal.cs",
+      "lines": 397,
+      "sizeKB": 13,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine._Scripting.APIUpdating",
+      "file": "UnityEngine._Scripting.APIUpdating.cs",
+      "lines": 60,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.AI",
+      "file": "UnityEngine.AI.cs",
+      "lines": 67,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Analytics",
+      "file": "UnityEngine.Analytics.cs",
+      "lines": 150,
+      "sizeKB": 5,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Android",
+      "file": "UnityEngine.Android.cs",
+      "lines": 752,
+      "sizeKB": 24,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Animations",
+      "file": "UnityEngine.Animations.cs",
+      "lines": 347,
+      "sizeKB": 12,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Audio",
+      "file": "UnityEngine.Audio.cs",
+      "lines": 154,
+      "sizeKB": 5,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Bindings",
+      "file": "UnityEngine.Bindings.cs",
+      "lines": 673,
+      "sizeKB": 19,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Device",
+      "file": "UnityEngine.Device.cs",
+      "lines": 58,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Events",
+      "file": "UnityEngine.Events.cs",
+      "lines": 1347,
+      "sizeKB": 40,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.EventSystems",
+      "file": "UnityEngine.EventSystems.cs",
+      "lines": 2083,
+      "sizeKB": 71,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Experimental.Audio",
+      "file": "UnityEngine.Experimental.Audio.cs",
+      "lines": 70,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Experimental.GlobalIllumination",
+      "file": "UnityEngine.Experimental.GlobalIllumination.cs",
+      "lines": 371,
+      "sizeKB": 12,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Experimental.Playables",
+      "file": "UnityEngine.Experimental.Playables.cs",
+      "lines": 118,
+      "sizeKB": 4,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Experimental.Rendering",
+      "file": "UnityEngine.Experimental.Rendering.cs",
+      "lines": 436,
+      "sizeKB": 19,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Experimental.U2D",
+      "file": "UnityEngine.Experimental.U2D.cs",
+      "lines": 75,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Internal",
+      "file": "UnityEngine.Internal.cs",
+      "lines": 209,
+      "sizeKB": 7,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.LowLevel",
+      "file": "UnityEngine.LowLevel.cs",
+      "lines": 94,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Networking",
+      "file": "UnityEngine.Networking.cs",
+      "lines": 634,
+      "sizeKB": 23,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Networking.PlayerConnection",
+      "file": "UnityEngine.Networking.PlayerConnection.cs",
+      "lines": 270,
+      "sizeKB": 9,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Playables",
+      "file": "UnityEngine.Playables.cs",
+      "lines": 410,
+      "sizeKB": 13,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.PlayerLoop",
+      "file": "UnityEngine.PlayerLoop.cs",
+      "lines": 884,
+      "sizeKB": 22,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Pool",
+      "file": "UnityEngine.Pool.cs",
+      "lines": 315,
+      "sizeKB": 9,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Rendering",
+      "file": "UnityEngine.Rendering.cs",
+      "lines": 1831,
+      "sizeKB": 63,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.SceneManagement",
+      "file": "UnityEngine.SceneManagement.cs",
+      "lines": 227,
+      "sizeKB": 8,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Scripting",
+      "file": "UnityEngine.Scripting.cs",
+      "lines": 123,
+      "sizeKB": 4,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Scripting.APIUpdating",
+      "file": "UnityEngine.Scripting.APIUpdating.cs",
+      "lines": 79,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Serialization",
+      "file": "UnityEngine.Serialization.cs",
+      "lines": 60,
+      "sizeKB": 2,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.Sprites",
+      "file": "UnityEngine.Sprites.cs",
+      "lines": 64,
+      "sizeKB": 3,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.TextCore",
+      "file": "UnityEngine.TextCore.cs",
+      "lines": 550,
+      "sizeKB": 17,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.TextCore.LowLevel",
+      "file": "UnityEngine.TextCore.LowLevel.cs",
+      "lines": 947,
+      "sizeKB": 43,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.TextCore.Text",
+      "file": "UnityEngine.TextCore.Text.cs",
+      "lines": 4366,
+      "sizeKB": 158,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.U2D",
+      "file": "UnityEngine.U2D.cs",
+      "lines": 185,
+      "sizeKB": 6,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.UI",
+      "file": "UnityEngine.UI.cs",
+      "lines": 6509,
+      "sizeKB": 213,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.UI.Collections",
+      "file": "UnityEngine.UI.Collections.cs",
+      "lines": 317,
+      "sizeKB": 9,
+      "image": "UnityEngine.CoreModule.dll"
+    },
+    {
+      "name": "UnityEngine.UI.CoroutineTween",
+      "file": "UnityEngine.UI.CoroutineTween.cs",
+      "lines": 407,
+      "sizeKB": 13,
+      "image": "UnityEngine.CoreModule.dll"
+    }
+  ],
+  "totalLines": 406158
+}

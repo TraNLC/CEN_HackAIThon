@@ -1,0 +1,33 @@
+📂 ĐÃ CÓ 30 shop (khỏi quét lại):
+    • tho.ren.thanh.thi.1 | Phượng Tường (map 1) | 19 món
+    • tap.hoa.thon.tran.8 | Thạch Cù trẹn (map 153) | 11 món
+    • tap.hoa.thon.tran.3 | Long Môn trẹn (map 121) | 11 món
+    • tho.ren.thon.tran.3 | Long Môn trẹn (map 121) | 10 món
+    • tap.hoa.thon.tran.1 | Ba LỚng huyện (map 53) | 11 món
+    • tho.ren.thon.tran.1 | Ba LỚng huyện (map 53) | 10 món
+    • tho.ren.thon.tran.2 | Giang Tân Thôn (map 20) | 10 món
+    • tap.hoa.thon.tran.2 | Giang Tân Thôn (map 20) | 11 món
+    • tap.hoa.thon.tran.4 | Long Tuyỉn thôn (map 174) | 11 món
+    • tho.ren.thon.tran.4 | Long Tuyỉn thôn (map 174) | 10 món
+    • tho.ren.thon.tran.5 | Đạo Hương thôn (map 101) | 10 món
+    • tap.hoa.thon.tran.5 | Đạo Hương thôn (map 101) | 11 món
+    • tap.hoa.thon.tran.6 | Vổnh Lạc trẹn (map 99) | 11 món
+    • tho.ren.thon.tran.6 | Vổnh Lạc trẹn (map 99) | 10 món
+    • tap.hoa.thon.tran.7 | Chu Tiên trẹn (map 100) | 11 món
+    • tho.ren.thon.tran.7 | Chu Tiên trẹn (map 100) | 10 món
+    • tho.ren.thon.tran.8 | Thạch Cù trẹn (map 153) | 10 món
+    • tap.hoa.thanh.thi.1 | Phượng Tường (map 1) | 11 món
+    • tap.hoa.thanh.thi.2 | Thành Đô (map 11) | 11 món
+    • tho.ren.thanh.thi.2 | Thành Đô (map 11) | 19 món
+    • tap.hoa.thanh.thi.3 | Đại Lý phủ (map 162) | 11 món
+    • tho.ren.thanh.thi.3 | Đại Lý phủ (map 162) | 19 món
+    • tap.hoa.thanh.thi.4 | Biện Kinh (map 37) | 11 món
+    • tho.ren.thanh.thi.4 | Biện Kinh (map 37) | 19 món
+    • tho.ren.thanh.thi.5 | Tương Dương (map 78) | 19 món
+    • tap.hoa.thanh.thi.5 | Tương Dương (map 78) | 11 món
+    • tap.hoa.thanh.thi.6 | Dương Châu (map 80) | 11 món
+    • tho.ren.thanh.thi.6 | Dương Châu (map 80) | 19 món
+    • tap.hoa.thanh.thi.7 | Lâm An (map 176) | 11 món
+    • tho.ren.thanh.thi.7 | Lâm An (map 176) | 19 món
+🟢 LISTENER BẬT 200s (đang ở Thành Đô/map 11) — đi từng thành/thôn MỞ tạp hóa + thợ rèn...
+✅ [07:37:23] cập nhật: tho.ren.thanh.thi.2 | Thành Đô (map 11) | 28 món | vd: Huyền Thiết Kiếm, Huyền Thiết Kiếm, Huyền Thiết Kiếm, Đại Phong Đao, Đại Phong Đao

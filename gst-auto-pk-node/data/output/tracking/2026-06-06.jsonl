@@ -1,0 +1,175 @@
+{"ts": "2026-06-06 07:11:00", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 07:11:44", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 07:11:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:11:56", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:12:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:12:10", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:12:17", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã thử 3 lần nhưng không đọc được hội thoại Dã Tẩu! Tạm dừng Auto!"}
+{"ts": "2026-06-06 07:12:17", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:17", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:18", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:18", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:18", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:18", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:20", "device": "127.0.0.1:26624", "type": "log", "msg": "Bị lạc đường! Vui lòng dùng Thổ Địa Phù hoặc đưa nhân vật về thành phố thủ công rồi bật lại Auto."}
+{"ts": "2026-06-06 07:12:20", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:26624. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 07:12:20", "device": "127.0.0.1:26624", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 07:13:18", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 07:14:53", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 07:14:58", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 07:15:06", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 07:15:07", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 07:15:07", "device": "127.0.0.1:26624", "type": "log", "msg": "🔎 Cần: Đơn Đao (cấp 2, hệ thổ) (g0 d0 p1 lv2)"}
+{"ts": "2026-06-06 07:15:07", "device": "127.0.0.1:26624", "type": "log", "msg": "Không có trong rương. Quét sạp người chơi quanh đây..."}
+{"ts": "2026-06-06 07:15:11", "device": "127.0.0.1:26624", "type": "log", "msg": "Thư viện sạp: 56 sạp (420 món). Ngưỡng mua: 50 vạn."}
+{"ts": "2026-06-06 07:15:11", "device": "127.0.0.1:26624", "type": "log", "msg": "[chẩn đoán] Loại đồ ở sạp (detail->số lượng): {7: 27, 9: 104, 0: 44, 5: 17, 2: 17, 4: 96, 3: 52, 8: 6, 1: 49, 6: 8}. Cùng loại spec(detail=0): 44 món."}
+{"ts": "2026-06-06 07:15:11", "device": "127.0.0.1:26624", "type": "log", "msg": "Có 44 món cùng loại nhưng không khớp (p,lv,giá): [(3, 9, 300000), (0, 0, 0), (0, 9, 3000000), (1, 10, 200000), (4, 10, 200000), (1, 10, 0), (4, 9, 0), (2, 10, 15)]. Cần đúng (p=1,lv=2) & giá<= 50 vạn."}
+{"ts": "2026-06-06 07:15:11", "device": "127.0.0.1:26624", "type": "log", "msg": "Chưa thấy Đơn Đao (cấp 2, hệ thổ) giá <= 50 vạn ở sạp quanh đây. Đứng chờ."}
+{"ts": "2026-06-06 07:15:34", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:26624. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 07:15:34", "device": "127.0.0.1:26624", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 07:19:38", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 07:23:19", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 07:24:14", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 07:24:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:24:26", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 07:24:26", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 07:24:26", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 07:24:26", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 07:24:26", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 07:24:27", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 07:24:27", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 07:24:27", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 07:24:27", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 07:24:27", "device": "127.0.0.1:26624", "type": "log", "msg": "Không thấy 'Đơn Đao' trong shop_index (tho.ren.thanh.thi.2 + shop cùng loại). Cần bổ sung shop_index (build_shop_index) hoặc tên item chưa map."}
+{"ts": "2026-06-06 07:25:08", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:26624. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 07:25:08", "device": "127.0.0.1:26624", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 07:42:38", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 07:46:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 07:46:54", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 07:49:24", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 08:02:50", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 08:02:55", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:01", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:01", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 08:03:01", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 08:03:01", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:01", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "→ itemindex=28 ('đơn đao', giá 0). Mua remote (đứng im)..."}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "Bạc trong người ít quá. Dùng bí thuật Rút Bạc Từ Xa (5 Vạn)..."}
+{"ts": "2026-06-06 08:03:02", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang gửi lệnh mua Đơn Đao xuyên không gian..."}
+{"ts": "2026-06-06 08:03:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang phân tích gói tin eSyncPlayerItem để lấy toạ độ..."}
+{"ts": "2026-06-06 08:03:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Network Sniffer: Đồ nằm ở ô 120001"}
+{"ts": "2026-06-06 08:03:03", "device": "127.0.0.1:26624", "type": "item_received", "name": "Đơn Đao", "source": "buy_shop", "slot": 120001}
+{"ts": "2026-06-06 08:03:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã mua đồ xong. Món đồ nằm ở ô 120001. Đi trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp/hoàn thành NV Dã Tẩu bằng packet (GiveBox)..."}
+{"ts": "2026-06-06 08:03:04", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp đồ packet: eGiveBoxSend(itemId=120001) + Confirm..."}
+{"ts": "2026-06-06 08:03:11", "device": "127.0.0.1:26624", "type": "log", "msg": "⚠️ Không thấy bảng phần thưởng (245). NV có thể tự trả thưởng hoặc gói tới muộn."}
+{"ts": "2026-06-06 08:03:11", "device": "127.0.0.1:26624", "type": "reward", "qno": 1, "options": ["(không có bảng chọn thưởng)"], "chosen_idx": -1, "chosen": "tự động"}
+{"ts": "2026-06-06 08:03:12", "device": "127.0.0.1:26624", "type": "quest_completed", "qno": 1, "remaining": 0}
+{"ts": "2026-06-06 08:03:14", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:14", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "→ itemindex=28 ('đơn đao', giá 0). Mua remote (đứng im)..."}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "Bạc trong người ít quá. Dùng bí thuật Rút Bạc Từ Xa (5 Vạn)..."}
+{"ts": "2026-06-06 08:03:15", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang gửi lệnh mua Đơn Đao xuyên không gian..."}
+{"ts": "2026-06-06 08:03:16", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang phân tích gói tin eSyncPlayerItem để lấy toạ độ..."}
+{"ts": "2026-06-06 08:03:21", "device": "127.0.0.1:26624", "type": "log", "msg": "Lỗi! Không tìm thấy vật phẩm vừa mua trong hành trang!"}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "→ itemindex=28 ('đơn đao', giá 0). Mua remote (đứng im)..."}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "Bạc trong người ít quá. Dùng bí thuật Rút Bạc Từ Xa (5 Vạn)..."}
+{"ts": "2026-06-06 08:03:22", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang gửi lệnh mua Đơn Đao xuyên không gian..."}
+{"ts": "2026-06-06 08:03:23", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang phân tích gói tin eSyncPlayerItem để lấy toạ độ..."}
+{"ts": "2026-06-06 08:03:23", "device": "127.0.0.1:26624", "type": "log", "msg": "Network Sniffer: Đồ nằm ở ô 120001"}
+{"ts": "2026-06-06 08:03:23", "device": "127.0.0.1:26624", "type": "item_received", "name": "Đơn Đao", "source": "buy_shop", "slot": 120001}
+{"ts": "2026-06-06 08:03:23", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã mua đồ xong. Món đồ nằm ở ô 120001. Đi trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:23", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp/hoàn thành NV Dã Tẩu bằng packet (GiveBox)..."}
+{"ts": "2026-06-06 08:03:24", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp đồ packet: eGiveBoxSend(itemId=120001) + Confirm..."}
+{"ts": "2026-06-06 08:03:31", "device": "127.0.0.1:26624", "type": "log", "msg": "⚠️ Không thấy bảng phần thưởng (245). NV có thể tự trả thưởng hoặc gói tới muộn."}
+{"ts": "2026-06-06 08:03:31", "device": "127.0.0.1:26624", "type": "reward", "qno": 1, "options": ["(không có bảng chọn thưởng)"], "chosen_idx": -1, "chosen": "tự động"}
+{"ts": "2026-06-06 08:03:32", "device": "127.0.0.1:26624", "type": "quest_completed", "qno": 1, "remaining": 0}
+{"ts": "2026-06-06 08:03:34", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 08:03:35", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "→ itemindex=28 ('đơn đao', giá 0). Mua remote (đứng im)..."}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Bạc trong người ít quá. Dùng bí thuật Rút Bạc Từ Xa (5 Vạn)..."}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang gửi lệnh mua Đơn Đao xuyên không gian..."}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang phân tích gói tin eSyncPlayerItem để lấy toạ độ..."}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Network Sniffer: Đồ nằm ở ô 120001"}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "item_received", "name": "Đơn Đao", "source": "buy_shop", "slot": 120001}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã mua đồ xong. Món đồ nằm ở ô 120001. Đi trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:36", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp/hoàn thành NV Dã Tẩu bằng packet (GiveBox)..."}
+{"ts": "2026-06-06 08:03:37", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp đồ packet: eGiveBoxSend(itemId=120001) + Confirm..."}
+{"ts": "2026-06-06 08:03:44", "device": "127.0.0.1:26624", "type": "log", "msg": "⚠️ Không thấy bảng phần thưởng (245). NV có thể tự trả thưởng hoặc gói tới muộn."}
+{"ts": "2026-06-06 08:03:44", "device": "127.0.0.1:26624", "type": "reward", "qno": 1, "options": ["(không có bảng chọn thưởng)"], "chosen_idx": -1, "chosen": "tự động"}
+{"ts": "2026-06-06 08:03:45", "device": "127.0.0.1:26624", "type": "quest_completed", "qno": 1, "remaining": 0}
+{"ts": "2026-06-06 08:03:47", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "log", "msg": "📜 Đã nhận nhiệm vụ: Đơn Đao"}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "log", "msg": "📝 Yêu cầu: Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ"}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "log", "msg": "=============================="}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 1, "item": "Đơn Đao", "text": "Nhiệm vụ thứ 1. Đến chỗ Thợ rèn Thành Đô tìm cho ta 1 cái Đơn Đao hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "log", "msg": "📂 Loại NV: Mua đồ ở NPC (thợ rèn/tạp hóa) → Hành động: Auto làm"}
+{"ts": "2026-06-06 08:03:48", "device": "127.0.0.1:26624", "type": "quest_action", "qno": 1, "qtype": "buy", "action": "auto", "item": "Đơn Đao"}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "NV MUA SHOP NPC: 1x Đơn Đao"}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "→ Shop: tho.ren.thanh.thi.2 (thành đô)"}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "→ itemindex=28 ('đơn đao', giá 0). Mua remote (đứng im)..."}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Bạc trong người ít quá. Dùng bí thuật Rút Bạc Từ Xa (5 Vạn)..."}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang gửi lệnh mua Đơn Đao xuyên không gian..."}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang phân tích gói tin eSyncPlayerItem để lấy toạ độ..."}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Network Sniffer: Đồ nằm ở ô 120001"}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "item_received", "name": "Đơn Đao", "source": "buy_shop", "slot": 120001}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã mua đồ xong. Món đồ nằm ở ô 120001. Đi trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:03:49", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp/hoàn thành NV Dã Tẩu bằng packet (GiveBox)..."}
+{"ts": "2026-06-06 08:03:50", "device": "127.0.0.1:26624", "type": "log", "msg": "Nộp đồ packet: eGiveBoxSend(itemId=120001) + Confirm..."}
+{"ts": "2026-06-06 08:03:57", "device": "127.0.0.1:26624", "type": "log", "msg": "⚠️ Không thấy bảng phần thưởng (245). NV có thể tự trả thưởng hoặc gói tới muộn."}
+{"ts": "2026-06-06 08:03:57", "device": "127.0.0.1:26624", "type": "reward", "qno": 1, "options": ["(không có bảng chọn thưởng)"], "chosen_idx": -1, "chosen": "tự động"}
+{"ts": "2026-06-06 08:03:58", "device": "127.0.0.1:26624", "type": "quest_completed", "qno": 1, "remaining": 0}
+{"ts": "2026-06-06 08:03:59", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:26624. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 08:04:00", "device": "127.0.0.1:26624", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 08:08:10", "device": "SYSTEM", "type": "log", "msg": "Phần mềm sẵn sàng. Quét thiết bị và click [Auto] để bật."}
+{"ts": "2026-06-06 08:08:38", "device": "127.0.0.1:5555", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:5555."}
+{"ts": "2026-06-06 08:08:40", "device": "127.0.0.1:5555", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:5555. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 08:08:42", "device": "127.0.0.1:5555", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 08:08:44", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã bật Auto cho 127.0.0.1:26624."}
+{"ts": "2026-06-06 08:08:52", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:09:03", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:09:13", "device": "127.0.0.1:26624", "type": "log", "msg": "Đang trò chuyện với Dã Tẩu để nhận/trả nhiệm vụ..."}
+{"ts": "2026-06-06 08:09:19", "device": "127.0.0.1:26624", "type": "log", "msg": "Đã tắt Auto cho 127.0.0.1:26624. Đang chờ luồng dừng..."}
+{"ts": "2026-06-06 08:09:23", "device": "127.0.0.1:26624", "type": "log", "msg": "Bot đã dừng lại hoàn toàn."}
+{"ts": "2026-06-06 08:33:54", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 2, "item": "Trường Thương", "text": "Nhiệm vụ thứ 2. Đến chỗ Thợ rèn Biện Kinh tìm cho ta 1 cái Trường Thương hệ Thổ", "remaining": 0}
+{"ts": "2026-06-06 21:47:44", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 3, "item": "Dây Chuyền", "text": "Nhiệm vụ thứ 3. Hãy đi tìm cho ta 1 cái Dây Chuyền hệ Thủy. Hôm nay còn 26 nhiệm vụ để hoàn thành.", "remaining": 26}
+{"ts": "2026-06-06 22:04:06", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 3, "item": "Dây Chuyền", "text": "Nhiệm vụ thứ 3. Hãy đi tìm cho ta 1 cái Dây Chuyền hệ Thủy. Hôm nay còn 26 nhiệm vụ để hoàn thành.", "remaining": 26}
+{"ts": "2026-06-06 22:11:02", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 3, "item": "Dây Chuyền", "text": "Nhiệm vụ thứ 3. Hãy đi tìm cho ta 1 cái Dây Chuyền hệ Thủy. Hôm nay còn 26 nhiệm vụ để hoàn thành.", "remaining": 26}
+{"ts": "2026-06-06 22:16:04", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 3, "item": "Dây Chuyền", "text": "Nhiệm vụ thứ 3. Hãy đi tìm cho ta 1 cái Dây Chuyền hệ Thủy. Hôm nay còn 26 nhiệm vụ để hoàn thành.", "remaining": 26}
+{"ts": "2026-06-06 22:16:33", "device": "127.0.0.1:26624", "type": "quest_received", "qno": 4, "item": "Ngọc Bội(Nữ) [Cấp 8]", "text": "Nhiệm vụ thứ 4. Hãy đi tìm cho ta 1 cái Ngọc Bội(Nữ) [Cấp 8] hệ Kim. Hôm nay còn 25 nhiệm vụ để hoàn thành.", "remaining": 25}
+{"ts": "2026-06-06 23:50:01", "device": "127.0.0.1:26625", "type": "quest_received", "qno": 4, "item": "Ngọc Bội(Nữ) [Cấp 8]", "text": "Nhiệm vụ thứ 4. Hãy đi tìm cho ta 1 cái Ngọc Bội(Nữ) [Cấp 8] hệ Kim. Hôm nay còn 25 nhiệm vụ để hoàn thành.", "remaining": 25}

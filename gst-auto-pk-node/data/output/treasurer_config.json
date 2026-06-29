@@ -1,0 +1,14 @@
+{
+  "device": "127.0.0.1:26752",
+  "give_names": [
+    "Quế Hoa Tửu",
+    "Thiên sơn Bảo Lộ",
+    "Thiết La Hán"
+  ],
+  "pos": {
+    "map_id": 37,
+    "gx": 214,
+    "gy": 189
+  },
+  "give_money": 20000
+}

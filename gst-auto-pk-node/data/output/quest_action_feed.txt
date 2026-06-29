@@ -1,0 +1,21 @@
+🟢 SNIFF NÚT NV 180s — mở Dã Tẩu, bấm LẦN LƯỢT từng nút (Nhận → Hoàn thành → Hủy → Hủy 100 đồ chí). ⭐ = gói liên quan.
+⭐ [07:00:32] GỬI eNpcDialogue(33) f1=str('3447') | hex=0600000021000a0433343437
+⭐ [07:00:38] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:00:41] GỬI eGiveBoxConfirm(130)  | hex=000000008200
+⭐ [07:00:44] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:00:52] GỬI eNpcDialogue(33) f1=str('3447') | hex=0600000021000a0433343437
+⭐ [07:00:55] GỬI eNpcSelect(35) f1=int(1) | hex=0200000023000801
+⭐ [07:01:00] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:01:02] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:02:05] GỬI eNpcDialogue(33) f1=str('3447') | hex=0600000021000a0433343437
+⭐ [07:02:27] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:02:45] GỬI eNpcSelect(35) f1=int(1) | hex=0200000023000801
+⭐ [07:02:47] GỬI eNpcSelect(35) f1=int(1) | hex=0200000023000801
+⭐ [07:02:49] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:03:01] GỬI eNpcDialogue(33) f1=str('3447') | hex=0600000021000a0433343437
+⭐ [07:03:03] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:03:05] GỬI eNpcSelect(35)  | hex=000000002300
+⭐ [07:03:07] GỬI eGiveBoxSend(127) f1=str('44') | hex=040000007f000a023434
+⭐ [07:03:09] GỬI eGiveBoxConfirm(130)  | hex=000000008200
+⭐ [07:03:10] GỬI eNpcSelect(35)  | hex=000000002300
+🏁 HẾT GIỜ sniff nút NV.

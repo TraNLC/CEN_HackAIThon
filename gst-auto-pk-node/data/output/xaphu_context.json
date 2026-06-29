@@ -1,0 +1,538 @@
+{
+  "npc_id": "1455",
+  "destinations": [
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 3,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Hoa Sơn Cảnh Kỹ Trường [0]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Khu vực Thành Thị",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Phượng Tường [300]",
+        "Thành Đô [300]",
+        "Đại Lý [400]",
+        "Biện Kinh [300]",
+        "Tương Dương [300]",
+        "Dương Châu [300]",
+        "Lâm An [500]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 5,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 1,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Phượng Tường [300]",
+        "Thành Đô [300]",
+        "Đại Lý [400]",
+        "Biện Kinh [300]",
+        "Tương Dương [300]",
+        "Lâm An [500]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 6,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 2,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Ba Lăng Huyện [200]",
+        "Giang Tân Thôn [100]",
+        "Long Môn Trấn [100]",
+        "Nam Nhạc Trấn [100]",
+        "Long Tuyền Thôn [100]",
+        "Đạo Hương Thôn [100]",
+        "Vĩnh Lạc Trấn [100]",
+        "Chu Tiên Trấn [100]",
+        "Thạch Cổ Trấn [100]",
+        "Tây Sơn Thôn [100]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 10,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Hoa Sơn Cảnh Kỹ Trường [0]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 4,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Kiếm Các Tây Bắc [0]",
+        "Tầng Lăng [0]",
+        "Mãnh Hổ Động [0]",
+        "Kiếm Các Tây Nam [0]",
+        "Kiếm Các Trung Nguyên [0]",
+        "Vũ Lăng Sơn [0]",
+        "Bạch Thủy Động [0]",
+        "Phục Lưu Động [0]",
+        "Hỏa Lang Động [0]",
+        "La Tiêu Sơn [0]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Vũ Di Sơn [0]",
+        "Thục Cương Sơn [0]",
+        "Lăng Tần Thủy Hoàng [0]",
+        "Bạch Vân Động [0]",
+        "Miêu Lĩnh [0]",
+        "Yến Tử Động [0]",
+        "Phục Ngưu Sơn Đông [0]",
+        "Khoái Hoạt Lâm [0]",
+        "Dược Vương Động Tầng 1 [0]",
+        "Tuyết Báo Động Tầng 1 [0]",
+        "Tuyết Báo Động Tầng 2 [0]",
+        "Thổ Phỉ Động [0]",
+        "Kim Quang Động [0]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 13,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Điểm Thương Sơn [0]",
+        "Phục Ngưu Sơn Tây [0]",
+        "Thanh Thành Sơn [0]",
+        "Hoàng Hà Nguyên Đầu [0]",
+        "Tỏa Vân Động [0]",
+        "Thần Tiên Động [0]",
+        "Mê Cung Kê Quán Động [0]",
+        "Kiến Tính Phong Sơn Động [0]",
+        "Phụng Nhãn Động [0]",
+        "Điểm Thương Động Tầng 1 [0]",
+        "Điểm Thương Động Tầng 2 [0]",
+        "Điểm Thương Động Tầng 3 [0]",
+        "Long Cung Động [0]",
+        "Kinh Hoàng Động [0]",
+        "Mật Thất Thiếu Lâm [0]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 15,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 7,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Địa Đạo Hậu Viện Tín Tướng Tự [100]",
+        "Hưởng Thủy Động [100]",
+        "Thiết Tháp Tầng 1 [100]",
+        "Thiết Tháp Tầng 2 [100]",
+        "Thiết Tháp Tầng 3 [100]",
+        "Thiên Tâm Động [100]",
+        "Đáy Động Đình Hồ Tầng 1 [100]",
+        "Đáy Động Đình Hồ Tầng 2 [100]",
+        "Tường Vân Động Tầng 1 [100]",
+        "Lưu Tiên Động Tầng 1 [100]",
+        "Băng Huyệt Động [100]",
+        "Tuyết Báo Động Tầng 3 [100]",
+        "Ác Bá Địa Đạo [100]",
+        "Thiên Tầm Tháp Tầng 1 [100]",
+        "Thiên Tầm Tháp Tầng 2 [100]",
+        "Sơn Động Ngự Hoa Viên [100]",
+        "Nghiệt Long Động [100]",
+        "Ngọc Hoa Động [100]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 18,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 8,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Thánh Động Tầng 1 [200]",
+        "Thánh Động Tầng 2 [200]",
+        "Mê Cung Cấm Địa [200]",
+        "Hoành Sơn Phái [200]",
+        "Thanh Loa Đảo [200]",
+        "Mật Đạo Tương Dương [200]",
+        "108 La Hán Trận [200]",
+        "Tường Vân Động Tầng 2 [200]",
+        "Tường Vân Động Tầng 3 [200]",
+        "Tường Vân Động Tầng 4 [200]",
+        "Lưu Tiên Động Tầng 2 [200]",
+        "Lưu Tiên Động Tầng 3 [200]",
+        "Lưu Tiên Động Tầng 4 [200]",
+        "Tuyết Báo Động Tầng 4 [200]",
+        "Mê Cung Cấm Địa [200]",
+        "Trúc Tơ Động Tầng 1 [200]",
+        "Thiên Tầm Tháp Tầng 3 [200]",
+        "Dương Giác Động [200]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 9,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Lâm Du Quan [300]",
+        "Trường Giang Nguyên Đầu [300]",
+        "Đào Hoa Nguyên [300]",
+        "Thanh Loa Đảo Sơn Động [300]",
+        "Trúc Tơ Động Tầng 2 [300]",
+        "Đại Tù Động [300]",
+        "Sơn Bảo Động [300]",
+        "Linh Cốc Động [300]",
+        "Tường Vân Động Tầng 5 [300]",
+        "Lão Hổ Động [300]",
+        "Lưu Tiên Động Tầng 5 [300]",
+        "Lưu Tiên Động Tầng 6 [300]",
+        "Dược Vương Động Tầng 2 [300]",
+        "Tuyết Báo Động Tầng 5 [300]",
+        "Long Nhãn Động [300]",
+        "Tầng Lăng Tầng 2 [300]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 16,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Sa Mạc Địa Biểu [400]",
+        "Chân Núi Trường Bạch [400]",
+        "Băng Hà Động [400]",
+        "Nhạn Thạch Động [400]",
+        "Dược Vương Động Tầng 3 [400]",
+        "Tuyết Báo Động Tầng 6 [400]",
+        "Tuyết Báo Động Tầng 7 [400]",
+        "Lưỡng Thủy Động 1 [400]",
+        "Lưỡng Thủy Động 2 [400]",
+        "Thanh Khê Động [400]",
+        "Vũ Lăng Động [400]",
+        "Phù Dung Động [400]",
+        "Vô Danh Động [400]",
+        "Phi Thiên Động [400]",
+        "Dương Trung Động [400]",
+        "Tầng Lăng Tầng 3 [400]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": null,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 11,
+      "text": "Vị đại hiệp muốn đi đến đâu?",
+      "options": [
+        "Mạc Cao Quật [500]",
+        "Mạc Cao Quật 2 [500]",
+        "Trường Bạch Nam [500]",
+        "Trường Bạch Nam 2 [500]",
+        "Trường Bạch Bắc [500]",
+        "Phong Lăng Độ [500]",
+        "Sa Mạc 1 [500]",
+        "Sa Mạc 2 [500]",
+        "Sa Mạc 3 [500]",
+        "Sa Mạc 4 [500]",
+        "Khỏa Lang Động [500]",
+        "Tiến Cúc Động [500]",
+        "Cán Viên Động [500]",
+        "Dược Vương Tầng 4 [500]",
+        "Dược Vương Tầng 5 [500]",
+        "Tuyết Báo Tầng 8 [500]",
+        "Hắc Sa Động [500]",
+        "Quay lại",
+        "Kết thúc đối thoại"
+      ]
+    },
+    {
+      "after_index": 17,
+      "text": "Vị Thiếu hiệp muốn đi đến đâu?",
+      "options": [
+        "Trở lại điểm cũ",
+        "Thành Thị",
+        "Thôn Trấn",
+        "Luyện công 10",
+        "Luyện công 20",
+        "Luyện công 30",
+        "Luyện công 40",
+        "Luyện công 50",
+        "Luyện công 60",
+        "Luyện công 70",
+        "Luyện công 80",
+        "Luyện công 90",
+        "Tẩy Tủy đảo",
+        "Đêm Huy Hoàng",
+        "Kết thúc đối thoại"
+      ]
+    }
+  ]
+}

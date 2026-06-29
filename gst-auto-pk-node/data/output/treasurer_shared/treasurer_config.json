@@ -1,0 +1,28 @@
+{
+  "device": "127.0.0.1:26880",
+  "give_names": [
+    "Băng Phòng hoàn (Tống Kim)",
+    "Cao Thiểm hoàn (Tống Kim)",
+    "Chiến cổ (Tống Kim)",
+    "Gia Bào hoàn (Tống Kim)",
+    "Hỏa Phòng hoàn (Tống Kim)",
+    "Lôi Phòng hoàn (Tống Kim)",
+    "Lệnh bài (Tống Kim)",
+    "Phi Tốc hoàn (Tống Kim)",
+    "Trường Mệnh hoàn (Tống Kim)",
+    "Đại Lực hoàn (Tống Kim)",
+    "Độc Phòng hoàn (Tống Kim)",
+    "Quế Hoa Tửu",
+    "Thiên sơn Bảo Lộ",
+    "Thiết La Hán",
+    "Tiên Thảo Lộ",
+    "Tử Thủy Tinh"
+  ],
+  "machine": "CPP00061233Bfsoftfptvn",
+  "pos": {
+    "map_id": 37,
+    "gx": 214,
+    "gy": 189
+  },
+  "give_money": 200000
+}

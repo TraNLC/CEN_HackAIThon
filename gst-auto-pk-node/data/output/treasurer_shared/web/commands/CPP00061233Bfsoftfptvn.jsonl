@@ -1,0 +1,40 @@
+{"id": "101aaa96d633", "ts": 1781773170.227653, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "resume", "args": {}}
+{"id": "7e46c3e72c19", "ts": 1781773408.329371, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "34358d642f4f", "ts": 1781773705.849122, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "31d310958be9", "ts": 1781774149.547285, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "14911494e18d", "ts": 1781777526.094362, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_config", "args": {"name": "loot", "content": {"sell_loot": true}}}
+{"id": "e98c8bc16dd8", "ts": 1781780114.9744341, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"tim_do": "auto", "do_hiem": "huy"}}}
+{"id": "1f9084a43c39", "ts": 1781781436.275572, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "be65f7a2fce8", "ts": 1781781437.885959, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "aea643391d70", "ts": 1781781440.387831, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "b717f9e020e9", "ts": 1781781444.7056608, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "pause", "args": {}}
+{"id": "25283933ab6f", "ts": 1781784495.183521, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "d005f17cf277", "ts": 1781784529.771161, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "ef0dd658a62e", "ts": 1781841783.440383, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_threshold", "args": {"van": 6}}
+{"id": "bf19eae89ac3", "ts": 1781843291.017854, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_threshold", "args": {"van": 4}}
+{"id": "85b3b5c96355", "ts": 1781843310.799222, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_threshold", "args": {"van": 6}}
+{"id": "cf88b2d0a3b5", "ts": 1781844618.150652, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "a479547c53b5", "ts": 1781848167.5656781, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "auto", "nang_thuoc_tinh": "auto", "do_hiem": "huy"}}}
+{"id": "98457090a8ea", "ts": 1781848177.200372, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "auto", "nang_thuoc_tinh": "auto", "do_hiem": "huy_do_chi"}}}
+{"id": "2f89277908fd", "ts": 1781848224.599064, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "huy_do_chi", "nang_thuoc_tinh": "auto", "do_hiem": "huy_do_chi"}}}
+{"id": "7bdcee8906c3", "ts": 1781855176.247351, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "f3eebd97fdfa", "ts": 1781855757.405635, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "343dd8f48113", "ts": 1781856916.314877, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "set_accounts", "args": {"accounts": [{"acc": "duatop052"}, {"acc": "duatop053"}, {"acc": "duatop054"}, {"acc": "duatop055"}, {"acc": "duatop056"}, {"acc": "duatop057"}, {"acc": "duatop058"}, {"acc": "duatop059"}, {"acc": "duatop060"}]}}
+{"id": "b58677144131", "ts": 1781856958.6156852, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "set_accounts", "args": {"accounts": [{"acc": "duatop052", "pass": "11111111"}, {"acc": "duatop053", "pass": "11111111"}, {"acc": "duatop054", "pass": "11111111"}, {"acc": "duatop055", "pass": "11111111"}, {"acc": "duatop056", "pass": "11111111"}, {"acc": "duatop057", "pass": "11111111"}, {"acc": "duatop058", "pass": "11111111"}, {"acc": "duatop059", "pass": "11111111"}, {"acc": "duatop060", "pass": "11111111"}, {"acc": "duatop061", "pass": "11111111"}, {"acc": "duatop062", "pass": "11111111"}, {"acc": "duatop063", "pass": "11111111"}]}}
+{"id": "50b2b72accfc", "ts": 1781856964.297916, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "be01d39e23eb", "ts": 1781864070.7317262, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "61f99bd09eaa", "ts": 1781864074.1091762, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "e4633699e922", "ts": 1781864082.507206, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "9d8bd62bc135", "ts": 1781864085.7886689, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "eccd5f42703c", "ts": 1781872505.725593, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "resume", "args": {}}
+{"id": "f1b09fda48c2", "ts": 1781872513.5625448, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26752", "action": "resume", "args": {}}
+{"id": "818cd9e6e8f8", "ts": 1781872548.33849, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "resume", "args": {}}
+{"id": "9cd6e2afe0d9", "ts": 1781873760.466047, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26752", "action": "resume", "args": {}}
+{"id": "e9a38a31a127", "ts": 1781874139.494675, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26752", "action": "resume", "args": {}}
+{"id": "6846a3ff65b8", "ts": 1781888369.649277, "machine": "CPP00061233Bfsoftfptvn", "device": null, "action": "rescan", "args": {}}
+{"id": "aba28fe07dda", "ts": 1781910787.648757, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26720", "action": "resume", "args": {}}
+{"id": "e1453c3869eb", "ts": 1781910796.9569988, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26752", "action": "resume", "args": {}}
+{"id": "f59d9d063e10", "ts": 1781910814.457162, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26816", "action": "stop", "args": {}}
+{"id": "e8bbb948199b", "ts": 1781910818.168632, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26816", "action": "stop", "args": {}}
+{"id": "e270b8f156b1", "ts": 1781910840.832809, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26816", "action": "start", "args": {}}
+{"id": "e5f6cc788ee9", "ts": 1781937895.174901, "machine": "CPP00061233Bfsoftfptvn", "device": "127.0.0.1:26624", "action": "resume", "args": {}}

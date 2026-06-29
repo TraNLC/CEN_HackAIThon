@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: gstauto-shared
+created: 2026-06-14T11:25:30+07:00

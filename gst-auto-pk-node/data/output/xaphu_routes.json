@@ -1,0 +1,1775 @@
+{
+  "note": "LC50-90 build theo cost-suffix (tin cay). seq=[catTopMenu, destIdx]. talk_npc(npc_town)->eNpcSelect(cat)->eNpcSelect(idx).",
+  "npc_town": "1222",
+  "npc_field_to_city": "1571",
+  "return_city_seq": [
+    0,
+    4
+  ],
+  "cities_field_idx": {
+    "Phượng Tường": 0,
+    "Thành Đô": 1,
+    "Đại Lý": 2,
+    "Biện Kinh": 3,
+    "Tương Dương": 4,
+    "Dương Châu": 5,
+    "Lâm An": 6
+  },
+  "routes": {
+    "ba lăng huyện": {
+      "name": "Ba Lăng Huyện",
+      "seq": [
+        2,
+        0
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "giang tân thôn": {
+      "name": "Giang Tân Thôn",
+      "seq": [
+        2,
+        1
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "long môn trấn": {
+      "name": "Long Môn Trấn",
+      "seq": [
+        2,
+        2
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "nam nhạc trấn": {
+      "name": "Nam Nhạc Trấn",
+      "seq": [
+        2,
+        3
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "long tuyền thôn": {
+      "name": "Long Tuyền Thôn",
+      "seq": [
+        2,
+        4
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "đạo hương thôn": {
+      "name": "Đạo Hương Thôn",
+      "seq": [
+        2,
+        5
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "vĩnh lạc trấn": {
+      "name": "Vĩnh Lạc Trấn",
+      "seq": [
+        2,
+        6
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "chu tiên trấn": {
+      "name": "Chu Tiên Trấn",
+      "seq": [
+        2,
+        7
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "thạch cổ trấn": {
+      "name": "Thạch Cổ Trấn",
+      "seq": [
+        2,
+        8
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "tây sơn thôn": {
+      "name": "Tây Sơn Thôn",
+      "seq": [
+        2,
+        9
+      ],
+      "tier": "Thôn Trấn"
+    },
+    "địa đạo hậu viện tín tướng tự": {
+      "name": "Địa Đạo Hậu Viện Tín Tướng Tự",
+      "seq": [
+        7,
+        0
+      ],
+      "tier": "LC50"
+    },
+    "hưởng thủy động": {
+      "name": "Hưởng Thủy Động",
+      "seq": [
+        7,
+        1
+      ],
+      "tier": "LC50"
+    },
+    "thiết tháp tầng 1": {
+      "name": "Thiết Tháp Tầng 1",
+      "seq": [
+        7,
+        2
+      ],
+      "tier": "LC50"
+    },
+    "thiết tháp tầng 2": {
+      "name": "Thiết Tháp Tầng 2",
+      "seq": [
+        7,
+        3
+      ],
+      "tier": "LC50"
+    },
+    "thiết tháp tầng 3": {
+      "name": "Thiết Tháp Tầng 3",
+      "seq": [
+        7,
+        4
+      ],
+      "tier": "LC50"
+    },
+    "thiên tâm động": {
+      "name": "Thiên Tâm Động",
+      "seq": [
+        7,
+        5
+      ],
+      "tier": "LC50"
+    },
+    "đáy động đình hồ tầng 1": {
+      "name": "Đáy Động Đình Hồ Tầng 1",
+      "seq": [
+        7,
+        6
+      ],
+      "tier": "LC50"
+    },
+    "đáy động đình hồ tầng 2": {
+      "name": "Đáy Động Đình Hồ Tầng 2",
+      "seq": [
+        7,
+        7
+      ],
+      "tier": "LC50"
+    },
+    "tường vân động tầng 1": {
+      "name": "Tường Vân Động Tầng 1",
+      "seq": [
+        7,
+        8
+      ],
+      "tier": "LC50"
+    },
+    "lưu tiên động tầng 1": {
+      "name": "Lưu Tiên Động Tầng 1",
+      "seq": [
+        7,
+        9
+      ],
+      "tier": "LC50"
+    },
+    "băng huyệt động": {
+      "name": "Băng Huyệt Động",
+      "seq": [
+        7,
+        10
+      ],
+      "tier": "LC50"
+    },
+    "tuyết báo động tầng 3": {
+      "name": "Tuyết Báo Động Tầng 3",
+      "seq": [
+        7,
+        11
+      ],
+      "tier": "LC50"
+    },
+    "ác bá địa đạo": {
+      "name": "Ác Bá Địa Đạo",
+      "seq": [
+        7,
+        12
+      ],
+      "tier": "LC50"
+    },
+    "thiên tầm tháp tầng 1": {
+      "name": "Thiên Tầm Tháp Tầng 1",
+      "seq": [
+        7,
+        13
+      ],
+      "tier": "LC50"
+    },
+    "thiên tầm tháp tầng 2": {
+      "name": "Thiên Tầm Tháp Tầng 2",
+      "seq": [
+        7,
+        14
+      ],
+      "tier": "LC50"
+    },
+    "sơn động ngự hoa viên": {
+      "name": "Sơn Động Ngự Hoa Viên",
+      "seq": [
+        7,
+        15
+      ],
+      "tier": "LC50"
+    },
+    "nghiệt long động": {
+      "name": "Nghiệt Long Động",
+      "seq": [
+        7,
+        16
+      ],
+      "tier": "LC50"
+    },
+    "ngọc hoa động": {
+      "name": "Ngọc Hoa Động",
+      "seq": [
+        7,
+        17
+      ],
+      "tier": "LC50"
+    },
+    "thánh động tầng 1": {
+      "name": "Thánh Động Tầng 1",
+      "seq": [
+        8,
+        0
+      ],
+      "tier": "LC60"
+    },
+    "thánh động tầng 2": {
+      "name": "Thánh Động Tầng 2",
+      "seq": [
+        8,
+        1
+      ],
+      "tier": "LC60"
+    },
+    "mê cung cấm địa": {
+      "name": "Mê Cung Cấm Địa",
+      "seq": [
+        8,
+        14
+      ],
+      "tier": "LC60"
+    },
+    "hoành sơn phái": {
+      "name": "Hoành Sơn Phái",
+      "seq": [
+        8,
+        3
+      ],
+      "tier": "LC60"
+    },
+    "thanh loa đảo": {
+      "name": "Thanh Loa Đảo",
+      "seq": [
+        8,
+        4
+      ],
+      "tier": "LC60"
+    },
+    "mật đạo tương dương": {
+      "name": "Mật Đạo Tương Dương",
+      "seq": [
+        8,
+        5
+      ],
+      "tier": "LC60"
+    },
+    "108 la hán trận": {
+      "name": "108 La Hán Trận",
+      "seq": [
+        8,
+        6
+      ],
+      "tier": "LC60"
+    },
+    "tường vân động tầng 2": {
+      "name": "Tường Vân Động Tầng 2",
+      "seq": [
+        8,
+        7
+      ],
+      "tier": "LC60"
+    },
+    "tường vân động tầng 3": {
+      "name": "Tường Vân Động Tầng 3",
+      "seq": [
+        8,
+        8
+      ],
+      "tier": "LC60"
+    },
+    "tường vân động tầng 4": {
+      "name": "Tường Vân Động Tầng 4",
+      "seq": [
+        8,
+        9
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên động tầng 2": {
+      "name": "Lưu Tiên Động Tầng 2",
+      "seq": [
+        8,
+        10
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên động tầng 3": {
+      "name": "Lưu Tiên Động Tầng 3",
+      "seq": [
+        8,
+        11
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên động tầng 4": {
+      "name": "Lưu Tiên Động Tầng 4",
+      "seq": [
+        8,
+        12
+      ],
+      "tier": "LC60"
+    },
+    "tuyết báo động tầng 4": {
+      "name": "Tuyết Báo Động Tầng 4",
+      "seq": [
+        8,
+        13
+      ],
+      "tier": "LC60"
+    },
+    "trúc tơ động tầng 1": {
+      "name": "Trúc Tơ Động Tầng 1",
+      "seq": [
+        8,
+        15
+      ],
+      "tier": "LC60"
+    },
+    "thiên tầm tháp tầng 3": {
+      "name": "Thiên Tầm Tháp Tầng 3",
+      "seq": [
+        8,
+        16
+      ],
+      "tier": "LC60"
+    },
+    "dương giác động": {
+      "name": "Dương Giác Động",
+      "seq": [
+        8,
+        17
+      ],
+      "tier": "LC60"
+    },
+    "lâm du quan": {
+      "name": "Lâm Du Quan",
+      "seq": [
+        9,
+        0
+      ],
+      "tier": "LC70"
+    },
+    "trường giang nguyên đầu": {
+      "name": "Trường Giang Nguyên Đầu",
+      "seq": [
+        9,
+        1
+      ],
+      "tier": "LC70"
+    },
+    "đào hoa nguyên": {
+      "name": "Đào Hoa Nguyên",
+      "seq": [
+        9,
+        2
+      ],
+      "tier": "LC70"
+    },
+    "thanh loa đảo sơn động": {
+      "name": "Thanh Loa Đảo Sơn Động",
+      "seq": [
+        9,
+        3
+      ],
+      "tier": "LC70"
+    },
+    "trúc tơ động tầng 2": {
+      "name": "Trúc Tơ Động Tầng 2",
+      "seq": [
+        9,
+        4
+      ],
+      "tier": "LC70"
+    },
+    "đại tù động": {
+      "name": "Đại Tù Động",
+      "seq": [
+        9,
+        5
+      ],
+      "tier": "LC70"
+    },
+    "sơn bảo động": {
+      "name": "Sơn Bảo Động",
+      "seq": [
+        9,
+        6
+      ],
+      "tier": "LC70"
+    },
+    "linh cốc động": {
+      "name": "Linh Cốc Động",
+      "seq": [
+        9,
+        7
+      ],
+      "tier": "LC70"
+    },
+    "tường vân động tầng 5": {
+      "name": "Tường Vân Động Tầng 5",
+      "seq": [
+        9,
+        8
+      ],
+      "tier": "LC70"
+    },
+    "lão hổ động": {
+      "name": "Lão Hổ Động",
+      "seq": [
+        9,
+        9
+      ],
+      "tier": "LC70"
+    },
+    "lưu tiên động tầng 5": {
+      "name": "Lưu Tiên Động Tầng 5",
+      "seq": [
+        9,
+        10
+      ],
+      "tier": "LC70"
+    },
+    "lưu tiên động tầng 6": {
+      "name": "Lưu Tiên Động Tầng 6",
+      "seq": [
+        9,
+        11
+      ],
+      "tier": "LC70"
+    },
+    "dược vương động tầng 2": {
+      "name": "Dược Vương Động Tầng 2",
+      "seq": [
+        9,
+        12
+      ],
+      "tier": "LC70"
+    },
+    "tuyết báo động tầng 5": {
+      "name": "Tuyết Báo Động Tầng 5",
+      "seq": [
+        9,
+        13
+      ],
+      "tier": "LC70"
+    },
+    "long nhãn động": {
+      "name": "Long Nhãn Động",
+      "seq": [
+        9,
+        14
+      ],
+      "tier": "LC70"
+    },
+    "tầng lăng tầng 2": {
+      "name": "Tầng Lăng Tầng 2",
+      "seq": [
+        9,
+        15
+      ],
+      "tier": "LC70"
+    },
+    "sa mạc địa biểu": {
+      "name": "Sa Mạc Địa Biểu",
+      "seq": [
+        10,
+        0
+      ],
+      "tier": "LC80"
+    },
+    "chân núi trường bạch": {
+      "name": "Chân Núi Trường Bạch",
+      "seq": [
+        10,
+        1
+      ],
+      "tier": "LC80"
+    },
+    "băng hà động": {
+      "name": "Băng Hà Động",
+      "seq": [
+        10,
+        2
+      ],
+      "tier": "LC80"
+    },
+    "nhạn thạch động": {
+      "name": "Nhạn Thạch Động",
+      "seq": [
+        10,
+        3
+      ],
+      "tier": "LC80"
+    },
+    "dược vương động tầng 3": {
+      "name": "Dược Vương Động Tầng 3",
+      "seq": [
+        10,
+        4
+      ],
+      "tier": "LC80"
+    },
+    "tuyết báo động tầng 6": {
+      "name": "Tuyết Báo Động Tầng 6",
+      "seq": [
+        10,
+        5
+      ],
+      "tier": "LC80"
+    },
+    "tuyết báo động tầng 7": {
+      "name": "Tuyết Báo Động Tầng 7",
+      "seq": [
+        10,
+        6
+      ],
+      "tier": "LC80"
+    },
+    "lưỡng thủy động 1": {
+      "name": "Lưỡng Thủy Động 1",
+      "seq": [
+        10,
+        7
+      ],
+      "tier": "LC80"
+    },
+    "lưỡng thủy động 2": {
+      "name": "Lưỡng Thủy Động 2",
+      "seq": [
+        10,
+        8
+      ],
+      "tier": "LC80"
+    },
+    "thanh khê động": {
+      "name": "Thanh Khê Động",
+      "seq": [
+        10,
+        9
+      ],
+      "tier": "LC80"
+    },
+    "vũ lăng động": {
+      "name": "Vũ Lăng Động",
+      "seq": [
+        10,
+        10
+      ],
+      "tier": "LC80"
+    },
+    "phù dung động": {
+      "name": "Phù Dung Động",
+      "seq": [
+        10,
+        11
+      ],
+      "tier": "LC80"
+    },
+    "vô danh động": {
+      "name": "Vô Danh Động",
+      "seq": [
+        10,
+        12
+      ],
+      "tier": "LC80"
+    },
+    "phi thiên động": {
+      "name": "Phi Thiên Động",
+      "seq": [
+        10,
+        13
+      ],
+      "tier": "LC80"
+    },
+    "dương trung động": {
+      "name": "Dương Trung Động",
+      "seq": [
+        10,
+        14
+      ],
+      "tier": "LC80"
+    },
+    "tầng lăng tầng 3": {
+      "name": "Tầng Lăng Tầng 3",
+      "seq": [
+        10,
+        15
+      ],
+      "tier": "LC80"
+    },
+    "mạc cao quật": {
+      "name": "Mạc Cao Quật",
+      "seq": [
+        11,
+        0
+      ],
+      "tier": "LC90"
+    },
+    "mạc cao quật 2": {
+      "name": "Mạc Cao Quật 2",
+      "seq": [
+        11,
+        1
+      ],
+      "tier": "LC90"
+    },
+    "trường bạch nam": {
+      "name": "Trường Bạch Nam",
+      "seq": [
+        11,
+        2
+      ],
+      "tier": "LC90"
+    },
+    "trường bạch nam 2": {
+      "name": "Trường Bạch Nam 2",
+      "seq": [
+        11,
+        3
+      ],
+      "tier": "LC90"
+    },
+    "trường bạch bắc": {
+      "name": "Trường Bạch Bắc",
+      "seq": [
+        11,
+        4
+      ],
+      "tier": "LC90"
+    },
+    "phong lăng độ": {
+      "name": "Phong Lăng Độ",
+      "seq": [
+        11,
+        5
+      ],
+      "tier": "LC90"
+    },
+    "sa mạc 1": {
+      "name": "Sa Mạc 1",
+      "seq": [
+        11,
+        6
+      ],
+      "tier": "LC90"
+    },
+    "sa mạc 2": {
+      "name": "Sa Mạc 2",
+      "seq": [
+        11,
+        7
+      ],
+      "tier": "LC90"
+    },
+    "sa mạc 3": {
+      "name": "Sa Mạc 3",
+      "seq": [
+        11,
+        8
+      ],
+      "tier": "LC90"
+    },
+    "sa mạc 4": {
+      "name": "Sa Mạc 4",
+      "seq": [
+        11,
+        9
+      ],
+      "tier": "LC90"
+    },
+    "khỏa lang động": {
+      "name": "Khỏa Lang Động",
+      "seq": [
+        11,
+        10
+      ],
+      "tier": "LC90"
+    },
+    "tiến cúc động": {
+      "name": "Tiến Cúc Động",
+      "seq": [
+        11,
+        11
+      ],
+      "tier": "LC90"
+    },
+    "cán viên động": {
+      "name": "Cán Viên Động",
+      "seq": [
+        11,
+        12
+      ],
+      "tier": "LC90"
+    },
+    "dược vương tầng 4": {
+      "name": "Dược Vương Tầng 4",
+      "seq": [
+        11,
+        13
+      ],
+      "tier": "LC90"
+    },
+    "dược vương tầng 5": {
+      "name": "Dược Vương Tầng 5",
+      "seq": [
+        11,
+        14
+      ],
+      "tier": "LC90"
+    },
+    "tuyết báo tầng 8": {
+      "name": "Tuyết Báo Tầng 8",
+      "seq": [
+        11,
+        15
+      ],
+      "tier": "LC90"
+    },
+    "hắc sa động": {
+      "name": "Hắc Sa Động",
+      "seq": [
+        11,
+        16
+      ],
+      "tier": "LC90"
+    },
+    "phượng tường": {
+      "name": "Phượng Tường",
+      "seq": [
+        1,
+        0
+      ],
+      "tier": "Thành Thị"
+    },
+    "thành đô": {
+      "name": "Thành Đô",
+      "seq": [
+        1,
+        1
+      ],
+      "tier": "Thành Thị"
+    },
+    "đại lý": {
+      "name": "Đại Lý",
+      "seq": [
+        1,
+        2
+      ],
+      "tier": "Thành Thị"
+    },
+    "biện kinh": {
+      "name": "Biện Kinh",
+      "seq": [
+        1,
+        3
+      ],
+      "tier": "Thành Thị"
+    },
+    "dương châu": {
+      "name": "Dương Châu",
+      "seq": [
+        1,
+        5
+      ],
+      "tier": "Thành Thị"
+    },
+    "lâm an": {
+      "name": "Lâm An",
+      "seq": [
+        1,
+        5
+      ],
+      "tier": "Thành Thị"
+    },
+    "hoa sơn cảnh kỹ trường": {
+      "name": "Hoa Sơn Cảnh Kỹ Trường",
+      "seq": [
+        3,
+        0
+      ],
+      "tier": "LC10"
+    },
+    "kiếm các tây bắc": {
+      "name": "Kiếm Các Tây Bắc",
+      "seq": [
+        4,
+        0
+      ],
+      "tier": "LC20"
+    },
+    "tầng lăng": {
+      "name": "Tầng Lăng",
+      "seq": [
+        4,
+        1
+      ],
+      "tier": "LC20"
+    },
+    "mãnh hổ động": {
+      "name": "Mãnh Hổ Động",
+      "seq": [
+        4,
+        2
+      ],
+      "tier": "LC20"
+    },
+    "kiếm các tây nam": {
+      "name": "Kiếm Các Tây Nam",
+      "seq": [
+        4,
+        3
+      ],
+      "tier": "LC20"
+    },
+    "kiếm các trung nguyên": {
+      "name": "Kiếm Các Trung Nguyên",
+      "seq": [
+        4,
+        4
+      ],
+      "tier": "LC20"
+    },
+    "vũ lăng sơn": {
+      "name": "Vũ Lăng Sơn",
+      "seq": [
+        4,
+        5
+      ],
+      "tier": "LC20"
+    },
+    "bạch thủy động": {
+      "name": "Bạch Thủy Động",
+      "seq": [
+        4,
+        6
+      ],
+      "tier": "LC20"
+    },
+    "phục lưu động": {
+      "name": "Phục Lưu Động",
+      "seq": [
+        4,
+        7
+      ],
+      "tier": "LC20"
+    },
+    "hỏa lang động": {
+      "name": "Hỏa Lang Động",
+      "seq": [
+        4,
+        8
+      ],
+      "tier": "LC20"
+    },
+    "la tiêu sơn": {
+      "name": "La Tiêu Sơn",
+      "seq": [
+        4,
+        9
+      ],
+      "tier": "LC20"
+    },
+    "vũ di sơn": {
+      "name": "Vũ Di Sơn",
+      "seq": [
+        5,
+        0
+      ],
+      "tier": "LC30"
+    },
+    "thục cương sơn": {
+      "name": "Thục Cương Sơn",
+      "seq": [
+        5,
+        1
+      ],
+      "tier": "LC30"
+    },
+    "lăng tần thủy hoàng": {
+      "name": "Lăng Tần Thủy Hoàng",
+      "seq": [
+        5,
+        2
+      ],
+      "tier": "LC30"
+    },
+    "bạch vân động": {
+      "name": "Bạch Vân Động",
+      "seq": [
+        5,
+        3
+      ],
+      "tier": "LC30"
+    },
+    "miêu lĩnh": {
+      "name": "Miêu Lĩnh",
+      "seq": [
+        5,
+        4
+      ],
+      "tier": "LC30"
+    },
+    "yến tử động": {
+      "name": "Yến Tử Động",
+      "seq": [
+        5,
+        5
+      ],
+      "tier": "LC30"
+    },
+    "phục ngưu sơn đông": {
+      "name": "Phục Ngưu Sơn Đông",
+      "seq": [
+        5,
+        6
+      ],
+      "tier": "LC30"
+    },
+    "khoái hoạt lâm": {
+      "name": "Khoái Hoạt Lâm",
+      "seq": [
+        5,
+        7
+      ],
+      "tier": "LC30"
+    },
+    "dược vương động tầng 1": {
+      "name": "Dược Vương Động Tầng 1",
+      "seq": [
+        5,
+        8
+      ],
+      "tier": "LC30"
+    },
+    "tuyết báo động tầng 1": {
+      "name": "Tuyết Báo Động Tầng 1",
+      "seq": [
+        5,
+        9
+      ],
+      "tier": "LC30"
+    },
+    "tuyết báo động tầng 2": {
+      "name": "Tuyết Báo Động Tầng 2",
+      "seq": [
+        5,
+        10
+      ],
+      "tier": "LC30"
+    },
+    "thổ phỉ động": {
+      "name": "Thổ Phỉ Động",
+      "seq": [
+        5,
+        11
+      ],
+      "tier": "LC30"
+    },
+    "kim quang động": {
+      "name": "Kim Quang Động",
+      "seq": [
+        5,
+        12
+      ],
+      "tier": "LC30"
+    },
+    "điểm thương sơn": {
+      "name": "Điểm Thương Sơn",
+      "seq": [
+        6,
+        0
+      ],
+      "tier": "LC40"
+    },
+    "phục ngưu sơn tây": {
+      "name": "Phục Ngưu Sơn Tây",
+      "seq": [
+        6,
+        1
+      ],
+      "tier": "LC40"
+    },
+    "thanh thành sơn": {
+      "name": "Thanh Thành Sơn",
+      "seq": [
+        6,
+        2
+      ],
+      "tier": "LC40"
+    },
+    "hoàng hà nguyên đầu": {
+      "name": "Hoàng Hà Nguyên Đầu",
+      "seq": [
+        6,
+        3
+      ],
+      "tier": "LC40"
+    },
+    "tỏa vân động": {
+      "name": "Tỏa Vân Động",
+      "seq": [
+        6,
+        4
+      ],
+      "tier": "LC40"
+    },
+    "thần tiên động": {
+      "name": "Thần Tiên Động",
+      "seq": [
+        6,
+        5
+      ],
+      "tier": "LC40"
+    },
+    "mê cung kê quán động": {
+      "name": "Mê Cung Kê Quán Động",
+      "seq": [
+        6,
+        6
+      ],
+      "tier": "LC40"
+    },
+    "kiến tính phong sơn động": {
+      "name": "Kiến Tính Phong Sơn Động",
+      "seq": [
+        6,
+        7
+      ],
+      "tier": "LC40"
+    },
+    "phụng nhãn động": {
+      "name": "Phụng Nhãn Động",
+      "seq": [
+        6,
+        8
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương động tầng 1": {
+      "name": "Điểm Thương Động Tầng 1",
+      "seq": [
+        6,
+        9
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương động tầng 2": {
+      "name": "Điểm Thương Động Tầng 2",
+      "seq": [
+        6,
+        10
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương động tầng 3": {
+      "name": "Điểm Thương Động Tầng 3",
+      "seq": [
+        6,
+        11
+      ],
+      "tier": "LC40"
+    },
+    "long cung động": {
+      "name": "Long Cung Động",
+      "seq": [
+        6,
+        12
+      ],
+      "tier": "LC40"
+    },
+    "kinh hoàng động": {
+      "name": "Kinh Hoàng Động",
+      "seq": [
+        6,
+        13
+      ],
+      "tier": "LC40"
+    },
+    "mật thất thiếu lâm": {
+      "name": "Mật Thất Thiếu Lâm",
+      "seq": [
+        6,
+        14
+      ],
+      "tier": "LC40"
+    },
+    "đi đảo tẩy tủy": {
+      "name": "Đi đảo tẩy tủy",
+      "seq": [
+        12,
+        0
+      ],
+      "tier": "Tẩy Tủy đảo"
+    },
+    "tương dương": {
+      "name": "Tương Dương",
+      "seq": [
+        1,
+        4
+      ],
+      "tier": "Thành Thị"
+    },
+    "mãnh hổ": {
+      "name": "Mãnh Hổ Động",
+      "seq": [
+        4,
+        2
+      ],
+      "tier": "LC20"
+    },
+    "bạch thủy": {
+      "name": "Bạch Thủy Động",
+      "seq": [
+        4,
+        6
+      ],
+      "tier": "LC20"
+    },
+    "phục lưu": {
+      "name": "Phục Lưu Động",
+      "seq": [
+        4,
+        7
+      ],
+      "tier": "LC20"
+    },
+    "hỏa lang": {
+      "name": "Hỏa Lang Động",
+      "seq": [
+        4,
+        8
+      ],
+      "tier": "LC20"
+    },
+    "lăng tần thủy hòang": {
+      "name": "Lăng Tần Thủy Hoàng",
+      "seq": [
+        5,
+        2
+      ],
+      "tier": "LC30"
+    },
+    "bạch vân": {
+      "name": "Bạch Vân Động",
+      "seq": [
+        5,
+        3
+      ],
+      "tier": "LC30"
+    },
+    "yến tử": {
+      "name": "Yến Tử Động",
+      "seq": [
+        5,
+        5
+      ],
+      "tier": "LC30"
+    },
+    "khóai họat lâm": {
+      "name": "Khoái Hoạt Lâm",
+      "seq": [
+        5,
+        7
+      ],
+      "tier": "LC30"
+    },
+    "dược vương tầng 1": {
+      "name": "Dược Vương Động Tầng 1",
+      "seq": [
+        5,
+        8
+      ],
+      "tier": "LC30"
+    },
+    "tuyết báo tầng 1": {
+      "name": "Tuyết Báo Động Tầng 1",
+      "seq": [
+        5,
+        9
+      ],
+      "tier": "LC30"
+    },
+    "tuyết báo tầng 2": {
+      "name": "Tuyết Báo Động Tầng 2",
+      "seq": [
+        5,
+        10
+      ],
+      "tier": "LC30"
+    },
+    "thổ phỉ": {
+      "name": "Thổ Phỉ Động",
+      "seq": [
+        5,
+        11
+      ],
+      "tier": "LC30"
+    },
+    "kim quang": {
+      "name": "Kim Quang Động",
+      "seq": [
+        5,
+        12
+      ],
+      "tier": "LC30"
+    },
+    "hòang hà nguyên đầu": {
+      "name": "Hoàng Hà Nguyên Đầu",
+      "seq": [
+        6,
+        3
+      ],
+      "tier": "LC40"
+    },
+    "tỏa vân": {
+      "name": "Tỏa Vân Động",
+      "seq": [
+        6,
+        4
+      ],
+      "tier": "LC40"
+    },
+    "thần tiên": {
+      "name": "Thần Tiên Động",
+      "seq": [
+        6,
+        5
+      ],
+      "tier": "LC40"
+    },
+    "mê cung kê quán": {
+      "name": "Mê Cung Kê Quán Động",
+      "seq": [
+        6,
+        6
+      ],
+      "tier": "LC40"
+    },
+    "kiến tính phong sơn": {
+      "name": "Kiến Tính Phong Sơn Động",
+      "seq": [
+        6,
+        7
+      ],
+      "tier": "LC40"
+    },
+    "phụng nhãn": {
+      "name": "Phụng Nhãn Động",
+      "seq": [
+        6,
+        8
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương tầng 1": {
+      "name": "Điểm Thương Động Tầng 1",
+      "seq": [
+        6,
+        9
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương tầng 2": {
+      "name": "Điểm Thương Động Tầng 2",
+      "seq": [
+        6,
+        10
+      ],
+      "tier": "LC40"
+    },
+    "điểm thương tầng 3": {
+      "name": "Điểm Thương Động Tầng 3",
+      "seq": [
+        6,
+        11
+      ],
+      "tier": "LC40"
+    },
+    "long cung": {
+      "name": "Long Cung Động",
+      "seq": [
+        6,
+        12
+      ],
+      "tier": "LC40"
+    },
+    "kinh hòang": {
+      "name": "Kinh Hoàng Động",
+      "seq": [
+        6,
+        13
+      ],
+      "tier": "LC40"
+    },
+    "hưởng thủy": {
+      "name": "Hưởng Thủy Động",
+      "seq": [
+        7,
+        1
+      ],
+      "tier": "LC50"
+    },
+    "thiên tâm": {
+      "name": "Thiên Tâm Động",
+      "seq": [
+        7,
+        5
+      ],
+      "tier": "LC50"
+    },
+    "đáy đình hồ tầng 1": {
+      "name": "Đáy Động Đình Hồ Tầng 1",
+      "seq": [
+        7,
+        6
+      ],
+      "tier": "LC50"
+    },
+    "đáy đình hồ tầng 2": {
+      "name": "Đáy Động Đình Hồ Tầng 2",
+      "seq": [
+        7,
+        7
+      ],
+      "tier": "LC50"
+    },
+    "tường vân tầng 1": {
+      "name": "Tường Vân Động Tầng 1",
+      "seq": [
+        7,
+        8
+      ],
+      "tier": "LC50"
+    },
+    "lưu tiên tầng 1": {
+      "name": "Lưu Tiên Động Tầng 1",
+      "seq": [
+        7,
+        9
+      ],
+      "tier": "LC50"
+    },
+    "băng huyệt": {
+      "name": "Băng Huyệt Động",
+      "seq": [
+        7,
+        10
+      ],
+      "tier": "LC50"
+    },
+    "tuyết báo tầng 3": {
+      "name": "Tuyết Báo Động Tầng 3",
+      "seq": [
+        7,
+        11
+      ],
+      "tier": "LC50"
+    },
+    "sơn ngự hoa viên": {
+      "name": "Sơn Động Ngự Hoa Viên",
+      "seq": [
+        7,
+        15
+      ],
+      "tier": "LC50"
+    },
+    "nghiệt long": {
+      "name": "Nghiệt Long Động",
+      "seq": [
+        7,
+        16
+      ],
+      "tier": "LC50"
+    },
+    "ngọc hoa": {
+      "name": "Ngọc Hoa Động",
+      "seq": [
+        7,
+        17
+      ],
+      "tier": "LC50"
+    },
+    "thánh tầng 1": {
+      "name": "Thánh Động Tầng 1",
+      "seq": [
+        8,
+        0
+      ],
+      "tier": "LC60"
+    },
+    "thánh tầng 2": {
+      "name": "Thánh Động Tầng 2",
+      "seq": [
+        8,
+        1
+      ],
+      "tier": "LC60"
+    },
+    "hòanh sơn phái": {
+      "name": "Hoành Sơn Phái",
+      "seq": [
+        8,
+        3
+      ],
+      "tier": "LC60"
+    },
+    "tường vân tầng 2": {
+      "name": "Tường Vân Động Tầng 2",
+      "seq": [
+        8,
+        7
+      ],
+      "tier": "LC60"
+    },
+    "tường vân tầng 3": {
+      "name": "Tường Vân Động Tầng 3",
+      "seq": [
+        8,
+        8
+      ],
+      "tier": "LC60"
+    },
+    "tường vân tầng 4": {
+      "name": "Tường Vân Động Tầng 4",
+      "seq": [
+        8,
+        9
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên tầng 2": {
+      "name": "Lưu Tiên Động Tầng 2",
+      "seq": [
+        8,
+        10
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên tầng 3": {
+      "name": "Lưu Tiên Động Tầng 3",
+      "seq": [
+        8,
+        11
+      ],
+      "tier": "LC60"
+    },
+    "lưu tiên tầng 4": {
+      "name": "Lưu Tiên Động Tầng 4",
+      "seq": [
+        8,
+        12
+      ],
+      "tier": "LC60"
+    },
+    "tuyết báo tầng 4": {
+      "name": "Tuyết Báo Động Tầng 4",
+      "seq": [
+        8,
+        13
+      ],
+      "tier": "LC60"
+    },
+    "trúc tơ tầng 1": {
+      "name": "Trúc Tơ Động Tầng 1",
+      "seq": [
+        8,
+        15
+      ],
+      "tier": "LC60"
+    },
+    "dương giác": {
+      "name": "Dương Giác Động",
+      "seq": [
+        8,
+        17
+      ],
+      "tier": "LC60"
+    },
+    "thanh loa đảo sơn": {
+      "name": "Thanh Loa Đảo Sơn Động",
+      "seq": [
+        9,
+        3
+      ],
+      "tier": "LC70"
+    },
+    "trúc tơ tầng 2": {
+      "name": "Trúc Tơ Động Tầng 2",
+      "seq": [
+        9,
+        4
+      ],
+      "tier": "LC70"
+    },
+    "đại tù": {
+      "name": "Đại Tù Động",
+      "seq": [
+        9,
+        5
+      ],
+      "tier": "LC70"
+    },
+    "sơn bảo": {
+      "name": "Sơn Bảo Động",
+      "seq": [
+        9,
+        6
+      ],
+      "tier": "LC70"
+    },
+    "linh cốc": {
+      "name": "Linh Cốc Động",
+      "seq": [
+        9,
+        7
+      ],
+      "tier": "LC70"
+    },
+    "tường vân tầng 5": {
+      "name": "Tường Vân Động Tầng 5",
+      "seq": [
+        9,
+        8
+      ],
+      "tier": "LC70"
+    },
+    "lão hổ": {
+      "name": "Lão Hổ Động",
+      "seq": [
+        9,
+        9
+      ],
+      "tier": "LC70"
+    },
+    "lưu tiên tầng 5": {
+      "name": "Lưu Tiên Động Tầng 5",
+      "seq": [
+        9,
+        10
+      ],
+      "tier": "LC70"
+    },
+    "lưu tiên tầng 6": {
+      "name": "Lưu Tiên Động Tầng 6",
+      "seq": [
+        9,
+        11
+      ],
+      "tier": "LC70"
+    },
+    "dược vương tầng 2": {
+      "name": "Dược Vương Động Tầng 2",
+      "seq": [
+        9,
+        12
+      ],
+      "tier": "LC70"
+    },
+    "tuyết báo tầng 5": {
+      "name": "Tuyết Báo Động Tầng 5",
+      "seq": [
+        9,
+        13
+      ],
+      "tier": "LC70"
+    },
+    "long nhãn": {
+      "name": "Long Nhãn Động",
+      "seq": [
+        9,
+        14
+      ],
+      "tier": "LC70"
+    },
+    "băng hà": {
+      "name": "Băng Hà Động",
+      "seq": [
+        10,
+        2
+      ],
+      "tier": "LC80"
+    },
+    "nhạn thạch": {
+      "name": "Nhạn Thạch Động",
+      "seq": [
+        10,
+        3
+      ],
+      "tier": "LC80"
+    },
+    "dược vương tầng 3": {
+      "name": "Dược Vương Động Tầng 3",
+      "seq": [
+        10,
+        4
+      ],
+      "tier": "LC80"
+    },
+    "tuyết báo tầng 6": {
+      "name": "Tuyết Báo Động Tầng 6",
+      "seq": [
+        10,
+        5
+      ],
+      "tier": "LC80"
+    },
+    "tuyết báo tầng 7": {
+      "name": "Tuyết Báo Động Tầng 7",
+      "seq": [
+        10,
+        6
+      ],
+      "tier": "LC80"
+    },
+    "lưỡng thủy 1": {
+      "name": "Lưỡng Thủy Động 1",
+      "seq": [
+        10,
+        7
+      ],
+      "tier": "LC80"
+    },
+    "lưỡng thủy 2": {
+      "name": "Lưỡng Thủy Động 2",
+      "seq": [
+        10,
+        8
+      ],
+      "tier": "LC80"
+    },
+    "thanh khê": {
+      "name": "Thanh Khê Động",
+      "seq": [
+        10,
+        9
+      ],
+      "tier": "LC80"
+    },
+    "vũ lăng": {
+      "name": "Vũ Lăng Động",
+      "seq": [
+        10,
+        10
+      ],
+      "tier": "LC80"
+    },
+    "phù dung": {
+      "name": "Phù Dung Động",
+      "seq": [
+        10,
+        11
+      ],
+      "tier": "LC80"
+    },
+    "vô danh": {
+      "name": "Vô Danh Động",
+      "seq": [
+        10,
+        12
+      ],
+      "tier": "LC80"
+    },
+    "phi thiên": {
+      "name": "Phi Thiên Động",
+      "seq": [
+        10,
+        13
+      ],
+      "tier": "LC80"
+    },
+    "dương trung": {
+      "name": "Dương Trung Động",
+      "seq": [
+        10,
+        14
+      ],
+      "tier": "LC80"
+    },
+    "khỏa lang": {
+      "name": "Khỏa Lang Động",
+      "seq": [
+        11,
+        10
+      ],
+      "tier": "LC90"
+    },
+    "tiến cúc": {
+      "name": "Tiến Cúc Động",
+      "seq": [
+        11,
+        11
+      ],
+      "tier": "LC90"
+    },
+    "cán viên": {
+      "name": "Cán Viên Động",
+      "seq": [
+        11,
+        12
+      ],
+      "tier": "LC90"
+    },
+    "hắc sa": {
+      "name": "Hắc Sa Động",
+      "seq": [
+        11,
+        16
+      ],
+      "tier": "LC90"
+    },
+    "đi miễn phí": {
+      "name": "Đi miễn phí",
+      "seq": [
+        12,
+        0
+      ],
+      "tier": "Tẩy Tủy đảo"
+    },
+    "kết thúc đối thọai": {
+      "name": "Kết thúc đối thoại",
+      "seq": [
+        13,
+        0
+      ],
+      "tier": "Đêm Huy Hoàng"
+    }
+  },
+  "aliases": {
+    "mật đạo nha môn": "Mật Đạo Tương Dương"
+  }
+}

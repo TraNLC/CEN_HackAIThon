@@ -1,0 +1,83 @@
+{
+  "127.0.0.1:26656": {
+    "date": "2026-06-12",
+    "done": [
+      "duatop013",
+      "duatop014",
+      "duatop015",
+      "duatop017"
+    ]
+  },
+  "127.0.0.1:26784": {
+    "date": "2026-06-12",
+    "done": [
+      "duatop022",
+      "duatop023",
+      "duatop024",
+      "duatop025"
+    ]
+  },
+  "127.0.0.1:26688": {
+    "date": "2026-06-12",
+    "done": [
+      "duatop018",
+      "duatop019",
+      "duatop020",
+      "duatop021"
+    ]
+  },
+  "127.0.0.1:26624": {
+    "date": "2026-06-20",
+    "done": [
+      "duatop047",
+      "duatop048",
+      "duatop049",
+      "duatop050",
+      "duatop051",
+      "duatop052",
+      "duatop053"
+    ],
+    "errored": []
+  },
+  "127.0.0.1:26625": {
+    "date": "2026-06-11",
+    "done": [
+      "mquang12345"
+    ]
+  },
+  "127.0.0.1:26720": {
+    "date": "2026-06-20",
+    "done": [
+      "duatop041",
+      "duatop042",
+      "duatop043",
+      "duatop044",
+      "duatop045",
+      "duatop046",
+      "duatop047"
+    ],
+    "errored": []
+  },
+  "127.0.0.1:26752": {
+    "date": "2026-06-20",
+    "done": [
+      "duatop054",
+      "duatop055",
+      "duatop056",
+      "duatop057",
+      "duatop058",
+      "duatop059",
+      "duatop060"
+    ],
+    "errored": []
+  },
+  "127.0.0.1:26816": {
+    "date": "2026-06-20",
+    "done": [
+      "duatop061",
+      "duatop062",
+      "duatop063"
+    ],
+    "errored": []
+  }
+}

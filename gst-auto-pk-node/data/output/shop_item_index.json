@@ -1,0 +1,283 @@
+{
+  "đơn đao": {
+    "shopkey": "tho.ren.thanh.thi.2",
+    "itemindex": 28,
+    "element": "thổ",
+    "qty": 1
+  },
+  "thiết thương": {
+    "shopkey": "tho.ren.thon.tran.4",
+    "itemindex": 10,
+    "element": "Thổ"
+  },
+  "phi đao": {
+    "shopkey": "tho.ren.thon.tran.7",
+    "itemindex": 10,
+    "element": "Thổ"
+  },
+  "tấn thiết song đao": {
+    "shopkey": "tho.ren.thanh.thi.6",
+    "itemindex": 28,
+    "element": "Thổ"
+  },
+  "tăng già giới cô": {
+    "shopkey": "tap.hoa.thanh.thi.4",
+    "itemindex": 11,
+    "element": "Kim"
+  },
+  "cát ngoa": {
+    "shopkey": "tap.hoa.thanh.thi.6",
+    "itemindex": 11,
+    "element": "Mộc"
+  },
+  "bố ngoa": {
+    "shopkey": "tap.hoa.thon.tran.6",
+    "itemindex": 11,
+    "element": "Mộc"
+  },
+  "thiêu hỏa côn": {
+    "shopkey": "tho.ren.thon.tran.3",
+    "itemindex": 10,
+    "element": "Thổ"
+  },
+  "nga mi thích": {
+    "shopkey": "tho.ren.thon.tran.6",
+    "itemindex": 10,
+    "element": "Thổ"
+  },
+  "lang bì yêu đái": {
+    "shopkey": "tap.hoa.thon.tran.5",
+    "itemindex": 11,
+    "element": "Mộc"
+  },
+  "cang kiếm": {
+    "shopkey": "tho.ren.thanh.thi.1",
+    "itemindex": 28,
+    "element": "Thổ"
+  },
+  "tăng giới cô": {
+    "shopkey": "tap.hoa.thon.tran.8",
+    "itemindex": 11,
+    "element": "Mộc"
+  },
+  "yêu đao": {
+    "shopkey": "tho.ren.thon.tran.2",
+    "itemindex": 10,
+    "element": "Thổ"
+  },
+  "liệt bạch mã": {
+    "shopkey": "trai.ngua.2",
+    "itemindex": 1,
+    "element": "Kim"
+  },
+  "cang kiếm|thổ": {
+    "shopkey": "tho.ren.thanh.thi.1",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "cang kiếm"
+  },
+  "tăng giới cô|kim": {
+    "shopkey": "tap.hoa.thon.tran.4",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "tăng giới cô"
+  },
+  "ngân tơ trạc|mộc": {
+    "shopkey": "tap.hoa.thanh.thi.7",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "ngân tơ trạc"
+  },
+  "nga mi thích|thổ": {
+    "shopkey": "tho.ren.thon.tran.6",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "nga mi thích"
+  },
+  "luyện đồng thủ trạc|mộc": {
+    "shopkey": "tap.hoa.thon.tran.7",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "luyện đồng thủ trạc"
+  },
+  "thiết thương|thổ": {
+    "shopkey": "tho.ren.thon.tran.4",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "thiết thương"
+  },
+  "trường thương|thổ": {
+    "shopkey": "tho.ren.thanh.thi.4",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "trường thương"
+  },
+  "liệt hồng mã|kim": {
+    "shopkey": "trai.ngua.4",
+    "itemindex": 1,
+    "element": "kim",
+    "name": "liệt hồng mã"
+  },
+  "tề mi côn|thổ": {
+    "shopkey": "tho.ren.thanh.thi.3",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "tề mi côn"
+  },
+  "liệt hắc mã|kim": {
+    "shopkey": "trai.ngua.3",
+    "itemindex": 1,
+    "element": "kim",
+    "name": "liệt hắc mã"
+  },
+  "bát lăng chùy|thổ": {
+    "shopkey": "tho.ren.thanh.thi.5",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "bát lăng chùy"
+  },
+  "đơn đao|thổ": {
+    "shopkey": "tho.ren.thanh.thi.2",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "đơn đao"
+  },
+  "ngân tơ trạc|kim": {
+    "shopkey": "tap.hoa.thanh.thi.3",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "ngân tơ trạc"
+  },
+  "phi đao|thổ": {
+    "shopkey": "tho.ren.thon.tran.7",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "phi đao"
+  },
+  "yêu đao|thổ": {
+    "shopkey": "tho.ren.thon.tran.2",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "yêu đao"
+  },
+  "bố ngoa|mộc": {
+    "shopkey": "tap.hoa.thon.tran.6",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "bố ngoa"
+  },
+  "tăng già giới cô|kim": {
+    "shopkey": "tap.hoa.thanh.thi.4",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "tăng già giới cô"
+  },
+  "tăng giới cô|mộc": {
+    "shopkey": "tap.hoa.thon.tran.8",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "tăng giới cô"
+  },
+  "thiêu hỏa côn|thổ": {
+    "shopkey": "tho.ren.thon.tran.3",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "thiêu hỏa côn"
+  },
+  "bố ngoa|kim": {
+    "shopkey": "tap.hoa.thon.tran.2",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "bố ngoa"
+  },
+  "cát ngoa|mộc": {
+    "shopkey": "tap.hoa.thanh.thi.6",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "cát ngoa"
+  },
+  "lang bì yêu đái|mộc": {
+    "shopkey": "tap.hoa.thon.tran.5",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "lang bì yêu đái"
+  },
+  "thiếu lâm táo nhân tiêu|thổ": {
+    "shopkey": "tho.ren.thanh.thi.7",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "thiếu lâm táo nhân tiêu"
+  },
+  "liệt hoàng mã|kim": {
+    "shopkey": "trai.ngua.0",
+    "itemindex": 1,
+    "element": "kim",
+    "name": "liệt hoàng mã"
+  },
+  "mãng bì yêu đái|kim": {
+    "shopkey": "tap.hoa.thanh.thi.1",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "mãng bì yêu đái"
+  },
+  "luyện đồng thủ trạc|kim": {
+    "shopkey": "tap.hoa.thon.tran.3",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "luyện đồng thủ trạc"
+  },
+  "thiết trủy thủ|thổ": {
+    "shopkey": "tho.ren.thon.tran.1",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "thiết trủy thủ"
+  },
+  "tấn thiết song đao|thổ": {
+    "shopkey": "tho.ren.thanh.thi.6",
+    "itemindex": 28,
+    "element": "thổ",
+    "name": "tấn thiết song đao"
+  },
+  "tụ tiễn|thổ": {
+    "shopkey": "tho.ren.thon.tran.8",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "tụ tiễn"
+  },
+  "liệt thanh mã|kim": {
+    "shopkey": "trai.ngua.1",
+    "itemindex": 1,
+    "element": "kim",
+    "name": "liệt thanh mã"
+  },
+  "liệt bạch mã|kim": {
+    "shopkey": "trai.ngua.2",
+    "itemindex": 1,
+    "element": "kim",
+    "name": "liệt bạch mã"
+  },
+  "cát ngoa|kim": {
+    "shopkey": "tap.hoa.thanh.thi.2",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "cát ngoa"
+  },
+  "lang bì yêu đái|kim": {
+    "shopkey": "tap.hoa.thon.tran.1",
+    "itemindex": 11,
+    "element": "kim",
+    "name": "lang bì yêu đái"
+  },
+  "mãng bì yêu đái|mộc": {
+    "shopkey": "tap.hoa.thanh.thi.5",
+    "itemindex": 11,
+    "element": "mộc",
+    "name": "mãng bì yêu đái"
+  },
+  "toán đầu chùy|thổ": {
+    "shopkey": "tho.ren.thon.tran.5",
+    "itemindex": 10,
+    "element": "thổ",
+    "name": "toán đầu chùy"
+  }
+}

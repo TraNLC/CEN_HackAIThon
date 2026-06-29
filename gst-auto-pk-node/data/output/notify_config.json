@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "zalo": {
+    "phone": "",
+    "password": "",
+    "imei": "84633e18-5fb5-4083-845a-d3cd4bb4bcea-b977e10d1cb26107909e97d51a688323",
+    "cookies": "data/output/zalo_cookies.json",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+    "thread_id": "5490856011937391216",
+    "thread_type": "GROUP"
+  },
+  "events": {
+    "stuck": true,
+    "stats_daily": true
+  },
+  "stats_hour": 21
+}

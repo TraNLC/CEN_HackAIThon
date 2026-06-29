@@ -1,0 +1,40 @@
+{"id": "f117df9d0b21", "ts": 1781841414.842668, "machine": "CPP00185830E", "device": "127.0.0.1:26688", "action": "resume", "args": {}}
+{"id": "425b2e0f5c8f", "ts": 1781841783.443985, "machine": "CPP00185830E", "device": null, "action": "set_threshold", "args": {"van": 6}}
+{"id": "489a1f914454", "ts": 1781843291.026835, "machine": "CPP00185830E", "device": null, "action": "set_threshold", "args": {"van": 4}}
+{"id": "6eaaa2672c8b", "ts": 1781843310.8119612, "machine": "CPP00185830E", "device": null, "action": "set_threshold", "args": {"van": 6}}
+{"id": "8d8177da12c1", "ts": 1781844577.28234, "machine": "CPP00185830E", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "b4973628f2ff", "ts": 1781844618.1495628, "machine": "CPP00185830E", "device": null, "action": "rescan", "args": {}}
+{"id": "2fd4c0fa10af", "ts": 1781844627.5826151, "machine": "CPP00185830E", "device": "127.0.0.1:26624", "action": "start", "args": {}}
+{"id": "8574a68242f3", "ts": 1781848167.563782, "machine": "CPP00185830E", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "auto", "nang_thuoc_tinh": "auto", "do_hiem": "huy"}}}
+{"id": "f980bed05d0f", "ts": 1781848177.1996312, "machine": "CPP00185830E", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "auto", "nang_thuoc_tinh": "auto", "do_hiem": "huy_do_chi"}}}
+{"id": "62b446e9ddb1", "ts": 1781848224.595755, "machine": "CPP00185830E", "device": null, "action": "set_config", "args": {"name": "quest_actions", "content": {"mua_npc": "auto", "tim_do": "auto", "do_chi_combat": "auto", "tongkim_points": "huy_do_chi", "nang_thuoc_tinh": "auto", "do_hiem": "huy_do_chi"}}}
+{"id": "2aa669abdb8a", "ts": 1781851794.793749, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "start", "args": {}}
+{"id": "d6a0fce145bd", "ts": 1781852132.989235, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "stop", "args": {}}
+{"id": "98fe0112f885", "ts": 1781852150.592535, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "start", "args": {}}
+{"id": "4fb2f8d3e3c5", "ts": 1781854052.7756338, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "stop", "args": {}}
+{"id": "0876aea990e9", "ts": 1781854054.534176, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "stop", "args": {}}
+{"id": "bf3282a2dca2", "ts": 1781854058.105925, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "stop", "args": {}}
+{"id": "d5f9fa23fc97", "ts": 1781854062.906719, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "resume", "args": {}}
+{"id": "aa688a44ac28", "ts": 1781854140.20068, "machine": "CPP00185830E", "device": "127.0.0.1:26752", "action": "start", "args": {}}
+{"id": "2e273b0ac27d", "ts": 1781855176.24434, "machine": "CPP00185830E", "device": null, "action": "rescan", "args": {}}
+{"id": "7e8e4c95cd08", "ts": 1781855757.4020422, "machine": "CPP00185830E", "device": null, "action": "rescan", "args": {}}
+{"id": "d8fb8246e321", "ts": 1781859553.973678, "machine": "CPP00185830E", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "87be2d5c6689", "ts": 1781866292.006408, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "stop", "args": {}}
+{"id": "78fa3d2e713b", "ts": 1781866295.505839, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "stop", "args": {}}
+{"id": "0b17de1b2bdb", "ts": 1781866299.0694132, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "stop", "args": {}}
+{"id": "c89fdb1d789b", "ts": 1781866302.372552, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "resume", "args": {}}
+{"id": "29d4c6b21438", "ts": 1781866370.041339, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "start", "args": {}}
+{"id": "e189a4f667ad", "ts": 1781866444.862601, "machine": "CPP00185830E", "device": "127.0.0.1:26784", "action": "resume", "args": {}}
+{"id": "10b98ad8894e", "ts": 1781872480.356446, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "resume", "args": {}}
+{"id": "616bd2d2a3de", "ts": 1781872493.0328, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "resume", "args": {}}
+{"id": "92826d7ca2a7", "ts": 1781872595.9568892, "machine": "CPP00185830E", "device": "127.0.0.1:26624", "action": "resume", "args": {}}
+{"id": "eff4c6986e4b", "ts": 1781873770.949673, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "resume", "args": {}}
+{"id": "7a6cbdd5fcdc", "ts": 1781888369.646571, "machine": "CPP00185830E", "device": null, "action": "rescan", "args": {}}
+{"id": "166b70832940", "ts": 1781910828.163382, "machine": "CPP00185830E", "device": "127.0.0.1:26624", "action": "stop", "args": {}}
+{"id": "e85e87f551c9", "ts": 1781910835.374232, "machine": "CPP00185830E", "device": "127.0.0.1:26720", "action": "stop", "args": {}}
+{"id": "78fb35357cc7", "ts": 1781920038.306886, "machine": "CPP00185830E", "device": "127.0.0.1:26688", "action": "stop", "args": {}}
+{"id": "d030d1952c9e", "ts": 1781920040.503974, "machine": "CPP00185830E", "device": "127.0.0.1:26688", "action": "stop", "args": {}}
+{"id": "f5e4b4161075", "ts": 1781921420.2706401, "machine": "CPP00185830E", "device": "127.0.0.1:26656", "action": "start", "args": {}}
+{"id": "67fb38521739", "ts": 1781921421.155979, "machine": "CPP00185830E", "device": "127.0.0.1:26688", "action": "start", "args": {}}
+{"id": "7ef723e3c0ec", "ts": 1781937889.9184582, "machine": "CPP00185830E", "device": "127.0.0.1:26720", "action": "resume", "args": {}}
+{"id": "304a73edd0bb", "ts": 1781946161.663904, "machine": "CPP00185830E", "device": "127.0.0.1:26720", "action": "resume", "args": {}}

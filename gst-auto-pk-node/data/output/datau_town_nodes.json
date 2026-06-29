@@ -1,0 +1,26 @@
+{
+  "note": "Node Dã Tẩu CỐ ĐỊNH theo thành (VERIFIED 2026-06-07, remote OK, không đổi theo server/phiên). map1 Phượng Tường=588, map11 Thành Đô=1049, map37 Biện Kinh=1723, map78 Tương Dương=1425, map80 Dương Châu=1192. Gọi cả list, node đúng tự đẩy lên đầu.",
+  "town_datau_nodes": [
+    "4099",
+    "1723",
+    "1192",
+    "3447",
+    "1425",
+    "1049",
+    "588",
+    "396",
+    "879",
+    "1312",
+    "716",
+    "714",
+    "8746"
+  ],
+  "npc_khac_nodes": [
+    "3363",
+    "1386",
+    "4159",
+    "1222",
+    "1058",
+    "1722"
+  ]
+}

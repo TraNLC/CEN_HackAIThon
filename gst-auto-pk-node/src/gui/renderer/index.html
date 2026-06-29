@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>GST VLTK1 Mobile Auto PK - Multi-Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="app-header">
+    <div class="logo-area">
+      <div>
+        <h1 class="title-martial">VO LÂM TRUYEN KY</h1>
+        <p class="subtitle-eng">MULTI-ACCOUNT AUTO PK v2.0</p>
+      </div>
+    </div>
+    <div class="header-controls">
+      <button id="btn-refresh" class="btn-primary">Lam Moi</button>
+      <button id="btn-restart" class="btn-warning">Khoi Dong Lai</button>
+    </div>
+  </header>
+
+  <!-- BODY WRAPPER -->
+  <div class="app-body">
+    
+    <!-- MAIN CONTENT -->
+    <main class="app-content-full">
+      <div class="left-col">
+        <!-- TOP PANEL: DEVICE TABLE -->
+        <section class="card device-table-card">
+          <div class="table-responsive">
+            <table class="modern-table">
+              <thead>
+                <tr>
+                  <th width="80" style="text-align: center;">Mo</th>
+                  <th width="200">Ten Nhan Vat</th>
+                  <th width="200">Diem Tong Kim</th>
+                  <th>Thiet Bi</th>
+                </tr>
+              </thead>
+              <tbody id="device-table-body">
+                <tr>
+                  <td colspan="4" style="text-align: center; color: #888; padding: 20px;">Bam "Lam Moi" de tim thiet bi...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- BOTTOM PANEL: GLOBAL LOGS -->
+        <section class="card log-card">
+          <div class="log-header">
+            <h2 class="card-subtitle">Global Log</h2>
+            <button id="btn-clear-log" class="btn-small">Clear</button>
+          </div>
+          <div class="log-container" id="global-log-container">
+            <div class="log-entry log-system">[System] Multi-Account Manager Initialized.</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="right-col">
+        <!-- MIDDLE PANEL: TONG KIM CONTROLS -->
+        <section class="card controls-card">
+          <div class="control-bar">
+            <div class="toggle-group">
+              <span class="toggle-label gold-text"><strong style="font-size: 1.1em;">TU DONG RA TRAN</strong></span>
+              <label class="switch">
+                <input type="checkbox" id="pk-fight-switch">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            <div class="dropdown-group">
+              <label class="dropdown-label">Phe:</label>
+              <select id="tk-side-select" class="modern-select">
+                <option value="auto">Tu dong</option>
+                <option value="song">Tong</option>
+                <option value="jin">Kim</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- LOWER MIDDLE PANEL: LAC CONTROLS -->
+        <section class="card lac-card">
+          <h2 class="card-subtitle">Tu dung lac Tong Kim</h2>
+          <div class="lac-grid" id="lac-controls-container">
+            <!-- Item 1 -->
+            <div class="lac-row">
+              <span class="lac-label">Su dung</span>
+              <select class="modern-select lac-select" id="lac-1-select">
+                <option value="none">—</option>
+                <option value="45">Phi Toc Hoan</option>
+                <option value="51">Lenh Bai</option>
+                <option value="50">Chien Co</option>
+              </select>
+              <span class="lac-count" id="lac-1-count"></span>
+            </div>
+            <!-- Item 2 -->
+            <div class="lac-row">
+              <span class="lac-label">Su dung</span>
+              <select class="modern-select lac-select" id="lac-2-select">
+                <option value="none">—</option>
+                <option value="45">Phi Toc Hoan</option>
+                <option value="51">Lenh Bai</option>
+                <option value="50">Chien Co</option>
+              </select>
+              <span class="lac-count" id="lac-2-count"></span>
+            </div>
+            <!-- Item 3 -->
+            <div class="lac-row">
+              <span class="lac-label">Su dung</span>
+              <select class="modern-select lac-select" id="lac-3-select">
+                <option value="none">—</option>
+                <option value="45">Phi Toc Hoan</option>
+                <option value="51">Lenh Bai</option>
+                <option value="50">Chien Co</option>
+              </select>
+              <span class="lac-count" id="lac-3-count"></span>
+            </div>
+          </div>
+          
+          <!-- TEST CHAT NPC -->
+          <div class="glass-panel" style="margin-top:20px;">
+            <h3 style="font-size: 14px; font-weight: 600; margin-bottom: 15px; color: var(--text-primary);">Test Chat NPC</h3>
+            <div style="display: flex; gap: 10px;">
+              <button class="btn-primary" style="flex:1; padding:10px 0; font-size:13px; font-weight:bold;" onclick="window.api.testChatNpc('23')">Chiêu Binh Quân</button>
+              <button class="btn-primary" style="flex:1; padding:10px 0; font-size:13px; font-weight:bold;" onclick="window.api.testChatNpc('2581')">Quân Nhu</button>
+              <button class="btn-primary" style="flex:1; padding:10px 0; font-size:13px; font-weight:bold;" onclick="window.api.testChatNpc('2593')">Trinh Sát</button>
+            </div>
+            <div style="margin-top: 10px;">
+              <button class="btn-primary" style="width:100%; padding:10px 0; font-size:13px; font-weight:bold; background: linear-gradient(135deg, #10b981 0%, #059669 100%);" onclick="window.api.testChatNpc('radar')">📡 Radar Quét NPC Gần Đây</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

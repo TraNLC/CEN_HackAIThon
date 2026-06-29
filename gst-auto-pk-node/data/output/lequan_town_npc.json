@@ -1,0 +1,24 @@
+{
+  "_note": "Lễ Quan theo thành (mapId -> npcId). Mọi Lễ Quan giao diện GIỐNG NHAU -> menu + index DÙNG CHUNG. Remote same-region: talk_npc(npcId) -> eNpcSelect(index). npcId đã LỌC (click đầu mỗi thành = Lễ Quan; bỏ Xa Phu ghi đè nhầm do menu Xa Phu có 'Luyện công N').",
+  "_menu_index": {
+    "0": "Hồi phục Tân Thủ",
+    "1": "Kiểm tra sách vở",
+    "2": "Kinh nghiệm luyện công",
+    "3": "Thay đổi phe phái",
+    "4": "Đổi Tên",
+    "5": "Chuyển giới",
+    "6": "Kết thúc đối thoại"
+  },
+  "_actions_quan_tam": {
+    "hoi_phuc_tan_thu": {"index": 0, "select_hex": "000000002300", "mo_ta": "Nhận buff Tân Thủ cho char <=cấp 79 (cao hơn NPC từ chối). eNpcSelect(0)=thân rỗng. Có thể nhiều bước confirm (đã thấy ~4 gói rỗng) -> verify khi dựng feature."},
+    "tra_kn_luyen_cong": {"index": 2, "mo_ta": "Tra mốc kinh nghiệm luyện công ĐÃ train trong ngày (ĐỌC/tra). eNpcSelect(2)."}
+  },
+  "_select_format": "eNpcSelect(selectIndex=N): idx0=body rỗng '000000002300'; idx>=1 body '08 0N' vd idx2='0200000023000802'. Dùng bot.send_gs('eNpcSelect', selectIndex=N).",
+  "1": {"npcId": "673", "town": "Phượng Tường", "is_lequan": true},
+  "11": {"npcId": "999", "town": "Thành Đô", "is_lequan": true},
+  "37": {"npcId": "1727", "town": "Biện Kinh", "is_lequan": true},
+  "78": {"npcId": "1375", "town": "Tương Dương", "is_lequan": true},
+  "80": {"npcId": "1243", "town": "Dương Châu", "is_lequan": true},
+  "162": {"npcId": "4095", "town": "Đại Lý", "is_lequan": true},
+  "176": {"npcId": "3445", "town": "Lâm An", "is_lequan": true}
+}

@@ -1,0 +1,2445 @@
+{
+ "Kim": {
+  "series": 0,
+  "so_thuoc_tinh": 43,
+  "thuoc_tinh": [
+   {
+    "ten": "Sức mạnh",
+    "cap": 1,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 1,
+    "max": 2,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Sức mạnh",
+    "cap": 2,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 3,
+    "max": 4,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Uy lực",
+    "cap": 3,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 5,
+    "max": 6,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Uy lực",
+    "cap": 4,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 7,
+    "max": 8,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Sức mạnh",
+    "cap": 5,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 9,
+    "max": 10,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Sức mạnh",
+    "cap": 6,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 11,
+    "max": 12,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Trâu rừng",
+    "cap": 7,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 13,
+    "max": 14,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Người khổng lồ",
+    "cap": 8,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 15,
+    "max": 16,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Sơn Thần",
+    "cap": 9,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 17,
+    "max": 18,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Cộng Công",
+    "cap": 10,
+    "thuoc_tinh": "sức_mạnh",
+    "min": 19,
+    "max": 20,
+    "mo_ta": "tăng sức mạnh"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 1,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 2,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 3,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 4,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 5,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 6,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 25,
+    "max": 30,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 7,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 30,
+    "max": 35,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 8,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 35,
+    "max": 40,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 9,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 40,
+    "max": 45,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Dao nhọn",
+    "cap": 10,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại",
+    "min": 45,
+    "max": 50,
+    "mo_ta": "tăng sát thương Vật lý"
+   },
+   {
+    "ten": "Kim Tinh",
+    "cap": 3,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 2,
+    "max": 4,
+    "mo_ta": "Chuyển hóa sát thương vật lý thành Nội lực"
+   },
+   {
+    "ten": "Kim Phách",
+    "cap": 6,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 4,
+    "max": 7,
+    "mo_ta": "Chuyển hóa sát thương vật lý thành Nội lực"
+   },
+   {
+    "ten": "Kim Thần",
+    "cap": 10,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 7,
+    "max": 10,
+    "mo_ta": "Chuyển hóa sát thương vật lý thành Nội lực"
+   },
+   {
+    "ten": "Bích Lục",
+    "cap": 2,
+    "thuoc_tinh": "kháng_độc_phần_trăm",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "tăng kháng độc"
+   },
+   {
+    "ten": "Lục Tùng Thạch",
+    "cap": 4,
+    "thuoc_tinh": "kháng_độc_phần_trăm",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "tăng kháng độc"
+   },
+   {
+    "ten": "Bích Ngọc",
+    "cap": 6,
+    "thuoc_tinh": "kháng_độc_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "tăng kháng độc"
+   },
+   {
+    "ten": "Lục Bảo Thạch",
+    "cap": 8,
+    "thuoc_tinh": "kháng_độc_phần_trăm",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "tăng kháng độc"
+   },
+   {
+    "ten": "Phỉ thúy",
+    "cap": 10,
+    "thuoc_tinh": "kháng_độc_phần_trăm",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "tăng kháng độc"
+   },
+   {
+    "ten": "Kim ý",
+    "cap": 2,
+    "thuoc_tinh": 140,
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng Kỹ năng hệ Kim"
+   },
+   {
+    "ten": "Kim tính",
+    "cap": 4,
+    "thuoc_tinh": 140,
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng Kỹ năng hệ Kim"
+   },
+   {
+    "ten": "Kim vận",
+    "cap": 6,
+    "thuoc_tinh": 140,
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng Kỹ năng hệ Kim"
+   },
+   {
+    "ten": "Kim khí",
+    "cap": 8,
+    "thuoc_tinh": 140,
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng Kỹ năng hệ Kim"
+   },
+   {
+    "ten": "Kim tâm",
+    "cap": 10,
+    "thuoc_tinh": 140,
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng Kỹ năng hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 1,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 1,
+    "max": 20,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 2,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 20,
+    "max": 40,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 3,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 40,
+    "max": 60,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 4,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 60,
+    "max": 80,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 5,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 80,
+    "max": 100,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 6,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 100,
+    "max": 120,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 7,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 120,
+    "max": 140,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 8,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 140,
+    "max": 160,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 9,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 160,
+    "max": 180,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   },
+   {
+    "ten": "Kim Ma",
+    "cap": 10,
+    "thuoc_tinh": "sát_thương_vật_lý_nội",
+    "min": 180,
+    "max": 200,
+    "mo_ta": "Tăng Sát thương hệ Kim"
+   }
+  ]
+ },
+ "Mộc": {
+  "series": 1,
+  "so_thuoc_tinh": 43,
+  "thuoc_tinh": [
+   {
+    "ten": "Nước độc",
+    "cap": 1,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Độc Xà",
+    "cap": 2,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Cỏ khô",
+    "cap": 3,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Ôn dịch",
+    "cap": 4,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Oán hận",
+    "cap": 5,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Truyền nhiễm",
+    "cap": 6,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 25,
+    "max": 30,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Thối rửa",
+    "cap": 7,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 30,
+    "max": 35,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Kịch Độc",
+    "cap": 8,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 35,
+    "max": 40,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Chí tử",
+    "cap": 9,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 40,
+    "max": 45,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Đoạn hồn",
+    "cap": 10,
+    "thuoc_tinh": "độc_sát_ngoại",
+    "min": 45,
+    "max": 50,
+    "mo_ta": "Tăng sát Độc sát"
+   },
+   {
+    "ten": "Hổ Phách",
+    "cap": 1,
+    "thuoc_tinh": "kháng_lôi_phần_trăm",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "Tăng kháng Lôi"
+   },
+   {
+    "ten": "Ngọc đỏ",
+    "cap": 4,
+    "thuoc_tinh": "kháng_lôi_phần_trăm",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "Tăng kháng Lôi"
+   },
+   {
+    "ten": "Hoàng BảoThạch",
+    "cap": 7,
+    "thuoc_tinh": "kháng_lôi_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Tăng kháng Lôi"
+   },
+   {
+    "ten": "Hoàng Ngọc",
+    "cap": 8,
+    "thuoc_tinh": "kháng_lôi_phần_trăm",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "Tăng kháng Lôi"
+   },
+   {
+    "ten": "Lam Thủy Tinh",
+    "cap": 10,
+    "thuoc_tinh": "kháng_lôi_phần_trăm",
+    "min": 20,
+    "max": 30,
+    "mo_ta": "Tăng kháng Lôi"
+   },
+   {
+    "ten": "Mộc Tinh",
+    "cap": 3,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 2,
+    "max": 6,
+    "mo_ta": "Hấp thụ độc"
+   },
+   {
+    "ten": "Mộc Phách",
+    "cap": 6,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 6,
+    "max": 10,
+    "mo_ta": "Hấp thụ độc"
+   },
+   {
+    "ten": "Mộc Thần",
+    "cap": 10,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Hấp thụ độc"
+   },
+   {
+    "ten": "Vận khí",
+    "cap": 1,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Số may",
+    "cap": 2,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Ngẫu nhiên",
+    "cap": 3,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Cơ hội",
+    "cap": 4,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Vận mệnh",
+    "cap": 5,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Gặp may",
+    "cap": 6,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 6,
+    "max": 6,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Khéo léo",
+    "cap": 7,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 7,
+    "max": 7,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Hạnh phúc",
+    "cap": 8,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 8,
+    "max": 8,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Ngạo mạn",
+    "cap": 9,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 9,
+    "max": 9,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Vua Thuấn",
+    "cap": 10,
+    "thuoc_tinh": "may_mắn_phần_trăm",
+    "min": 10,
+    "max": 10,
+    "mo_ta": "Tăng May mắn"
+   },
+   {
+    "ten": "Mộc ý",
+    "cap": 2,
+    "thuoc_tinh": 141,
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng Kỹ năng hệ Mộc"
+   },
+   {
+    "ten": "Mộc tính",
+    "cap": 4,
+    "thuoc_tinh": 141,
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng Kỹ năng hệ Mộc"
+   },
+   {
+    "ten": "Mộc vận",
+    "cap": 6,
+    "thuoc_tinh": 141,
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng Kỹ năng hệ Mộc"
+   },
+   {
+    "ten": "Mộc khí",
+    "cap": 8,
+    "thuoc_tinh": 141,
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng Kỹ năng hệ Mộc"
+   },
+   {
+    "ten": "Mộc tâm",
+    "cap": 10,
+    "thuoc_tinh": 141,
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng Kỹ năng hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 1,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 2,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 3,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 4,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 5,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 6,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 25,
+    "max": 30,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 7,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 30,
+    "max": 35,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 8,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 35,
+    "max": 40,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 9,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 40,
+    "max": 45,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   },
+   {
+    "ten": "Mộc Ma",
+    "cap": 10,
+    "thuoc_tinh": "độc_sát_nội",
+    "min": 45,
+    "max": 50,
+    "mo_ta": "Tăng sát thương hệ Mộc"
+   }
+  ]
+ },
+ "Thủy": {
+  "series": 2,
+  "so_thuoc_tinh": 46,
+  "thuoc_tinh": [
+   {
+    "ten": "Lạnh giá",
+    "cap": 1,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 1,
+    "max": 10,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Lạnh giá",
+    "cap": 2,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 10,
+    "max": 20,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Lạnh giá",
+    "cap": 3,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 20,
+    "max": 30,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "đóng băng",
+    "cap": 4,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 30,
+    "max": 40,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Băng tuyết",
+    "cap": 5,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 40,
+    "max": 50,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Hàn Đông",
+    "cap": 6,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 50,
+    "max": 60,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Lạnh buốt",
+    "cap": 7,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 60,
+    "max": 70,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Lạnh buốt",
+    "cap": 8,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 70,
+    "max": 80,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Băng cực",
+    "cap": 9,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 80,
+    "max": 90,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Chuyên Húc",
+    "cap": 10,
+    "thuoc_tinh": "băng_sát_ngoại",
+    "min": 90,
+    "max": 100,
+    "mo_ta": "Tăng sát Băng sát"
+   },
+   {
+    "ten": "Thâm hậu",
+    "cap": 2,
+    "thuoc_tinh": "kháng_hỏa_phần_trăm",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "tăng kháng Hỏa"
+   },
+   {
+    "ten": "Vũ Hoa Thạch",
+    "cap": 4,
+    "thuoc_tinh": "kháng_hỏa_phần_trăm",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "tăng kháng Hỏa"
+   },
+   {
+    "ten": "Bão lửa",
+    "cap": 6,
+    "thuoc_tinh": "kháng_hỏa_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "tăng kháng Hỏa"
+   },
+   {
+    "ten": "Bông vải đỏ",
+    "cap": 8,
+    "thuoc_tinh": "kháng_hỏa_phần_trăm",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "tăng kháng Hỏa"
+   },
+   {
+    "ten": "Hồng Bảo Thạch",
+    "cap": 10,
+    "thuoc_tinh": "kháng_hỏa_phần_trăm",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "tăng kháng Hỏa"
+   },
+   {
+    "ten": "BăngTinh",
+    "cap": 3,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 2,
+    "max": 6,
+    "mo_ta": "Hấp thụ băng sát (chuyển hóa, nâng cao nội lực )"
+   },
+   {
+    "ten": "Băng Phách",
+    "cap": 6,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 6,
+    "max": 10,
+    "mo_ta": "Hấp thụ băng sát (chuyển hóa, nâng cao nội lực )"
+   },
+   {
+    "ten": "Băng Thần",
+    "cap": 10,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Hấp thụ băng sát (chuyển hóa, nâng cao nội lực )"
+   },
+   {
+    "ten": "Thể chất",
+    "cap": 1,
+    "thuoc_tinh": "sinh_khí",
+    "min": 1,
+    "max": 2,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Gian xảo",
+    "cap": 2,
+    "thuoc_tinh": "sinh_khí",
+    "min": 3,
+    "max": 4,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Tàn nhẫn",
+    "cap": 3,
+    "thuoc_tinh": "sinh_khí",
+    "min": 5,
+    "max": 6,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Tham lam",
+    "cap": 4,
+    "thuoc_tinh": "sinh_khí",
+    "min": 7,
+    "max": 8,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Hung bạo",
+    "cap": 5,
+    "thuoc_tinh": "sinh_khí",
+    "min": 9,
+    "max": 10,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Yêu quý",
+    "cap": 6,
+    "thuoc_tinh": "sinh_khí",
+    "min": 11,
+    "max": 12,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Mãnh hổ",
+    "cap": 7,
+    "thuoc_tinh": "sinh_khí",
+    "min": 13,
+    "max": 14,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Cá voi",
+    "cap": 8,
+    "thuoc_tinh": "sinh_khí",
+    "min": 15,
+    "max": 16,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Linh hiển",
+    "cap": 9,
+    "thuoc_tinh": "sinh_khí",
+    "min": 17,
+    "max": 18,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Nữ Oa",
+    "cap": 10,
+    "thuoc_tinh": "sinh_khí",
+    "min": 19,
+    "max": 20,
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Tỉnh táo",
+    "cap": 4,
+    "thuoc_tinh": "thời_gian_choáng_phần_trăm",
+    "min": 20,
+    "max": 20,
+    "mo_ta": "Chống choáng"
+   },
+   {
+    "ten": "Tỉnh táo",
+    "cap": 7,
+    "thuoc_tinh": "thời_gian_choáng_phần_trăm",
+    "min": 30,
+    "max": 30,
+    "mo_ta": "Chống choáng"
+   },
+   {
+    "ten": "Tỉnh táo",
+    "cap": 10,
+    "thuoc_tinh": "thời_gian_choáng_phần_trăm",
+    "min": 40,
+    "max": 40,
+    "mo_ta": "Chống choáng"
+   },
+   {
+    "ten": "Thủy ý",
+    "cap": 2,
+    "thuoc_tinh": 142,
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng Kỹ năng hệ Thủy"
+   },
+   {
+    "ten": "Thủy tính",
+    "cap": 4,
+    "thuoc_tinh": 142,
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng Kỹ năng hệ Thủy"
+   },
+   {
+    "ten": "Thủy vận",
+    "cap": 6,
+    "thuoc_tinh": 142,
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng Kỹ năng hệ Thủy"
+   },
+   {
+    "ten": "Thủy khí",
+    "cap": 8,
+    "thuoc_tinh": 142,
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng Kỹ năng hệ Thủy"
+   },
+   {
+    "ten": "Thủy tâm",
+    "cap": 10,
+    "thuoc_tinh": 142,
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng Kỹ năng hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 1,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 1,
+    "max": 20,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 2,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 20,
+    "max": 40,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 3,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 40,
+    "max": 60,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 4,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 60,
+    "max": 80,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 5,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 80,
+    "max": 100,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 6,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 100,
+    "max": 120,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 7,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 120,
+    "max": 140,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 8,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 140,
+    "max": 160,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 9,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 160,
+    "max": 180,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   },
+   {
+    "ten": "Thủy Ma",
+    "cap": 10,
+    "thuoc_tinh": "băng_sát_nội",
+    "min": 180,
+    "max": 200,
+    "mo_ta": "Tăng Sát thương hệ Thủy"
+   }
+  ]
+ },
+ "Hỏa": {
+  "series": 3,
+  "so_thuoc_tinh": 46,
+  "thuoc_tinh": [
+   {
+    "ten": "Địa Diệm hỏa",
+    "cap": 1,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 1,
+    "max": 10,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Hào quang",
+    "cap": 2,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 10,
+    "max": 20,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Nhiệt tình",
+    "cap": 3,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 20,
+    "max": 30,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Tình cảm mãnh liệt",
+    "cap": 4,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 30,
+    "max": 40,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "đốt",
+    "cap": 5,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 40,
+    "max": 50,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Thiêu đốt",
+    "cap": 6,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 50,
+    "max": 60,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Lửa đỏ",
+    "cap": 7,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 60,
+    "max": 70,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Xích Diệm",
+    "cap": 8,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 70,
+    "max": 80,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Lửa đỏ",
+    "cap": 9,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 80,
+    "max": 90,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Viêm đế",
+    "cap": 10,
+    "thuoc_tinh": "hỏa_sát_ngoại",
+    "min": 90,
+    "max": 100,
+    "mo_ta": "Tăng Hoả sát"
+   },
+   {
+    "ten": "Vô hình",
+    "cap": 2,
+    "thuoc_tinh": "phòng_thủ_vật_lý_phần_trăm",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "Bỏ qua sát thương vật lý"
+   },
+   {
+    "ten": "Huyễn nhớ",
+    "cap": 4,
+    "thuoc_tinh": "phòng_thủ_vật_lý_phần_trăm",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "Bỏ qua sát thương vật lý"
+   },
+   {
+    "ten": "Thấp thoáng",
+    "cap": 6,
+    "thuoc_tinh": "phòng_thủ_vật_lý_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Bỏ qua sát thương vật lý"
+   },
+   {
+    "ten": "Hư ảo",
+    "cap": 8,
+    "thuoc_tinh": "phòng_thủ_vật_lý_phần_trăm",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "Bỏ qua sát thương vật lý"
+   },
+   {
+    "ten": "Linh hồn",
+    "cap": 10,
+    "thuoc_tinh": "phòng_thủ_vật_lý_phần_trăm",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "Bỏ qua sát thương vật lý"
+   },
+   {
+    "ten": "Hỏa Tinh",
+    "cap": 3,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 2,
+    "max": 6,
+    "mo_ta": "Hấp thu lửa"
+   },
+   {
+    "ten": "Hỏa Phách",
+    "cap": 6,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 6,
+    "max": 10,
+    "mo_ta": "Hấp thu lửa"
+   },
+   {
+    "ten": "Hỏa Thần",
+    "cap": 10,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Hấp thu lửa"
+   },
+   {
+    "ten": "ấm áp",
+    "cap": 3,
+    "thuoc_tinh": "thời_gian_làm_chậm_phần_trăm",
+    "min": 20,
+    "max": 20,
+    "mo_ta": "Giảm thời gian đóng băng"
+   },
+   {
+    "ten": "Nhiệt tình",
+    "cap": 6,
+    "thuoc_tinh": "thời_gian_làm_chậm_phần_trăm",
+    "min": 30,
+    "max": 30,
+    "mo_ta": "Giảm thời gian đóng băng"
+   },
+   {
+    "ten": "Hỏa nhiệt",
+    "cap": 10,
+    "thuoc_tinh": "thời_gian_làm_chậm_phần_trăm",
+    "min": 40,
+    "max": 40,
+    "mo_ta": "không thể đóng băng"
+   },
+   {
+    "ten": "Linh hoạt",
+    "cap": 1,
+    "thuoc_tinh": "thân_pháp",
+    "min": 1,
+    "max": 2,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Khéo léo",
+    "cap": 2,
+    "thuoc_tinh": "thân_pháp",
+    "min": 3,
+    "max": 4,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Nhạy bén",
+    "cap": 3,
+    "thuoc_tinh": "thân_pháp",
+    "min": 5,
+    "max": 6,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Thục luyện",
+    "cap": 4,
+    "thuoc_tinh": "thân_pháp",
+    "min": 7,
+    "max": 8,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Khéo léo",
+    "cap": 5,
+    "thuoc_tinh": "thân_pháp",
+    "min": 9,
+    "max": 10,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Chính xác",
+    "cap": 6,
+    "thuoc_tinh": "thân_pháp",
+    "min": 11,
+    "max": 12,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Chính xác",
+    "cap": 7,
+    "thuoc_tinh": "thân_pháp",
+    "min": 13,
+    "max": 14,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Thanh Phong",
+    "cap": 8,
+    "thuoc_tinh": "thân_pháp",
+    "min": 15,
+    "max": 16,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Gió bão",
+    "cap": 9,
+    "thuoc_tinh": "thân_pháp",
+    "min": 17,
+    "max": 18,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Tật Điện",
+    "cap": 10,
+    "thuoc_tinh": "thân_pháp",
+    "min": 19,
+    "max": 20,
+    "mo_ta": "Tăng nhanh nhẹn"
+   },
+   {
+    "ten": "Hỏa ý",
+    "cap": 2,
+    "thuoc_tinh": 143,
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng Kỹ năng hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa tính",
+    "cap": 4,
+    "thuoc_tinh": 143,
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng Kỹ năng hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa vận",
+    "cap": 6,
+    "thuoc_tinh": 143,
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng Kỹ năng hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa khí",
+    "cap": 8,
+    "thuoc_tinh": 143,
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng Kỹ năng hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa tâm",
+    "cap": 10,
+    "thuoc_tinh": 143,
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng Kỹ năng hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 1,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 1,
+    "max": 20,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 2,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 20,
+    "max": 40,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 3,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 40,
+    "max": 60,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 4,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 60,
+    "max": 80,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 5,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 80,
+    "max": 100,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 6,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 100,
+    "max": 120,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 7,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 120,
+    "max": 140,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 8,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 140,
+    "max": 160,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 9,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 160,
+    "max": 180,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   },
+   {
+    "ten": "Hỏa Ma",
+    "cap": 10,
+    "thuoc_tinh": "hỏa_sát_nội",
+    "min": 180,
+    "max": 200,
+    "mo_ta": "Tăng Sát thương hệ Hỏa"
+   }
+  ]
+ },
+ "Thổ": {
+  "series": 4,
+  "so_thuoc_tinh": 36,
+  "thuoc_tinh": [
+   {
+    "ten": "Tiếng sấm",
+    "cap": 1,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 1,
+    "max": 10,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Điện kích",
+    "cap": 2,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 10,
+    "max": 20,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "ánh chớp",
+    "cap": 3,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 20,
+    "max": 30,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Trung hòa điện",
+    "cap": 4,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 30,
+    "max": 40,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "ánh chớp",
+    "cap": 5,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 40,
+    "max": 50,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "ánh chớp",
+    "cap": 6,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 50,
+    "max": 60,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Sấm sét",
+    "cap": 7,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 60,
+    "max": 70,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Thiên Lôi",
+    "cap": 8,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 70,
+    "max": 80,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Lôi Công",
+    "cap": 9,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 80,
+    "max": 90,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Lôi Thần",
+    "cap": 10,
+    "thuoc_tinh": "lôi_sát_ngoại",
+    "min": 90,
+    "max": 100,
+    "mo_ta": "Tăng Lôi sát"
+   },
+   {
+    "ten": "Cỏ xanh",
+    "cap": 2,
+    "thuoc_tinh": "kháng_băng_phần_trăm",
+    "min": 1,
+    "max": 5,
+    "mo_ta": "Tăng kháng băng"
+   },
+   {
+    "ten": "Hàn Mai",
+    "cap": 4,
+    "thuoc_tinh": "kháng_băng_phần_trăm",
+    "min": 5,
+    "max": 10,
+    "mo_ta": "Tăng kháng băng"
+   },
+   {
+    "ten": "Cô Tùng",
+    "cap": 6,
+    "thuoc_tinh": "kháng_băng_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Tăng kháng băng"
+   },
+   {
+    "ten": "Ngạo Trúc",
+    "cap": 8,
+    "thuoc_tinh": "kháng_băng_phần_trăm",
+    "min": 15,
+    "max": 20,
+    "mo_ta": "Tăng kháng băng"
+   },
+   {
+    "ten": "Lam Bảo Thạch",
+    "cap": 10,
+    "thuoc_tinh": "kháng_băng_phần_trăm",
+    "min": 20,
+    "max": 25,
+    "mo_ta": "Tăng kháng băng"
+   },
+   {
+    "ten": "Thổ Tinh",
+    "cap": 3,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 2,
+    "max": 6,
+    "mo_ta": "Hấp thu điện"
+   },
+   {
+    "ten": "Thổ Phách",
+    "cap": 6,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 6,
+    "max": 10,
+    "mo_ta": "Hấp thu điện"
+   },
+   {
+    "ten": "Thổ Thần",
+    "cap": 10,
+    "thuoc_tinh": "chuyển_hóa_sát_thương_thành_nội_lực_phần_trăm",
+    "min": 10,
+    "max": 15,
+    "mo_ta": "Hấp thu điện"
+   },
+   {
+    "ten": "Linh Xạ",
+    "cap": 4,
+    "thuoc_tinh": "thời_gian_trúng_độc_phần_trăm",
+    "min": 20,
+    "max": 20,
+    "mo_ta": "Giảm thời gian trúng độc"
+   },
+   {
+    "ten": "Tê Giác",
+    "cap": 6,
+    "thuoc_tinh": "thời_gian_trúng_độc_phần_trăm",
+    "min": 30,
+    "max": 30,
+    "mo_ta": "Giảm thời gian trúng độc"
+   },
+   {
+    "ten": "Sò đỏ",
+    "cap": 10,
+    "thuoc_tinh": "thời_gian_trúng_độc_phần_trăm",
+    "min": 40,
+    "max": 40,
+    "mo_ta": "Giảm thời gian trúng độc"
+   },
+   {
+    "ten": "Thổ ý",
+    "cap": 2,
+    "thuoc_tinh": 144,
+    "min": 1,
+    "max": 1,
+    "mo_ta": "Tăng Kỹ năng hệ Thổ"
+   },
+   {
+    "ten": "Thổ tính",
+    "cap": 4,
+    "thuoc_tinh": 144,
+    "min": 2,
+    "max": 2,
+    "mo_ta": "Tăng Kỹ năng hệ Thổ"
+   },
+   {
+    "ten": "Thổ vận",
+    "cap": 6,
+    "thuoc_tinh": 144,
+    "min": 3,
+    "max": 3,
+    "mo_ta": "Tăng Kỹ năng hệ Thổ"
+   },
+   {
+    "ten": "Thổ khí",
+    "cap": 8,
+    "thuoc_tinh": 144,
+    "min": 4,
+    "max": 4,
+    "mo_ta": "Tăng Kỹ năng hệ Thổ"
+   },
+   {
+    "ten": "Thổ tâm",
+    "cap": 10,
+    "thuoc_tinh": 144,
+    "min": 5,
+    "max": 5,
+    "mo_ta": "Tăng Kỹ năng hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 1,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 1,
+    "max": 20,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 2,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 20,
+    "max": 40,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 3,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 40,
+    "max": 60,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 4,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 60,
+    "max": 80,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 5,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 80,
+    "max": 100,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 6,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 100,
+    "max": 120,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 7,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 120,
+    "max": 140,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 8,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 140,
+    "max": 160,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 9,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 160,
+    "max": 180,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   },
+   {
+    "ten": "Thổ Ma",
+    "cap": 10,
+    "thuoc_tinh": "lôi_sát_nội",
+    "min": 180,
+    "max": 200,
+    "mo_ta": "Tăng Sát thương hệ Thổ"
+   }
+  ]
+ },
+ "_chung_khong_theo_he": {
+  "so_thuoc_tinh": 116,
+  "thuoc_tinh": [
+   {
+    "ten": "Thanh Đồng",
+    "cap": 1,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Xích Đồng",
+    "cap": 2,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Sinh Thiết",
+    "cap": 3,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Tinh Cang",
+    "cap": 4,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Bạch Ngân",
+    "cap": 5,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Thuần Ngân",
+    "cap": 6,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Hoàng Kim",
+    "cap": 7,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Bạch Kim",
+    "cap": 8,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Vẫn Thiết",
+    "cap": 9,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Huyền Thiết",
+    "cap": 10,
+    "thuoc_tinh": "sát_thương_vật_lý_ngoại_phần_trăm",
+    "mo_ta": "Tăng hiệu quả sát thương"
+   },
+   {
+    "ten": "Mũi nhọn",
+    "cap": 1,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Đẹp đẽ",
+    "cap": 2,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Võ sĩ",
+    "cap": 3,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Hiệp khách",
+    "cap": 4,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Bá chủ",
+    "cap": 5,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Quốc vương",
+    "cap": 6,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Quân Vương",
+    "cap": 7,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Bá Vương",
+    "cap": 8,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Hoàng Đế",
+    "cap": 9,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Ngọc Đế",
+    "cap": 10,
+    "thuoc_tinh": "độ_chính_xác",
+    "mo_ta": "Tăng chính xác"
+   },
+   {
+    "ten": "Tốc độ cao",
+    "cap": 2,
+    "thuoc_tinh": "tốc_độ_đánh_ngoại_phần_trăm",
+    "mo_ta": "Tăng tốc độ công kích"
+   },
+   {
+    "ten": "Cấp tốc",
+    "cap": 5,
+    "thuoc_tinh": "tốc_độ_đánh_ngoại_phần_trăm",
+    "mo_ta": "Tăng tốc độ công kích"
+   },
+   {
+    "ten": "Tốc độ",
+    "cap": 9,
+    "thuoc_tinh": "tốc_độ_đánh_ngoại_phần_trăm",
+    "mo_ta": "Tăng tốc độ công kích"
+   },
+   {
+    "ten": "Đâm xuyên",
+    "cap": 10,
+    "thuoc_tinh": "bỏ_qua_né_tránh_phần_trăm",
+    "mo_ta": "Bỏ qua phòng thủ đối phương"
+   },
+   {
+    "ten": "Vĩnh hằng",
+    "cap": 10,
+    "thuoc_tinh": "không_thể_phá_hủy",
+    "mo_ta": "Không thể phá hủy"
+   },
+   {
+    "ten": "Chắc chắn",
+    "cap": 1,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Xơ cứng",
+    "cap": 2,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Sắt thép",
+    "cap": 3,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Kiên cố",
+    "cap": 4,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Kiên cường",
+    "cap": 5,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Thánh thiện",
+    "cap": 6,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Thánh thiện",
+    "cap": 7,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Chúc phúc",
+    "cap": 8,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Chúc phúc",
+    "cap": 9,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Thần Hữu",
+    "cap": 10,
+    "thuoc_tinh": "né_tránh",
+    "mo_ta": "Tăng phòng thủ đối đa"
+   },
+   {
+    "ten": "Tốc độ cao",
+    "cap": 2,
+    "thuoc_tinh": "tốc_độ_di_chuyển_phần_trăm",
+    "mo_ta": "Tăng tốc độ chạy và đi bộ"
+   },
+   {
+    "ten": "Đừng vội",
+    "cap": 4,
+    "thuoc_tinh": "tốc_độ_di_chuyển_phần_trăm",
+    "mo_ta": "Tăng tốc độ chạy và đi bộ"
+   },
+   {
+    "ten": "Nhanh chóng",
+    "cap": 6,
+    "thuoc_tinh": "tốc_độ_di_chuyển_phần_trăm",
+    "mo_ta": "Tăng tốc độ chạy và đi bộ"
+   },
+   {
+    "ten": "Bay lượn",
+    "cap": 8,
+    "thuoc_tinh": "tốc_độ_di_chuyển_phần_trăm",
+    "mo_ta": "Tăng tốc độ chạy và đi bộ"
+   },
+   {
+    "ten": "Khoa Phụ",
+    "cap": 10,
+    "thuoc_tinh": "tốc_độ_di_chuyển_phần_trăm",
+    "mo_ta": "Tăng tốc độ chạy và đi bộ"
+   },
+   {
+    "ten": "Gai nhọn",
+    "cap": 3,
+    "thuoc_tinh": "phản_đòn_cận_chiến",
+    "mo_ta": "Phản đòn Vật lý"
+   },
+   {
+    "ten": "Đâm ngã",
+    "cap": 9,
+    "thuoc_tinh": "phản_đòn_cận_chiến",
+    "mo_ta": "Phản đòn Vật lý"
+   },
+   {
+    "ten": "Ngày bình thường",
+    "cap": 3,
+    "thuoc_tinh": "thời_gian_phục_hồi",
+    "mo_ta": "Phục hồi trạng thái công kích"
+   },
+   {
+    "ten": "ổn định",
+    "cap": 6,
+    "thuoc_tinh": "thời_gian_phục_hồi",
+    "mo_ta": "Phục hồi trạng thái công kích"
+   },
+   {
+    "ten": "Cân đối",
+    "cap": 9,
+    "thuoc_tinh": "thời_gian_phục_hồi",
+    "mo_ta": "Phục hồi trạng thái công kích"
+   },
+   {
+    "ten": "ánh sáng",
+    "cap": 1,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "Mặt trăng",
+    "cap": 2,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "Phát sáng",
+    "cap": 3,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "Nhấp nháy",
+    "cap": 4,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "ánh sáng chói lọi",
+    "cap": 5,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "Mặt trời",
+    "cap": 6,
+    "thuoc_tinh": 112,
+    "mo_ta": "Tăng phạm vi sát thương"
+   },
+   {
+    "ten": "Thái Sư",
+    "cap": 5,
+    "thuoc_tinh": "tăng_cấp_kỹ_năng",
+    "mo_ta": "Tăng kỹ năng"
+   },
+   {
+    "ten": "Tông sư",
+    "cap": 10,
+    "thuoc_tinh": "tăng_cấp_kỹ_năng",
+    "mo_ta": "Tăng kỹ năng"
+   },
+   {
+    "ten": "Lăng kính",
+    "cap": 1,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Cầu vồng",
+    "cap": 2,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "bảy màu",
+    "cap": 3,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Hào quang",
+    "cap": 4,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "ánh chớp",
+    "cap": 5,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Cầu vồng",
+    "cap": 6,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Cầu vồng",
+    "cap": 7,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Cầu vồng",
+    "cap": 8,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Toàn thạch",
+    "cap": 9,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Cầu vồng",
+    "cap": 10,
+    "thuoc_tinh": "kháng_tất_cả_phần_trăm",
+    "mo_ta": "tăng phòng thủ"
+   },
+   {
+    "ten": "Hút máu",
+    "cap": 2,
+    "thuoc_tinh": "hút_sinh_lực_phần_trăm",
+    "mo_ta": "hút Sinh lực"
+   },
+   {
+    "ten": "Con muỗi",
+    "cap": 5,
+    "thuoc_tinh": "hút_sinh_lực_phần_trăm",
+    "mo_ta": "hút Sinh lực"
+   },
+   {
+    "ten": "Con đỉa",
+    "cap": 7,
+    "thuoc_tinh": "hút_sinh_lực_phần_trăm",
+    "mo_ta": "hút Sinh lực"
+   },
+   {
+    "ten": "Hoa ăn thịt người",
+    "cap": 10,
+    "thuoc_tinh": "hút_sinh_lực_phần_trăm",
+    "mo_ta": "hút Sinh lực"
+   },
+   {
+    "ten": "Con dơi",
+    "cap": 2,
+    "thuoc_tinh": "hút_nội_lực_phần_trăm",
+    "mo_ta": "hút Nội lực"
+   },
+   {
+    "ten": "Quỷ hồn",
+    "cap": 5,
+    "thuoc_tinh": "hút_nội_lực_phần_trăm",
+    "mo_ta": "hút Nội lực"
+   },
+   {
+    "ten": "Châu chấu",
+    "cap": 7,
+    "thuoc_tinh": "hút_nội_lực_phần_trăm",
+    "mo_ta": "hút Nội lực"
+   },
+   {
+    "ten": "Châu chấu",
+    "cap": 10,
+    "thuoc_tinh": "hút_nội_lực_phần_trăm",
+    "mo_ta": "hút Nội lực"
+   },
+   {
+    "ten": "Sinh lực",
+    "cap": 1,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Trường thọ",
+    "cap": 2,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Trường thọ",
+    "cap": 3,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Trường sinh",
+    "cap": 4,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Trường sinh",
+    "cap": 5,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Sinh động",
+    "cap": 6,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Sinh động",
+    "cap": 7,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Sinh linh",
+    "cap": 8,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Sinh linh",
+    "cap": 9,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Trường thọ",
+    "cap": 10,
+    "thuoc_tinh": "sinh_lực_tối_đa",
+    "mo_ta": "Tăng Sinh lực"
+   },
+   {
+    "ten": "Nội lực",
+    "cap": 1,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Sức sống",
+    "cap": 2,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Sức sống",
+    "cap": 3,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Thịnh vượng",
+    "cap": 4,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Thịnh vượng",
+    "cap": 5,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Thâm hậu",
+    "cap": 6,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Thâm hậu",
+    "cap": 7,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Vô cùng",
+    "cap": 8,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Vô cùng",
+    "cap": 9,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Vô tận",
+    "cap": 10,
+    "thuoc_tinh": "nội_lực_tối_đa",
+    "mo_ta": "Tăng Nội lực"
+   },
+   {
+    "ten": "Lâu dài",
+    "cap": 1,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Lâu dài",
+    "cap": 2,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Lâu dài",
+    "cap": 3,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Lâu dài",
+    "cap": 4,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Không ngừng",
+    "cap": 5,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Không ngừng",
+    "cap": 6,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Không ngừng",
+    "cap": 7,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Không ngừng",
+    "cap": 8,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Sâu thẳm",
+    "cap": 9,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Sâu thẳm",
+    "cap": 10,
+    "thuoc_tinh": "thể_lực_tối_đa",
+    "mo_ta": "Tăng thể lực"
+   },
+   {
+    "ten": "Êm dịu",
+    "cap": 1,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "Êm dịu",
+    "cap": 3,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "Nhu mì",
+    "cap": 5,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "Phục sinh",
+    "cap": 6,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "tỷnh lại",
+    "cap": 8,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "phục sinh",
+    "cap": 10,
+    "thuoc_tinh": "phục_hồi_sinh_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Sinh lực"
+   },
+   {
+    "ten": "Biển rộng",
+    "cap": 2,
+    "thuoc_tinh": "phục_hồi_nội_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Nội lực"
+   },
+   {
+    "ten": "Sóng gió",
+    "cap": 5,
+    "thuoc_tinh": "phục_hồi_nội_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Nội lực"
+   },
+   {
+    "ten": "Mưa to",
+    "cap": 7,
+    "thuoc_tinh": "phục_hồi_nội_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Nội lực"
+   },
+   {
+    "ten": "Làn sóng",
+    "cap": 10,
+    "thuoc_tinh": "phục_hồi_nội_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Nội lực"
+   },
+   {
+    "ten": "Dồi dào",
+    "cap": 1,
+    "thuoc_tinh": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Thể lực"
+   },
+   {
+    "ten": "Mềm dẻo",
+    "cap": 3,
+    "thuoc_tinh": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Thể lực"
+   },
+   {
+    "ten": "Tranh thủ",
+    "cap": 5,
+    "thuoc_tinh": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Thể lực"
+   },
+   {
+    "ten": "Tranh thủ",
+    "cap": 6,
+    "thuoc_tinh": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Thể lực"
+   },
+   {
+    "ten": "Tranh thủ",
+    "cap": 7,
+    "thuoc_tinh": "phục_hồi_thể_lực_mỗi_nửa_giây",
+    "mo_ta": "Tăng tốc độ hồi phục Thể lực"
+   }
+  ]
+ }
+}

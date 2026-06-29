@@ -1,0 +1,81 @@
+{
+  "shopkey": "hieu.thuoc.thanh.thi",
+  "offset": 4,
+  "items": [
+    {
+      "idx": 7,
+      "name": "Kim Sáng Dược (tiểu)",
+      "particular": 11
+    },
+    {
+      "idx": 8,
+      "name": "Kim Sáng Dược (trung)",
+      "particular": 12
+    },
+    {
+      "idx": 9,
+      "name": "Kim Sáng Dược (đại)",
+      "particular": 13
+    },
+    {
+      "idx": 10,
+      "name": "Hồi Thiên đan",
+      "particular": 14
+    },
+    {
+      "idx": 11,
+      "name": "Cửu Chuyển Hoàn Hồn đan",
+      "particular": 15
+    },
+    {
+      "idx": 12,
+      "name": "Ngưng Thần đan (tiểu)",
+      "particular": 16
+    },
+    {
+      "idx": 13,
+      "name": "Ngưng Thần đan (trung)",
+      "particular": 17
+    },
+    {
+      "idx": 14,
+      "name": "Ngưng Thần đan (đại)",
+      "particular": 18
+    },
+    {
+      "idx": 15,
+      "name": "Đại Bổ tán",
+      "particular": 19
+    },
+    {
+      "idx": 16,
+      "name": "Ô đầu Hoàn thần đan",
+      "particular": 20
+    },
+    {
+      "idx": 17,
+      "name": "Thừa Tiên Mật (tiểu)",
+      "particular": 21
+    },
+    {
+      "idx": 18,
+      "name": "Thừa Tiên Mật (trung)",
+      "particular": 22
+    },
+    {
+      "idx": 19,
+      "name": "Thừa Tiên Mật (đại)",
+      "particular": 23
+    },
+    {
+      "idx": 20,
+      "name": "Thất Khiếu Bổ tâm đan",
+      "particular": 24
+    },
+    {
+      "idx": 21,
+      "name": "Ngũ Hoa Ngọc Lộ Hoàn",
+      "particular": 25
+    }
+  ]
+}

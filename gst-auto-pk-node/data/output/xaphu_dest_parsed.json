@@ -1,0 +1,589 @@
+{
+  "_top": {
+    "1": "Thành Thị",
+    "2": "Thôn Trấn",
+    "3": "Luyện công 10",
+    "4": "Luyện công 20",
+    "5": "Luyện công 30",
+    "6": "Luyện công 40",
+    "7": "Luyện công 50",
+    "8": "Luyện công 60",
+    "9": "Luyện công 70",
+    "10": "Luyện công 80",
+    "11": "Luyện công 90",
+    "12": "Tẩy Tủy đảo",
+    "13": "Đêm Huy Hoàng"
+  },
+  "routes": {
+    "phượng tường": {
+      "name": "Phượng Tường",
+      "cat": 3,
+      "idx": 0
+    },
+    "thành đô": {
+      "name": "Thành Đô",
+      "cat": 3,
+      "idx": 1
+    },
+    "đại lý": {
+      "name": "Đại Lý",
+      "cat": 3,
+      "idx": 2
+    },
+    "biện kinh": {
+      "name": "Biện Kinh",
+      "cat": 3,
+      "idx": 3
+    },
+    "tương dương": {
+      "name": "Tương Dương",
+      "cat": 3,
+      "idx": 4
+    },
+    "lâm an": {
+      "name": "Lâm An",
+      "cat": 3,
+      "idx": 6
+    },
+    "ba lăng huyện": {
+      "name": "Ba Lăng Huyện",
+      "cat": 2,
+      "idx": 0
+    },
+    "giang tân thôn": {
+      "name": "Giang Tân Thôn",
+      "cat": 2,
+      "idx": 1
+    },
+    "long môn trấn": {
+      "name": "Long Môn Trấn",
+      "cat": 2,
+      "idx": 2
+    },
+    "nam nhạc trấn": {
+      "name": "Nam Nhạc Trấn",
+      "cat": 2,
+      "idx": 3
+    },
+    "long tuyền thôn": {
+      "name": "Long Tuyền Thôn",
+      "cat": 2,
+      "idx": 4
+    },
+    "đạo hương thôn": {
+      "name": "Đạo Hương Thôn",
+      "cat": 2,
+      "idx": 5
+    },
+    "vĩnh lạc trấn": {
+      "name": "Vĩnh Lạc Trấn",
+      "cat": 2,
+      "idx": 6
+    },
+    "chu tiên trấn": {
+      "name": "Chu Tiên Trấn",
+      "cat": 2,
+      "idx": 7
+    },
+    "thạch cổ trấn": {
+      "name": "Thạch Cổ Trấn",
+      "cat": 2,
+      "idx": 8
+    },
+    "tây sơn thôn": {
+      "name": "Tây Sơn Thôn",
+      "cat": 2,
+      "idx": 9
+    },
+    "dương châu": {
+      "name": "Dương Châu",
+      "cat": 3,
+      "idx": 5
+    },
+    "vũ di sơn": {
+      "name": "Vũ Di Sơn",
+      "cat": 4,
+      "idx": 0
+    },
+    "thục cương sơn": {
+      "name": "Thục Cương Sơn",
+      "cat": 4,
+      "idx": 1
+    },
+    "lăng tần thủy hoàng": {
+      "name": "Lăng Tần Thủy Hoàng",
+      "cat": 4,
+      "idx": 2
+    },
+    "bạch vân động": {
+      "name": "Bạch Vân Động",
+      "cat": 4,
+      "idx": 3
+    },
+    "miêu lĩnh": {
+      "name": "Miêu Lĩnh",
+      "cat": 4,
+      "idx": 4
+    },
+    "yến tử động": {
+      "name": "Yến Tử Động",
+      "cat": 4,
+      "idx": 5
+    },
+    "phục ngưu sơn đông": {
+      "name": "Phục Ngưu Sơn Đông",
+      "cat": 4,
+      "idx": 6
+    },
+    "khoái hoạt lâm": {
+      "name": "Khoái Hoạt Lâm",
+      "cat": 4,
+      "idx": 7
+    },
+    "dược vương động tầng 1": {
+      "name": "Dược Vương Động Tầng 1",
+      "cat": 4,
+      "idx": 8
+    },
+    "tuyết báo động tầng 1": {
+      "name": "Tuyết Báo Động Tầng 1",
+      "cat": 4,
+      "idx": 9
+    },
+    "tuyết báo động tầng 2": {
+      "name": "Tuyết Báo Động Tầng 2",
+      "cat": 4,
+      "idx": 10
+    },
+    "thổ phỉ động": {
+      "name": "Thổ Phỉ Động",
+      "cat": 4,
+      "idx": 11
+    },
+    "kim quang động": {
+      "name": "Kim Quang Động",
+      "cat": 4,
+      "idx": 12
+    },
+    "địa đạo hậu viện tín tướng tự": {
+      "name": "Địa Đạo Hậu Viện Tín Tướng Tự",
+      "cat": 7,
+      "idx": 0
+    },
+    "hưởng thủy động": {
+      "name": "Hưởng Thủy Động",
+      "cat": 7,
+      "idx": 1
+    },
+    "thiết tháp tầng 1": {
+      "name": "Thiết Tháp Tầng 1",
+      "cat": 7,
+      "idx": 2
+    },
+    "thiết tháp tầng 2": {
+      "name": "Thiết Tháp Tầng 2",
+      "cat": 7,
+      "idx": 3
+    },
+    "thiết tháp tầng 3": {
+      "name": "Thiết Tháp Tầng 3",
+      "cat": 7,
+      "idx": 4
+    },
+    "thiên tâm động": {
+      "name": "Thiên Tâm Động",
+      "cat": 7,
+      "idx": 5
+    },
+    "đáy động đình hồ tầng 1": {
+      "name": "Đáy Động Đình Hồ Tầng 1",
+      "cat": 7,
+      "idx": 6
+    },
+    "đáy động đình hồ tầng 2": {
+      "name": "Đáy Động Đình Hồ Tầng 2",
+      "cat": 7,
+      "idx": 7
+    },
+    "tường vân động tầng 1": {
+      "name": "Tường Vân Động Tầng 1",
+      "cat": 7,
+      "idx": 8
+    },
+    "lưu tiên động tầng 1": {
+      "name": "Lưu Tiên Động Tầng 1",
+      "cat": 7,
+      "idx": 9
+    },
+    "băng huyệt động": {
+      "name": "Băng Huyệt Động",
+      "cat": 7,
+      "idx": 10
+    },
+    "tuyết báo động tầng 3": {
+      "name": "Tuyết Báo Động Tầng 3",
+      "cat": 7,
+      "idx": 11
+    },
+    "ác bá địa đạo": {
+      "name": "Ác Bá Địa Đạo",
+      "cat": 7,
+      "idx": 12
+    },
+    "thiên tầm tháp tầng 1": {
+      "name": "Thiên Tầm Tháp Tầng 1",
+      "cat": 7,
+      "idx": 13
+    },
+    "thiên tầm tháp tầng 2": {
+      "name": "Thiên Tầm Tháp Tầng 2",
+      "cat": 7,
+      "idx": 14
+    },
+    "sơn động ngự hoa viên": {
+      "name": "Sơn Động Ngự Hoa Viên",
+      "cat": 7,
+      "idx": 15
+    },
+    "nghiệt long động": {
+      "name": "Nghiệt Long Động",
+      "cat": 7,
+      "idx": 16
+    },
+    "ngọc hoa động": {
+      "name": "Ngọc Hoa Động",
+      "cat": 7,
+      "idx": 17
+    },
+    "thánh động tầng 1": {
+      "name": "Thánh Động Tầng 1",
+      "cat": 8,
+      "idx": 0
+    },
+    "thánh động tầng 2": {
+      "name": "Thánh Động Tầng 2",
+      "cat": 8,
+      "idx": 1
+    },
+    "mê cung cấm địa": {
+      "name": "Mê Cung Cấm Địa",
+      "cat": 8,
+      "idx": 14
+    },
+    "hoành sơn phái": {
+      "name": "Hoành Sơn Phái",
+      "cat": 8,
+      "idx": 3
+    },
+    "thanh loa đảo": {
+      "name": "Thanh Loa Đảo",
+      "cat": 8,
+      "idx": 4
+    },
+    "mật đạo tương dương": {
+      "name": "Mật Đạo Tương Dương",
+      "cat": 8,
+      "idx": 5
+    },
+    "108 la hán trận": {
+      "name": "108 La Hán Trận",
+      "cat": 8,
+      "idx": 6
+    },
+    "tường vân động tầng 2": {
+      "name": "Tường Vân Động Tầng 2",
+      "cat": 8,
+      "idx": 7
+    },
+    "tường vân động tầng 3": {
+      "name": "Tường Vân Động Tầng 3",
+      "cat": 8,
+      "idx": 8
+    },
+    "tường vân động tầng 4": {
+      "name": "Tường Vân Động Tầng 4",
+      "cat": 8,
+      "idx": 9
+    },
+    "lưu tiên động tầng 2": {
+      "name": "Lưu Tiên Động Tầng 2",
+      "cat": 8,
+      "idx": 10
+    },
+    "lưu tiên động tầng 3": {
+      "name": "Lưu Tiên Động Tầng 3",
+      "cat": 8,
+      "idx": 11
+    },
+    "lưu tiên động tầng 4": {
+      "name": "Lưu Tiên Động Tầng 4",
+      "cat": 8,
+      "idx": 12
+    },
+    "tuyết báo động tầng 4": {
+      "name": "Tuyết Báo Động Tầng 4",
+      "cat": 8,
+      "idx": 13
+    },
+    "trúc tơ động tầng 1": {
+      "name": "Trúc Tơ Động Tầng 1",
+      "cat": 8,
+      "idx": 15
+    },
+    "thiên tầm tháp tầng 3": {
+      "name": "Thiên Tầm Tháp Tầng 3",
+      "cat": 8,
+      "idx": 16
+    },
+    "dương giác động": {
+      "name": "Dương Giác Động",
+      "cat": 8,
+      "idx": 17
+    },
+    "sa mạc địa biểu": {
+      "name": "Sa Mạc Địa Biểu",
+      "cat": 9,
+      "idx": 0
+    },
+    "chân núi trường bạch": {
+      "name": "Chân Núi Trường Bạch",
+      "cat": 9,
+      "idx": 1
+    },
+    "băng hà động": {
+      "name": "Băng Hà Động",
+      "cat": 9,
+      "idx": 2
+    },
+    "nhạn thạch động": {
+      "name": "Nhạn Thạch Động",
+      "cat": 9,
+      "idx": 3
+    },
+    "dược vương động tầng 3": {
+      "name": "Dược Vương Động Tầng 3",
+      "cat": 9,
+      "idx": 4
+    },
+    "tuyết báo động tầng 6": {
+      "name": "Tuyết Báo Động Tầng 6",
+      "cat": 9,
+      "idx": 5
+    },
+    "tuyết báo động tầng 7": {
+      "name": "Tuyết Báo Động Tầng 7",
+      "cat": 9,
+      "idx": 6
+    },
+    "lưỡng thủy động 1": {
+      "name": "Lưỡng Thủy Động 1",
+      "cat": 9,
+      "idx": 7
+    },
+    "lưỡng thủy động 2": {
+      "name": "Lưỡng Thủy Động 2",
+      "cat": 9,
+      "idx": 8
+    },
+    "thanh khê động": {
+      "name": "Thanh Khê Động",
+      "cat": 9,
+      "idx": 9
+    },
+    "vũ lăng động": {
+      "name": "Vũ Lăng Động",
+      "cat": 9,
+      "idx": 10
+    },
+    "phù dung động": {
+      "name": "Phù Dung Động",
+      "cat": 9,
+      "idx": 11
+    },
+    "vô danh động": {
+      "name": "Vô Danh Động",
+      "cat": 9,
+      "idx": 12
+    },
+    "phi thiên động": {
+      "name": "Phi Thiên Động",
+      "cat": 9,
+      "idx": 13
+    },
+    "dương trung động": {
+      "name": "Dương Trung Động",
+      "cat": 9,
+      "idx": 14
+    },
+    "tầng lăng tầng 3": {
+      "name": "Tầng Lăng Tầng 3",
+      "cat": 9,
+      "idx": 15
+    },
+    "hoa sơn cảnh kỹ trường": {
+      "name": "Hoa Sơn Cảnh Kỹ Trường",
+      "cat": 10,
+      "idx": 0
+    },
+    "mạc cao quật": {
+      "name": "Mạc Cao Quật",
+      "cat": 11,
+      "idx": 0
+    },
+    "mạc cao quật 2": {
+      "name": "Mạc Cao Quật 2",
+      "cat": 11,
+      "idx": 1
+    },
+    "trường bạch nam": {
+      "name": "Trường Bạch Nam",
+      "cat": 11,
+      "idx": 2
+    },
+    "trường bạch nam 2": {
+      "name": "Trường Bạch Nam 2",
+      "cat": 11,
+      "idx": 3
+    },
+    "trường bạch bắc": {
+      "name": "Trường Bạch Bắc",
+      "cat": 11,
+      "idx": 4
+    },
+    "phong lăng độ": {
+      "name": "Phong Lăng Độ",
+      "cat": 11,
+      "idx": 5
+    },
+    "sa mạc 1": {
+      "name": "Sa Mạc 1",
+      "cat": 11,
+      "idx": 6
+    },
+    "sa mạc 2": {
+      "name": "Sa Mạc 2",
+      "cat": 11,
+      "idx": 7
+    },
+    "sa mạc 3": {
+      "name": "Sa Mạc 3",
+      "cat": 11,
+      "idx": 8
+    },
+    "sa mạc 4": {
+      "name": "Sa Mạc 4",
+      "cat": 11,
+      "idx": 9
+    },
+    "khỏa lang động": {
+      "name": "Khỏa Lang Động",
+      "cat": 11,
+      "idx": 10
+    },
+    "tiến cúc động": {
+      "name": "Tiến Cúc Động",
+      "cat": 11,
+      "idx": 11
+    },
+    "cán viên động": {
+      "name": "Cán Viên Động",
+      "cat": 11,
+      "idx": 12
+    },
+    "dược vương tầng 4": {
+      "name": "Dược Vương Tầng 4",
+      "cat": 11,
+      "idx": 13
+    },
+    "dược vương tầng 5": {
+      "name": "Dược Vương Tầng 5",
+      "cat": 11,
+      "idx": 14
+    },
+    "tuyết báo tầng 8": {
+      "name": "Tuyết Báo Tầng 8",
+      "cat": 11,
+      "idx": 15
+    },
+    "hắc sa động": {
+      "name": "Hắc Sa Động",
+      "cat": 11,
+      "idx": 16
+    },
+    "điểm thương sơn": {
+      "name": "Điểm Thương Sơn",
+      "cat": 13,
+      "idx": 0
+    },
+    "phục ngưu sơn tây": {
+      "name": "Phục Ngưu Sơn Tây",
+      "cat": 13,
+      "idx": 1
+    },
+    "thanh thành sơn": {
+      "name": "Thanh Thành Sơn",
+      "cat": 13,
+      "idx": 2
+    },
+    "hoàng hà nguyên đầu": {
+      "name": "Hoàng Hà Nguyên Đầu",
+      "cat": 13,
+      "idx": 3
+    },
+    "tỏa vân động": {
+      "name": "Tỏa Vân Động",
+      "cat": 13,
+      "idx": 4
+    },
+    "thần tiên động": {
+      "name": "Thần Tiên Động",
+      "cat": 13,
+      "idx": 5
+    },
+    "mê cung kê quán động": {
+      "name": "Mê Cung Kê Quán Động",
+      "cat": 13,
+      "idx": 6
+    },
+    "kiến tính phong sơn động": {
+      "name": "Kiến Tính Phong Sơn Động",
+      "cat": 13,
+      "idx": 7
+    },
+    "phụng nhãn động": {
+      "name": "Phụng Nhãn Động",
+      "cat": 13,
+      "idx": 8
+    },
+    "điểm thương động tầng 1": {
+      "name": "Điểm Thương Động Tầng 1",
+      "cat": 13,
+      "idx": 9
+    },
+    "điểm thương động tầng 2": {
+      "name": "Điểm Thương Động Tầng 2",
+      "cat": 13,
+      "idx": 10
+    },
+    "điểm thương động tầng 3": {
+      "name": "Điểm Thương Động Tầng 3",
+      "cat": 13,
+      "idx": 11
+    },
+    "long cung động": {
+      "name": "Long Cung Động",
+      "cat": 13,
+      "idx": 12
+    },
+    "kinh hoàng động": {
+      "name": "Kinh Hoàng Động",
+      "cat": 13,
+      "idx": 13
+    },
+    "mật thất thiếu lâm": {
+      "name": "Mật Thất Thiếu Lâm",
+      "cat": 13,
+      "idx": 14
+    }
+  }
+}

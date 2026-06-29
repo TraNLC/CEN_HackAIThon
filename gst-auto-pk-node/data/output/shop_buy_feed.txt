@@ -1,0 +1,2 @@
+🟢 HỌC MUA SHOP 360s — mở shop NPC, MUA TAY món quest cần (vd Đơn Đao hệ Thổ). Mỗi lần mua tôi bắt shopkey+itemindex; bạn nhắn tên món để tôi lưu.
+🏁 HẾT GIỜ học mua shop.

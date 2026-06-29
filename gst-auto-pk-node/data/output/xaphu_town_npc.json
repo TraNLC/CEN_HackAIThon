@@ -1,0 +1,10 @@
+{
+  "_note": "Xa Phu npcId THEO THÀNH (mapId -> npcId). Menu/route seq DÙNG CHUNG (xaphu_routes.json); chỉ npcId khác. Xa Phu KHÔNG remote xuyên thành -> phải dùng npcId của thành đang đứng. Học thêm: test_scan_xaphu.py. Đủ 7 thành chính (2026-06-09).",
+  "1": "879",
+  "11": "1058",
+  "37": "1386",
+  "78": "1222",
+  "80": "1312",
+  "162": "4159",
+  "176": "3363"
+}

@@ -1,0 +1,1 @@
+🟢 SNIFF NỘP NV 300s — mở Dã Tẩu, NỘP TAY 1 nhiệm vụ (hoàn thành→giao nộp→nhận thưởng). →GỬI = client gửi, ←NHẬN = server trả.

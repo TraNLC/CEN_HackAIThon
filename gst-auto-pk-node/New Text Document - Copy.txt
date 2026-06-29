@@ -1,0 +1,1316 @@
+ -*- coding: utf-8 -*-
+"""pk_app.py — APP AUTO-PK ĐỘC LẬP (KHÔNG dính bot Dã Tẩu). Giao diện kiểu bot (banner + bảng + notebook + log).
+Bảng cửa sổ: Tên nhân vật | Môn phái | Điểm tích luỹ. Tab Chiến đấu: tick 'Tự động đánh' = bắt đầu tìm+đánh.
+Tự attach Frida từng cửa sổ (NỀN, không lag). TẮT Auto-bot cửa sổ định PK (Frida 1 attach/PID).
+CHẠY: venv/bin/python pk_app.py
+"""
+import sys, time, threading, subprocess, unicodedata, tkinter as tk
+from tkinter import ttk
+sys.path.insert(0, ".")
+from features.bot.game_bot import VLTK1Bot
+from core import pk_skills
+try:
+    from core.adb_helper import ADB_PATH
+except Exception:
+    ADB_PATH = "adb"
+
+NGUHANH = {0: "Kim", 1: "Mộc", 2: "Thủy", 3: "Hỏa", 4: "Thổ", -1: "?"}
+PORTS = (26624, 26656, 26688, 26720, 26752, 26784, 26816, 26880, 5555)
+# Tống Kim: NPC ở doanh trại (id có thể đổi theo phiên — sửa ở đây nếu lệch)
+TK_HEAL_NPC = 5554; TK_HEAL_OPT = 1     # NPC nhận máu/mana, option 1 (đầu tiên)
+TK_WAR_NPC = 5574; TK_WAR_OPT = 1       # NPC ra chiến trường, option 1 (1 hoặc 2 = vào, 3 = huỷ)
+TK_REJOIN_CD = 5.0                      # cooldown sau khi ra trận (tránh nhấn lại lúc đang chuyển; giảm 12→5 cho nhanh)
+LAC_NONE = "—"                          # giá trị select box = không dùng
+# 🏃 'lắc' Tống Kim = đồ magicscript (genre RUNTIME ≠ 6; tên rỗng vì GetItemName không trả) → KHỚP THEO particular id
+#   (tra data/game_raw/settings/item/magicscript.txt). gap = cooldown tự dùng (s), đặt ~ thời lượng buff:
+#     Phi Tốc Hoàn (#45): "Nội 5 phút, +50% tốc đánh"  → 5 phút
+#     Lệnh Bài     (#51): "Nội 3 phút, đồng đội +30% di chuyển/+50% xuất chiêu" → 3 phút
+#     Chiến Cổ     (#50): "Nội 3 phút, đồng đội +30% Sinh lực/Phòng thủ" → 3 phút
+LAC_TYPES = [("Phi Tốc Hoàn", 45, 295),
+             ("Lệnh Bài", 51, 175),
+             ("Chiến Cổ", 50, 175)]
+
+
+class PKApp:
+    def __init__(self, root):
+        self.root = root
+        # Phiên bản build (đọc BUILD_VERSION.txt theo THƯ MỤC FILE NÀY — lộ ngay nếu chạy nhầm folder cũ).
+        import os as _os
+        try:
+            with open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "BUILD_VERSION.txt"),
+                      encoding="utf-8") as _bf:
+                _ver = _bf.read().strip()
+        except Exception:
+            _ver = "?"
+        root.title(f"Auto-PK - Ver {_ver}"); root.geometry("400x720")   # 1/2 độ rộng, cao hơn để thấy ô log
+        self.bots = {}          # dev -> VLTK1Bot
+        self.opened = {}        # dev -> bool ĐÃ MỞ (attach + get phái/skill)
+        self.run = {}           # dev -> bool đang đánh
+        self.sect = {}          # dev -> sect
+        self.level = {}         # dev -> cấp nhân vật
+        self.skill = {}         # dev -> skill_id (chọn tay)
+        self.skill_cands = {}   # dev -> [skill id] autoplay (chính/phụ/hỗ trợ) = id CAST ĐƯỢC (gây dame)
+        self.buffs = {}         # dev -> [{id,name}] buff hỗ trợ của phái (cho dropdown)
+        self.buff_sel = {}      # dev -> id buff ĐANG chọn để niệm (1 cái đặc trưng)
+        self.maxrange = {}      # dev -> tầm đánh (max skill radius) của char
+        self.sect_manual = {}   # dev -> True nếu user chọn phái bằng chuột phải (auto KHÔNG được đè)
+        self.npc_learn = {}     # (dev, npcId) -> selectIndex HỌC từ cú click tay của user
+        self._last_npc = {}     # dev -> npcId vừa mở (để ghép op33→op35)
+        # NPC Tống Kim HỌC THEO PHE (id NPC máu/ra-trận KHÁC nhau giữa phe Tống và Kim) — bắt từ cú click tay:
+        #   op33→op232 = NPC NHẬN MÁU (Quan Nhu);  op33→op35 (khi auto_tk bật) = NPC RA CHIẾN TRƯỜNG.
+        self.tk_heal_npc = {}   # dev -> npcId nhận máu (học); fallback TK_HEAL_NPC (phe Tống)
+        self.tk_war_npc = {}    # dev -> npcId ra chiến trường (học); fallback TK_WAR_NPC
+        self.tk_war_pkt = {}    # dev -> hex gói VÀO TRẬN học từ click (phe Kim dùng op229, KHÁC op35 phe Tống) → replay
+        self.tk_heal_pkt = {}   # dev -> hex gói NHẬN THUỐC học từ click (phe Kim NPC máu KHÔNG ăn RỖNG/op232 → replay gói thật)
+        self.tk_heal_part = {}  # dev -> particular thuốc máu TK ("Ngũ Hoa Ngọc Lộ Hoàn") — TỰ HỌC bằng diff túi khi nhận từ Quan Nhu
+        self.tk_heal_slot = {}  # dev -> ô túi của thuốc máu TK (cache lúc học để bơm máu use_item NHANH, khỏi dump mỗi lần)
+        self.dev_camp = {}      # dev -> campValue HIỆN TẠI (Tống/Kim — KHÔNG cần biết số nào là phe nào)
+        # HỌC LƯU FILE theo campValue (số nào cũng được): học 1 lần nhớ MÃI qua phiên → 3h chiều khỏi click lại.
+        self._tk_file = "data/output/tk_npc_learn.json"
+        self._tk_db = self._tk_load()   # {campValue(str): {heal,war,war_pkt,heal_part}}
+        # seed phe Kim (campValue=2) đã học sẵn: NPC máu 126, ra-trận 106 (Kim Trinh Sát), thuốc Ngũ Hoa part 25
+        if "2" not in self._tk_db:
+            self._tk_db["2"] = {"heal": 126, "war": 106, "heal_part": 25}
+            self._tk_save_db()
+        self._rejoining = {}    # dev -> đang tự rejoin (bỏ qua học để khỏi học gói của chính bot)
+        self._tk_probe_ts = {}  # (dev,mapId) -> ts probe NPC gần nhất (throttle dò dialog)
+        self._tk_heal_fail = {} # dev -> số lần heal liên tiếp KHÔNG ra thuốc (phe chưa học được cách nhận)
+        self._tk_teach_mode = {}# dev -> True = DỪNG auto cửa sổ này để USER click dạy NPC máu (hết hammer)
+        self._tk_teach_log = {} # dev -> ts log nhắc-học gần nhất (throttle)
+        self._recovering = {}   # dev -> True đang thử kết nối lại (watchdog) — chống chạy chồng
+        self._recover_ts = {}   # dev -> ts lần thử reconnect gần nhất (throttle 15s)
+        self.lac_available = set()  # nhãn loại lắc PHÁT HIỆN trong túi (union các cửa sổ đã mở) → đổ vào select box
+        self.lac_stock = {}         # particular -> stack (số lượng) gần nhất → label 'còn N' sau select box
+        self._logt = {}             # key -> ts: log tiết chế (chống spam dòng lặp định kỳ)
+        self._tk_nomatch_ts = {}    # (dev,map) -> ts log "chưa khớp NPC" gần nhất (throttle 60s)
+        self._buff_shown = []
+        self._shown = []
+        self._create_widgets()
+        self.root.after(300, self.refresh)
+        self.root.after(1200, self._learn_tick)   # học thao tác NPC chạy nền (mọi cửa sổ đã mở)
+        self.root.after(6000, self._watchdog_tick) # tự kết nối lại + chạy lại cửa sổ bị crash/dis
+
+    # ---------- HỌC NPC Tống Kim LƯU FILE theo campValue (qua phiên vẫn nhớ) ----------
+    def _tk_load(self):
+        try:
+            import json, os
+            if os.path.exists(self._tk_file):
+                return json.load(open(self._tk_file, encoding="utf-8")) or {}
+        except Exception: pass
+        return {}
+
+    def _tk_save_db(self):
+        try:
+            import json, os
+            os.makedirs("data/output", exist_ok=True)
+            json.dump(self._tk_db, open(self._tk_file, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        except Exception: pass
+
+    def _tk_apply(self, dev, camp):
+        """Nạp dữ liệu đã học của campValue này vào dict runtime per-dev (gọi lúc worker khởi động). DỨT KHOÁT:
+        trường nào KHÔNG có record cho phe này thì XOÁ key per-dev → về fallback (tránh dùng id phe CŨ khi đổi phe)."""
+        rec = self._tk_db.get(str(camp)) or {}
+        for key, d in (("heal", self.tk_heal_npc), ("war", self.tk_war_npc),
+                       ("war_pkt", self.tk_war_pkt), ("heal_pkt", self.tk_heal_pkt), ("heal_part", self.tk_heal_part)):
+            if rec.get(key) is not None and rec.get(key) != "":
+                v = rec[key]
+                if key in ("heal", "war"):
+                    try: v = int(v)   # id NPC: ép INT để khớp nids (int) ở at_camp — file lưu str → '23' in {ints} luôn False
+                    except Exception: pass
+                d[dev] = v
+            else:
+                d.pop(dev, None)
+        self.tk_heal_slot.pop(dev, None)   # ô resolve lại mỗi phiên từ particular Ngũ Hoa
+        if rec:
+            self.log(f"📂 {dev}: nạp NPC TK đã học (camp {camp}): {rec}")
+
+    def _tk_learn(self, dev, key, val):
+        """Ghi 1 trường đã học vào DB theo campValue của dev + lưu file (nhớ qua phiên)."""
+        camp = self.dev_camp.get(dev)
+        if camp is None: return
+        rec = self._tk_db.setdefault(str(camp), {})
+        if rec.get(key) != val:
+            rec[key] = val
+            self._tk_save_db()
+
+    def _tk_learn_map(self, dev, key, val):
+        """Ghi id NPC học theo (campValue, MAP HIỆN TẠI) → maps[mapId][key]. Để 'cứ tới map đó + phe đó = mặc định
+        gọi remote id này' (kể cả NPC ngoài tầm đọc). Lưu bền qua phiên. mapId lấy từ _cur_map (set ở _tk_autofind)."""
+        camp = self.dev_camp.get(dev); mid = (getattr(self, '_cur_map', {}) or {}).get(dev)
+        if camp is None or mid is None: return
+        rec = self._tk_db.setdefault(str(camp), {}); maps = rec.setdefault("maps", {})
+        mrec = maps.setdefault(str(mid), {})
+        if mrec.get(key) != val:
+            mrec[key] = val; self._tk_save_db()
+            self.log(f"💾 {dev}: LƯU {key}={val} cho map {mid} phe {camp} (lần sau tự remote).")
+
+    # nhãn phe (campValue) + ngũ hành (series) cho log quét
+    _CAMP_LABEL = {1: "Tống", 2: "Kim"}
+    _SERIES_LABEL = {0: "Kim", 1: "Mộc", 2: "Thủy", 3: "Hỏa", 4: "Thổ"}
+
+    @staticmethod
+    def _noacc(s):
+        """Bỏ dấu + lower để khớp tên VN không lệ thuộc dấu (vd 'Phi Tốc Hoàn' → 'phi toc hoan')."""
+        s = (s or "").lower()
+        return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+
+    def _scan_lac(self, dev, b=None):
+        """Sau khi mở cửa sổ: dump túi, phát hiện loại lắc nào CÓ THẬT (Phi Tốc/Lệnh Bài/Chiến Cổ) → union vào
+        lac_available → select box chỉ hiện loại có. Chạy nền (dump_bag_items hơi nặng)."""
+        b = b or self.bots.get(dev)
+        if not b: return
+        def _bg():
+            try: items = (b.dump_bag_items() or {}).get("items") or []
+            except Exception as e:
+                self.log(f"🏃 {dev}: đọc túi lỗi {e}"); return
+            bag = [it for it in items if it.get("location") == 2]
+            found = []
+            for lbl, pid, _g in LAC_TYPES:
+                s = sum((it.get("stack") or 1) for it in bag if it.get("particular") == pid)
+                self.lac_stock[pid] = s
+                if s > 0: found.append(lbl)
+            if found: self.lac_available |= set(found)
+            self.log(f"🏃 {dev}: lắc có trong túi: {found or '(không có)'}")
+            self.root.after(0, self._refresh_lac_boxes)
+            self.root.after(0, self._refresh_lac_counts)
+        threading.Thread(target=_bg, daemon=True).start()
+
+    def _refresh_lac_boxes(self):
+        """Đổ lại giá trị 3 select box = '—' + các loại lắc đang có trong túi. Lựa cũ không còn → về '—'."""
+        vals = [LAC_NONE] + [lbl for lbl, _p, _g in LAC_TYPES if lbl in self.lac_available]
+        for var, cb in zip(self.lac_sel, getattr(self, "lac_cbs", [])):
+            try:
+                cb["values"] = vals
+                if var.get() not in vals: var.set(LAC_NONE)
+            except Exception: pass
+
+    def _refresh_lac_counts(self):
+        """Label 'còn N' sau mỗi select box = số lượng loại đang chọn (từ lần dump túi gần nhất + tự trừ khi dùng)."""
+        pid_by = {lbl: pid for lbl, pid, _g in LAC_TYPES}
+        for var, cnt in zip(self.lac_sel, getattr(self, "lac_count_lbls", [])):
+            try:
+                pid = pid_by.get(var.get())
+                n = self.lac_stock.get(pid) if pid is not None else None
+                cnt.config(text=(f"còn {n}" if n is not None else ""))
+            except Exception: pass
+
+    def _active_lac(self):
+        """Trả LIST (nhãn, particular, gap) các loại lắc đang được chọn ở 3 select box (bỏ '—', bỏ trùng)."""
+        try: sels = {v.get() for v in self.lac_sel}
+        except Exception: sels = set()
+        return [(lbl, pid, gap) for lbl, pid, gap in LAC_TYPES if lbl in sels]
+
+    def _fmt_player(self, fl):
+        """Định dạng 1 người quét được: tên - phái(Tống/Kim·hệ) - cấp - %máu."""
+        nm = fl.get("id.nameValue") or "?"
+        cv = fl.get("id.campValue")
+        camp = self._CAMP_LABEL.get(cv, f"c{cv}" if cv is not None else "?")
+        he = self._SERIES_LABEL.get(fl.get("data.series"), "?")
+        lv = fl.get("data.level")
+        hp = fl.get("id.healthCurrent"); hm = fl.get("id.healthMax")
+        try:
+            pct = f"{int(round(hp / hm * 100))}%" if hp is not None and hm else (f"{hp}" if hp is not None else "?")
+        except Exception:
+            pct = "?"
+        return f"{nm}-{camp}·{he}-Lv{lv if lv is not None else '?'}-{pct}"
+
+    # từ khoá nhận diện qua DIALOG (chức năng), KHÔNG theo tên (tên đổi/trùng)
+    _HEAL_KW = ("dược phẩm miễn phí", "nhận dược phẩm", "dược phẩm", "nhận thuốc", "hồi phục")
+    _WAR_KW = ("ra chiến trường", "vào chiến trường", "tham chiến", "ra trận", "xuất chiến", "chiến trường")
+
+    def _tk_autofind(self, dev, b, npcs, map_id):
+        """MAP NÀO CŨNG GỌI ĐƯỢC NPC heal/war (id đổi theo map):
+          (1) NHỚ THEO MAP: rec['maps'][mapId]={heal,war} → map đã đụng → gọi THẲNG (khỏi dò).
+          (2) DÒ DIALOG: map lạ → mở từng NPC (op33), dialog có 'dược phẩm miễn phí' = HEAL, 'ra chiến trường' = WAR.
+              Chỉ op33 (KHÔNG eNpcSelect = không lỡ kích hành động). Probe 1 lần/map (throttle 30s), cần ≥3 NPC."""
+        camp = self.dev_camp.get(dev)
+        if camp is None or map_id is None: return
+        rec = self._tk_db.setdefault(str(camp), {}); maps = rec.setdefault("maps", {}); mkey = str(map_id)
+        present = {str(n.get("id")) for n in npcs if str(n.get("id", "")).isdigit()}
+        mrec = maps.get(mkey) or {}
+        self._cur_map = getattr(self, '_cur_map', {}); self._cur_map[dev] = map_id   # cho _learn_npc lưu theo map
+        import unicodedata as _ud
+        def _na(_s):
+            _s = (_s or "").lower()
+            return "".join(_c for _c in _ud.normalize("NFD", _s) if _ud.category(_c) != "Mn")
+        # MẶC ĐỊNH dùng id NPC đã HỌC theo (phe, MAP) — REMOTE (talk_npc/op33 KHÔNG check khoảng cách). User chốt:
+        #   "cứ tới map đó, phe đó = mặc định gọi remote id này" (Trinh Sát ngoài tầm đọc vẫn gọi được). KHÔNG đòi
+        #   present nữa. Name-match (dưới) VẪN chạy (throttle) để CẬP NHẬT nếu NPC hiện ra id KHÁC = đổi trận → re-learn.
+        if mrec.get("heal"): self.tk_heal_npc[dev] = int(mrec["heal"])
+        if mrec.get("war"):  self.tk_war_npc[dev] = int(mrec["war"])
+        # ⚠️ NPC id ĐỔI MỖI TRẬN TỐNG KIM (14h: heal=24/war=23 → 15h: heal=2594/war=2582). id nạp từ file
+        #    (top-level, trận TRƯỚC) thường KHÔNG còn quanh → CHỈ early-return khi heal+war đã set *VÀ ĐANG HIỆN
+        #    DIỆN* quanh (đúng trận này). KHÔNG hiện diện = STALE → PHẢI name-match lại. (Bug LinhLinh đứng im:
+        #    file heal='23'/war='2582' cũ → early-return cũ bỏ qua name-match → at_camp luôn False, không nhận máu/ra trận.)
+        _h = self.tk_heal_npc.get(dev); _w = self.tk_war_npc.get(dev)
+        if _h and _w and str(_h) in present and str(_w) in present:
+            return   # đã đủ heal+war VÀ đúng trận hiện tại → khỏi name-match
+        # ⭐ KHỚP THEO TÊN — AN TOÀN: ĐÃ BỎ dò-dialog op33 (op33-spam mở nhầm RƯƠNG CHỨA ĐỒ + gây CRASH "script
+        #    destroyed"). TÊN NPC nằm ở Controller.data.name → DÙNG getNearNpcsDetail (getNearNpcsSafe đọc surface
+        #    field = RỖNG). 'Quân Nhu'=nhận máu(heal); 'Trinh Sát'=ra trận(war). Đúng cả Tống/Kim, bỏ dấu. Throttle 5s.
+        now = time.time(); pk = (dev, mkey)
+        # GIẢM FREEZE: getNearNpcsDetail (đọc data.name NPC gần) ở TK đông lính spawn/chết = dễ chạm object freed
+        #   → đơ game. ĐÃ BIẾT cả heal+war (set, dù Trinh Sát ngoài tầm) → quét THƯA 60s (chỉ để bắt đổi-trận id
+        #   mới); CHƯA biết → quét dày 5s để học nhanh. Cắt phần lớn số lần đọc near-npc khi đã ổn định.
+        # _known = đã biết heal+war VÀ ĐANG HIỆN DIỆN (tới đây = đã qua early-return, nên thực chất STALE) → name-match
+        #   NHANH (5s) để bắt id trận mới, KHÔNG để 60s (id global stale = đứng im không ra trận, lỗi 3 cửa Kim).
+        #   Freeze của getNearNpcsDetail giờ có LƯỚI A che (Process.setExceptionHandler).
+        _known = bool(_h and _w and str(_h) in present and str(_w) in present)
+        _gap = 60 if _known else 5
+        if now - self._tk_probe_ts.get(pk, 0) < _gap:
+            return
+        self._tk_probe_ts[pk] = now
+        try:
+            named = (b.rpc.get_near_npcs_detail() or {}).get("npcs") or []
+        except Exception:
+            named = []
+        ch = False
+        for _n in named:
+            _nid = _n.get("id"); _nm = _na(_n.get("name", ""))
+            if not str(_nid).isdigit():
+                continue
+            # 🚫 LỌC BỎ "Chiêu binh quân" (chỗ báo danh) — cả Tống lẫn Kim ra-trận đều = 'Trinh Sát'. (user chốt)
+            if "chieu binh" in _nm:
+                continue
+            if "quan nhu" in _nm and self.tk_heal_npc.get(dev) != int(_nid):
+                self.tk_heal_npc[dev] = int(_nid); mrec["heal"] = int(_nid); ch = True
+                if rec.get("heal_opt") is None: rec["heal_opt"] = 0
+                self.log(f"❤️ {dev}: NPC máu theo TÊN = {_nid} ('{_n.get('name')}')")
+            elif "trinh sat" in _nm and self.tk_war_npc.get(dev) != int(_nid):
+                self.tk_war_npc[dev] = int(_nid); mrec["war"] = int(_nid); ch = True
+                self.log(f"⚔️ {dev}: NPC ra trận theo TÊN = {_nid} ('{_n.get('name')}')")
+        if ch:
+            maps[mkey] = mrec; self._tk_save_db()
+        if not (self.tk_heal_npc.get(dev) and self.tk_war_npc.get(dev)):
+            if now - self._tk_nomatch_ts.get(pk, 0) > 60:   # throttle 60s (đỡ spam khi ngoài trại)
+                self._tk_nomatch_ts[pk] = now
+                _nm_list = [(n.get("id"), n.get("name")) for n in named if (n.get("name") or "").strip()][:16]
+                self.log(f"🔬 {dev}: chưa khớp Quân Nhu/Trinh Sát theo tên (map {map_id}). TÊN đọc được: "
+                         f"{_nm_list or '(rỗng — NPC chưa load tên / chưa ở camp)'}")
+
+    def _learn_tick(self):
+        for d in [x for x in self.opened if self.opened.get(x) and x in self.bots]:
+            threading.Thread(target=self._learn_npc, args=(d, self.bots[d]), daemon=True).start()
+        self.root.after(900, self._learn_tick)
+
+    # ---------- WATCHDOG: game crash/dis → user mở lại game → TỰ attach + chạy lại ----------
+    def _watchdog_tick(self):
+        """Cửa sổ mà USER muốn chạy (opened=True) NHƯNG vòng auto đã DỪNG (run=False) = đã crash/dis (vòng _loop
+        tự set run=False khi poll_recv lỗi 8 lần). Đóng tay thì opened=False nên KHÔNG đụng vào. → thử kết nối lại
+        (game mở lại = PID mới, connect() tự lấy PID mới; game chưa vào thế giới thì connect() trả False, thử lại sau)."""
+        now = time.time()
+        for dev in [d for d in list(self.opened) if self.opened.get(d)]:
+            b = self.bots.get(dev)
+            # CRASH = phiên Frida đã DETACH (game đóng/crash). KHÔNG dựa vào run nữa: giờ run=False là BÌNH THƯỜNG
+            #   khi cửa sổ mới mở (chưa tick Ra trận). Chỉ recover khi bot CÓ rồi mà mất kết nối.
+            if b is None:
+                continue
+            try: alive = b.is_connected()
+            except Exception: alive = False
+            if alive:                                   # còn kết nối → khoẻ → bỏ qua
+                continue
+            if self._recovering.get(dev):               # đang thử rồi → khỏi chồng
+                continue
+            if now - self._recover_ts.get(dev, 0) < 15:  # throttle: 15s/lần/cửa sổ (đỡ spam adb khi game chưa mở lại)
+                continue
+            self._recover_ts[dev] = now
+            self._recovering[dev] = True
+            threading.Thread(target=self._recover, args=(dev,), daemon=True).start()
+        self.root.after(6000, self._watchdog_tick)
+
+    def _recover(self, dev):
+        try:
+            b = self.bots.get(dev)
+            if b is None:                               # chưa có bot (lạ) → mở mới như tick tay
+                self.log(f"♻ {dev}: chưa có phiên → mở mới…")
+                self._open(dev); return
+            self._logn(f"recon:{dev}", f"♻ {dev}: phát hiện cửa sổ DỪNG (crash/dis?) → thử kết nối lại…", gap=60)
+            try: ok = b.connect()                       # connect() tự lấy PID MỚI sau khi game relaunch
+            except Exception as e:
+                self.log(f"⏳ {dev}: reconnect lỗi {e} — thử lại sau"); return
+            if not ok:                                  # game chưa chạy / chưa vào nhân vật → watchdog thử lại sau
+                self._logn(f"reconwait:{dev}",
+                           f"⏳ {dev}: chưa kết nối lại được (game chưa vào thế giới?) — sẽ thử lại", gap=60)
+                return
+            b.capture_sent = True                       # giữ học thao tác NPC sau reconnect
+            for _ in range(4):
+                try: b.poll_recv()
+                except Exception: pass
+                time.sleep(0.2)
+            try: b.redetect_fd_by_traffic()
+            except Exception: pass
+            self.root.after(0, lambda: self.tree.set(dev, "auto", "✔"))
+            self._read_bg(dev)
+            self._scan_lac(dev, b)
+            if self.fight.get():                        # CHỈ chạy lại vòng ra-trận nếu đang tick 'Ra trận'
+                self.log(f"✅ {dev}: KẾT NỐI LẠI OK → chạy lại auto ra trận")
+                self._fight_start(dev)
+            else:
+                self.log(f"✅ {dev}: KẾT NỐI LẠI OK (chưa tick Ra trận → chỉ giữ kết nối)")
+        finally:
+            self._recovering[dev] = False
+
+    def _flatbtn(self, parent, text, cmd, bg, hover):
+        b = tk.Label(parent, text=text, bg=bg, fg="white", font=("Helvetica", 10, "bold"), cursor="hand2", padx=6, pady=5)
+        b.bind("<Button-1>", lambda e: cmd()); b.bind("<Enter>", lambda e: b.config(bg=hover)); b.bind("<Leave>", lambda e: b.config(bg=bg))
+        return b
+
+    def _create_widgets(self):
+        st = ttk.Style()
+        try:
+            st.theme_use('clam')
+            st.configure("Treeview", rowheight=24, font=("Helvetica", 10), borderwidth=0)
+            st.configure("Treeview.Heading", font=("Helvetica", 10, "bold"), padding=3)
+            st.map("Treeview", background=[("selected", "#1f8b5f")], foreground=[("selected", "white")])
+            st.configure("TNotebook.Tab", padding=(8, 4), font=("Helvetica", 10))
+        except Exception:
+            pass
+        # ===== TOP: banner (Làm mới) + bảng cửa sổ: Tên nhân vật | Điểm Tống Kim =====
+        top = tk.Frame(self.root, bg="#eceff1"); top.pack(side=tk.TOP, fill=tk.BOTH, expand=False, padx=8, pady=(8, 4))
+        bar = tk.Frame(top, bg="#2c3e50"); bar.pack(fill=tk.X)
+        self._flatbtn(bar, "🔄 Làm mới", self.refresh, "#3b5168", "#4a637e").pack(side=tk.LEFT, expand=True, fill=tk.X, padx=(8, 3), pady=6)
+        self._flatbtn(bar, "♻️ Khởi động lại", self._restart_app, "#b9770e", "#d4890f").pack(side=tk.LEFT, expand=True, fill=tk.X, padx=(3, 8), pady=6)
+        tw = tk.Frame(top, bg="white"); tw.pack(fill=tk.BOTH, expand=True)
+        cols = ("auto", "name", "diem")
+        self.tree = ttk.Treeview(tw, columns=cols, show="headings", height=8)
+        self.tree.heading("auto", text="Mở"); self.tree.heading("name", text="Tên nhân vật")
+        self.tree.heading("diem", text="Điểm Tống Kim")
+        self.tree.column("auto", width=44, anchor=tk.CENTER, stretch=False)
+        self.tree.column("name", width=150, anchor=tk.W, stretch=False)
+        self.tree.column("diem", width=130, anchor=tk.CENTER, stretch=True)
+        vsb = ttk.Scrollbar(tw, orient=tk.VERTICAL, command=self.tree.yview); self.tree.configure(yscrollcommand=vsb.set)
+        self.tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True); vsb.pack(side=tk.RIGHT, fill=tk.Y)
+        self.tree.bind("<Button-1>", self._on_click)              # bấm ô 'Mở' = attach/đóng (mở = TỰ CHẠY)
+        self.tree.bind("<<TreeviewSelect>>", lambda e: self.on_select())
+        # ===== Cấu hình ẨN (KHÔNG UI): worker CHỈ nhận máu + ra trận + BẬT AUTO GAME. Đánh/buff/máu = auto game lo.
+        self.v = {}
+        self.v["auto_tk"] = tk.BooleanVar(value=True)       # luồng TK (nhận máu + ra trận) luôn chạy khi mở cửa sổ
+        self.v["buff"] = tk.BooleanVar(value=False)         # KHÔNG tự buff (auto game lo)
+        self.v["bom_mau"] = tk.BooleanVar(value=False)      # KHÔNG tự bơm máu (auto game lo)
+        self.v["bom_mana"] = tk.BooleanVar(value=False)
+        self.v["danh_nguoi"] = tk.BooleanVar(value=True)
+        self.v["danh_quai"] = tk.BooleanVar(value=False)
+        self.v["uu_tien_hoa"] = tk.BooleanVar(value=True)
+        self.v["ap_sat"] = tk.BooleanVar(value=False)
+        self.v["buff_gap"] = tk.StringVar(value="60")
+        self.v["mau_slot"] = tk.StringVar(value="0"); self.v["mana_slot"] = tk.StringVar(value="1")
+        self.v["mau_pct"] = tk.StringVar(value="90"); self.v["mana_pct"] = tk.StringVar(value="30")
+        self.v["tam"] = tk.StringVar(value="0"); self.v["scan_gap"] = tk.StringVar(value="0.5")
+        # MỞ cửa sổ (tick 'Mở' ở bảng) = CHỈ attach + đọc nhân vật + load thuốc/lắc. KHÔNG tự ra trận.
+        #   Tick '⚔️ Ra trận' (panel riêng giữa bảng & panel thuốc) mới chạy vòng quét NPC → nhận thuốc → ra trận.
+        self.fight = tk.BooleanVar(value=False)
+        # ===== BOTTOM: panel log =====
+        lf = tk.LabelFrame(self.root, text="Log", font=("Helvetica", 10, "bold")); lf.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=True, padx=8, pady=(2, 8))
+        self.logbox = tk.Text(lf, height=12); self.logbox.pack(fill=tk.BOTH, expand=True, padx=4, pady=4)
+        # ===== Panel TỰ DÙNG LẮC (NGAY TRÊN log): header số lượng + 3 dòng select box chọn loại lắc Tống Kim =====
+        #   pack side=BOTTOM TRƯỚC khi pack-xong log → panel này nằm ngay TRÊN ô log. Dùng cả 3 loại cùng lúc được.
+        lac = tk.LabelFrame(self.root, text="🏃 Tự dùng lắc Tống Kim", font=("Helvetica", 10, "bold"))
+        lac.pack(side=tk.BOTTOM, fill=tk.X, padx=8, pady=(2, 0))
+        self.lac_sel = []; self.lac_cbs = []; self.lac_count_lbls = []   # StringVar + Combobox + Label(còn N)
+        for _i in range(3):
+            row = tk.Frame(lac); row.pack(fill=tk.X, padx=6, pady=2)
+            tk.Label(row, text="Sử dụng", font=("Helvetica", 10), width=8, anchor=tk.W).pack(side=tk.LEFT)
+            var = tk.StringVar(value=LAC_NONE)
+            cb = ttk.Combobox(row, textvariable=var, values=[LAC_NONE], state="readonly", width=16)
+            cb.pack(side=tk.LEFT, fill=tk.X, expand=True)
+            cb.bind("<<ComboboxSelected>>", lambda e: self._refresh_lac_counts())
+            cnt = tk.Label(row, text="", font=("Helvetica", 10, "bold"), fg="#1f8b5f", width=8, anchor=tk.E)
+            cnt.pack(side=tk.LEFT)
+            self.lac_sel.append(var); self.lac_cbs.append(cb); self.lac_count_lbls.append(cnt)
+        # ===== Panel RA TRẬN (giữa bảng cửa sổ & panel thuốc): tick = chạy vòng quét NPC → nhận thuốc → ra trận =====
+        rt = tk.Frame(self.root, bg="#34495e"); rt.pack(side=tk.BOTTOM, fill=tk.X, padx=8, pady=(4, 0))
+        tk.Checkbutton(rt, text="⚔️  RA TRẬN",
+                       variable=self.fight, command=self.toggle_fight, bg="#34495e", fg="white",
+                       selectcolor="#c0392b", activebackground="#34495e", activeforeground="white",
+                       font=("Helvetica", 10, "bold"), bd=0, highlightthickness=0, anchor=tk.W).pack(side=tk.LEFT, padx=6, pady=5)
+        # Phe khi báo danh Trinh Sát: Tự động (theo phái) / Tống / Kim. Tống=eNpcSelect 1, Kim=2 ('1 hoặc 2 = vào').
+        #   Nhiều acc KHÁC phe → để 'Tự động' (mỗi cửa sổ tự theo campValue). Chọn Tống/Kim = ÉP cho mọi cửa sổ.
+        tk.Label(rt, text="Phe:", bg="#34495e", fg="white", font=("Helvetica", 9, "bold")).pack(side=tk.LEFT, padx=(10, 2))
+        self.tk_side = tk.StringVar(value="Tự động")
+        ttk.Combobox(rt, textvariable=self.tk_side, values=["Tự động", "Tống", "Kim"],
+                     state="readonly", width=9).pack(side=tk.LEFT, padx=(0, 8), pady=5)
+
+    @staticmethod
+    def _dialog_options(hexstr):
+        """Trả LIST các đoạn chữ UTF-8 (>=4 ký tự) trong gói thoại — mỗi đoạn ~ 1 option/dòng."""
+        try: raw = bytes.fromhex(hexstr)
+        except Exception: return []
+        out = []; cur = bytearray()
+        for c in raw:
+            if 0x20 <= c < 0x7f or c >= 0xc2: cur.append(c)
+            else:
+                if len(cur) >= 4:
+                    try:
+                        t = cur.decode("utf-8", "ignore").strip()
+                        if len(t) >= 3: out.append(t)
+                    except Exception: pass
+                cur = bytearray()
+        if len(cur) >= 4:
+            try:
+                t = cur.decode("utf-8", "ignore").strip()
+                if len(t) >= 3: out.append(t)
+            except Exception: pass
+        return out
+
+    @staticmethod
+    def _readable(hexstr):
+        """Trích các đoạn chữ UTF-8 đọc được từ hex gói (để xem option thoại NPC)."""
+        try:
+            raw = bytes.fromhex(hexstr)
+        except Exception:
+            return ""
+        out = []; cur = bytearray()
+        i = 0
+        while i < len(raw):
+            c = raw[i]
+            if 0x20 <= c < 0x7f or c >= 0xc2:   # ascii in được hoặc đầu chuỗi UTF-8
+                cur.append(c)
+            else:
+                if len(cur) >= 3:
+                    try: out.append(cur.decode("utf-8", "ignore"))
+                    except Exception: pass
+                cur = bytearray()
+            i += 1
+        if len(cur) >= 3:
+            try: out.append(cur.decode("utf-8", "ignore"))
+            except Exception: pass
+        return " | ".join(s.strip() for s in out if s.strip())
+
+    @staticmethod
+    def _dlg_opts(hx):
+        """op34/124: trả LIST option (field protobuf 2, wire2 string) THEO THỨ TỰ.
+        selectIndex của eNpcSelect = VỊ TRÍ trong list này (0-based; index 0 = eNpcSelect RỖNG)."""
+        def vi(d, o):
+            r = s = 0
+            while o < len(d):
+                x = d[o]; o += 1; r |= (x & 0x7F) << s
+                if not x & 0x80: break
+                s += 7
+            return r, o
+        out = []
+        try: b = bytes.fromhex(hx)[6:]
+        except Exception: return out
+        o = 0
+        while o < len(b):
+            try: tag, o = vi(b, o)
+            except Exception: break
+            f, w = tag >> 3, tag & 7
+            if w == 0: _, o = vi(b, o)
+            elif w == 2:
+                ln, o = vi(b, o); raw = b[o:o + ln]; o += ln
+                if f == 2:
+                    try: out.append("".join(c for c in raw.decode("utf-8", "ignore") if c.isprintable()))
+                    except Exception: pass
+            elif w == 1: o += 8
+            elif w == 5: o += 4
+            else: break
+        return out
+
+    def _opts_after_talk(self, b, npc_id):
+        """Mở thoại NPC rồi đọc danh sách option (chuỗi) từ gói trả về (op34/33)."""
+        try: seen0 = len(getattr(b, "recv_buffer", []) or [])
+        except Exception: seen0 = 0
+        try: b.talk_npc(str(npc_id))
+        except Exception: pass
+        opts = []
+        for _ in range(5):                       # chờ + poll tới khi có gói thoại
+            time.sleep(0.18)
+            try: b.poll_recv()
+            except Exception: pass
+            try:
+                for pk in (list(getattr(b, "recv_buffer", []) or []))[seen0:]:
+                    if pk.get("opcode") in (34, 33):
+                        for s in self._dialog_options(pk.get("hex") or ""):
+                            if s not in opts: opts.append(s)
+            except Exception: pass
+            if opts: break
+        return opts
+
+    def _do_rejoin(self, b, dev):
+        """Về doanh trại: nhận máu (Quan Nhu) rồi RA CHIẾN TRƯỜNG. Option NHẬN MÁU = HỌC từ cú click tay của
+        bạn (nếu chưa học → KHÔNG bấm bừa, nhắc bạn tự click 1 lần). Cờ _rejoining để khỏi tự-học gói của bot."""
+        self._rejoining[dev] = True
+        heal_npc = self.tk_heal_npc.get(dev, TK_HEAL_NPC)   # id HỌC theo phe; fallback phe Tống
+        war_npc  = self.tk_war_npc.get(dev, TK_WAR_NPC)
+        try:
+            # NHẬN DƯỢC PHẨM MIỄN PHÍ = mở Quan Nhu (op33) rồi gửi op232 eClientCompleted (rỗng) — bắt live từ click user
+            # TỰ HỌC thuốc máu TK: dump túi TRƯỚC, sau khi nhận dump LẠI → particular nào tăng = "Ngũ Hoa Ngọc Lộ Hoàn".
+            def _g6_counts():
+                try:
+                    its = (b.dump_bag_items() or {}).get('items') or []
+                    c = {}
+                    for it in its:
+                        if it.get('genre') == 6 and it.get('location') == 2:
+                            p = it.get('particular'); c[p] = c.get(p, 0) + (it.get('stack') or 1)
+                    return c
+                except Exception: return {}
+            before = _g6_counts()
+            # NHẬN THUỐC = mở NPC (op33) rồi:
+            #   - Tống: CHỌN 1 LỰA CHỌN trong popup → eNpcSelect(option đã học từ click tay / file).
+            #   - Kim : eClientCompleted (op232).
+            # Ưu tiên option đã học (npc_learn theo click, hoặc heal_opt trong file); chưa học → thử op232 (Kim).
+            camp = self.dev_camp.get(dev)
+            heal_opt = self.npc_learn.get((dev, heal_npc))
+            if heal_opt is None:
+                heal_opt = (self._tk_db.get(str(camp)) or {}).get('heal_opt')
+            if heal_opt is None:
+                heal_opt = 0   # MẶC ĐỊNH: chọn DÒNG ĐẦU 'Dược phẩm miễn phí' = eNpcSelect RỖNG (đúng cho cả Tống/Kim
+                               # NPC có option nhận thuốc; KHÔNG fallback op232 vì op232 SAI cho NPC này = 'túi KHÔNG đổi').
+            try: _seen0 = len(getattr(b, "recv_buffer", []) or [])
+            except Exception: _seen0 = 0
+            b.talk_npc(str(heal_npc)); time.sleep(0.35)
+            try: b.poll_recv()
+            except Exception: pass
+            # ✅ CHỌN INDEX ĐÚNG = ĐỌC MENU op34 (đã về từ 1 op33 ở trên, KHÔNG spam) → tìm dòng chứa từ-khoá nhận
+            #   thuốc ('dược phẩm miễn phí'/'nhận thuốc'/'hồi phục') → eNpcSelect(index DÒNG ĐÓ). Index 'Dược phẩm
+            #   miễn phí' KHÔNG luôn = 0 (tuỳ NPC/phe) → hardcode 0 = nhận hụt (bug 'chọn index sai'). Bỏ dấu khi khớp.
+            import unicodedata as _ud
+            def _na(_s):
+                _s = (_s or "").lower()
+                return "".join(_c for _c in _ud.normalize("NFD", _s) if _ud.category(_c) != "Mn")
+            menu_idx = None
+            try:
+                for pk in (list(getattr(b, "recv_buffer", []) or []))[_seen0:]:
+                    if pk.get("opcode") == 34:
+                        opts = self._dlg_opts(pk.get("hex") or "")
+                        for _i, _s in enumerate(opts):
+                            _sn = _na(_s)
+                            if any(_na(_k) in _sn for _k in self._HEAL_KW):
+                                menu_idx = _i; break
+                    if menu_idx is not None: break
+            except Exception: menu_idx = None
+            if menu_idx is not None:
+                b.send_gs('eNpcSelect', selectIndex=int(menu_idx)); heal_opt = int(menu_idx)
+            elif str(heal_opt) == 'op232':
+                b.send_gs('eClientCompleted')
+            elif heal_opt and int(heal_opt) != 0:
+                b.send_gs('eNpcSelect', selectIndex=int(heal_opt))
+            else:
+                # KHÔNG đọc được menu → fallback index 0 TƯỜNG MINH (field '08 00', không gửi rỗng). Retry op232 ở dưới.
+                b.send_gs('eNpcSelect', selectIndex=0)
+            time.sleep(0.6)
+            after = _g6_counts()
+            gained = [(p, after[p] - before.get(p, 0)) for p in after if after[p] > before.get(p, 0)]
+            # ✅ XÁC NHẬN (không fix mù): so túi TRƯỚC/SAU. Tăng = option nhận thuốc ĐÚNG; không đổi = SAI/chưa nhận.
+            if gained:
+                self.log(f"✅ {dev}: XÁC NHẬN NHẬN THUỐC OK — túi tăng {gained} (option {heal_opt} đúng)")
+            else:
+                # PHƯƠNG PHÁP CHÍNH TRƯỢT → THỬ PHƯƠNG PHÁP CÒN LẠI 1 LẦN (heal interface = war interface; war chạy
+                #   bằng eNpcSelect index 0). Đối xứng: op232 trượt → thử eNpcSelect(0); eNpcSelect(0) trượt → thử
+                #   op232. Cái nào ăn thì HỌC LẠI (chống 'op232' học cũ làm hỏng heal vĩnh viễn — bug live LinhDL).
+                #   CHỈ 1 retry (KHÔNG brute-force op33 = crash 'script has been destroyed').
+                try:
+                    b.talk_npc(str(heal_npc)); time.sleep(0.35); b.poll_recv()
+                    if str(heal_opt) == 'op232':
+                        b.send_gs('eNpcSelect', selectIndex=0); alt = 0          # op232 hỏng → về eNpcSelect index 0 (như war)
+                    else:
+                        b.send_gs('eClientCompleted'); alt = 'op232'             # eNpcSelect hỏng → thử op232 (vài NPC Kim)
+                    time.sleep(0.6)
+                    _a2 = _g6_counts()
+                    gained = [(p, _a2[p] - before.get(p, 0)) for p in _a2 if _a2[p] > before.get(p, 0)]
+                except Exception:
+                    gained = []; alt = None
+                if gained:
+                    self._tk_learn(dev, 'heal_opt', alt)
+                    self.log(f"✅ {dev}: NHẬN THUỐC OK qua {alt} — túi tăng {gained}. ĐÃ HỌC LẠI heal_opt={alt}.")
+                else:
+                    self._logn(f"healfail:{dev}",
+                               f"⚠️ {dev}: NPC {heal_npc} chưa ra thuốc (eNpcSelect-0 lẫn op232 trượt) — "
+                               f"transient (chuyển map / túi đầy). Vòng sau thử lại.", gap=30)
+            gained = [g[0] for g in gained]
+            part = gained[0] if gained else self.tk_heal_part.get(dev)
+            if part is not None:
+                self.tk_heal_part[dev] = part
+                self._tk_learn(dev, 'heal_part', part)   # nhớ qua phiên (theo campValue)
+                # Cache ô túi thuốc CHỈ khi VỪA nhận được (gained) hoặc CHƯA cache → KHÔNG re-dump + log mỗi rejoin
+                #   (trước đây chạy mỗi 5s = spam '💊 HỌC thuốc'). Chỉ log khi ô THỰC SỰ đổi.
+                if gained or dev not in self.tk_heal_slot:
+                    try:
+                        cand = [it for it in ((b.dump_bag_items() or {}).get('items') or [])
+                                if it.get('particular') == part and it.get('location') == 2]
+                        if cand:
+                            best = max(cand, key=lambda it: (it.get('stack') or 1))
+                            _ns = int(best.get('index') or best.get('slot'))
+                            if self.tk_heal_slot.get(dev) != _ns:
+                                self.tk_heal_slot[dev] = _ns
+                                self.log(f"💊 {dev}: thuốc máu Ngũ Hoa particular={part} → ô {_ns}")
+                    except Exception: pass
+            # (USER PHÁT HIỆN 15h: NHẬN THUỐC REMOTE ĐƯỢC — click tay ngoài chiến trường vẫn ăn. Nên KHÔNG chặn ra
+            #  trận theo số thuốc nữa. Vấn đề chỉ là gửi ĐÚNG GÓI nhận thuốc → dùng heal_pkt replay ở khối heal trên.)
+            # RA CHIẾN TRƯỜNG: NPC TRẠI GIỐNG NPC máu → CHÍNH = eNpcSelect(selectIndex, FIELD CÓ MẶT) như fix heal
+            #   (RỖNG body-trống bị server BỎ = không vào được — đúng bug heal). Đọc dialog tìm đúng index 'ra chiến
+            #   trường' (default 0 = dòng đầu, '1 hoặc 2 = vào'). op229 replay (gói học) gửi THÊM phòng phe Kim
+            #   (nhưng op229 học trận CŨ hay stale qua trận → KHÔNG còn là cách chính, char kẹt camp ↔ war).
+            if hasattr(b, 'recv_buffer'): b.recv_buffer = []
+            b.talk_npc(str(war_npc)); time.sleep(0.4)
+            try: war_pkts = b.poll_recv() or []
+            except Exception: war_pkts = []
+            war_idx = self.npc_learn.get((dev, war_npc))   # đã học từ click tay?
+            war_lbl = None
+            if war_idx is None:                            # đọc dialog tìm option 'ra chiến trường'
+                _WK = ('ra chiến trường', 'vào chiến trường', 'tham chiến', 'ra trận', 'xuất chiến', 'tham gia')
+                for p in war_pkts:
+                    if p.get('opcode') in (34, 124):
+                        opts = self._dlg_opts(p.get('hex', '')) or []
+                        for i, o in enumerate(opts):
+                            if any(k in (o or '').lower() for k in _WK):
+                                war_idx = i; war_lbl = o; break
+                        if war_idx is not None: break
+            # CHẶN BẮN MÙ: chỉ eNpcSelect khi NPC war THẬT SỰ mở dialog (có op34/124/166/35 phản hồi). NPC war chưa
+            #   tìm thấy / chưa hiện (vd Trinh Sát chưa name-match) → talk_npc không mở gì → nếu vẫn eNpcSelect thì
+            #   bắn vào NGỮ CẢNH CÒN SÓT (dialog heal / Rương Chứa Đồ) → "MỞ RƯƠNG" + không ra trận (user phải nhấn
+            #   tay). Bỏ qua vòng này → vòng sau name-match ra Trinh Sát rồi bắn (lần 2 chạy đúng).
+            # GATE theo NAME-MATCH (không theo opcode): chỉ ra trận khi war NPC = Trinh Sát ĐÃ tìm-theo-tên (đúng NPC).
+            #   Popup ra trận MỞ bằng talk_npc(op33) rồi, nhưng opcode popup KHÔNG nằm trong (34/124/166/35) nên gate
+            #   cũ tưởng "chưa mở" → skip → popup mở mà KHÔNG chọn (user thấy popup, không vào trận). Name-match-được
+            #   = đúng Trinh Sát → cứ eNpcSelect. Chưa name-match (dùng default 5574) → bỏ qua (tránh bắn mù mở rương).
+            _war_matched = self.tk_war_npc.get(dev) is not None
+            _ops = [p.get('opcode') for p in war_pkts]
+            if not _war_matched:
+                self._logn(f"warnomatch:{dev}",
+                           f"⏭️ {dev}: war NPC chưa name-match (Trinh Sát chưa hiện) → bỏ qua vòng này.", gap=30)
+            else:
+                # default = TK_WAR_OPT (1), KHÔNG phải 0: option 0='dòng đầu' KHÔNG vào trận; '1 hoặc 2 = vào'.
+                _wi = int(war_idx) if war_idx is not None else TK_WAR_OPT
+                # ÉP PHE theo select box (nếu KHÔNG để 'Tự động'): Tống → eNpcSelect 1, Kim → 2 ('1 hoặc 2 = vào').
+                #   Ưu tiên hơn index dò-dialog (war_idx) để báo danh đúng quân. 'Tự động' = giữ index dò/default.
+                _side = self.tk_side.get() if hasattr(self, "tk_side") else "Tự động"
+                if _side == "Tống": _wi = 1
+                elif _side == "Kim": _wi = 2
+                b.send_gs('eNpcSelect', selectIndex=_wi)   # FIELD CÓ MẶT (KHÔNG RỖNG) — như fix nhận thuốc
+                self._logn(f"war:{dev}",
+                           f"⚔️ {dev}: ra chiến trường (NPC {war_npc} → index {_wi}{(' '+war_lbl) if war_lbl else ''})", gap=20)
+            war_pkt = self.tk_war_pkt.get(dev)
+            if war_pkt:                                    # gửi THÊM op229 đã học (phòng phe Kim) — vô hại nếu đã vào trận
+                time.sleep(0.2)
+                try:
+                    b.send_raw(bytes.fromhex(war_pkt)); self.log(f"⚔️ {dev}: + op229 replay (gói học, phòng phe Kim)")
+                except Exception: pass
+            # ĐÓNG POPUP NPC (để thấy PK ngoài chiến trường, không bị bảng che).
+            time.sleep(0.5)
+            try: b.close_datau_popups()
+            except Exception: pass
+        except Exception as e:
+            self.log(f"{dev}: rejoin lỗi {e}")
+        finally:
+            try: b.rpc.get_send_packets()    # xả gói op33/35 của bot để không bị học nhầm
+            except Exception: pass
+            self._rejoining[dev] = False
+
+    def _tk_request_meds(self, b, dev, part):
+        """REQUEST nhận dược phẩm Quân Nhu 1 LẦN khi đang PK (thuốc<30) — KHÔNG về doanh trại, KHÔNG ra trận lại.
+        Remote op33 (NPC dialog KHÔNG check khoảng cách) + gửi heal_opt ĐÃ HỌC (RỖNG/op232/index). So túi
+        TRƯỚC/SAU để XÁC NHẬN remote-nhận-thuốc-trong-trận có ăn không (đây là cái user muốn test)."""
+        heal_npc = self.tk_heal_npc.get(dev, TK_HEAL_NPC)
+        camp = self.dev_camp.get(dev)
+        heal_opt = self.npc_learn.get((dev, heal_npc))
+        if heal_opt is None:
+            heal_opt = (self._tk_db.get(str(camp)) or {}).get('heal_opt')
+        if heal_opt is None:
+            heal_opt = 0   # dòng đầu 'Dược phẩm miễn phí' = eNpcSelect RỖNG
+        def _cnt():
+            try:
+                return sum((it.get('stack') or 1) for it in ((b.dump_bag_items() or {}).get('items') or [])
+                           if it.get('particular') == part and it.get('location') == 2)
+            except Exception:
+                return None
+        self._rejoining[dev] = True
+        try:
+            before = _cnt()
+            b.talk_npc(str(heal_npc)); time.sleep(0.35)
+            try: b.poll_recv()
+            except Exception: pass
+            if str(heal_opt) == 'op232':
+                b.send_gs('eClientCompleted')
+            elif int(heal_opt) == 0:
+                b.send_gs('eNpcSelect')
+            else:
+                b.send_gs('eNpcSelect', selectIndex=int(heal_opt))
+            time.sleep(0.6)
+            after = _cnt()
+            try: b.close_datau_popups()   # đóng popup NPC để không che chiến trường
+            except Exception: pass
+            if before is not None and after is not None and after > before:
+                self.log(f"✅ {dev}: bù thuốc TRONG TRẬN OK — {before}→{after} (+{after-before}) [remote op33 ăn]")
+            else:
+                self.log(f"⚠️ {dev}: request dược phẩm KHÔNG tăng túi ({before}→{after}) — remote op33 trong trận "
+                         f"không nhận? (cooldown NPC / phải ở doanh trại). Test: ghi nhận remote-heal-in-war = {('OK' if (before is not None and after and after>before) else 'KHÔNG')}.")
+        except Exception as e:
+            self.log(f"{dev}: request dược phẩm lỗi {e}")
+        finally:
+            try: b.rpc.get_send_packets()   # xả gói bot tự gửi để khỏi học nhầm thao tác
+            except Exception: pass
+            self._rejoining[dev] = False
+
+    def _logn(self, key, s, gap=30):
+        """Log TIẾT CHẾ: cùng 'key' trong 'gap' giây thì BỎ QUA (chống spam dòng lặp định kỳ trong vòng auto)."""
+        now = time.time()
+        if now - self._logt.get(key, 0) < gap:
+            return
+        self._logt[key] = now
+        self.log(s)
+
+    def log(self, s):
+        try:
+            import os, time as _t
+            if not hasattr(self, "_logf"):
+                os.makedirs("data/output", exist_ok=True)
+                self._logf = open("data/output/pk_app.log", "a", encoding="utf-8")
+            self._logf.write(f"[{_t.strftime('%H:%M:%S')}] {s}\n"); self._logf.flush()
+        except Exception: pass
+        self.root.after(0, lambda: (self.logbox.insert("end", s + "\n"), self.logbox.see("end")))
+
+    def _restart_app(self):
+        """♻️ KHỞI ĐỘNG LẠI HẲN app PK (re-exec) — Frida chết mức OS, attach lại SẠCH 100%. Dùng khi PK đứng/đơ/
+        Frida treo. Sau khi mở lại: tick lại cửa sổ cần PK."""
+        import os, sys
+        self.log("♻️ KHỞI ĐỘNG LẠI app PK — đóng Frida + chạy lại tiến trình mới. Tick lại sau khi mở.")
+        for dev in list(self.run): self.run[dev] = False
+        for dev in list(self.opened): self.opened[dev] = False
+        for dev, b in list(self.bots.items()):
+            try: b.close()
+            except Exception: pass
+        def _reexec():
+            try: self.root.destroy()
+            except Exception: pass
+            try:
+                os.execv(sys.executable, [sys.executable] + sys.argv)
+            except Exception:
+                import subprocess; subprocess.Popen([sys.executable] + sys.argv); os._exit(0)
+        self.root.after(1200, _reexec)
+
+    # ---------- thiết bị ----------
+    def refresh(self):
+        threading.Thread(target=self._refresh_bg, daemon=True).start()
+
+    def _refresh_bg(self):
+        for p in PORTS:
+            subprocess.run(f"{ADB_PATH} connect 127.0.0.1:{p}", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=3)
+        devs = []
+        try:
+            for ln in subprocess.check_output(f"{ADB_PATH} devices", shell=True).decode().strip().split("\n")[1:]:
+                if "\tdevice" in ln:
+                    d = ln.split("\t")[0]
+                    if not d.startswith("emulator-"): devs.append(d)
+        except Exception:
+            pass
+        def upd():
+            for i in self.tree.get_children(): self.tree.delete(i)
+            for d in devs: self.tree.insert("", "end", iid=d, values=("☐", d, "—"))
+        self.root.after(0, upd)
+        self.log(f"[*] {len(devs)} cửa sổ.")
+
+    def _on_click(self, e):
+        if self.tree.identify("region", e.x, e.y) != "cell": return
+        if self.tree.identify_column(e.x) != "#1": return     # cột 'Mở'
+        dev = self.tree.identify_row(e.y)
+        if not dev: return
+        if self.opened.get(dev):
+            self.opened[dev] = False; self.run[dev] = False
+            self.tree.set(dev, "auto", "☐"); self.log(f"✖ {dev} đóng")
+        else:
+            self.tree.set(dev, "auto", "✔"); self.log(f"⟳ {dev} đang mở…")
+            threading.Thread(target=self._open, args=(dev,), daemon=True).start()
+
+    def _open(self, dev):
+        """MỞ cửa sổ: attach Frida + get phái/skill (KHÔNG đánh)."""
+        b = self._ensure(dev)
+        if not b:
+            self.opened[dev] = False; self.root.after(0, lambda: self.tree.set(dev, "auto", "☐")); return
+        self.opened[dev] = True
+        self._read_bg(dev)
+        self._scan_lac(dev, b)   # phát hiện loại lắc có trong túi → đổ select box
+        if self.fight.get(): self._fight_start(dev)   # nếu đang bật tự đánh thì cho đánh luôn
+
+    def _sect_menu(self, e):
+        """Chuột phải trên 1 cửa sổ → menu chọn phái → đổ skill/buff tương ứng."""
+        dev = self.tree.identify_row(e.y)
+        if not dev: return
+        self.tree.selection_set(dev)
+        m = tk.Menu(self.root, tearoff=0)
+        for sect in [v[0] for v in pk_skills.SECT_TABLE.values() if v[0] != "Tân Thủ"]:
+            def _pick(s=sect, d=dev):
+                self.sect_manual[d] = True       # khoá: auto-detect KHÔNG được đè nữa
+                self.log(f"🖱 {d}: chọn phái {s} (khoá tay)")
+                self._apply_sect(d, s)
+            m.add_command(label=sect, command=_pick)
+        try: m.tk_popup(e.x_root, e.y_root)
+        finally: m.grab_release()
+
+    def _sel(self):
+        s = self.tree.selection(); return s[0] if s else None
+
+    def _ensure(self, dev):
+        if dev in self.bots: return self.bots[dev]
+        self.log(f"[*] Attach {dev}…")
+        b = VLTK1Bot(device_id=dev)
+        if not b.connect(): self.log(f"[-] Attach FAIL {dev} (còn Auto-bot? tắt đi)"); return None
+        b.capture_sent = True   # để học thao tác NPC từ cú click của bạn (op33/op35)
+        for _ in range(4):
+            try: b.poll_recv()
+            except: pass
+            time.sleep(0.2)
+        try: b.redetect_fd_by_traffic()
+        except: pass
+        self.bots[dev] = b; return b
+
+    def read_all(self):
+        for dev in list(self.tree.get_children()):
+            threading.Thread(target=self._read_bg, args=(dev,), daemon=True).start()
+
+    def on_select(self):
+        # CHỌN DÒNG = KHÔNG attach (tránh click tên là tự mở). CHỈ đọc lại điểm nếu cửa sổ ĐÃ mở (tick 'Mở').
+        dev = self._sel()
+        if dev and dev in self.bots:
+            threading.Thread(target=self._read_bg, args=(dev,), daemon=True).start()
+
+    def _read_tk_points(self, b, sect):
+        """Điểm Tống Kim (điểm tích luỹ) của nhân vật. Thử các field có sẵn; chưa xác định nguồn chắc → None.
+        (Điểm TK nhiều khả năng server đẩy lúc TK / nằm ở UI bảng xếp hạng — cần probe live xác định field.)"""
+        for k in ("tongkimPoint", "warPoint", "battlePoint", "meritPoint", "integral", "point", "tkPoint", "accumPoint"):
+            try:
+                v = (sect or {}).get(k)
+                if isinstance(v, (int, float)) and v >= 0:
+                    return int(v)
+            except Exception:
+                pass
+        try:
+            r = b.rpc.get_tongkim_points()   # nếu sau này thêm RPC riêng
+            v = (r or {}).get("point")
+            if isinstance(v, (int, float)): return int(v)
+        except Exception:
+            pass
+        return None
+
+    def _read_bg(self, dev):
+        b = self._ensure(dev)
+        if not b: return
+        try: b.rpc.invalidate_player_main()
+        except Exception: pass
+        try: b.poll_recv()
+        except Exception: pass
+        try: r = b.rpc.get_my_sect() or {}
+        except Exception as e: self.log(f"{dev} đọc thông tin lỗi: {e}"); return
+        self.level[dev] = r.get("level") or 0
+        nm = r.get("name") or dev
+        pts = self._read_tk_points(b, r)
+        self.root.after(0, lambda: (self.tree.set(dev, "name", nm),
+                                    self.tree.set(dev, "diem", str(pts) if pts is not None else "—")))
+
+    def _apply_sect(self, dev, sect):
+        """Áp phái cho cửa sổ → đổ skill (mapping) + buff + tầm. Dùng cho cả auto lẫn chọn-tay (chuột phải)."""
+        if not sect: return
+        self.sect[dev] = sect
+        b = self.bots.get(dev)
+        atk = pk_skills.attack_skills_of_sect(sect)
+        cands = [s["id"] for s in atk]
+        self.maxrange[dev] = max([(s.get("radius") or 0) for s in atk], default=0)
+        if b is not None:
+            try:
+                for p in (b.rpc.get_autoplay_skills() or {}).get("profiles") or []:
+                    for k in ("chinh", "phu", "ht1", "ht2", "ht3"):
+                        v = p.get(k) or 0
+                        if v and v not in cands: cands.append(v)
+            except Exception: pass
+        self.skill_cands[dev] = cands
+        self.skill[dev] = cands[0] if cands else None       # đổi phái -> đổi skill mặc định
+        lvl = self.level.get(dev) or 0
+        sup = [s for s in pk_skills.support_skills_of_sect(sect) if (s.get("reqlevel") or 0) <= lvl]
+        self.buffs[dev] = [{"id": s["id"], "name": s["name"]} for s in sup]
+        defb = pk_skills.default_buff_of_sect(sect)
+        ids = [s["id"] for s in sup]
+        self.buff_sel[dev] = defb if defb in ids else (ids[0] if ids else None)
+        self.log(f"⚔️ {dev} phái {sect}: skill {cands} | buff {self.buff_sel.get(dev)} | tầm {self.maxrange[dev]}")
+        self.root.after(0, lambda: self.tree.set(dev, "sect", sect))
+        if dev == self._sel():
+            self.root.after(0, lambda: (self._fill_skills(dev), self._fill_buffs(dev)))
+
+    def _fill_buffs(self, dev):
+        sup = self.buffs.get(dev) or []
+        self._buff_shown = [s["id"] for s in sup]
+        self.buff_cb["values"] = [f"{s['name']} (id{s['id']})" for s in sup]
+        cur = self.buff_sel.get(dev)
+        if cur in self._buff_shown: self.buff_cb.current(self._buff_shown.index(cur))
+        elif sup: self.buff_cb.current(0)
+
+    def set_buff(self):
+        dev = self._sel(); i = self.buff_cb.current()
+        if dev and 0 <= i < len(self._buff_shown):
+            self.buff_sel[dev] = self._buff_shown[i]; self.log(f"✨ {dev} chọn buff {self._buff_shown[i]}")
+
+    def _fill_skills(self, dev):
+        cands = self.skill_cands.get(dev) or []
+        sect = self.sect.get(dev)
+        nmap = {}
+        if sect:
+            for s in (pk_skills.attack_skills_of_sect(sect) or []): nmap[s["id"]] = (s["name"], s.get("reqlevel"))
+        self._shown = list(cands)
+        vals = []
+        for i in cands:
+            if i in nmap: vals.append(f"{nmap[i][0]} (id{i}, lv{nmap[i][1]})")
+            else: vals.append(f"id{i} (autoplay/đã học)")
+        self.skill_cb["values"] = vals
+        cur = self.skill.get(dev)
+        if cur in cands: self.skill_cb.current(cands.index(cur))
+        elif cands: self.skill_cb.current(0)
+
+    def set_skill(self):
+        dev = self._sel(); i = self.skill_cb.current()
+        if dev and 0 <= i < len(self._shown):
+            self.skill[dev] = self._shown[i]; self.log(f"🎯 {dev} chọn skill {self._shown[i]}")
+
+    @staticmethod
+    def _parse_skillid(hexstr):
+        """op238/239/240: body bắt đầu ở byte 6, field1 (skillid) = tag 0x08 + varint."""
+        try:
+            b = bytes.fromhex(hexstr)
+            if len(b) < 8 or b[6] != 0x08: return None
+            val = 0; shift = 0; i = 7
+            while i < len(b):
+                byte = b[i]; val |= (byte & 0x7f) << shift; i += 1
+                if not (byte & 0x80): break
+                shift += 7
+            return val or None
+        except Exception:
+            return None
+
+    @staticmethod
+    def _parse_op35(hexstr):
+        """op35 eNpcSelect: field1 selectIndex (varint, tag 0x08). Cho phép 0."""
+        try:
+            b = bytes.fromhex(hexstr)
+            if len(b) < 7 or b[6] != 0x08: return None
+            val = 0; shift = 0; i = 7
+            while i < len(b):
+                c = b[i]; val |= (c & 0x7f) << shift; i += 1
+                if not (c & 0x80): break
+                shift += 7
+            return val
+        except Exception:
+            return None
+
+    @staticmethod
+    def _parse_op33_npc(hexstr):
+        """op33 eNpcDialogue: field1 npcId = chuỗi ASCII (tag 0x0a)."""
+        try:
+            b = bytes.fromhex(hexstr)
+            if len(b) < 8 or b[6] != 0x0a: return None
+            ln = b[7]; s = b[8:8 + ln].decode("ascii", "ignore")
+            return s if s.isdigit() else None
+        except Exception:
+            return None
+
+    _LEARN_NOISE = {7, 8, 9, 16, 17, 18, 19, 20, 23, 40, 54, 63, 66, 69, 70, 72, 87, 91, 94, 98, 248, 238, 239, 240, 49}
+
+    def _learn_npc(self, dev, b):
+        """Bắt op33→op35 từ cú click TAY của user → học. + LOG mọi gói OUT lạ (để xác định opcode chọn-option thật)."""
+        try: pkts = b.rpc.get_send_packets() or []
+        except Exception: return
+        if self._rejoining.get(dev): return       # đang tự rejoin → đã drain, không học gói của bot
+        for p in pkts:
+            op = p.get("opcode"); hx = p.get("hex") or ""
+            if op == 33:
+                nid = self._parse_op33_npc(hx)
+                if nid: self._last_npc[dev] = nid; self.log(f"👉 {dev}: bạn mở NPC {nid} (op33)")
+            elif op == 35:
+                si = self._parse_op35(hx); ln = self._last_npc.get(dev)
+                if ln and si is not None and self.npc_learn.get((dev, ln)) != si:
+                    self.npc_learn[(dev, ln)] = si
+                    self.log(f"📝 {dev}: HỌC NPC {ln} → option {si} (sẽ tự dùng)")
+                # NẾU NPC này LÀ NPC NHẬN MÁU của phe → đây là OPTION CHỌN THUỐC (Tống) → lưu heal_opt (nhớ qua phiên).
+                if ln and si is not None and ln == self.tk_heal_npc.get(dev):
+                    self._tk_learn(dev, 'heal_opt', si)
+                    self.log(f"❤️ {dev}: HỌC OPTION NHẬN THUỐC = chọn {si} (NPC máu {ln})")
+                # KHI auto_tk BẬT: NPC bạn click-chọn-option ở doanh trại = NPC RA CHIẾN TRƯỜNG (theo phe hiện tại).
+                if ln and si is not None and self.v["auto_tk"].get() and self.tk_war_npc.get(dev) != ln \
+                        and ln != self.tk_heal_npc.get(dev):
+                    self.tk_war_npc[dev] = ln
+                    self._tk_learn(dev, 'war', ln)                 # lưu file theo campValue
+                    self._tk_learn_map(dev, 'war', ln)             # + lưu theo (phe, MAP) → lần sau tự remote
+                    self.log(f"🏳 {dev}: HỌC NPC RA CHIẾN TRƯỜNG (phe hiện tại) = {ln} opt {si}")
+            elif op == 232:
+                # eClientCompleted = nhận dược phẩm → NPC vừa mở (op33) là NPC NHẬN MÁU của phe hiện tại.
+                # GUARD: KHÔNG gán nhầm NPC ra-trận (tk_war_npc) thành NPC máu (đã từng hỏng: heal=2593=war).
+                ln = self._last_npc.get(dev)
+                if ln and self.tk_heal_npc.get(dev) != ln and ln != self.tk_war_npc.get(dev):
+                    self.tk_heal_npc[dev] = ln
+                    self._tk_learn(dev, 'heal', ln)                # lưu file theo campValue
+                    self._tk_learn_map(dev, 'heal', ln)            # + lưu theo (phe, MAP) → lần sau tự remote
+                    self.log(f"❤️ {dev}: HỌC NPC NHẬN MÁU (phe hiện tại) = {ln}")
+            elif op == 229:
+                # NPC RA CHIẾN TRƯỜNG phe KIM (vd 'Kim Trinh Sát') VÀO TRẬN bằng op229 (KHÁC op35 phe Tống).
+                # HỌC nguyên gói op229 từ click → REPLAY. GUARD: KHÔNG học nếu NPC này đã học op35 (npc_learn) =
+                # NPC dùng eNpcSelect (phe Tống) → tránh gán op229 lạc làm hỏng (đã từng dính war_pkt op229 vào Tống).
+                ln = self._last_npc.get(dev)
+                if ln and self.v["auto_tk"].get() and ln != self.tk_heal_npc.get(dev) \
+                        and self.npc_learn.get((dev, ln)) is None:
+                    if self.tk_war_npc.get(dev) != ln or self.tk_war_pkt.get(dev) != hx:
+                        self.tk_war_npc[dev] = ln
+                        self.tk_war_pkt[dev] = hx
+                        self._tk_learn(dev, 'war', ln); self._tk_learn(dev, 'war_pkt', hx)   # lưu file
+                        self._tk_learn_map(dev, 'war', ln)         # + lưu theo (phe, MAP) → lần sau tự remote
+                        self.log(f"🏳 {dev}: HỌC NPC RA CHIẾN TRƯỜNG (op229) = {ln}, gói={hx}")
+
+    def learn_skill(self):
+        """SNIFF skill id RUNTIME từ op238/239/240 game gửi khi đánh. Cách dùng: trong game đánh 1 đòn
+        (hoặc bật auto game vài giây) RỒI bấm nút này. id này mới là id DoSkill cast ra dame (vd 31)."""
+        dev = self._sel()
+        if not dev or dev not in self.bots:
+            self.log("⚠️ chọn 1 cửa sổ ĐÃ MỞ trước khi học skill"); return
+        threading.Thread(target=self._learn_bg, args=(dev,), daemon=True).start()
+
+    def _learn_bg(self, dev):
+        b = self.bots[dev]
+        try: pkts = b.rpc.get_send_packets() or []
+        except Exception as e: self.log(f"{dev} học skill lỗi: {e}"); return
+        found = None
+        for p in pkts:
+            if p.get("opcode") in (238, 239, 240):
+                sid = self._parse_skillid(p.get("hex") or "")
+                if sid: found = sid   # lấy skill MỚI NHẤT game vừa đánh
+        if found:
+            if found not in (self.skill_cands.get(dev) or []):
+                self.skill_cands.setdefault(dev, []).insert(0, found)
+            self.skill[dev] = found
+            self.log(f"📖 {dev} học được skill đánh = {found} (đã chọn)")
+            self.root.after(0, lambda: self._fill_skills(dev))
+        else:
+            self.log(f"⚠️ {dev}: chưa bắt được skill. Vào game đánh 1 đòn (hoặc bật auto) rồi bấm '📖 Học skill' lại.")
+
+    def toggle_fight(self):
+        """Tick 'Tự đánh người' = cho TẤT CẢ cửa sổ đã mở bắt đầu đánh; bỏ tick = dừng hết."""
+        if self.fight.get():
+            opened = [d for d in self.opened if self.opened.get(d)]
+            if not opened:
+                self.fight.set(False); self.log("⚠️ chưa mở cửa sổ nào (tick cột 'Mở' ở bảng trước)"); return
+            for dev in opened: self._fight_start(dev)
+        else:
+            for dev in list(self.run): self.run[dev] = False
+            self.log("⏹ tắt tự đánh người")
+
+    def _fight_start(self, dev):
+        if self.run.get(dev): return
+        b = self.bots.get(dev)
+        if not b: self.log(f"{dev} chưa mở"); return
+        # KHÔNG cần skill nữa (đánh giao AUTO GAME). Mở cửa sổ = tự chạy: nhận máu → ra trận → bật auto game.
+        self.run[dev] = True
+        threading.Thread(target=self._loop, args=(dev, b, None), daemon=True).start()
+
+    def _loop(self, dev, b, skill):
+        try: me = b.rpc.get_player_info() or {}
+        except Exception: me = {}
+        mycid = str(me.get("cid") or "")
+        try: mycamp = (b.rpc.get_my_sect() or {}).get("campValue")
+        except Exception: mycamp = None
+        # XÁC ĐỊNH PHE = campValue (KHÔNG cần biết số nào Tống/Kim) → nạp NPC máu/ra-trận/thuốc đã học cho phe này.
+        self.dev_camp[dev] = mycamp
+        if mycamp is not None: self._tk_apply(dev, mycamp)
+        # 🔑 BIẾN TẠM PHIÊN (RAM, KHÔNG file): id NPC Tống Kim đổi mỗi trận → nhớ id từ file = STALE = nguồn mọi bug.
+        #    → XOÁ id nạp-từ-file, để get_near (name-match Quân Nhu/Trinh Sát) tự lấy id TƯƠI của trận này lúc ở
+        #    doanh trại, lưu vào tk_heal_npc/tk_war_npc (dict RAM) dùng cả vòng đời auto. Giữ heal_part (không stale).
+        self.tk_heal_npc[dev] = None
+        self.tk_war_npc[dev] = None
+        lw = lb = lm = lh = ls = lbuff = 0; fired = 0; errs = 0; cur_cid = None; dm_done = False
+        lcamp = lrejoin = llearn = lscan = lv = lpop = 0; at_camp = True; foe_fl = None
+        l_lac_t = {}; l_lac_log = {}   # 🏃 dùng lắc: cooldown + throttle log THEO LOẠI (keyword)
+        dead = False                   # đang chết (HP=0) → KHÔNG dùng lắc (phí, buff mất khi chết)
+        last_replen_chk = 0.0; last_replen = 0.0; low_meds_armed = True   # 💊 bù dược phẩm khi PK: <30 bình → request 1 lần
+        # XÁC ĐỊNH THUỐC MÁU (Ngũ Hoa) lúc khởi động — DÙNG THEO PARTICULAR (id vật phẩm), KHÔNG hardcode ô:
+        #   ưu tiên 1) particular ĐÃ HỌC (file) → resolve ô hiện tại;
+        #           2) chưa biết → ĐỌC ô SEED user chỉ (heal_seed_slot, vd ô 0 = Ngũ Hoa top-left) LẤY particular → học;
+        #           3) fallback: món genre6 stack lớn nhất.
+        if dev not in self.tk_heal_slot:
+            try:
+                items = (b.dump_bag_items() or {}).get('items') or []
+                def _slot_of(part):
+                    cs = [it for it in items if it.get('particular') == part and it.get('location') == 2]
+                    return int((max(cs, key=lambda it: (it.get('stack') or 1))).get('index') or 0) if cs else None
+                rec = self._tk_db.get(str(mycamp)) or {}
+                part = self.tk_heal_part.get(dev)
+                seed = rec.get('heal_seed_slot')
+                if part is None and seed is not None:
+                    # ĐỌC Ô SEED → lấy particular của Ngũ Hoa (id thật) → học theo phe
+                    it0 = next((it for it in items if int(it.get('index', it.get('slot', -1))) == int(seed)), None)
+                    if it0:
+                        part = it0.get('particular'); self.tk_heal_part[dev] = part
+                        self._tk_learn(dev, 'heal_part', part)
+                        self.log(f"💊 {dev}: đọc ô {seed} → Ngũ Hoa particular={part} (sẽ dùng theo id này)")
+                if part is None:   # fallback stack lớn nhất
+                    cand = [it for it in items if it.get('genre') == 6 and it.get('location') == 2 and (it.get('stack') or 1) > 1]
+                    if cand:
+                        best = max(cand, key=lambda it: (it.get('stack') or 1)); part = best.get('particular')
+                        self.tk_heal_part[dev] = part; self._tk_learn(dev, 'heal_part', part)
+                if part is not None:
+                    sl = _slot_of(part)
+                    if sl is not None:
+                        self.tk_heal_slot[dev] = sl
+                        self.log(f"💊 {dev}: thuốc máu Ngũ Hoa particular={part} → ô hiện tại {sl}")
+            except Exception: pass
+        while self.run.get(dev):
+            now = time.time()
+            try: _pk = b.poll_recv() or []; errs = 0
+            except Exception:
+                _pk = []
+                errs += 1
+                if errs >= 8:   # game crash/detach -> ngừng hammer; GIỮ opened=True để watchdog tự kết nối lại
+                    self.run[dev] = False
+                    self.root.after(0, lambda: self.tree.set(dev, "auto", "⟳"))   # ⟳ = chờ watchdog hồi phục
+                    self.log(f"🛑 {dev}: mất kết nối (game crash/đóng?) — DỪNG. Watchdog sẽ TỰ kết nối lại khi game mở lại.")
+                    break
+            # 📊 ĐIỂM TK: bảng op124 'Cá nhân giết X điểm Y hạng Z' → cột Điểm Tống Kim.
+            _diem_now = None
+            for _p in _pk:
+                if _p.get("opcode") == 9: continue   # bỏ op9 spam vị trí
+                try:
+                    _tl = "".join(c for c in bytes.fromhex(_p.get("hex", ""))[6:].decode("utf-8", "ignore") if c.isprintable()).lower()
+                    if "cá nhân" in _tl and "điểm" in _tl:
+                        import re as _re
+                        _m = _re.search(r"cá nhân.*?điểm\s*[: ]*(\d+)", _tl)
+                        if _m: _diem_now = int(_m.group(1))
+                except Exception: pass
+            if _diem_now is not None:
+                self.root.after(0, lambda d=dev, p=_diem_now: self.tree.set(d, "diem", str(p)))
+            # ĐÓNG POPUP "Về thành dưỡng sức" (class PlayerDie.Close) + popup khác định kỳ ~2s.
+            if now - lpop > 2:
+                lpop = now
+                try: b.close_datau_popups()
+                except Exception: pass
+            # (HỌC thao tác NPC chạy nền ở _learn_tick, không cần ở đây)
+            # 🏃 TỰ DÙNG LẮC: theo select box 'Sử dụng …'. ĐẶT TRƯỚC khối rejoin (rejoin có 'continue' khi ở trại →
+            #   nếu để sau sẽ không bao giờ chạy lúc ở doanh trại). Khớp theo PARTICULAR id (tên rỗng), dùng theo
+            #   Ô TÚI = field 'slot' (KHÔNG dùng 'index'=id-loại → trỏ nhầm ô = trúng Huy chương). Mỗi loại cooldown riêng.
+            # CHỈ dùng lắc khi ĐÃ RA KHỎI DOANH TRẠI (not at_camp) + còn sống (not dead). Ở doanh trại/báo danh
+            #   = chưa đánh → dùng lắc phí (buff trôi). Cooldown được reset lúc 'ra khỏi doanh trại' + lúc hồi sinh.
+            _act = self._active_lac()
+            _due = [(lbl, pid, gap) for (lbl, pid, gap) in _act if now - l_lac_t.get(pid, 0) > gap] \
+                   if (_act and not dead and not at_camp) else []
+            if _due:
+                try:
+                    items = (b.dump_bag_items() or {}).get("items") or []   # dump 1 lần, dùng cho mọi loại tới hạn
+                    for (lbl, pid, gap) in _due:
+                        l_lac_t[pid] = now
+                        # KHỚP GIỐNG HỆT _scan_lac (KHÔNG loại lockstate — lắc bị KHOÁ vẫn DÙNG được; lock chỉ chặn
+                        #   bán/giao dịch). Trước đây loại lockstate → loop báo 'HẾT' dù scan thấy có.
+                        cand = [it for it in items
+                                if it.get("particular") == pid and it.get("location") == 2
+                                and (it.get("stack") or 1) > 0]
+                        if cand:
+                            best = max(cand, key=lambda it: (it.get("stack") or 1))
+                            slot = best.get("slot")
+                            if slot is None: continue
+                            b.use_item(int(slot))
+                            self.lac_stock[pid] = max(0, (best.get("stack") or 1) - 1)   # tự trừ → label 'còn N'
+                            self.root.after(0, self._refresh_lac_counts)
+                            if now - l_lac_log.get(pid, 0) > 25:   # throttle log theo loại
+                                l_lac_log[pid] = now
+                                self.log(f"🏃 {dev}: dùng {lbl} (particular {pid}, ô {slot}, còn ~{self.lac_stock[pid]})")
+                        else:
+                            self.log(f"🏃 {dev}: HẾT {lbl} trong túi → tạm dừng (kiểm lại sau 3 phút)")
+                            l_lac_t[pid] = now + 180   # hết → đừng dump liên tục, 3 phút kiểm lại
+                except Exception as e:
+                    self.log(f"🏃 {dev}: dùng lắc lỗi {e}")
+            # AUTO TỐNG KIM: về DOANH TRẠI (thấy NPC máu/ra-trận) → nhận full máu rồi RA CHIẾN TRƯỜNG
+            if self.v["auto_tk"].get() and now - lcamp > 2.0:
+                lcamp = now
+                # CAMP-DETECT — HYBRID chống đơ (user 26/6):
+                #  • CHƯA biết heal+war → cần TÊN để học → get_near_npcs_safe + _tk_autofind (lúc này ở DOANH TRẠI,
+                #    ít lính, deref an toàn; PHẢI giữ nếu không sẽ KHÔNG học được war_npc → KHÔNG tự ra trận).
+                #  • ĐÃ biết heal+war → ở chiến trường ĐÔNG LÍNH spawn/chết → get_near_npcs_safe deref = chạm object
+                #    freed = ĐƠ. Dùng get_near_npc_ids (CHỈ đọc _key, KHÔNG deref Controller) → an toàn.
+                _heal_k = self.tk_heal_npc.get(dev); _war_k = self.tk_war_npc.get(dev)
+                if _heal_k and _war_k:
+                    nids = set()
+                    try:
+                        nids = {int(x) for x in ((b.rpc.get_near_npc_ids() or {}).get("ids") or []) if str(x).isdigit()}
+                    except Exception:
+                        nids = set()
+                else:
+                    npcs = []
+                    try:
+                        npcs = (b.rpc.get_near_npcs_safe() or {}).get("npcs") or []
+                    except Exception:
+                        try: npcs = [{"id": x} for x in ((b.rpc.get_near_npc_ids() or {}).get("ids") or [])]
+                        except Exception: npcs = []
+                    try:
+                        _mid = (b.rpc.get_player_info() or {}).get("mapId")
+                        self._tk_autofind(dev, b, npcs, _mid)
+                    except Exception as e:
+                        self.log(f"{dev}: autofind NPC lỗi {e}")
+                    nids = {int(n.get("id")) for n in npcs if str(n.get("id", "")).isdigit()}
+                heal_npc = self.tk_heal_npc.get(dev, TK_HEAL_NPC)   # id đã resolve theo map/tên
+                war_npc  = self.tk_war_npc.get(dev, TK_WAR_NPC)
+                _was_camp = at_camp
+                at_camp = (heal_npc in nids or war_npc in nids)     # thấy NPC máu/ra-trận = ĐANG Ở DOANH TRẠI
+                if _was_camp and not at_camp:   # VỪA RA KHỎI doanh trại → niệm buff + dùng lắc tươi (auto đã arm sẵn)
+                    lbuff = 0   # reset buff để niệm lại; autoplay KHÔNG re-arm (đã arm 1 lần, giữ state)
+                    l_lac_t.clear()     # 🏃 ra chiến trường → reset cooldown lắc → dùng buff TƯƠI ngay (vòng kế)
+                    self.log(f"🚪 {dev}: ra chiến trường (auto game giữ state).")
+                if at_camp and now - lrejoin > TK_REJOIN_CD:
+                    lrejoin = now
+                    if not _was_camp:   # CHỈ log khi VỪA vào trại (đừng lặp mỗi 5s khi đứng trại)
+                        self.log(f"🏕 {dev}: về doanh trại → nhận máu + ra chiến trường")
+                    self._do_rejoin(b, dev)
+                    time.sleep(0.3); continue
+            # BUFF trấn phái: CHỈ niệm khi ĐÃ RA KHỎI DOANH TRẠI (theo logic user — trong doanh trại không buff).
+            bid = self.buff_sel.get(dev)
+            _block_buff = self.v["auto_tk"].get() and at_camp   # auto_tk + ở doanh trại = KHÔNG buff; còn lại buff bình thường
+            if self.v["buff"].get() and bid and not _block_buff and now - lbuff > float(self.v["buff_gap"].get() or 60):
+                lbuff = now
+                try: r = b.do_skill(int(bid)); self.log(f"✨ {dev}: niệm buff id{bid} → {(r or {}).get('ok')}")
+                except Exception as e: self.log(f"✨ {dev}: niệm buff id{bid} lỗi {e}")
+            # BƠM MÁU/MANA: COOLDOWN 2.0s (Ngũ Hoa có cooldown — bơm 0.25s = hammer use_item 25 lần/12s khi HP
+            #   không hồi = vô ích + nghi gây crash 'script destroyed'). Auto game thường tự lo HP; bơm này backup.
+            if (self.v["bom_mau"].get() or self.v["bom_mana"].get()) and now - lh > 2.0:
+                lh = now
+                try:
+                    v = b.rpc.get_my_vitals() or {}
+                    hp, hm, mp, mm = v.get("hp"), v.get("hpMax"), v.get("mp"), v.get("mpMax")
+                    if self.v["bom_mau"].get() and hp and hm and hp / hm * 100 < float(self.v["mau_pct"].get() or 90):
+                        # ƯU TIÊN thuốc máu TK đã học (Ngũ Hoa Ngọc Lộ Hoàn) qua ô đã cache; chưa học → ô cấu hình.
+                        hs = self.tk_heal_slot.get(dev)
+                        b.use_item(int(hs if hs is not None else (self.v["mau_slot"].get() or 0)))
+                        self.log(f"💊 {dev} bơm máu {hp}/{hm}{' (Ngũ Hoa ô'+str(hs)+')' if hs is not None else ''}")
+                    if self.v["bom_mana"].get() and mp and mm and mp / mm * 100 < float(self.v["mana_pct"].get() or 30):
+                        b.use_item(int(self.v["mana_slot"].get() or 1)); self.log(f"💧 {dev} bơm mana {mp}/{mm}")
+                except Exception: pass
+            # 💀 PHÁT HIỆN MÌNH CHẾT (HP=0): TUYỆT ĐỐI KHÔNG cast skill / quét player lúc chết-hồi sinh → đụng
+            #    PlayerMain trạng thái chết = ACCESS VIOLATION = GIẬT + CRASH (user: "chết là giật + crash"). Ngừng
+            #    PK, để camp-check (ở trên) tự rejoin khi hồi sinh ở doanh trại.
+            if now - lv > 0.4:
+                lv = now
+                try:
+                    _hp = (b.rpc.get_my_vitals() or {}).get("hp")
+                    if _hp is not None and _hp <= 0:
+                        cur_cid = None; foe_fl = None; dm_done = False   # RESET xuống ngựa → hồi sinh lần sau tự xuống lại
+                        # 🏃 CHẾT → về doanh trại → KHÔNG dùng lắc ở đó. Lắc CHỈ dùng khi RA KHỎI doanh trại (mốc
+                        #   '🚪 ra chiến trường' đã reset cooldown). dead=True chỉ để CHẶN dùng lắc trong lúc đang
+                        #   chết (chưa kịp về trại). KHÔNG reset cooldown ở đây (tránh dùng lắc sai chỗ).
+                        dead = True
+                        if now - lb > 2: lb = now; self.log(f"💀 {dev}: ĐÃ CHẾT → ngừng PK, chờ hồi sinh + về doanh trại")
+                        try: b.close_datau_popups()   # đóng popup 'về thành dưỡng sức' (class PlayerDie) khi chết
+                        except Exception: pass
+                        time.sleep(0.5); continue
+                    elif _hp is not None:
+                        dead = False   # còn sống → cho phép dùng lắc lại (vừa hồi sinh → l_lac_t đã clear → dùng ngay)
+                except Exception: pass
+            # ⚡ KHÔNG PK TỰ CHẾ NỮA (theo user 21/6): bỏ get_pk_scan + attack_player_hooked (nguồn lag/crash/chiếm
+            #    chuột). Bot CHỈ lo: nhận máu + ra chiến trường (ở trên) + BẬT AUTO GAME (dưới) + bơm máu (ở trên).
+            #    Việc đánh để AUTO GAME tự lo (user tự set profile auto trong game cho ngon).
+            # 🚫 KHÔNG TỰ BẬT AUTO GAME nữa (user chốt 26/6: ưu tiên KHÔNG CRASH > tự-động). enable_autoplay =
+            #   FindObjectsOfTypeAll + invoke EnableAutoplay = vector crash 'script destroyed' lúc mass-combat TK.
+            #   User BẬT NÚT AUTO TAY 1 lần (autoplay giữ state qua chết/đổi map) → bot khỏi đụng il2cpp-invoke này.
+            #   Bot chỉ còn lo: nhận thuốc + ra trận (packet) + buff + bơm máu.
+                # 💊 (ĐÃ GỠ) BÙ DƯỢC PHẨM KHI PK <30 bình — TEST LIVE 15h kết luận: remote op33 nhận thuốc khi
+                #   ĐANG Ở CHIẾN TRƯỜNG = KHÔNG ăn (túi 0→0). BẮT BUỘC ở cạnh NPC doanh trại mới nhận được. Bỏ
+                #   auto-request ngoài trận (chỉ spam fail + gây rối). Việc bù thuốc để vòng 'về doanh trại' lo.
+            time.sleep(0.5)
+
+
+if __name__ == "__main__":
+    # TỰ CẬP NHẬT khi mở (không cần ui_bot Dã Tẩu chạy trước): có deploy mới → áp + re-exec chính nó.
+    try:
+        from core import deploy_sync as _D
+        _D.apply_and_reexec_if_new()
+    except Exception:
+        pass
+    root = tk.Tk(); PKApp(root); root.mainloop()

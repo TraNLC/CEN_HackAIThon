@@ -1,0 +1,137 @@
+# opcode_db.yaml — Cross-game opcode reference database
+#
+# Tổng hợp từ games cùng engine (Cocos2d-x, custom C++) phổ biến ở VN/TQ
+# Dùng để gợi ý khi phân tích captures mới
+#
+# Format:
+#   engine_name:
+#     game_name:
+#       c2s:  (client → server)
+#         0xXXXX:
+#           name: ACTION_NAME
+#           payload: "mô tả payload"
+#       s2c:  (server → client)
+#         ...
+
+# ─────────────────────────────────────────────────────────────
+# VLTK-style games (Snail engine, phổ biến nhất ở VN)
+# Các game cùng engine thường có opcode gần giống nhau
+# ─────────────────────────────────────────────────────────────
+snail_engine:
+  common_patterns:
+    notes: "Snail engine dùng cho VLTK, Thiên Long Bát Bộ, Đại Đường Vô Song"
+    packet_format: "[2B total_length][2B opcode][payload]"
+    endian: "big-endian"
+
+    c2s:
+      # Auth
+      0x0001: { name: LOGIN_REQUEST,     payload: "str8 username, str8 password" }
+      0x0002: { name: SELECT_CHARACTER,  payload: "uint32 char_id" }
+      0x0003: { name: ENTER_WORLD,       payload: "" }
+      0x0004: { name: LOGOUT,            payload: "" }
+      0x0005: { name: HEARTBEAT,         payload: "uint32 timestamp" }
+
+      # Movement
+      0x0101: { name: MOVE_TO,           payload: "uint16 x, uint16 y" }
+      0x0102: { name: MOVE_DIR,          payload: "uint8 direction, uint8 speed" }
+      0x0103: { name: AUTO_PATH_NPC,     payload: "uint32 npc_id" }
+      0x0104: { name: AUTO_PATH_COORDS,  payload: "uint16 x, uint16 y, uint8 flags" }
+      0x0105: { name: STOP_MOVE,         payload: "" }
+
+      # NPC / Quest
+      0x0201: { name: TALK_NPC,          payload: "uint32 npc_id" }
+      0x0202: { name: SELECT_DIALOG,     payload: "uint32 npc_id, uint8 option_index" }
+      0x0203: { name: ACCEPT_QUEST,      payload: "uint32 npc_id, uint32 quest_id" }
+      0x0204: { name: SUBMIT_QUEST,      payload: "uint32 npc_id, uint32 quest_id" }
+      0x0205: { name: ABANDON_QUEST,     payload: "uint32 quest_id" }
+      0x0206: { name: QUERY_QUEST,       payload: "uint32 quest_id" }
+
+      # Combat
+      0x0301: { name: ATTACK_TARGET,     payload: "uint32 target_id" }
+      0x0302: { name: USE_SKILL,         payload: "uint16 skill_id, uint32 target_id" }
+      0x0303: { name: STOP_ATTACK,       payload: "" }
+      0x0304: { name: PICK_ITEM,         payload: "uint32 item_uid" }
+      0x0305: { name: AUTO_FIGHT_ON,     payload: "uint8 enabled" }
+
+      # Inventory
+      0x0401: { name: USE_ITEM,          payload: "uint32 item_uid" }
+      0x0402: { name: DROP_ITEM,         payload: "uint32 item_uid" }
+      0x0403: { name: EQUIP_ITEM,        payload: "uint32 item_uid, uint8 slot" }
+
+    s2c:
+      # Auth responses
+      0x1001: { name: LOGIN_RESPONSE,    payload: "uint8 result, uint32 session_token" }
+      0x1002: { name: CHAR_LIST,         payload: "uint8 count, [char_data...]" }
+      0x1003: { name: ENTER_WORLD_OK,    payload: "uint32 char_id, uint16 x, uint16 y, uint16 map_id" }
+      0x1005: { name: HEARTBEAT_ACK,     payload: "uint32 server_time" }
+
+      # World updates
+      0x1101: { name: PLAYER_MOVE,       payload: "uint32 char_id, uint16 x, uint16 y" }
+      0x1102: { name: SPAWN_ENTITY,      payload: "uint32 id, uint8 type, uint16 x, uint16 y" }
+      0x1103: { name: DESPAWN_ENTITY,    payload: "uint32 id" }
+      0x1104: { name: POSITION_SYNC,     payload: "uint16 x, uint16 y" }
+
+      # Quest events
+      0x1201: { name: NPC_DIALOG_OPEN,   payload: "uint32 npc_id, uint16 dialog_id" }
+      0x1202: { name: QUEST_ACCEPT_OK,   payload: "uint32 quest_id" }
+      0x1203: { name: QUEST_PROGRESS,    payload: "uint32 quest_id, uint16 current, uint16 target" }
+      0x1204: { name: QUEST_COMPLETE,    payload: "uint32 quest_id" }
+      0x1205: { name: QUEST_SUBMIT_OK,   payload: "uint32 quest_id, uint32 exp, uint32 gold" }
+      0x1206: { name: QUEST_FAIL,        payload: "uint32 quest_id, uint8 reason" }
+
+      # Combat events
+      0x1301: { name: COMBAT_RESULT,     payload: "uint32 attacker, uint32 target, uint32 damage" }
+      0x1302: { name: ENTITY_DEAD,       payload: "uint32 entity_id" }
+      0x1303: { name: ITEM_DROP,         payload: "uint32 item_uid, uint16 item_id, uint16 x, uint16 y" }
+      0x1304: { name: PICK_ITEM_OK,      payload: "uint32 item_uid" }
+      0x1305: { name: HP_UPDATE,         payload: "uint32 entity_id, uint32 hp, uint32 max_hp" }
+
+      # System
+      0x1401: { name: SERVER_MESSAGE,    payload: "str16 message" }
+      0x1402: { name: ERROR_CODE,        payload: "uint16 code, str8 message" }
+      0x1403: { name: KICK,              payload: "uint8 reason" }
+
+# ─────────────────────────────────────────────────────────────
+# Cocos2d-x games (khác Snail engine)
+# Thường dùng protobuf hoặc custom binary
+# ─────────────────────────────────────────────────────────────
+cocos2dx_generic:
+  notes: "Games Cocos2d-x thường có opcode range khác"
+  packet_format: "[2B opcode][2B length][payload]"  # đảo ngược so với Snail
+  endian: "little-endian"
+  c2s:
+    0x0065: { name: LOGIN_REQUEST,   payload: "protobuf LoginReq" }
+    0x0067: { name: ENTER_GAME,      payload: "uint32 char_id" }
+    0x00C8: { name: MOVE_REQUEST,    payload: "float x, float y, float z" }
+    0x00CA: { name: ATTACK,          payload: "uint32 skill_id, uint32 target_id" }
+    0x012C: { name: ACCEPT_QUEST,    payload: "uint32 quest_id" }
+    0x012D: { name: SUBMIT_QUEST,    payload: "uint32 quest_id" }
+
+# ─────────────────────────────────────────────────────────────
+# Matching hints — dùng để fuzzy match với captures mới
+# ─────────────────────────────────────────────────────────────
+matching_hints:
+  notes: >
+    Khi phân tích captures mới, dùng các hints này:
+    - Packet đầu tiên C→S sau connect → thường là LOGIN
+    - Packet C→S ngắn nhất gửi định kỳ → HEARTBEAT
+    - Packet C→S ngay sau click NPC → TALK_NPC
+    - S→C packet lớn sau LOGIN → CHAR_LIST
+    - S→C packet ngay sau ACCEPT_QUEST → QUEST_ACCEPT_OK
+
+  behavioral_signatures:
+    LOGIN:
+      - "Packet đầu tiên C→S sau connect"
+      - "Payload chứa printable ASCII (username/password)"
+      - "Kích thước: 20-100 bytes"
+    HEARTBEAT:
+      - "Gửi định kỳ mỗi 15-30 giây"
+      - "Payload nhỏ: 0-8 bytes"
+      - "Opcode giống nhau lặp lại"
+    MOVE_TO:
+      - "Gửi ngay sau click map"
+      - "Payload chứa 2 số liên tiếp (x, y coords)"
+      - "Kích thước: 8-12 bytes"
+    QUEST_COMPLETE:
+      - "S→C packet sau khi giết đủ số mob"
+      - "Thường đi kèm packet EXP/GOLD reward"

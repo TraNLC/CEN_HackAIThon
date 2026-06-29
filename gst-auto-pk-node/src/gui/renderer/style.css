@@ -1,0 +1,424 @@
+/* RESET & GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: hsl(220, 15%, 8%);
+  color: hsl(210, 20%, 95%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* CUSTOM SCROLLS */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(220, 15%, 8%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220, 10%, 25%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(43, 64%, 53%);
+}
+
+/* HEADER CSS */
+.app-header {
+  height: 70px;
+  background-color: rgba(30, 33, 38, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title-martial {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: hsl(43, 64%, 53%);
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.subtitle-eng {
+  font-size: 10px;
+  color: hsl(210, 10%, 60%);
+  letter-spacing: 1px;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BUTTONS */
+button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, hsl(43, 64%, 53%) 0%, hsl(35, 75%, 45%) 100%);
+  color: hsl(220, 15%, 8%);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, hsl(35, 80%, 55%) 0%, hsl(20, 80%, 45%) 100%);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(230, 126, 34, 0.3);
+}
+.btn-warning:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.5);
+}
+
+.btn-small {
+  background-color: hsl(220, 10%, 25%);
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.btn-small:hover {
+  background-color: hsl(220, 10%, 35%);
+}
+
+/* TOGGLE SLIDER SWITCH */
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.gold-text {
+  color: hsl(43, 64%, 53%);
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: hsl(220, 10%, 20%);
+  transition: .3s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: hsl(145, 63%, 49%);
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+}
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+input:disabled + .slider {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* APP BODY & FULL CONTENT */
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background: radial-gradient(circle at top right, rgba(40, 45, 55, 1) 0%, rgba(15, 18, 22, 1) 100%);
+}
+
+.app-content-full {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.left-col, .right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.left-col {
+  flex: 1;
+}
+
+/* CARDS (GLASSMORPHISM) */
+.card {
+  background: rgba(30, 33, 38, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(210, 15%, 80%);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DEVICE TABLE */
+.device-table-card {
+  flex: 0 0 auto;
+  height: 250px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-responsive {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.modern-table thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(25, 28, 33, 0.95);
+  padding: 12px 15px;
+  font-weight: 600;
+  color: hsl(43, 64%, 53%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.modern-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.2s;
+}
+.modern-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.modern-table td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+/* Health / Mana Progress inside Table */
+.hp-mp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.mini-bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.mini-bar-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+.mini-bar-fill.hp { background: hsl(145, 63%, 45%); }
+.mini-bar-fill.mp { background: hsl(204, 70%, 45%); }
+
+/* CONTROLS & DROPDOWNS */
+.controls-card {
+  flex: 0 0 auto;
+  background: linear-gradient(90deg, rgba(30, 35, 45, 0.8) 0%, rgba(20, 24, 30, 0.8) 100%);
+  border-left: 4px solid hsl(43, 64%, 53%);
+}
+
+.control-bar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.dropdown-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dropdown-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(210, 10%, 80%);
+}
+
+.modern-select {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.modern-select:hover {
+  border-color: hsl(43, 64%, 53%);
+}
+.modern-select option {
+  background: hsl(220, 15%, 12%);
+  color: white;
+}
+
+/* LAC CONTROLS */
+.lac-card {
+  flex: 0 0 auto;
+}
+
+.lac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.lac-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0,0,0,0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.lac-label {
+  font-size: 13px;
+  color: hsl(210, 10%, 70%);
+}
+
+.lac-select {
+  flex: 1;
+}
+
+.lac-count {
+  font-size: 13px;
+  font-weight: bold;
+  color: hsl(145, 63%, 49%);
+  min-width: 45px;
+  text-align: right;
+}
+
+/* GLOBAL LOG CARD */
+.log-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(20, 22, 25, 0.9);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.log-header .card-subtitle {
+  margin: 0;
+}
+
+.log-container {
+  flex: 1;
+  padding: 15px 20px;
+  background-color: rgba(10, 12, 15, 0.8);
+  font-family: monospace;
+  font-size: 13px;
+  color: hsl(210, 15%, 85%);
+  overflow-y: auto;
+  user-select: text;
+}
+
+.log-entry {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+.log-entry.log-system { color: hsl(43, 64%, 53%); }
+.log-entry.log-info { color: hsl(210, 15%, 85%); }
+.log-entry.log-warn { color: hsl(35, 80%, 55%); }
+.log-entry.log-error { color: hsl(5, 78%, 57%); }
+.log-entry.log-success { color: hsl(145, 63%, 49%); }
+
+.device-prefix {
+  color: hsl(204, 70%, 53%);
+  font-weight: bold;
+  margin-right: 8px;
+}

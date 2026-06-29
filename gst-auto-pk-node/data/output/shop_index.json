@@ -1,0 +1,3755 @@
+{
+ "tho.ren.thanh.thi.1": {
+  "shopkey": "tho.ren.thanh.thi.1",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 1,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f0020000770012ed050a1374686f2e72656e2e7468616e682e7468692e31120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ },
+ "tap.hoa.thon.tran.8": {
+  "shopkey": "tap.hoa.thon.tran.8",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 153,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 60,
+    "f7": 7,
+    "f8": 0,
+    "f9": 2,
+    "name": "Tỳ Lô mão",
+    "item_hex": "083c28ffffffffffffffffff01380748025001"
+   }
+  ],
+  "hex": "35010000770012b2020a137461702e686f612e74686f6e2e7472616e2e38120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012217080b1213083c28ffffffffffffffffff01380748025001"
+ },
+ "tap.hoa.thon.tran.3": {
+  "shopkey": "tap.hoa.thon.tran.3",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 121,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 74,
+    "f7": 8,
+    "f8": 0,
+    "f9": 2,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "084a28ffffffffffffffffff0138084802"
+   }
+  ],
+  "hex": "33010000770012b0020a137461702e686f612e74686f6e2e7472616e2e33120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012215080b1211084a28ffffffffffffffffff0138084802"
+ },
+ "tho.ren.thon.tran.3": {
+  "shopkey": "tho.ren.thon.tran.3",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 121,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015004"
+   }
+  ],
+  "hex": "1f0100007700129c020a1374686f2e72656e2e74686f6e2e7472616e2e33120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012217080a1213083228ffffffffffffffffff01400248015004"
+ },
+ "tap.hoa.thon.tran.1": {
+  "shopkey": "tap.hoa.thon.tran.1",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 53,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 74,
+    "f7": 6,
+    "f8": 0,
+    "f9": 2,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "084a28ffffffffffffffffff0138064802"
+   }
+  ],
+  "hex": "33010000770012b0020a137461702e686f612e74686f6e2e7472616e2e31120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012215080b1211084a28ffffffffffffffffff0138064802"
+ },
+ "tho.ren.thon.tran.1": {
+  "shopkey": "tho.ren.thon.tran.1",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 53,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015004"
+   }
+  ],
+  "hex": "1d0100007700129a020a1374686f2e72656e2e74686f6e2e7472616e2e31120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012215080a1211083228ffffffffffffffffff0148015004"
+ },
+ "tho.ren.thon.tran.2": {
+  "shopkey": "tho.ren.thon.tran.2",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 20,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff01400148015004"
+   }
+  ],
+  "hex": "1f0100007700129c020a1374686f2e72656e2e74686f6e2e7472616e2e32120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012217080a1213083228ffffffffffffffffff01400148015004"
+ },
+ "tap.hoa.thon.tran.2": {
+  "shopkey": "tap.hoa.thon.tran.2",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 20,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 60,
+    "f7": 5,
+    "f8": 0,
+    "f9": 2,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "083c28ffffffffffffffffff0138054802"
+   }
+  ],
+  "hex": "33010000770012b0020a137461702e686f612e74686f6e2e7472616e2e32120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012215080b1211083c28ffffffffffffffffff0138054802"
+ },
+ "tap.hoa.thon.tran.4": {
+  "shopkey": "tap.hoa.thon.tran.4",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 174,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 60,
+    "f7": 7,
+    "f8": 0,
+    "f9": 2,
+    "name": "Tỳ Lô mão",
+    "item_hex": "083c28ffffffffffffffffff0138074802"
+   }
+  ],
+  "hex": "33010000770012b0020a137461702e686f612e74686f6e2e7472616e2e34120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012215080b1211083c28ffffffffffffffffff0138074802"
+ },
+ "tho.ren.thon.tran.4": {
+  "shopkey": "tho.ren.thon.tran.4",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 174,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015004"
+   }
+  ],
+  "hex": "1f0100007700129c020a1374686f2e72656e2e74686f6e2e7472616e2e34120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012217080a1213083228ffffffffffffffffff01400348015004"
+ },
+ "tho.ren.thon.tran.5": {
+  "shopkey": "tho.ren.thon.tran.5",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 101,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff01400448015004"
+   }
+  ],
+  "hex": "1f0100007700129c020a1374686f2e72656e2e74686f6e2e7472616e2e35120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012217080a1213083228ffffffffffffffffff01400448015004"
+ },
+ "tap.hoa.thon.tran.5": {
+  "shopkey": "tap.hoa.thon.tran.5",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 101,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 74,
+    "f7": 6,
+    "f8": 0,
+    "f9": 2,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "084a28ffffffffffffffffff01380648025001"
+   }
+  ],
+  "hex": "35010000770012b2020a137461702e686f612e74686f6e2e7472616e2e35120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012217080b1213084a28ffffffffffffffffff01380648025001"
+ },
+ "tap.hoa.thon.tran.6": {
+  "shopkey": "tap.hoa.thon.tran.6",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 99,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 60,
+    "f7": 5,
+    "f8": 0,
+    "f9": 2,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "083c28ffffffffffffffffff01380548025001"
+   }
+  ],
+  "hex": "35010000770012b2020a137461702e686f612e74686f6e2e7472616e2e36120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012217080b1213083c28ffffffffffffffffff01380548025001"
+ },
+ "tho.ren.thon.tran.6": {
+  "shopkey": "tho.ren.thon.tran.6",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 99,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015004"
+   }
+  ],
+  "hex": "1f0100007700129c020a1374686f2e72656e2e74686f6e2e7472616e2e36120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012217080a1213083228ffffffffffffffffff01400548015004"
+ },
+ "tap.hoa.thon.tran.7": {
+  "shopkey": "tap.hoa.thon.tran.7",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 100,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 100,
+    "f7": 2,
+    "f8": 6,
+    "f9": 1,
+    "name": "Tuyền Long bào",
+    "item_hex": "086428ffffffffffffffffff01380240064801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 150,
+    "f7": 2,
+    "f8": 11,
+    "f9": 1,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08960128ffffffffffffffffff013802400b4801"
+   },
+   {
+    "itemindex": 4,
+    "cost": 70,
+    "f7": 5,
+    "f8": 0,
+    "f9": 1,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "084628ffffffffffffffffff0138054801"
+   },
+   {
+    "itemindex": 5,
+    "cost": 70,
+    "f7": 5,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Lũ hài",
+    "item_hex": "084628ffffffffffffffffff01380540024801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 6,
+    "f8": 0,
+    "f9": 1,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "083228ffffffffffffffffff0138064801"
+   },
+   {
+    "itemindex": 7,
+    "cost": 40,
+    "f7": 7,
+    "f8": 6,
+    "f9": 1,
+    "name": "Ô Tàm Mão",
+    "item_hex": "082828ffffffffffffffffff01380740064801"
+   },
+   {
+    "itemindex": 8,
+    "cost": 50,
+    "f7": 7,
+    "f8": 8,
+    "f9": 1,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "083228ffffffffffffffffff01380740084801"
+   },
+   {
+    "itemindex": 9,
+    "cost": 50,
+    "f7": 8,
+    "f8": 0,
+    "f9": 1,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "083228ffffffffffffffffff0138084801"
+   },
+   {
+    "itemindex": 10,
+    "cost": 50,
+    "f7": 8,
+    "f8": 1,
+    "f9": 1,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "083228ffffffffffffffffff01380840014801"
+   },
+   {
+    "itemindex": 11,
+    "cost": 74,
+    "f7": 8,
+    "f8": 0,
+    "f9": 2,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "084a28ffffffffffffffffff01380848025001"
+   }
+  ],
+  "hex": "35010000770012b2020a137461702e686f612e74686f6e2e7472616e2e37120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff01300638014009221708021213086428ffffffffffffffffff0138024006480122180803121408960128ffffffffffffffffff013802400b4801221508041211084628ffffffffffffffffff0138054801221708051213084628ffffffffffffffffff01380540024801221508061211083228ffffffffffffffffff0138064801221708071213082828ffffffffffffffffff01380740064801221708081213083228ffffffffffffffffff01380740084801221508091211083228ffffffffffffffffff01380848012217080a1213083228ffffffffffffffffff013808400148012217080b1213084a28ffffffffffffffffff01380848025001"
+ },
+ "tho.ren.thon.tran.7": {
+  "shopkey": "tho.ren.thon.tran.7",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 100,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015004"
+   }
+  ],
+  "hex": "210100007700129e020a1374686f2e72656e2e74686f6e2e7472616e2e37120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff0138014002480150012219080a1215081428ffffffffffffffffff013801400148015004"
+ },
+ "tho.ren.thon.tran.8": {
+  "shopkey": "tho.ren.thon.tran.8",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 153,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 50,
+    "f7": 0,
+    "f8": 0,
+    "f9": 1,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "083228ffffffffffffffffff0148015002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 50,
+    "f7": 0,
+    "f8": 1,
+    "f9": 1,
+    "name": "Đại Phong Đao",
+    "item_hex": "083228ffffffffffffffffff0140014801"
+   },
+   {
+    "itemindex": 3,
+    "cost": 50,
+    "f7": 0,
+    "f8": 2,
+    "f9": 1,
+    "name": "Kim Cô Bổng",
+    "item_hex": "083228ffffffffffffffffff01400248015003"
+   },
+   {
+    "itemindex": 4,
+    "cost": 50,
+    "f7": 0,
+    "f8": 3,
+    "f9": 1,
+    "name": "Phá Thiên Kích",
+    "item_hex": "083228ffffffffffffffffff01400348015003"
+   },
+   {
+    "itemindex": 5,
+    "cost": 50,
+    "f7": 0,
+    "f8": 4,
+    "f9": 1,
+    "name": "Phá Thiên chùy",
+    "item_hex": "083228ffffffffffffffffff0140044801"
+   },
+   {
+    "itemindex": 6,
+    "cost": 50,
+    "f7": 0,
+    "f8": 5,
+    "f9": 1,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "083228ffffffffffffffffff01400548015002"
+   },
+   {
+    "itemindex": 7,
+    "cost": 20,
+    "f7": 1,
+    "f8": 0,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff01380148015001"
+   },
+   {
+    "itemindex": 8,
+    "cost": 20,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "name": "",
+    "item_hex": "081428ffffffffffffffffff013801400148015001"
+   },
+   {
+    "itemindex": 9,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015001"
+   },
+   {
+    "itemindex": 10,
+    "cost": 150,
+    "f7": 1,
+    "f8": 2,
+    "f9": 1,
+    "name": "",
+    "item_hex": "08960128ffffffffffffffffff013801400248015004"
+   }
+  ],
+  "hex": "220100007700129f020a1374686f2e72656e2e74686f6e2e7472616e2e38120a5468e1bba32072c3a86e1801221508011211083228ffffffffffffffffff0148015002221508021211083228ffffffffffffffffff0140014801221708031213083228ffffffffffffffffff01400248015003221708041213083228ffffffffffffffffff01400348015003221508051211083228ffffffffffffffffff0140044801221708061213083228ffffffffffffffffff01400548015002221708071213081428ffffffffffffffffff01380148015001221908081215081428ffffffffffffffffff013801400148015001221a0809121608960128ffffffffffffffffff013801400248015001221a080a121608960128ffffffffffffffffff013801400248015004"
+ },
+ "tap.hoa.thanh.thi.1": {
+  "shopkey": "tap.hoa.thanh.thi.1",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 1,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 450,
+    "f7": 6,
+    "f8": 0,
+    "f9": 4,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c20328ffffffffffffffffff0138064804"
+   }
+  ],
+  "hex": "3c010000770012b9020a137461702e686f612e7468616e682e7468692e31120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032216080b121208c20328ffffffffffffffffff0138064804080000000900307c7c34367c3234140000000900317c3133353635317c35303438367c35313238380e0000000900307c3130393632337c34367c3234140000000900317c3135313035327c34393637307c3531343032140000000900317c3134363734397c34393535337c3531353431130000000900317c31303838337c34393636327c3531343732160000000900327c3134333230387c34393930347c35313333367c35140000000900317c3134373035367c34393834347c35313336"
+ },
+ "tap.hoa.thanh.thi.2": {
+  "shopkey": "tap.hoa.thanh.thi.2",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 11,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 224,
+    "f7": 5,
+    "f8": 0,
+    "f9": 4,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08e00128ffffffffffffffffff0138054804"
+   }
+  ],
+  "hex": "3c010000770012b9020a137461702e686f612e7468616e682e7468692e32120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032216080b121208e00128ffffffffffffffffff0138054804"
+ },
+ "tho.ren.thanh.thi.2": {
+  "shopkey": "tho.ren.thanh.thi.2",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 11,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 1,
+    "f8": 0,
+    "f9": 2,
+    "name": "",
+    "item_hex": "081e28ffffffffffffffffff01380148025001"
+   },
+   {
+    "itemindex": 20,
+    "cost": 40,
+    "f7": 1,
+    "f8": 0,
+    "f9": 3,
+    "name": "",
+    "item_hex": "082828ffffffffffffffffff01380148035001"
+   },
+   {
+    "itemindex": 21,
+    "cost": 60,
+    "f7": 1,
+    "f8": 0,
+    "f9": 4,
+    "name": "",
+    "item_hex": "083c28ffffffffffffffffff01380148045001"
+   },
+   {
+    "itemindex": 22,
+    "cost": 30,
+    "f7": 1,
+    "f8": 1,
+    "f9": 2,
+    "name": "",
+    "item_hex": "081e28ffffffffffffffffff013801400148025001"
+   },
+   {
+    "itemindex": 23,
+    "cost": 40,
+    "f7": 1,
+    "f8": 1,
+    "f9": 3,
+    "name": "",
+    "item_hex": "082828ffffffffffffffffff013801400148035001"
+   },
+   {
+    "itemindex": 24,
+    "cost": 60,
+    "f7": 1,
+    "f8": 1,
+    "f9": 4,
+    "name": "",
+    "item_hex": "083c28ffffffffffffffffff013801400148045001"
+   },
+   {
+    "itemindex": 25,
+    "cost": 400,
+    "f7": 1,
+    "f8": 2,
+    "f9": 2,
+    "name": "",
+    "item_hex": "08900328ffffffffffffffffff013801400248025001"
+   },
+   {
+    "itemindex": 26,
+    "cost": 600,
+    "f7": 1,
+    "f8": 2,
+    "f9": 3,
+    "name": "",
+    "item_hex": "08d80428ffffffffffffffffff013801400248035001"
+   },
+   {
+    "itemindex": 27,
+    "cost": 800,
+    "f7": 1,
+    "f8": 2,
+    "f9": 4,
+    "name": "",
+    "item_hex": "08a00628ffffffffffffffffff013801400248045001"
+   },
+   {
+    "itemindex": 28,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff01400148025004"
+   }
+  ],
+  "hex": "f2020000770012ef050a1374686f2e72656e2e7468616e682e7468692e32120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff01380148025001221708141213082828ffffffffffffffffff01380148035001221708151213083c28ffffffffffffffffff01380148045001221908161215081e28ffffffffffffffffff013801400148025001221908171215082828ffffffffffffffffff013801400148035001221908181215083c28ffffffffffffffffff013801400148045001221a0819121608900328ffffffffffffffffff013801400248025001221a081a121608d80428ffffffffffffffffff013801400248035001221a081b121608a00628ffffffffffffffffff0138014002480450012218081c121408900328ffffffffffffffffff01400148025004"
+ },
+ "tap.hoa.thanh.thi.3": {
+  "shopkey": "tap.hoa.thanh.thi.3",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 162,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 262,
+    "f7": 8,
+    "f8": 0,
+    "f9": 4,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08860228ffffffffffffffffff0138084804"
+   }
+  ],
+  "hex": "3c010000770012b9020a137461702e686f612e7468616e682e7468692e33120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032216080b121208860228ffffffffffffffffff0138084804"
+ },
+ "tho.ren.thanh.thi.3": {
+  "shopkey": "tho.ren.thanh.thi.3",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 162,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f2020000770012ef050a1374686f2e72656e2e7468616e682e7468692e33120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ },
+ "tap.hoa.thanh.thi.4": {
+  "shopkey": "tap.hoa.thanh.thi.4",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 37,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 186,
+    "f7": 7,
+    "f8": 0,
+    "f9": 4,
+    "name": "Tỳ Lô mão",
+    "item_hex": "08ba0128ffffffffffffffffff0138074804"
+   }
+  ],
+  "hex": "3c010000770012b9020a137461702e686f612e7468616e682e7468692e34120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032216080b121208ba0128ffffffffffffffffff0138074804"
+ },
+ "tho.ren.thanh.thi.4": {
+  "shopkey": "tho.ren.thanh.thi.4",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 37,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f2020000770012ef050a1374686f2e72656e2e7468616e682e7468692e34120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ },
+ "tho.ren.thanh.thi.5": {
+  "shopkey": "tho.ren.thanh.thi.5",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 78,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f2020000770012ef050a1374686f2e72656e2e7468616e682e7468692e35120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ },
+ "tap.hoa.thanh.thi.5": {
+  "shopkey": "tap.hoa.thanh.thi.5",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 78,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 450,
+    "f7": 6,
+    "f8": 0,
+    "f9": 4,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c20328ffffffffffffffffff01380648045001"
+   }
+  ],
+  "hex": "3e010000770012bb020a137461702e686f612e7468616e682e7468692e35120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032218080b121408c20328ffffffffffffffffff01380648045001"
+ },
+ "tap.hoa.thanh.thi.6": {
+  "shopkey": "tap.hoa.thanh.thi.6",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 80,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 224,
+    "f7": 5,
+    "f8": 0,
+    "f9": 4,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08e00128ffffffffffffffffff01380548045001"
+   }
+  ],
+  "hex": "3e010000770012bb020a137461702e686f612e7468616e682e7468692e36120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032218080b121408e00128ffffffffffffffffff01380548045001"
+ },
+ "tho.ren.thanh.thi.6": {
+  "shopkey": "tho.ren.thanh.thi.6",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 80,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f2020000770012ef050a1374686f2e72656e2e7468616e682e7468692e36120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ },
+ "tap.hoa.thanh.thi.7": {
+  "shopkey": "tap.hoa.thanh.thi.7",
+  "name": "Tạp hóa",
+  "costtype": 1,
+  "map": 176,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 500,
+    "f7": 1,
+    "f8": 9,
+    "f9": 0,
+    "name": "",
+    "item_hex": "08f40328ffffffffffffffffff01300638014009"
+   },
+   {
+    "itemindex": 2,
+    "cost": 2500,
+    "f7": 2,
+    "f8": 6,
+    "f9": 5,
+    "name": "Tuyền Long bào",
+    "item_hex": "08c41328ffffffffffffffffff01380240064805"
+   },
+   {
+    "itemindex": 3,
+    "cost": 3500,
+    "f7": 2,
+    "f8": 11,
+    "f9": 5,
+    "name": "Tích Lịch Kim Phụng giáp",
+    "item_hex": "08ac1b28ffffffffffffffffff013802400b4805"
+   },
+   {
+    "itemindex": 4,
+    "cost": 210,
+    "f7": 5,
+    "f8": 0,
+    "f9": 3,
+    "name": "Cửu Tiết Xương Vĩ Ngoa",
+    "item_hex": "08d20128ffffffffffffffffff0138054803"
+   },
+   {
+    "itemindex": 5,
+    "cost": 250,
+    "f7": 5,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Lũ hài",
+    "item_hex": "08fa0128ffffffffffffffffff01380540024803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 200,
+    "f7": 6,
+    "f8": 0,
+    "f9": 3,
+    "name": "Thiên Tàm Yêu Đái",
+    "item_hex": "08c80128ffffffffffffffffff0138064803"
+   },
+   {
+    "itemindex": 7,
+    "cost": 250,
+    "f7": 7,
+    "f8": 6,
+    "f9": 3,
+    "name": "Ô Tàm Mão",
+    "item_hex": "08fa0128ffffffffffffffffff01380740064803"
+   },
+   {
+    "itemindex": 8,
+    "cost": 150,
+    "f7": 7,
+    "f8": 8,
+    "f9": 3,
+    "name": "Âm Dương Vô Cực quán",
+    "item_hex": "08960128ffffffffffffffffff01380740084803"
+   },
+   {
+    "itemindex": 9,
+    "cost": 200,
+    "f7": 8,
+    "f8": 0,
+    "f9": 3,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08c80128ffffffffffffffffff0138084803"
+   },
+   {
+    "itemindex": 10,
+    "cost": 200,
+    "f7": 8,
+    "f8": 1,
+    "f9": 3,
+    "name": "Thiên Tàm Hộ Uyển",
+    "item_hex": "08c80128ffffffffffffffffff01380840014803"
+   },
+   {
+    "itemindex": 11,
+    "cost": 262,
+    "f7": 8,
+    "f8": 0,
+    "f9": 4,
+    "name": "Long Phụng Huyết Ngọc Trạc",
+    "item_hex": "08860228ffffffffffffffffff01380848045001"
+   }
+  ],
+  "hex": "3e010000770012bb020a137461702e686f612e7468616e682e7468692e37120a54e1baa1702068c3b361180122180801121408f40328ffffffffffffffffff0130063801400922180802121408c41328ffffffffffffffffff0138024006480522180803121408ac1b28ffffffffffffffffff013802400b480522160804121208d20128ffffffffffffffffff013805480322180805121408fa0128ffffffffffffffffff0138054002480322160806121208c80128ffffffffffffffffff013806480322180807121408fa0128ffffffffffffffffff0138074006480322180808121408960128ffffffffffffffffff0138074008480322160809121208c80128ffffffffffffffffff01380848032218080a121408c80128ffffffffffffffffff013808400148032218080b121408860228ffffffffffffffffff01380848045001"
+ },
+ "tho.ren.thanh.thi.7": {
+  "shopkey": "tho.ren.thanh.thi.7",
+  "name": "Thợ rèn",
+  "costtype": 1,
+  "map": 176,
+  "items": [
+   {
+    "itemindex": 1,
+    "cost": 400,
+    "f7": 0,
+    "f8": 0,
+    "f9": 2,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08900328ffffffffffffffffff0148025002"
+   },
+   {
+    "itemindex": 2,
+    "cost": 900,
+    "f7": 0,
+    "f8": 0,
+    "f9": 3,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08840728ffffffffffffffffff0148035002"
+   },
+   {
+    "itemindex": 3,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 0,
+    "f9": 4,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "08c00c28ffffffffffffffffff0148045002"
+   },
+   {
+    "itemindex": 4,
+    "cost": 400,
+    "f7": 0,
+    "f8": 1,
+    "f9": 2,
+    "name": "Đại Phong Đao",
+    "item_hex": "08900328ffffffffffffffffff0140014802"
+   },
+   {
+    "itemindex": 5,
+    "cost": 900,
+    "f7": 0,
+    "f8": 1,
+    "f9": 3,
+    "name": "Đại Phong Đao",
+    "item_hex": "08840728ffffffffffffffffff0140014803"
+   },
+   {
+    "itemindex": 6,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 1,
+    "f9": 4,
+    "name": "Đại Phong Đao",
+    "item_hex": "08c00c28ffffffffffffffffff0140014804"
+   },
+   {
+    "itemindex": 7,
+    "cost": 500,
+    "f7": 0,
+    "f8": 2,
+    "f9": 2,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f40328ffffffffffffffffff01400248025003"
+   },
+   {
+    "itemindex": 8,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 2,
+    "f9": 3,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08e80728ffffffffffffffffff01400248035003"
+   },
+   {
+    "itemindex": 9,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 2,
+    "f9": 4,
+    "name": "Kim Cô Bổng",
+    "item_hex": "08f20c28ffffffffffffffffff01400248045003"
+   },
+   {
+    "itemindex": 10,
+    "cost": 500,
+    "f7": 0,
+    "f8": 3,
+    "f9": 2,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f40328ffffffffffffffffff01400348025003"
+   },
+   {
+    "itemindex": 11,
+    "cost": 1000,
+    "f7": 0,
+    "f8": 3,
+    "f9": 3,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08e80728ffffffffffffffffff01400348035003"
+   },
+   {
+    "itemindex": 12,
+    "cost": 1650,
+    "f7": 0,
+    "f8": 3,
+    "f9": 4,
+    "name": "Phá Thiên Kích",
+    "item_hex": "08f20c28ffffffffffffffffff01400348045003"
+   },
+   {
+    "itemindex": 13,
+    "cost": 400,
+    "f7": 0,
+    "f8": 4,
+    "f9": 2,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08900328ffffffffffffffffff0140044802"
+   },
+   {
+    "itemindex": 14,
+    "cost": 900,
+    "f7": 0,
+    "f8": 4,
+    "f9": 3,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08840728ffffffffffffffffff0140044803"
+   },
+   {
+    "itemindex": 15,
+    "cost": 1500,
+    "f7": 0,
+    "f8": 4,
+    "f9": 4,
+    "name": "Phá Thiên chùy",
+    "item_hex": "08dc0b28ffffffffffffffffff0140044804"
+   },
+   {
+    "itemindex": 16,
+    "cost": 400,
+    "f7": 0,
+    "f8": 5,
+    "f9": 2,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08900328ffffffffffffffffff01400548025002"
+   },
+   {
+    "itemindex": 17,
+    "cost": 900,
+    "f7": 0,
+    "f8": 5,
+    "f9": 3,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08840728ffffffffffffffffff01400548035002"
+   },
+   {
+    "itemindex": 18,
+    "cost": 1600,
+    "f7": 0,
+    "f8": 5,
+    "f9": 4,
+    "name": "Thôn Nhật Trãm",
+    "item_hex": "08c00c28ffffffffffffffffff01400548045002"
+   },
+   {
+    "itemindex": 19,
+    "cost": 30,
+    "f7": 0,
+    "f8": 0,
+    "f9": 0,
+    "name": "Huyền Thiết Kiếm",
+    "item_hex": "081e28ffffffffffffffffff"
+   }
+  ],
+  "hex": "f1020000770012ee050a1374686f2e72656e2e7468616e682e7468692e37120a5468e1bba32072c3a86e180122160801121208900328ffffffffffffffffff014802500222160802121208840728ffffffffffffffffff014803500222160803121208c00c28ffffffffffffffffff014804500222160804121208900328ffffffffffffffffff014001480222160805121208840728ffffffffffffffffff014001480322160806121208c00c28ffffffffffffffffff014001480422180807121408f40328ffffffffffffffffff0140024802500322180808121408e80728ffffffffffffffffff0140024803500322180809121408f20c28ffffffffffffffffff014002480450032218080a121408f40328ffffffffffffffffff014003480250032218080b121408e80728ffffffffffffffffff014003480350032218080c121408f20c28ffffffffffffffffff014003480450032216080d121208900328ffffffffffffffffff01400448022216080e121208840728ffffffffffffffffff01400448032216080f121208dc0b28ffffffffffffffffff014004480422180810121408900328ffffffffffffffffff0140054802500222180811121408840728ffffffffffffffffff0140054803500222180812121408c00c28ffffffffffffffffff01400548045002221708131213081e28ffffffffffffffffff"
+ }
+}

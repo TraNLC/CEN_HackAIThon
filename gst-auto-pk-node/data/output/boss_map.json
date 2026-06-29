@@ -1,0 +1,35 @@
+{
+  "Heo rừng": {
+    "59": {
+      "mapId": 59,
+      "mapName": "Thiên Vương Bang",
+      "count": 1,
+      "last_pos": [
+        60365,
+        48748
+      ]
+    }
+  },
+  "Diệu Như": {
+    "13": {
+      "mapId": 13,
+      "mapName": "Nga My phái",
+      "count": 1,
+      "last_pos": [
+        72368,
+        76624
+      ]
+    }
+  },
+  "Khỉ ngựa": {
+    "13": {
+      "mapId": 13,
+      "mapName": "Nga My phái",
+      "count": 1,
+      "last_pos": [
+        72255,
+        76606
+      ]
+    }
+  }
+}

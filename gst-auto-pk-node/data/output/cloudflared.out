@@ -1,0 +1,51 @@
+2026-06-19T06:02:50Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-06-19T06:02:50Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-06-19T06:02:54Z INF +--------------------------------------------------------------------------------------------+
+2026-06-19T06:02:54Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-06-19T06:02:54Z INF |  https://protection-granted-chargers-surgeons.trycloudflare.com                            |
+2026-06-19T06:02:54Z INF +--------------------------------------------------------------------------------------------+
+2026-06-19T06:02:54Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-06-19T06:02:54Z INF Version 2026.6.1 (Checksum ae6ee90188ae5833c687ce937c3693e28403677607c06c65a2ff2b6a022f50e4)
+2026-06-19T06:02:54Z INF GOOS: darwin, GOVersion: go1.26.2, GoArch: arm64
+2026-06-19T06:02:54Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8500]
+2026-06-19T06:02:54Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-06-19T06:02:54Z INF Generated Connector ID: e0a7f466-43b7-4098-82b3-2bb73bd4b579
+2026-06-19T06:02:54Z INF Initial protocol quic
+2026-06-19T06:02:54Z INF ICMP proxy will use 192.168.24.73 as source for IPv4
+2026-06-19T06:02:54Z INF ICMP proxy will use fe80::4c9:94e9:d3d5:9c83 in zone en1 as source for IPv6
+2026-06-19T06:02:54Z INF Created ICMP proxy listening on 192.168.24.73:0
+2026-06-19T06:02:55Z INF ICMP proxy will use 192.168.24.73 as source for IPv4
+2026-06-19T06:02:55Z INF ICMP proxy will use fe80::4c9:94e9:d3d5:9c83 in zone en1 as source for IPv6
+2026-06-19T06:02:55Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-06-19T06:02:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.67
+2026-06-19T06:02:55Z INF Registered tunnel connection connIndex=0 connection=0f9944e2-281e-4c5b-9aab-6dbc281fb19e event=0 ip=198.41.192.67 location=hkg01 protocol=quic
+2026-06-19T06:03:01Z INF +-------------------------------------------------------------------------------------+
+2026-06-19T06:03:01Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-06-19T06:03:01Z INF +-------------------------------------------------------------------------------------+
+2026-06-19T06:03:01Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-06-19T06:03:01Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-06-19T06:03:01Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-06-19T06:03:01Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-06-19T06:03:01Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-06-19T06:03:01Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-06-19T06:03:01Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-06-19T06:03:01Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-06-19T06:03:01Z INF |                                                                                     |
+2026-06-19T06:03:01Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-06-19T06:03:01Z INF +-------------------------------------------------------------------------------------+
+2026-06-19T06:03:01Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region1.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region2.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region1.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region2.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region1.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=region2.v2.argotunnel.com
+2026-06-19T06:03:01Z INF precheck component="Cloudflare API" details="API is reachable" run_id=37658f24-61a9-40e5-800c-e52afc7a0256 status=pass target=api.cloudflare.com:443
+2026-06-19T06:03:01Z INF precheck complete hard_fail=false run_id=37658f24-61a9-40e5-800c-e52afc7a0256 suggested_protocol=quic
+2026-06-19T06:19:48Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8500
+2026-06-19T06:19:48Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8500
+2026-06-19T06:19:48Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 dest=https://protection-granted-chargers-surgeons.trycloudflare.com/api/logs/list event=0 ip=198.41.192.67 type=http
+2026-06-19T06:19:48Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 dest=https://protection-granted-chargers-surgeons.trycloudflare.com/api/state event=0 ip=198.41.192.67 type=http
+2026-06-19T06:19:48Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8500
+2026-06-19T06:19:48Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 dest=https://protection-granted-chargers-surgeons.trycloudflare.com/api/stats event=0 ip=198.41.192.67 type=http
+2026-06-19T06:19:48Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8500
+2026-06-19T06:19:48Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:8500: connect: connection refused" connIndex=0 dest=https://protection-granted-chargers-surgeons.trycloudflare.com/api/logs/tail?n=1500&file=CPP00185830E_127_0_0_1_26624.log event=0 ip=198.41.192.67 type=http
